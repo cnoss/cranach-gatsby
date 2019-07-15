@@ -1,3 +1,14 @@
-import React from "react"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from '@emotion/styled';
 
-export default props => <h1>{props.headerText}</h1>
+
+const H1 = styled.h1`
+	font-size: 2.5rem;
+`;
+
+export default props => <header>
+	<H1>
+		<Link className="logo" to="/">Cranach Digital Archive</Link>
+	</H1>
+</header>
