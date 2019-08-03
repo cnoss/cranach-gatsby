@@ -2,7 +2,7 @@
 const path = require(`path`);
 const fs = require('fs');
 
-const blogPostTemplate = path.resolve(`src/templates/page.js`);
+const blogPostTemplate = path.resolve(`src/templates/page.jsx`);
 
 
 const createGraphicPages = (graphics, actions) => {
