@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { css } from '@emotion/core'
 
 const Figure = styled.figure`
   border-radius: 1rem;
@@ -24,14 +23,28 @@ const FigCaption = styled.figcaption`
   padding-bottom: 1rem;
 `;
 
-export default (props) => (
-  <Figure>
-    <img
-      className="card-image"
-      alt="Platzhalter"
-      src="https://via.placeholder.com/400x700/000000/666666" />
-    <FigCaption className="helper-bg-gradient">
-      <p>{ props.item.titles[0].title }</p>
-    </FigCaption>
-  </Figure>
-)
+export default (props) => {
+  if (!props.item) {
+    throw new Error('graphic-card: Missing item prop');
+  }
+
+  const item = props.item;
+  const imgSrc = 'https://via.placeholder.com/400x700/000000/666666';
+  const title = (item.titles[0] && item.titles[0].title) || '';
+
+  return (
+    <Figure>
+      <img
+        className="card-image"
+        alt="Platzhalter"
+        src={ imgSrc } />
+      {
+        title && (
+          <FigCaption className="helper-bg-gradient">
+            <p>{ title }</p>
+          </FigCaption>
+        )
+      }
+    </Figure>
+  )
+}
