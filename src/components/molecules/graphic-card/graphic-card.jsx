@@ -23,12 +23,10 @@ const FigCaption = styled.figcaption`
   padding-bottom: 1rem;
 `;
 
-export default (props) => {
-  if (!props.item) {
+export default ({ item }) => {
+  if (!item) {
     throw new Error('graphic-card: Missing item prop');
   }
-
-  const item = props.item;
   const imgSrc = 'https://via.placeholder.com/400x700/000000/666666';
   const title = (item.titles[0] && item.titles[0].title) || '';
 
@@ -46,5 +44,5 @@ export default (props) => {
         )
       }
     </Figure>
-  )
-}
+  );
+};

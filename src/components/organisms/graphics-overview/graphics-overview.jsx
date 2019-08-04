@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 
-import GraphicCard from '../molecules/graphic-card';
+import GraphicCard from '@components/molecules/graphic-card';
 
 const GridContainer = styled.ul`
   display: grid;
@@ -27,16 +27,16 @@ const GridItem = styled.li`
 `;
 
 
-export default (props) => (
+export default ({ items = [] }) => (
   <GridContainer>
     {
-      props.items.map((item) => {
-        return <GridItem key={item.inventoryNumber}>
+      items.map(item => (
+        <GridItem key={item.inventoryNumber}>
           <Link to={`/${item.langCode}/${item.inventoryNumber}`}>
-            <GraphicCard item={item}/>
+            <GraphicCard item={item} />
           </Link>
         </GridItem>
-      })
+      ))
     }
   </GridContainer>
-)
+);

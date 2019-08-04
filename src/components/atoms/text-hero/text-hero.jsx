@@ -6,8 +6,8 @@ const P = styled.p`
   padding-bottom: 1.6rem;
 `;
 
-export default (props) => (
+export default ({ children }) => (
   <P>
-    { props.children }
+    { children }
   </P>
-)
+);

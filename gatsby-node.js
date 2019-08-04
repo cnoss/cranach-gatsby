@@ -1,14 +1,13 @@
 // gatsby-node.js
-const path = require(`path`);
-const fs = require('fs');
+const path = require('path');
 
-const blogPostTemplate = path.resolve(`src/templates/page.jsx`);
+const blogPostTemplate = path.resolve('src/templates/page.jsx');
 
 
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  graphics.forEach(graphic => {
+  graphics.forEach((graphic) => {
     createPage({
       path: `${graphic.langCode}/${graphic.inventoryNumber}`,
       component: blogPostTemplate,
