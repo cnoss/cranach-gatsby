@@ -31,6 +31,7 @@ module.exports = {
         },
         extensions: [
           'js',
+          'jsx',
           'css',
           'scss',
           'json',

@@ -35,6 +35,7 @@ module.exports = {
             },
             extensions: [
               '.js',
+              '.jsx',
               '.css',
               '.scss',
               '.json',
@@ -42,22 +43,10 @@ module.exports = {
           },
         },
       },
-      /*
-      alias: {
-        map: [
-          [ '@components', resolve('src/components') ],
-        ],
-        extensions: [
-          'js',
-          'css',
-          'scss',
-          'json',
-        ],
-      },
-      */
     },
   },
   rules: {
     'react/prop-types': 'off',
+    'no-underscore-dangle': 'off',
   },
 };
