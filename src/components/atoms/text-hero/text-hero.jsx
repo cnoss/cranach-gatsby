@@ -7,7 +7,7 @@ const P = styled.p`
 `;
 
 export default ({ children }) => (
-  <P>
+  <P className="text-hero">
     { children }
   </P>
 );
