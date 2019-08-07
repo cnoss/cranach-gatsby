@@ -31,9 +31,12 @@ export default ({ items = [] }) => (
   <GridContainer>
     {
       items.map(item => (
-        <GridItem key={item.inventoryNumber}>
-          <Link to={`/${item.langCode}/${item.inventoryNumber}`}>
-            <GraphicCard item={item} />
+        <GridItem key={ item.inventoryNumber }>
+          <Link to={ `/${item.langCode}/${item.inventoryNumber}` }>
+            <GraphicCard
+              title={ (item.titles[0] && item.titles[0].title) || '' }
+              imgSrc={ item.imgSrc || 'https://via.placeholder.com/400x700/000000/666666' }
+            />
           </Link>
         </GridItem>
       ))

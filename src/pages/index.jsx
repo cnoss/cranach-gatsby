@@ -13,7 +13,6 @@ const Container = styled.div`
   width: 1400px;
   margin: 0 auto;
   background-color: #333333;
-  padding: 1.25rem;
   color: #B4B4B4;
 `;
 

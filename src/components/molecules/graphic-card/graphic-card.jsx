@@ -23,26 +23,19 @@ const FigCaption = styled.figcaption`
   padding-bottom: 1rem;
 `;
 
-export default ({ item }) => {
-  if (!item) {
-    throw new Error('graphic-card: Missing item prop');
-  }
-  const imgSrc = 'https://via.placeholder.com/400x700/000000/666666';
-  const title = (item.titles[0] && item.titles[0].title) || '';
-
-  return (
-    <Figure>
-      <img
-        className="card-image"
-        alt="Platzhalter"
-        src={ imgSrc } />
-      {
-        title && (
-          <FigCaption className="helper-bg-gradient">
-            <p>{ title }</p>
-          </FigCaption>
-        )
-      }
-    </Figure>
-  );
-};
+export default ({ title = '', imgSrc = '', imgAlt = '' }) => (
+  <Figure className="graphic-card">
+    <img
+      className="card-image"
+      src={ imgSrc }
+      alt={ imgAlt }
+    />
+    {
+      title && (
+        <FigCaption className="card-caption helper-bg-gradient">
+          <p>{ title }</p>
+        </FigCaption>
+      )
+    }
+  </Figure>
+);
