@@ -17,10 +17,48 @@ const Container = styled.div`
 `;
 
 export default ({ data }) => {
-  const items = data.allGraphicsJson.edges.reduce((acc, edge) => {
+  const graphicsUrls = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
+    acc.push(edge.node);
+    return acc;
+  }, []);
+
+  const rawItems = data.allGraphicsJson.edges.reduce((acc, edge) => {
     acc.push(...edge.node.items);
     return acc;
   }, []);
+
+  const items = rawItems.map((rawItem) => {
+    const updatedItem = {
+      ...rawItem,
+      imgSrc: '',
+    };
+
+    const referenceInventoryNumbers = rawItem.references.map(
+      reference => reference.inventoryNumber,
+    );
+
+    const foundGraphicUrl = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
+      if (acc) {
+        return acc;
+      }
+
+      const foundMatchingGraphicUrl = graphicsUrls.find(
+        currGraphicsUrl => currGraphicsUrl.inventoryNumber === inventoryNumber,
+      );
+
+      if (foundMatchingGraphicUrl) {
+        return foundMatchingGraphicUrl;
+      }
+
+      return acc;
+    }, null);
+
+    if (foundGraphicUrl) {
+      updatedItem.imgSrc = foundGraphicUrl.imgSrc;
+    }
+
+    return updatedItem;
+  });
 
   return (
     <Container>
@@ -63,7 +101,18 @@ export const query = graphql`
               title
               type
             }
+            references {
+              inventoryNumber
+            }
           }
+        }
+      }
+    }
+    allGraphicsUrlsJson {
+      edges {
+        node {
+          inventoryNumber
+          imgSrc
         }
       }
     }
