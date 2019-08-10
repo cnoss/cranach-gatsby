@@ -2,13 +2,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { css } from '@emotion/core';
 import { mediaQuery } from '~/styles/mixins/media-query';
 import { spacing } from '~/styles/mixins/spacing';
 
 import Header from '~/components/atoms/header';
 import TextHero from '~/components/atoms/text-hero';
+import Footer from '~/components/atoms/footer';
 
 import GraphicsOverview from '~/components/organisms/graphics-overview';
 
@@ -35,6 +36,11 @@ const boxStyle = css`
 
 const mainStyle = css`
   margin-bottom: 2.5rem;
+`;
+
+const footerLinkStyle = css`
+  text-decoration: none;
+  color: #FFFFFF;
 `;
 
 export default ({ data }) => {
@@ -115,6 +121,13 @@ export default ({ data }) => {
           <GraphicsOverview items={items} />
         </main>
       </div>
+
+      <Footer>
+        <Link
+          to="/"
+          css={ footerLinkStyle }
+        >© 2019 / Cranach Digital Archive</Link>
+      </Footer>
     </div>
   );
 };
