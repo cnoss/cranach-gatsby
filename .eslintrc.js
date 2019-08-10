@@ -30,7 +30,7 @@ module.exports = {
             alias: {
               '@components': resolve('src/components'),
               '@pages': resolve('src/pages'),
-              '@styles': resolve('src/pages'),
+              '@styles': resolve('src/styles'),
               '@templates': resolve('src/templates'),
             },
             extensions: [

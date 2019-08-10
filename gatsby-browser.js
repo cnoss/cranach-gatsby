@@ -1,4 +1,4 @@
 
-import "./src/styles/fonts.css"
-import "./src/styles/reset.css"
-import "./src/styles/global.css"
+import('./src/styles/fonts.scss');
+import('./src/styles/reset.scss');
+import('./src/styles/global.scss')
