@@ -5,7 +5,6 @@
  */
 
 const path = require('path');
-const sass = require('sass');
 
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -14,12 +13,7 @@ function resolve(dir) {
 module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        implementation: sass,
-      },
-    },
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-json', {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -31,10 +25,7 @@ module.exports = {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {
-          '@components': resolve('src/components'),
-          '@pages': resolve('src/pages'),
-          '@styles': resolve('src/styles'),
-          '@templates': resolve('src/templates'),
+          '~': resolve('src'),
         },
         extensions: [
           'js',

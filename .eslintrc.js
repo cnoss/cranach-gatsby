@@ -28,10 +28,7 @@ module.exports = {
         config: {
           resolve: {
             alias: {
-              '@components': resolve('src/components'),
-              '@pages': resolve('src/pages'),
-              '@styles': resolve('src/styles'),
-              '@templates': resolve('src/templates'),
+              '~': resolve('src'),
             },
             extensions: [
               '.js',

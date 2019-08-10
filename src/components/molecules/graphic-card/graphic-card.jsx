@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { bgGradient } from '@styles/mixins/background';
+import { bgGradient } from '~/styles/mixins/background';
 
 const figureStyle = css`
   border-radius: 1rem;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { css } from '@emotion/core';
-import { mediaQuery } from '@styles/mixins/media-query';
+import { mediaQuery } from '~/styles/mixins/media-query';
 
-import GraphicCard from '@components/molecules/graphic-card';
+import GraphicCard from '~/components/molecules/graphic-card';
 
 const gridContainerStyle = css`
   display: grid;

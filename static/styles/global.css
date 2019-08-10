@@ -1,0 +1,39 @@
+
+body {
+  padding: 1.6rem;
+  font-size: 100%;
+  background-color: #333333;
+  color: #B4B4B4;
+  font-family: "IBMPlexSansLight";
+}
+
+html,
+body {
+  background-color: #333333;
+  padding: 1.25rem;
+  font-family: "IBMPlexSansLight";
+  color: #B4B4B4;
+  font-size: 80%;
+}
+
+@media only screen and (min-width: 720px) {
+  html,
+  body {
+    padding: 1.6rem;
+    font-size: 100%;
+  }
+}
+
+p, table, figcaption, dt, dl, dd, li {
+  line-height: 140%;
+  font-size: 1.25rem;
+}
+
+h1, h2, h3, p, code, pre {
+  margin-bottom: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #FFCC00;
+}

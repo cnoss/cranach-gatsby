@@ -1,14 +1,16 @@
 
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
-import { mediaQuery } from '@styles/mixins/media-query';
+import { mediaQuery } from '~/styles/mixins/media-query';
+import { spacing } from '~/styles/mixins/spacing';
 
-import Header from '@components/atoms/header';
-import TextHero from '@components/atoms/text-hero';
+import Header from '~/components/atoms/header';
+import TextHero from '~/components/atoms/text-hero';
 
-import GraphicsOverview from '@components/organisms/graphics-overview';
+import GraphicsOverview from '~/components/organisms/graphics-overview';
 
 const containerStyle = css`
   margin: 0 auto;
@@ -21,6 +23,18 @@ const pageStyle = css`
     width: 1400px;
     margin: 0 auto;
   }
+`;
+
+const boxStyle = css`
+  ${mediaQuery.md()} {
+    width: 50%;
+  }
+
+  ${spacing('bottom', '2rem')}
+`;
+
+const mainStyle = css`
+  margin-bottom: 2.5rem;
 `;
 
 export default ({ data }) => {
@@ -72,13 +86,19 @@ export default ({ data }) => {
       className="container"
       css={ containerStyle }
     >
+      <Helmet>
+        <title>Cranach Digital Archive - Grafiken</title>
+      </Helmet>
       <div
         className="page"
         css={ pageStyle }
       >
         <Header />
 
-        <div className="helper-box-medium helper-more-vspace">
+        <div
+          className="page-box"
+          css={ boxStyle }
+        >
           <TextHero>
             Lucas Cranach der Ältere verkörpert die Ideale eines Mannes im Zeitalter der
             Renaissance, der neben seiner Tätigkeit als Maler, Grafiker und Buchdrucker auch als
@@ -89,7 +109,9 @@ export default ({ data }) => {
           </TextHero>
         </div>
 
-        <main>
+        <main
+          css={ mainStyle }
+        >
           <GraphicsOverview items={items} />
         </main>
       </div>
