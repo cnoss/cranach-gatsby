@@ -2,18 +2,25 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { mediaQuery } from '@styles/mixins/media-query';
 
 import Header from '@components/atoms/header';
 import TextHero from '@components/atoms/text-hero';
 
 import GraphicsOverview from '@components/organisms/graphics-overview';
 
-const Container = styled.div`
-  width: 1400px;
+const containerStyle = css`
   margin: 0 auto;
   background-color: #333333;
   color: #B4B4B4;
+`;
+
+const pageStyle = css`
+  ${mediaQuery.lg()} {
+    width: 1400px;
+    margin: 0 auto;
+  }
 `;
 
 export default ({ data }) => {
@@ -61,8 +68,14 @@ export default ({ data }) => {
   });
 
   return (
-    <Container>
-      <div className="page">
+    <div
+      className="container"
+      css={ containerStyle }
+    >
+      <div
+        className="page"
+        css={ pageStyle }
+      >
         <Header />
 
         <div className="helper-box-medium helper-more-vspace">
@@ -80,7 +93,7 @@ export default ({ data }) => {
           <GraphicsOverview items={items} />
         </main>
       </div>
-    </Container>
+    </div>
   );
 };
 

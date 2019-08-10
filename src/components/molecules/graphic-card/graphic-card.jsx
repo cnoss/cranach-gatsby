@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { bgGradient } from '@styles/mixins/background';
 
-const Figure = styled.figure`
+const figureStyle = css`
   border-radius: 1rem;
   overflow: hidden;
   background-color: #000;
@@ -13,7 +14,7 @@ const Figure = styled.figure`
   padding-top: 100%;
 `;
 
-const FigCaption = styled.figcaption`
+const figCaptionStyle = css`
   position: absolute;
   bottom: 0;
   right: 0;
@@ -21,21 +22,39 @@ const FigCaption = styled.figcaption`
   padding: 1.6rem;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
+
+  ${bgGradient()}
+`;
+
+const cardImageStyle = css`
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 `;
 
 export default ({ title = '', imgSrc = '', imgAlt = '' }) => (
-  <Figure className="graphic-card">
+  <figure css={ figureStyle } className="graphic-card">
     <img
+      css={ cardImageStyle }
       className="card-image"
       src={ imgSrc }
       alt={ imgAlt }
     />
     {
       title && (
-        <FigCaption className="card-caption helper-bg-gradient">
+        <figcaption
+          css={ figCaptionStyle }
+          className="card-caption helper-bg-gradient"
+        >
           <p>{ title }</p>
-        </FigCaption>
+        </figcaption>
       )
     }
-  </Figure>
+  </figure>
 );

@@ -25,13 +25,6 @@ body {
 }
 
 
-@media only screen and (min-width: 1400px) {
-  .page {
-    width: 1400px;
-    margin: 0 auto;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   .helper-box-medium {
     width: 50%;
@@ -67,21 +60,4 @@ a.logo {
   border-bottom: solid 1px #666666;
   padding-bottom: 2rem;
   margin-bottom: 2.5rem;
-}
-
-
-.helper-bg-gradient > p {
-  position: relative;
-  z-index: 200;
-}
-
-.helper-bg-gradient::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-  z-index: 0;
 }

@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 
-const H1 = styled.h1`
+const h1Style = css`
   font-size: 2.5rem;
 `;
 
 export default () => (
   <header>
-    <H1>
+    <h1
+      css={ h1Style }
+    >
       <Link className="logo" to="/">Cranach Digital Archive</Link>
-    </H1>
+    </h1>
   </header>
 );

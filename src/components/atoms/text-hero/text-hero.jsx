@@ -1,13 +1,16 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 
-const P = styled.p`
+const textHeroStyle = css`
   font-size: 1.25rem;
   padding-bottom: 1.6rem;
 `;
 
 export default ({ children }) => (
-  <P className="text-hero">
+  <p
+    css={ textHeroStyle }
+    className="text-hero"
+  >
     { children }
-  </P>
+  </p>
 );
