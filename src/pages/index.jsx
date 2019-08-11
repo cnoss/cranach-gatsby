@@ -139,6 +139,7 @@ export const query = graphql`
         node {
           items {
             langCode
+            slug
             objectName
             inventoryNumber
             objectId

@@ -9,7 +9,7 @@ const createGraphicPages = (graphics, actions) => {
 
   graphics.forEach((graphic) => {
     createPage({
-      path: `${graphic.langCode}/${graphic.inventoryNumber}`,
+      path: `${graphic.langCode}/${graphic.slug}`,
       component: blogPostTemplate,
       context: {
         ...graphic,
@@ -18,6 +18,28 @@ const createGraphicPages = (graphics, actions) => {
   });
 };
 
+exports.onCreateNode = ({ node }) => {
+  /* Slugifying der title fur Nutzung als URL-Pfad */
+  if (node && node.internal.type === 'GraphicsJson') {
+    node.items.forEach((item) => {
+      const replaceMap = {
+        ä: 'a',
+        ö: 'o',
+        ü: 'u',
+        ß: 'ss',
+      };
+      const foundTitle = ((item.titles[0] && item.titles[0].title) || '').toLowerCase();
+      const slugifiedTitle = foundTitle && Object.entries(replaceMap).reduce(
+        (acc, pair) => acc.replace(pair[0], pair[1]),
+        foundTitle,
+      ).replace(/[^a-z0-9\s]*/g, '').replace(/\s+/g, '-');
+      const slug = slugifiedTitle || item.inventoryNumber;
+
+      /* eslint-disable-next-line */
+      item.slug = slug;
+    });
+  }
+};
 
 exports.createPages = ({ graphql, actions }) => {
   /*
@@ -33,6 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             items {
               langCode
+              slug
               objectName
               inventoryNumber
               objectId

@@ -37,7 +37,7 @@ export default ({ items = [] }) => (
           key={ item.inventoryNumber }
           css={ gridItemStyle }
         >
-          <Link to={ `/${item.langCode}/${item.inventoryNumber}` }>
+          <Link to={ `/${item.langCode}/${item.slug}` }>
             <GraphicCard
               title={ (item.titles[0] && item.titles[0].title) || '' }
               imgSrc={ item.imgSrc || 'https://via.placeholder.com/400x700/000000/666666' }
