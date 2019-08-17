@@ -93,7 +93,7 @@ export default ({ data }) => {
       css={ containerStyle }
     >
       <Helmet>
-        <title>Cranach Digital Archive - Grafiken</title>
+        <title>Cranach Digital Archive | Home</title>
       </Helmet>
       <div
         className="page"

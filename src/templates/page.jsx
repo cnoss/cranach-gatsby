@@ -9,7 +9,7 @@ const PageTemplate = ({ pageContext }) => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Grafiken - { (graphic.titles[0] && graphic.titles[0].title) || '' }</title>
+        <title>Grafiken | { (graphic.titles[0] && graphic.titles[0].title) || '' }</title>
       </Helmet>
       <h1>{graphic.inventoryNumber}</h1>
 
