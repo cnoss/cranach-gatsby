@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import TextHero from './text-hero';
 
-describe('Header', () => {
+describe('TextHero', () => {
   let container;
 
   beforeEach(() => {
