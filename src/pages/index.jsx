@@ -2,7 +2,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
 import { mediaQuery } from '~/styles/mixins/media-query';
 import { spacing } from '~/styles/mixins/spacing';
@@ -36,11 +36,6 @@ const boxStyle = css`
 
 const mainStyle = css`
   margin-bottom: 2.5rem;
-`;
-
-const footerLinkStyle = css`
-  text-decoration: none;
-  color: #FFFFFF;
 `;
 
 export default ({ data }) => {
@@ -122,12 +117,7 @@ export default ({ data }) => {
         </main>
       </div>
 
-      <Footer>
-        <Link
-          to="/"
-          css={ footerLinkStyle }
-        >© 2019 / Cranach Digital Archive</Link>
-      </Footer>
+      <Footer />
     </div>
   );
 };

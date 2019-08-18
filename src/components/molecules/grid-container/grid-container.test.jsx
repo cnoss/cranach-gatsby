@@ -2,10 +2,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import Footer from './footer';
+import GridContainer from './grid-container';
 
-describe('Footer', () => {
+describe('GridContainer', () => {
   let container;
+
+  /* Element selectors */
+  const gridContainerSelector = '.grid-container';
 
   beforeEach(() => {
     container = document.createElement('div');
@@ -19,9 +22,12 @@ describe('Footer', () => {
 
   it('renders correctly', () => {
     act(() => {
-      ReactDOM.render(<Footer />, container);
+      ReactDOM.render(
+        <GridContainer/>,
+        container,
+      );
     });
 
-    expect(!!container.querySelector('footer')).toBe(true);
+    expect(!!container.querySelector(gridContainerSelector)).toBe(true);
   });
 });

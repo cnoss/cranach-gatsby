@@ -1,5 +1,6 @@
 // gatsby-node.js
 const path = require('path');
+const graphicUrls = require('./content/graphics-urls.json');
 
 const blogPostTemplate = path.resolve('src/templates/page.jsx');
 
@@ -19,26 +20,54 @@ const createGraphicPages = (graphics, actions) => {
 };
 
 exports.onCreateNode = ({ node }) => {
-  /* Slugifying der title fur Nutzung als URL-Pfad */
-  if (node && node.internal.type === 'GraphicsJson') {
-    node.items.forEach((item) => {
-      const replaceMap = {
-        ä: 'a',
-        ö: 'o',
-        ü: 'u',
-        ß: 'ss',
-      };
-      const foundTitle = ((item.titles[0] && item.titles[0].title) || '').toLowerCase();
-      const slugifiedTitle = foundTitle && Object.entries(replaceMap).reduce(
-        (acc, pair) => acc.replace(pair[0], pair[1]),
-        foundTitle,
-      ).replace(/[^a-z0-9\s]*/g, '').replace(/\s+/g, '-');
-      const slug = slugifiedTitle || item.inventoryNumber;
-
-      /* eslint-disable-next-line */
-      item.slug = slug;
-    });
+  if (node && node.internal.type !== 'GraphicsJson') {
+    return;
   }
+
+  node.items.forEach((item) => {
+    /* Slugifying der title fur Nutzung als URL-Pfad */
+    /* TODO: Entfernen, wenn slug bereits beim Importieren generiert wird */
+    const replaceMap = {
+      ä: 'a',
+      ö: 'o',
+      ü: 'u',
+      ß: 'ss',
+    };
+    const foundTitle = ((item.titles[0] && item.titles[0].title) || '').toLowerCase();
+    const slugifiedTitle = foundTitle && Object.entries(replaceMap).reduce(
+      (acc, pair) => acc.replace(pair[0], pair[1]),
+      foundTitle,
+    ).replace(/[^a-z0-9\s]*/g, '').replace(/\s+/g, '-');
+    const slug = slugifiedTitle || item.inventoryNumber;
+
+    /* eslint-disable-next-line */
+    item.slug = slug;
+
+    /* Grafikverknüpfung */
+    /* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
+    const referenceInventoryNumbers = item.references.map(
+      reference => reference.inventoryNumber,
+    );
+
+    const graphicUrl = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
+      if (acc) {
+        return acc;
+      }
+
+      const foundGraphicUrl = graphicUrls.find(
+        currGraphicUrl => currGraphicUrl.inventoryNumber === inventoryNumber,
+      );
+
+      if (!foundGraphicUrl) {
+        return acc;
+      }
+
+      return foundGraphicUrl.imgSrc;
+    }, '');
+
+    /* eslint-disable-next-line */
+    item.imageSrc = graphicUrl;
+  });
 };
 
 exports.createPages = ({ graphql, actions }) => {
@@ -56,6 +85,7 @@ exports.createPages = ({ graphql, actions }) => {
             items {
               langCode
               slug
+              imageSrc
               objectName
               inventoryNumber
               objectId

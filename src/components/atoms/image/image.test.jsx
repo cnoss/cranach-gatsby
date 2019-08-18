@@ -2,10 +2,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import Footer from './footer';
+import Image from './image';
 
-describe('Footer', () => {
+describe('Header', () => {
   let container;
+
+  /* Element selectors */
+  const imageSelector = '.image';
 
   beforeEach(() => {
     container = document.createElement('div');
@@ -19,9 +22,9 @@ describe('Footer', () => {
 
   it('renders correctly', () => {
     act(() => {
-      ReactDOM.render(<Footer />, container);
+      ReactDOM.render(<Image />, container);
     });
 
-    expect(!!container.querySelector('footer')).toBe(true);
+    expect(!!container.querySelector(imageSelector)).toBe(true);
   });
 });
