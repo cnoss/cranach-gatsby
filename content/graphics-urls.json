@@ -1,62 +1,122 @@
 [
     {
         "inventoryNumber": "AT_A_DG1929-127",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-127/01_Overall/G_AT_A_DG1929-127_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-127/01_Overall/G_AT_A_DG1929-127_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-127/01_Overall/G_AT_A_DG1929-127_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-127/01_Overall/G_AT_A_DG1929-127_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-131",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-131/01_Overall/G_AT_A_DG1929-131_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-131/01_Overall/G_AT_A_DG1929-131_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-131/01_Overall/G_AT_A_DG1929-131_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-131/01_Overall/G_AT_A_DG1929-131_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-132",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-132/01_Overall/G_AT_A_DG1929-132_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-132/01_Overall/G_AT_A_DG1929-132_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-132/01_Overall/G_AT_A_DG1929-132_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-132/01_Overall/G_AT_A_DG1929-132_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-130",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-130/01_Overall/G_AT_A_DG1929-130_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-130/01_Overall/G_AT_A_DG1929-130_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-130/01_Overall/G_AT_A_DG1929-130_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-130/01_Overall/G_AT_A_DG1929-130_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-141",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-141/01_Overall/G_AT_A_DG1929-141_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-141/01_Overall/G_AT_A_DG1929-141_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-141/01_Overall/G_AT_A_DG1929-141_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-141/01_Overall/G_AT_A_DG1929-141_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-139",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-139/01_Overall/G_AT_A_DG1929-139_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-139/01_Overall/G_AT_A_DG1929-139_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-139/01_Overall/G_AT_A_DG1929-139_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-139/01_Overall/G_AT_A_DG1929-139_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-134",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-134/01_Overall/G_AT_A_DG1929-134_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-134/01_Overall/G_AT_A_DG1929-134_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-134/01_Overall/G_AT_A_DG1929-134_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-134/01_Overall/G_AT_A_DG1929-134_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-133",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-133/01_Overall/G_AT_A_DG1929-133_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-133/01_Overall/G_AT_A_DG1929-133_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-133/01_Overall/G_AT_A_DG1929-133_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-133/01_Overall/G_AT_A_DG1929-133_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-140",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-140/01_Overall/G_AT_A_DG1929-140_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-140/01_Overall/G_AT_A_DG1929-140_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-140/01_Overall/G_AT_A_DG1929-140_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-140/01_Overall/G_AT_A_DG1929-140_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-138",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-138/01_Overall/G_AT_A_DG1929-138_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-138/01_Overall/G_AT_A_DG1929-138_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-138/01_Overall/G_AT_A_DG1929-138_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-138/01_Overall/G_AT_A_DG1929-138_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-137",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-137/01_Overall/G_AT_A_DG1929-137_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-137/01_Overall/G_AT_A_DG1929-137_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-137/01_Overall/G_AT_A_DG1929-137_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-137/01_Overall/G_AT_A_DG1929-137_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-135",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-135/01_Overall/G_AT_A_DG1929-135_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-135/01_Overall/G_AT_A_DG1929-135_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-135/01_Overall/G_AT_A_DG1929-135_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-135/01_Overall/G_AT_A_DG1929-135_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-128v",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-128v/01_Overall/G_AT_A_DG1929-128v_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-128v/01_Overall/G_AT_A_DG1929-128v_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-128v/01_Overall/G_AT_A_DG1929-128v_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-128v/01_Overall/G_AT_A_DG1929-128v_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-136",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-136/01_Overall/G_AT_A_DG1929-136_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-136/01_Overall/G_AT_A_DG1929-136_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-136/01_Overall/G_AT_A_DG1929-136_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-136/01_Overall/G_AT_A_DG1929-136_Overall-l.tif.jpg"
+        }
     },
     {
         "inventoryNumber": "AT_A_DG1929-104",
-        "imgSrc": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-m.tif.jpg"
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-l.tif.jpg"
+      }
     }
 ]

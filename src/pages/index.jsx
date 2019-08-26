@@ -52,7 +52,11 @@ export default ({ data }) => {
   const items = rawItems.map((rawItem) => {
     const updatedItem = {
       ...rawItem,
-      imgSrc: '',
+      imgage: {
+        small: '',
+        medium: '',
+        large: '',
+      },
     };
 
     const referenceInventoryNumbers = rawItem.references.map(
@@ -76,7 +80,7 @@ export default ({ data }) => {
     }, null);
 
     if (foundGraphicUrl) {
-      updatedItem.imgSrc = foundGraphicUrl.imgSrc;
+      updatedItem.imgage = foundGraphicUrl.imgage;
     }
 
     return updatedItem;
@@ -151,7 +155,11 @@ export const query = graphql`
       edges {
         node {
           inventoryNumber
-          imgSrc
+          image {
+            small
+            medium
+            large
+          }
         }
       }
     }
