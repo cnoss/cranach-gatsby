@@ -15,7 +15,6 @@ import GraphicsOverview from '~/components/organisms/graphics-overview';
 
 const containerStyle = css`
   margin: 0 auto;
-  background-color: #333333;
   color: #B4B4B4;
 `;
 
@@ -39,7 +38,7 @@ const mainStyle = css`
 `;
 
 export default ({ data }) => {
-  const graphicsUrls = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
+  const graphics = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
     acc.push(edge.node);
     return acc;
   }, []);
@@ -52,7 +51,7 @@ export default ({ data }) => {
   const items = rawItems.map((rawItem) => {
     const updatedItem = {
       ...rawItem,
-      imgage: {
+      image: {
         small: '',
         medium: '',
         large: '',
@@ -63,24 +62,24 @@ export default ({ data }) => {
       reference => reference.inventoryNumber,
     );
 
-    const foundGraphicUrl = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
+    const foundGraphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
       if (acc) {
         return acc;
       }
 
-      const foundMatchingGraphicUrl = graphicsUrls.find(
-        currGraphicsUrl => currGraphicsUrl.inventoryNumber === inventoryNumber,
+      const foundMatchingGraphic = graphics.find(
+        currGraphics => currGraphics.inventoryNumber === inventoryNumber,
       );
 
-      if (foundMatchingGraphicUrl) {
-        return foundMatchingGraphicUrl;
+      if (foundMatchingGraphic) {
+        return foundMatchingGraphic;
       }
 
       return acc;
     }, null);
 
-    if (foundGraphicUrl) {
-      updatedItem.imgage = foundGraphicUrl.imgage;
+    if (foundGraphic) {
+      updatedItem.image = foundGraphic.image;
     }
 
     return updatedItem;

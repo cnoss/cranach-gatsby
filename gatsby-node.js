@@ -1,9 +1,43 @@
 // gatsby-node.js
 const path = require('path');
-const graphicUrls = require('./content/graphics-urls.json');
+const graphicsList = require('./content/graphics-urls.json');
 
 const blogPostTemplate = path.resolve('src/templates/page.jsx');
 
+const extendGraphic = (item) => {
+  /* Grafikverknüpfung */
+  /* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
+  const referenceInventoryNumbers = item.references.map(
+    reference => reference.inventoryNumber,
+  );
+
+  const graphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
+    if (acc) {
+      return acc;
+    }
+
+    const foundGraphic = graphicsList.find(
+      currGraphic => currGraphic.inventoryNumber === inventoryNumber,
+    );
+
+    if (!foundGraphic) {
+      return acc;
+    }
+
+    return foundGraphic;
+  }, null);
+
+  return {
+    ...item,
+    image: graphic
+      ? { ...graphic.image }
+      : {
+        small: '',
+        medium: '',
+        large: '',
+      },
+  };
+};
 
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
@@ -13,7 +47,7 @@ const createGraphicPages = (graphics, actions) => {
       path: `${graphic.langCode}/${graphic.slug}`,
       component: blogPostTemplate,
       context: {
-        ...graphic,
+        ...extendGraphic(graphic),
       },
     });
   });
@@ -42,31 +76,6 @@ exports.onCreateNode = ({ node }) => {
 
     /* eslint-disable-next-line */
     item.slug = slug;
-
-    /* Grafikverknüpfung */
-    /* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
-    const referenceInventoryNumbers = item.references.map(
-      reference => reference.inventoryNumber,
-    );
-
-    const graphicUrl = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
-      if (acc) {
-        return acc;
-      }
-
-      const foundGraphicUrl = graphicUrls.find(
-        currGraphicUrl => currGraphicUrl.inventoryNumber === inventoryNumber,
-      );
-
-      if (!foundGraphicUrl) {
-        return acc;
-      }
-
-      return foundGraphicUrl.imgSrc;
-    }, '');
-
-    /* eslint-disable-next-line */
-    item.imageSrc = graphicUrl;
   });
 };
 
@@ -85,7 +94,6 @@ exports.createPages = ({ graphql, actions }) => {
             items {
               langCode
               slug
-              imageSrc
               objectName
               inventoryNumber
               objectId

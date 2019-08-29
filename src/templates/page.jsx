@@ -26,7 +26,6 @@ const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-  const graphicUrl = graphic.imageSrc;
 
   return (
     <div
@@ -45,7 +44,7 @@ const PageTemplate = ({ pageContext }) => {
         <article>
           <GridContainer>
             <Image
-              src={ graphicUrl }
+              src={ graphic.image.large }
               alt={ title }
               sticky={ true }
             ></Image>
