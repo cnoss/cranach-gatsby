@@ -5,6 +5,7 @@
  */
 
 const path = require('path');
+const sass = require('sass');
 
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -14,7 +15,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-json', {
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: sass,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
