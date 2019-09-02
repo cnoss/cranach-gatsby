@@ -43,11 +43,13 @@ const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
   graphics.forEach((graphic) => {
+    const extendedGraphic = extendGraphic(graphic);
+
     createPage({
       path: `${graphic.langCode}/${graphic.slug}`,
       component: blogPostTemplate,
       context: {
-        ...extendGraphic(graphic),
+        ...extendedGraphic,
       },
     });
   });
@@ -88,7 +90,7 @@ exports.createPages = ({ graphql, actions }) => {
    */
   const pagesData = graphql(`
     query CranachGraphicObjects {
-      allGraphicsJson {
+      allGraphicsJson(filter: { items: { elemMatch: { isVirtual: { eq: true } } } }) {
         edges {
           node {
             items {
