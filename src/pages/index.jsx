@@ -59,7 +59,7 @@ export default ({ data }) => {
     };
 
     const referenceInventoryNumbers = rawItem.references.map(
-      reference => reference.inventoryNumber,
+      (reference) => reference.inventoryNumber,
     );
 
     const foundGraphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
@@ -68,7 +68,7 @@ export default ({ data }) => {
       }
 
       const foundMatchingGraphic = graphics.find(
-        currGraphics => currGraphics.inventoryNumber === inventoryNumber,
+        (currGraphics) => currGraphics.inventoryNumber === inventoryNumber,
       );
 
       if (foundMatchingGraphic) {

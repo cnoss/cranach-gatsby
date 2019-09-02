@@ -32,7 +32,7 @@ export default ({ items = [] }) => (
     css={ gridContainerStyle }
   >
     {
-      items.map(item => (
+      items.map((item) => (
         <li
           key={ item.inventoryNumber }
           css={ gridItemStyle }

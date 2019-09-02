@@ -60,11 +60,3 @@ const PageTemplate = ({ pageContext }) => {
 };
 
 export default PageTemplate;
-
-/*
-  <pre>
-    <code>
-      { JSON.stringify(graphic, null, 4) }
-    </code>
-  </pre>
-*/

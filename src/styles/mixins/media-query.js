@@ -12,7 +12,7 @@ const mediaQueryCreator = (props) => {
     minWidth: 0,
   };
 
-  const mergedOptions = Object.assign({}, options, props);
+  const mergedOptions = { ...options, ...props };
 
   return `@media ${mergedOptions.device} and (min-width: ${mergedOptions.minWidth})`;
 };
