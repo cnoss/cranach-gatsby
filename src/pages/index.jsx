@@ -3,39 +3,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import { graphql } from 'gatsby';
-import { css } from '@emotion/core';
-import { mediaQuery } from '~/styles/mixins/media-query';
-import { spacing } from '~/styles/mixins/spacing';
 
 import Header from '~/components/atoms/header';
 import TextHero from '~/components/atoms/text-hero';
 import Footer from '~/components/atoms/footer';
 
 import GraphicsOverview from '~/components/organisms/graphics-overview';
-
-const containerStyle = css`
-  margin: 0 auto;
-  color: #B4B4B4;
-`;
-
-const pageStyle = css`
-  ${mediaQuery.lg()} {
-    width: 1400px;
-    margin: 0 auto;
-  }
-`;
-
-const boxStyle = css`
-  ${mediaQuery.md()} {
-    width: 50%;
-  }
-
-  ${spacing('bottom', '2rem')}
-`;
-
-const mainStyle = css`
-  margin-bottom: 2.5rem;
-`;
 
 export default ({ data }) => {
   const graphics = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
@@ -87,21 +60,18 @@ export default ({ data }) => {
 
   return (
     <div
-      className="container"
-      css={ containerStyle }
+      className="container is-fluid"
     >
       <Helmet>
         <title>Cranach Digital Archive | Home</title>
       </Helmet>
       <div
         className="page"
-        css={ pageStyle }
       >
         <Header />
 
         <div
           className="page-box"
-          css={ boxStyle }
         >
           <TextHero>
             Lucas Cranach der Ältere verkörpert die Ideale eines Mannes im Zeitalter der
@@ -113,9 +83,7 @@ export default ({ data }) => {
           </TextHero>
         </div>
 
-        <main
-          css={ mainStyle }
-        >
+        <main>
           <GraphicsOverview items={items} />
         </main>
       </div>

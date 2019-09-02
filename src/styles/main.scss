@@ -1,10 +1,5 @@
+@charset 'utf-8';
 
-$family-sans-serif: "IBMPlexSans", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+@import './vars.scss';
 
-@import "~bulma/sass/utilities/_all.sass";
-@import "bulma/sass/base/generic.sass";
-
-html {
-  color: #b5b5b5;
-  background-color: #222;
-}
+@import '~bulma/bulma.sass';
