@@ -5,7 +5,7 @@ import React from 'react';
 export default function HTML(props) {
   return (
     <html
-      {...props.htmlAttributes}
+      { ...props.htmlAttributes }
     >
       <head>
         <meta charSet="utf-8" />
@@ -17,12 +17,12 @@ export default function HTML(props) {
         <link rel="stylesheet" type="text/css" href="/styles/fonts.css" />
         <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        {props.headComponents}
+        { props.headComponents }
       </head>
       <body
-        {...props.bodyAttributes}
+        { ...props.bodyAttributes }
       >
-        {props.preBodyComponents}
+        { props.preBodyComponents }
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
@@ -31,7 +31,7 @@ export default function HTML(props) {
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
-        {props.postBodyComponents}
+        { props.postBodyComponents }
       </body>
     </html>
   );

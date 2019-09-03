@@ -46,7 +46,6 @@ const PageTemplate = ({ pageContext }) => {
             <Image
               src={ graphic.image.large }
               alt={ title }
-              sticky={ true }
             ></Image>
 
             <p>{ title }</p>

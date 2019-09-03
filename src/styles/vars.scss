@@ -1,8 +1,36 @@
 
-// Colors
+// Typography
+
+$family-sans-serif: "IBMPlexSansLight", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// $weight-normal: 300;
+
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 64px;
+
+
+// Generic
+
+$body-size: 18px;
 $body-background-color: #222;
 $body-color: #b5b5b5;
 
-// Typography
 
-$family-sans-serif: "IBMPlexSans", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+// Elements
+
+// Card
+$card-background-color: #0a0a0a;
+$card-color: #b5b5b5;
+
+// Title
+$title-color: #dbdbdb;
+
+// Navbar
+$navbar-background-color: #222;
+$navbar-box-shadow-color: transparent;
+
+$navbar-item-color: #fff;
+$navbar-item-hover-color: #fc0;

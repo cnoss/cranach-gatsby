@@ -1,14 +1,2 @@
 
-p, table, figcaption, dt, dl, dd, li {
-  line-height: 140%;
-  font-size: 1.25rem;
-}
 
-h1, h2, h3, p, code, pre {
-  margin-bottom: 1.6rem;
-}
-
-a {
-  text-decoration: none;
-  color: #FFCC00;
-}

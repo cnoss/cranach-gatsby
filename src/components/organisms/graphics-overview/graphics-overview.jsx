@@ -1,50 +1,24 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { css } from '@emotion/core';
-import { mediaQuery } from '~/styles/mixins/media-query';
 
 import GraphicCard from '~/components/molecules/graphic-card';
 
-const gridContainerStyle = css`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 1.6rem;
-  grid-row-gap: 1.6rem;
-  list-style: none;
-
-  ${mediaQuery.sm()} {
-    grid-template-columns: 1fr 1fr;
-  }
-  ${mediaQuery.md()} {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  ${mediaQuery.lg()} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-`;
-
-const gridItemStyle = css`
-  display: contents;
-`;
 
 export default ({ items = [] }) => (
-  <ul
-    css={ gridContainerStyle }
-  >
+  <div className="graphics-overview columns is-multiline">
     {
       items.map((item) => (
-        <li
+        <div
           key={ item.inventoryNumber }
-          css={ gridItemStyle }
+          className="item column is-one-third-desktop is-one-fifth-widescreen is-half-tablet"
         >
-          <Link to={ `/${item.langCode}/${item.slug}` }>
-            <GraphicCard
-              title={ (item.titles[0] && item.titles[0].title) || '' }
-              imgSrc={ (item && item.image && item.image.medium) || 'https://via.placeholder.com/400x700/000000/666666' }
-            />
-          </Link>
-        </li>
+          <GraphicCard
+            title={ (item.titles[0] && item.titles[0].title) || '' }
+            subtitle={ item.dating.dated || '' }
+            href={ `/${item.langCode}/${item.slug}` }
+            imgSrc={ (item && item.image && item.image.small) }
+          />
+        </div>
       ))
     }
-  </ul>
+  </div>
 );

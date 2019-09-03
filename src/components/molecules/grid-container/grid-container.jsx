@@ -18,6 +18,6 @@ export default ({ children }) => (
     className="grid-container"
     css={ gridContainerStyle({ columns: (children && children.length) || 1 }) }
   >
-    { children}
+    { children }
   </div>
 );
