@@ -2,23 +2,10 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import { css } from '@emotion/core';
 
-import { mediaQuery } from '~/styles/mixins/media-query';
-
-import GridContainer from '~/components/molecules/grid-container';
 import Image from '~/components/atoms/image';
+import Navigation from '~/components/molecules/navigation';
 
-const pageStyle = css`
-  ${mediaQuery.lg()} {
-    width: 1400px;
-    margin: 0 auto;
-  }
-`;
-
-const mainStyle = css`
-  margin-bottom: 2.5rem;
-`;
 
 const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
@@ -28,27 +15,27 @@ const PageTemplate = ({ pageContext }) => {
   return (
     <div
       className="page"
-      css={ pageStyle }
     >
       <Helmet>
         <title>Grafiken | { title }</title>
       </Helmet>
 
-      <main
-        css={ mainStyle }
-      >
-        <article>
-          <GridContainer>
+      <Navigation />
+
+      <div className="container">
+        <div className="columns">
+          <div className="column">
             <Image
               src={ graphic.image.large }
               alt={ title }
             ></Image>
+          </div>
 
+          <div className="column">
             <p>{ title }</p>
-          </GridContainer>
-        </article>
-      </main>
-
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

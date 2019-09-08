@@ -62,6 +62,7 @@ export default ({ data }) => {
       <Helmet>
         <title>Cranach Digital Archive | Home</title>
       </Helmet>
+
       <div
         className="page"
       >
