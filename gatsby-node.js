@@ -35,6 +35,7 @@ const extendGraphic = (item) => {
         small: '',
         medium: '',
         large: '',
+        xlarge: '',
       },
   };
 };

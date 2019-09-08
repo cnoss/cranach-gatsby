@@ -3,7 +3,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Image from '~/components/atoms/image';
+import ZoomImage from '~/components/atoms/zoomImage';
 import Navigation from '~/components/molecules/navigation';
 
 
@@ -25,10 +25,11 @@ const PageTemplate = ({ pageContext }) => {
       <div className="container">
         <div className="columns">
           <div className="column">
-            <Image
-              src={ graphic.image.large }
+            <ZoomImage
+              src={ graphic.image.xlarge }
+              preloadSrc={ graphic.image.medium }
               alt={ title }
-            ></Image>
+            />
           </div>
 
           <div className="column">
