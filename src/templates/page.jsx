@@ -6,8 +6,6 @@ import { css } from '@emotion/core';
 
 import { mediaQuery } from '~/styles/mixins/media-query';
 
-import Header from '~/components/atoms/header';
-import Footer from '~/components/atoms/footer';
 import GridContainer from '~/components/molecules/grid-container';
 import Image from '~/components/atoms/image';
 
@@ -36,8 +34,6 @@ const PageTemplate = ({ pageContext }) => {
         <title>Grafiken | { title }</title>
       </Helmet>
 
-      <Header />
-
       <main
         css={ mainStyle }
       >
@@ -53,7 +49,6 @@ const PageTemplate = ({ pageContext }) => {
         </article>
       </main>
 
-      <Footer />
     </div>
   );
 };
