@@ -6,6 +6,6 @@ export default () => (
   <span
     className="logo"
   >
-    cda_
+    cda_&nbsp;
   </span>
 );

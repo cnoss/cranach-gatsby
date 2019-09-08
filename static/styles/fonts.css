@@ -47,12 +47,12 @@
   font-family: 'IBMPlexSansLight';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/IBMPlex-Sans/IBMPlexSans-ExtraLight.ttf") format('ttf');
+  src: url("/fonts/IBMPlex-Sans/IBMPlexSans-Light.ttf") format('ttf');
 }
 
 @font-face {
   font-family: 'IBMPlexSansLight';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/IBMPlex-Sans/IBMPlexSans-ExtraLight.woff2") format('woff2');
+  src: url("/fonts/IBMPlex-Sans/IBMPlexSans-Light.woff2") format('woff2');
 }

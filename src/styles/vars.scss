@@ -2,14 +2,18 @@
 // Typography
 
 $family-sans-serif: "IBMPlexSansLight", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: "IBMPlexMonoMedium", monospace;
 
-// $weight-normal: 300;
-
+$weight-normal: 300;
 
 // Responsiveness
 
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 64px;
+
+// Miscellaneous
+
+$radius: 0;
 
 
 // Generic
@@ -27,10 +31,13 @@ $card-color: #b5b5b5;
 
 // Title
 $title-color: #dbdbdb;
+$title-weight: 500;
 
 // Navbar
+$navbar-item-color: #b5b5b5;
 $navbar-background-color: #222;
-$navbar-box-shadow-color: transparent;
-
-$navbar-item-color: #fff;
 $navbar-item-hover-color: #fc0;
+$navbar-item-hover-background-color:  #121212;
+$navbar-item-active-color: #fc0;
+$navbar-item-active-background-color: #121212;
+$navbar-box-shadow-color: transparent;
