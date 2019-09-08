@@ -14,7 +14,7 @@ export default ({ items = [] }) => (
           <GraphicCard
             title={ (item.titles[0] && item.titles[0].title) || '' }
             subtitle={ item.dating.dated || '' }
-            href={ `/${item.langCode}/${item.slug}` }
+            to={ `/${item.langCode}/${item.slug}` }
             imgSrc={ (item && item.image && item.image.small) }
           />
         </div>

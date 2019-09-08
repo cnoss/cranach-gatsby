@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Image from '~/components/atoms/image';
+import Link from '~/components/atoms/link';
 
 import './graphic-card.scss';
 
 export default ({
   title = '',
   subtitle = '',
-  href = '',
+  to = '',
   imgSrc = '',
   imgAlt = '',
 }) => (
@@ -17,7 +17,7 @@ export default ({
   >
     <div className="card-image">
       <Link
-        to={ href }
+        to={ to }
       >
         <Image
           src={ imgSrc }
