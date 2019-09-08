@@ -14,8 +14,6 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.15",
-    "babel-jest": "^24.8.0",
     "bulma": "^0.7.5",
     "gatsby": "^2.15.9",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -30,6 +28,7 @@
     "sass": "^1.22.10"
   },
   "devDependencies": {
+    "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.2.8",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-react-app": "^4.0.1",
