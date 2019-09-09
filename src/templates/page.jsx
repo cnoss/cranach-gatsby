@@ -3,7 +3,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import ZoomImage from '~/components/atoms/zoomImage';
+import ZoomImage from '~/components/atoms/zoom-image';
 import Navigation from '~/components/molecules/navigation';
 
 
