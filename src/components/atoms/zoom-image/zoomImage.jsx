@@ -7,7 +7,7 @@ import './zoomImage.scss';
 
 export default ({
   src,
-  preloadSrc,
+  baseSrc,
   alt,
   caption,
 }) => {
@@ -61,7 +61,7 @@ export default ({
     >
       <img
         className="preload-image"
-        src={ preloadSrc }
+        src={ baseSrc }
         alt={ alt }
         onLoad={ baseImageLoaded }
       ></img>

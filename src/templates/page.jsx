@@ -40,7 +40,7 @@ const PageTemplate = ({ pageContext }) => {
           <div className="column">
             <ZoomImage
               src={ graphic.image.xlarge }
-              preloadSrc={ graphic.image.small }
+              baseSrc={ graphic.image.small }
               alt={ title }
             />
           </div>
