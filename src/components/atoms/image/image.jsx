@@ -15,7 +15,9 @@ export default ({
       alt={ alt }
     ></img>
 
-    { caption && <figcaption>
+    { caption && <figcaption
+        className="image-caption"
+      >
         { caption }
       </figcaption>
     }
