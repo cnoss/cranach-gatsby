@@ -8,7 +8,7 @@ function resolve(dir) {
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   env: {
     node: true,
@@ -17,12 +17,24 @@ module.exports = {
     __PATH_PREFIX__: true,
   },
   extends: [
-    'react-app',
-    'airbnb-base',
+    'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'react-app',
+    'airbnb-base',
+  ],
+  overrides: [
+    {
+      files: [
+        'src/*.js',
+        'src/*.jsx',
+      ],
+    },
   ],
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       webpack: {
         config: {
