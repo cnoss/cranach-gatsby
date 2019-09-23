@@ -27,7 +27,7 @@ storiesOf('Atoms/Image', module)
       </div>
     );
   })
-  .add('with alt text', () => {
+  .add('without src', () => {
     const images = files('Image', 'image/*', []);
 
     return (
