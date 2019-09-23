@@ -49,7 +49,7 @@ describe('Molecules/GraphicCard', () => {
   const graphicCardImageSelector = '.card-image';
   const graphicContentSelector = '.card-content';
   const graphicTitleSelector = '.card-content .title';
-  const graphicSubtitleSelector = '.card-content .subtitle';
+  const graphicSubtitleSelector = '.card-content .card-subtitle';
 
   beforeEach(() => {
     container = document.createElement('div');

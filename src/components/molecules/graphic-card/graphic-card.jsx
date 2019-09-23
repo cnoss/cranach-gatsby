@@ -31,7 +31,7 @@ export default ({
         <div className="media">
           <div className="media-content">
             <h2 className="title is-6">{ title }</h2>
-            <p className="subtitle">{ subtitle }</p>
+            <p className="content-subtitle">{ subtitle }</p>
           </div>
         </div>
       </div>)
