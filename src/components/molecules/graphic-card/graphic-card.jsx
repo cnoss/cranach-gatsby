@@ -26,8 +26,8 @@ export default ({
         ></Image>
       </Link>
     </div>
-    { title &&
-      (<div className="card-content">
+    { title
+      && (<div className="card-content">
         <div className="media">
           <div className="media-content">
             <h2 className="title is-6">{ title }</h2>
