@@ -16,8 +16,8 @@ storiesOf('Atoms/DefinitionList', module)
     const termDefinitionItems = array('Items', [
       'First Term = First Definition',
       'Second Term = Second Definition',
-      'Second Term = Second Definition',
       'Third Term = Third Definition',
+      'Fourth Term = Fourth Definition',
     ], ';');
     return (
       <div style={{ width: '300px' }}>
