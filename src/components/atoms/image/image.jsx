@@ -19,7 +19,7 @@ export default ({
     { caption && <figcaption
         className="image-caption"
       >
-        { caption }
+        <p className="text">{ caption }</p>
       </figcaption>
     }
   </figure>
