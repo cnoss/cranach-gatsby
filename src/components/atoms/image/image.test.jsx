@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import Image from './image';
 
-describe('Header', () => {
+describe('Atoms/Image', () => {
   let container;
 
   /* Element selectors */

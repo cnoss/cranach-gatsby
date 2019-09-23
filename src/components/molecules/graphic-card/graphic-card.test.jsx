@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import GrahpicCard from './graphic-card';
 
-describe('GraphicCard', () => {
+describe('Molecules/GraphicCard', () => {
   let container;
 
   /* Element selectors */
