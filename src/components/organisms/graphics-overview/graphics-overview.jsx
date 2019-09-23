@@ -4,7 +4,10 @@ import GraphicCard from '~/components/molecules/graphic-card';
 
 
 export default ({ items = [] }) => (
-  <div className="graphics-overview columns is-multiline">
+  <div
+    className="graphics-overview columns is-multiline"
+    data-component="organisms/graphics-overview"
+  >
     {
       items.map((item) => (
         <div

@@ -20,6 +20,7 @@ export default ({
         activeClassName={ activeClassName }
         partiallyActive={ partiallyActive }
         { ...other }
+        data-component="atoms/link"
       >
         { children }
       </GatsbyLink>
@@ -29,6 +30,7 @@ export default ({
     <a
       href={ to }
       { ...other }
+      data-component="atoms/link"
     >
       { children }
     </a>

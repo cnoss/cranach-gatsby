@@ -30,6 +30,7 @@ export default () => {
       className="navigation navbar has-shadow is-spaced"
       role="navigation"
       aria-label="main navigation"
+      data-component="molecules/navigation"
     >
       <div className="navbar-brand">
         <Link

@@ -5,6 +5,7 @@ import './definition-list.scss';
 const DefinitionList = ({ children }) => (
   <dl
     className="definition-list"
+    data-component="atoms/definition-list"
   >
     { children }
   </dl>

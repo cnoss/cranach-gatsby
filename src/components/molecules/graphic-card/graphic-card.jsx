@@ -14,6 +14,7 @@ export default ({
 }) => (
   <div
     className="graphic-card card bm--card-equal-height"
+    data-component="molecules/graphic-card"
   >
     <div className="card-image">
       <Link

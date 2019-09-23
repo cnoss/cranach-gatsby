@@ -9,6 +9,7 @@ export default ({
 }) => (
   <figure
     className="image"
+    data-component="atoms/image"
   >
     <img
       src={ src }

@@ -59,6 +59,7 @@ export default ({ data }) => {
   return (
     <div
       className="index"
+      data-page="index"
     >
       <Helmet>
         <title>Cranach Digital Archive | Home</title>

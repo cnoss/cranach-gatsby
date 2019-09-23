@@ -58,6 +58,7 @@ export default ({
     <figure
       ref={ figureElRef }
       className={ `zoom-image ${activeZoom ? 'has-active-zoom' : ''}` }
+      data-component="atoms/zoom-image"
     >
       <img
         className="preload-image"
