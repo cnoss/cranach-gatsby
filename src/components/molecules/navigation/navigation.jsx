@@ -44,18 +44,16 @@ export default () => {
       <div className="navbar-menu">
         <div className="navbar-start">
           {
-            navStructure.map(
-              (item) => (
-                <Link
-                  className="navbar-item"
-                  to={ item.to }
-                  key={ item.to }
-                  activeClassName="is-active"
-                >
-                  { item.title }
-                </Link>
-              ),
-            )
+            navStructure.map(item => (
+              <Link
+                className="navbar-item"
+                to={ item.to }
+                key={ item.to }
+                activeClassName="is-active"
+              >
+                { item.title }
+              </Link>
+            ))
           }
         </div>
 

@@ -9,7 +9,7 @@ export default ({ items = [] }) => (
     data-component="organisms/graphics-overview"
   >
     {
-      items.map((item) => (
+      items.map(item => (
         <div
           key={ item.inventoryNumber }
           className="item column is-one-third-desktop is-one-fifth-widescreen is-half-tablet"
