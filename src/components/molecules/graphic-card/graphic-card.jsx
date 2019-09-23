@@ -13,7 +13,7 @@ export default ({
   imgAlt = '',
 }) => (
   <div
-    className="graphic-card card bm--card-equal-height"
+    className="graphic-card card"
     data-component="molecules/graphic-card"
   >
     <div className="card-image">
@@ -26,14 +26,15 @@ export default ({
         ></Image>
       </Link>
     </div>
-
-    <div className="card-content">
-      <div className="media">
-        <div className="media-content">
-          <h2 className="title is-6">{ title }</h2>
-          <p>{ subtitle }</p>
+    { title &&
+      (<div className="card-content">
+        <div className="media">
+          <div className="media-content">
+            <h2 className="title is-6">{ title }</h2>
+            <p className="subtitle">{ subtitle }</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </div>)
+    }
   </div>
 );
