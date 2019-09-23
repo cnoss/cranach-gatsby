@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 
 import OpenSeaDragon from 'openseadragon';
 
-import './zoomImage.scss';
+import './zoom-image.scss';
 
 
 export default ({

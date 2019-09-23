@@ -1,4 +1,4 @@
 
-import ZoomImage from './zoomImage';
+import ZoomImage from './zoom-image';
 
 export default ZoomImage;
