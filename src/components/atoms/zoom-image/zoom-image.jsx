@@ -1,9 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import OpenSeaDragon from 'openseadragon';
-
 import './zoom-image.scss';
-
 
 export default ({
   src,
@@ -15,42 +12,49 @@ export default ({
   const [activeZoom, setActiveZoom] = useState(false);
 
   const baseImageLoaded = () => {
-    const viewer = OpenSeaDragon({
-      element: figureElRef.current,
-      tileSources: {
-        type: 'image',
-        url: src,
-      },
-      navImages: {
-        zoomIn: {
-          REST: 'zoomin_rest.png',
-          GROUP: 'zoomin_hover.png',
-          HOVER: 'zoomin_hover.png',
-          DOWN: 'zoomin_hover.png',
-        },
-        zoomOut: {
-          REST: 'zoomout_rest.png',
-          GROUP: 'zoomout_hover.png',
-          HOVER: 'zoomout_hover.png',
-          DOWN: 'zoomout_hover.png',
-        },
-        home: {
-          REST: 'home_rest.png',
-          GROUP: 'home_hover.png',
-          HOVER: 'home_hover.png',
-          DOWN: 'home_hover.png',
-        },
-        fullpage: {
-          REST: 'fullpage_rest.png',
-          GROUP: 'fullpage_hover.png',
-          HOVER: 'fullpage_hover.png',
-          DOWN: 'fullpage_hover.png',
-        },
-      },
-    });
+    /* OpenSeaDragon references document,  */
+    if (!window || !window.document) {
+      return;
+    }
 
-    viewer.addHandler('open', () => {
-      setActiveZoom(true);
+    import('openseadragon').then((OpenSeaDragon) => {
+      const viewer = new OpenSeaDragon.Viewer({
+        element: figureElRef.current,
+        tileSources: {
+          type: 'image',
+          url: src,
+        },
+        navImages: {
+          zoomIn: {
+            REST: 'zoomin_rest.png',
+            GROUP: 'zoomin_hover.png',
+            HOVER: 'zoomin_hover.png',
+            DOWN: 'zoomin_hover.png',
+          },
+          zoomOut: {
+            REST: 'zoomout_rest.png',
+            GROUP: 'zoomout_hover.png',
+            HOVER: 'zoomout_hover.png',
+            DOWN: 'zoomout_hover.png',
+          },
+          home: {
+            REST: 'home_rest.png',
+            GROUP: 'home_hover.png',
+            HOVER: 'home_hover.png',
+            DOWN: 'home_hover.png',
+          },
+          fullpage: {
+            REST: 'fullpage_rest.png',
+            GROUP: 'fullpage_hover.png',
+            HOVER: 'fullpage_hover.png',
+            DOWN: 'fullpage_hover.png',
+          },
+        },
+      });
+
+      viewer.addHandler('open', () => {
+        setActiveZoom(true);
+      });
     });
   };
 
