@@ -10,7 +10,7 @@ import '~/styles/main.scss';
 
 import DefinitionList from '.';
 
-storiesOf('Atoms/DefinitionList', module)
+storiesOf('Components|Atoms/DefinitionList', module)
   .addDecorator(withKnobs)
   .add('with items', () => {
     const termDefinitionItems = array('Items', [

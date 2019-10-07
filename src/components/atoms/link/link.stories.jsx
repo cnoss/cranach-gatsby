@@ -6,7 +6,7 @@ import '~/styles/main.scss';
 import Link from '.';
 
 
-storiesOf('Atoms/Link', module)
+storiesOf('Components|Atoms/Link', module)
   .add('with internal location', () => (
     <Link
       to='/'
