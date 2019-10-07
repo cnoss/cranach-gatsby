@@ -14,7 +14,8 @@
     "test:watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
@@ -52,6 +53,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react-hooks": "^2.0.1",
     "gatsby-plugin-eslint-v2": "^2.0.0-beta.0",
+    "gh-pages": "^2.1.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",

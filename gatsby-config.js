@@ -12,6 +12,7 @@ function resolve(dir) {
 }
 
 module.exports = {
+  pathPrefix: 'cranach-gatsby',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
