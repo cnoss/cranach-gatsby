@@ -12,7 +12,9 @@ export default ({
   const [activeZoom, setActiveZoom] = useState(false);
 
   const baseImageLoaded = () => {
-    /* OpenSeaDragon references document,  */
+    /* OpenSeaDragon references 'document',
+      so we have to skip the import to prevent an error
+      while building the site */
     if (!window || !window.document) {
       return;
     }
