@@ -23,9 +23,9 @@ module.exports = {
         exclude: /(node_modules|cache|public)/,
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
+          failOnError: false,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-sass',
