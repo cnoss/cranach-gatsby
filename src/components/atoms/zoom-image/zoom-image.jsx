@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { withPrefix } from 'gatsby';
 
 import './zoom-image.scss';
 
@@ -26,6 +27,7 @@ export default ({
           type: 'image',
           url: src,
         },
+        prefixUrl: withPrefix('/images/'),
         navImages: {
           zoomIn: {
             REST: 'zoomin_rest.png',

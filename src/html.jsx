@@ -1,6 +1,7 @@
 /* Development-Mode: For changes to take effect, development-mode has to be restarted */
 
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
 export default function HTML(props) {
   return (
@@ -14,9 +15,9 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" type="text/css" href="/styles/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
-        <link rel="stylesheet" type="text/css" href="/styles/global.css" />
+        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/fonts.css') } />
+        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/reset.css') }  />
+        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/global.css') }  />
         { props.headComponents }
       </head>
       <body
