@@ -6,7 +6,7 @@ import DefinitionList from '.';
 
 describe('Atoms/DefinitionList', () => {
   /* Element selectors */
-  const listSelector = '.definition-list';
+  const listSelector = '[data-component="atoms/definition-list"]';
   const termSelector = '.term';
   const definitionSelector = '.definition';
 

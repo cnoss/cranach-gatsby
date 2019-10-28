@@ -6,7 +6,7 @@ import Image from '.';
 
 describe('Atoms/Image', () => {
   /* Element selectors */
-  const imageSelector = '.image';
+  const imageSelector = '[data-component="atoms/image"]';
 
   it('renders correctly', () => {
     const { container } = render(

@@ -44,7 +44,7 @@ const mockImageSelector = '.mock-image';
 
 describe('Molecules/GraphicCard', () => {
   /* Element selectors */
-  const graphicCardSelector = '.graphic-card';
+  const graphicCardSelector = '[data-component="molecules/graphic-card"]';
   const graphicCardImageSelector = '.card-image';
   const graphicContentSelector = '.card-content';
 
