@@ -16,17 +16,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-plugin-eslint-v2',
-      options: {
-        test: /\/src\/.*\.jsx?$$/,
-        exclude: /(node_modules|cache|public)/,
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    },
+    'gatsby-plugin-eslint',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
