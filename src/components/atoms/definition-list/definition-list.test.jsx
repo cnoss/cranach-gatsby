@@ -1,32 +1,19 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { act } from 'react-dom/test-utils';
+import { render } from '@testing-library/react';
+
 import DefinitionList from '.';
 
 describe('Atoms/DefinitionList', () => {
-  let container;
-
   /* Element selectors */
   const listSelector = '.definition-list';
   const termSelector = '.term';
   const definitionSelector = '.definition';
 
-
-  beforeEach(() => {
-    container = document.createElement('div');
-    document.body.appendChild(container);
-  });
-
-  afterEach(() => {
-    document.body.removeChild(container);
-    container = null;
-  });
-
   it('renders correctly', () => {
-    act(() => {
-      ReactDOM.render(<DefinitionList />, container);
-    });
+    const { container } = render(
+      <DefinitionList/>,
+    );
 
     expect(!!container.querySelector(listSelector)).toBe(true);
   });
@@ -55,14 +42,11 @@ describe('Atoms/DefinitionList', () => {
       />
     ));
 
-    act(() => {
-      ReactDOM.render(
-        <DefinitionList />,
-        container,
-      );
-    });
+    const firstRender = render(
+      <DefinitionList/>,
+    );
 
-    const firstTryListEl = container.querySelector(listSelector);
+    const firstTryListEl = firstRender.container.querySelector(listSelector);
 
     const firstsTryTermEls = firstTryListEl.querySelectorAll(termSelector);
     const firstsTryDefinitionEls = firstTryListEl.querySelectorAll(definitionSelector);
@@ -70,16 +54,13 @@ describe('Atoms/DefinitionList', () => {
     expect(firstsTryTermEls.length).toBe(0);
     expect(firstsTryDefinitionEls.length).toBe(0);
 
-    act(() => {
-      ReactDOM.render(
-        <DefinitionList>
-          { items }
-        </DefinitionList>,
-        container,
-      );
-    });
+    const secondRender = render(
+      <DefinitionList>
+        { items }
+      </DefinitionList>,
+    );
 
-    const listEl = container.querySelector(listSelector);
+    const listEl = secondRender.container.querySelector(listSelector);
 
     const termEls = listEl.querySelectorAll(termSelector);
     const definitionEls = listEl.querySelectorAll(definitionSelector);
@@ -112,14 +93,11 @@ describe('Atoms/DefinitionList', () => {
       />
     ));
 
-    act(() => {
-      ReactDOM.render(
-        <DefinitionList>
-          { items }
-        </DefinitionList>,
-        container,
-      );
-    });
+    const { container } = render(
+      <DefinitionList>
+        { items }
+      </DefinitionList>,
+    );
 
     const listEl = container.querySelector(listSelector);
 
