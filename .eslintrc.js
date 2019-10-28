@@ -36,6 +36,7 @@ module.exports = {
       version: 'detect',
     },
     'import/resolver': {
+      node: {},
       webpack: {
         config: {
           resolve: {
