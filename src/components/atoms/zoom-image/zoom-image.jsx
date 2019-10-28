@@ -75,7 +75,9 @@ export default ({
         onLoad={ baseImageLoaded }
       ></img>
 
-      { caption && <figcaption>
+      { caption && <figcaption
+          className="zoom-image-caption"
+        >
           { caption }
         </figcaption>
       }
