@@ -24,6 +24,6 @@ describe('Molecules/GraphicCard', () => {
   });
 
   /*
-    TODO: Test for partiallyActive when nav-items are passed as props
+    @TODO: Test for partiallyActive when nav-items are passed as props
    */
 });
