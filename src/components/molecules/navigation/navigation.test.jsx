@@ -7,7 +7,7 @@ import Navigation from '.';
 
 describe('Molecules/GraphicCard', () => {
   /* Element selectors */
-  const navigationSelector = '.navigation';
+  const navigationSelector = '[data-component="molecules/navigation"]';
   const navigationBrandSelector = '.navbar-brand';
   const navigationMenuSelector = '.navbar-menu';
   const navigationEndSelector = '.navbar-end';
