@@ -17,7 +17,7 @@ const dummyImage = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAIBA
 storiesOf('Components|Atoms/Image', module)
   .addDecorator(withKnobs)
   .add('with src', () => {
-    const images = files('Image', 'image/*', [ dummyImage ]);
+    const images = files('Image', 'image/*', [dummyImage]);
 
     return (
       <div style={{ width: '300px' }}>
@@ -40,7 +40,7 @@ storiesOf('Components|Atoms/Image', module)
     );
   })
   .add('with simple caption', () => {
-    const images = files('Image', 'image/*', [ dummyImage ]);
+    const images = files('Image', 'image/*', [dummyImage]);
     const captionText = text('Caption text', 'A simple caption text');
 
     return (
@@ -53,7 +53,7 @@ storiesOf('Components|Atoms/Image', module)
     );
   })
   .add('with complex caption', () => {
-    const images = files('Image', 'image/*', [ dummyImage ]);
+    const images = files('Image', 'image/*', [dummyImage]);
 
     return (
       <div style={{ width: '300px' }}>

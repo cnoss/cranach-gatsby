@@ -17,7 +17,7 @@ const dummyImage = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAIBA
 storiesOf('Components|Molecules/GraphicCard', module)
   .addDecorator(withKnobs)
   .add('with all properties', () => {
-    const images = files('Image', 'image/*', [ dummyImage ]);
+    const images = files('Image', 'image/*', [dummyImage]);
     const imgAltText = text('Image alt text', 'Alternative text');
     const titleText = text('Title', 'A title');
     const subtitleText = text('Subtitle', 'A subtitle');
