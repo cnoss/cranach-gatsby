@@ -3,10 +3,15 @@ import React from 'react';
 import Logo from '~/components/atoms/logo';
 import Link from '~/components/atoms/link';
 
+import './navigation.scss';
 
 export default () => {
   /* TODO: Pass through as parameter (?) */
   const navStructure = [
+    {
+      title: 'Grafiken',
+      to: '/',
+    },
     {
       title: 'Gemälde',
       to: 'http://lucascranach.org/gallery',
@@ -18,10 +23,6 @@ export default () => {
     {
       title: 'Literatur',
       to: 'http://lucascranach.org/publications',
-    },
-    {
-      title: 'Grafiken',
-      to: '/',
     },
   ];
 
@@ -46,10 +47,11 @@ export default () => {
           {
             navStructure.map(item => (
               <Link
-                className="navbar-item"
+                className="navbar-item is-tab"
                 to={ item.to }
                 key={ item.to }
                 activeClassName="is-active"
+                partiallyActive={ true }
               >
                 { item.title }
               </Link>

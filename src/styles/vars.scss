@@ -36,10 +36,15 @@ $title-weight: 500;
 $subtitle-color: #b5b5b5;
 
 // Navbar
-$navbar-item-color: #b5b5b5;
-$navbar-background-color: #222;
-$navbar-item-hover-color: #fc0;
-$navbar-item-hover-background-color:  #121212;
-$navbar-item-active-color: #fc0;
-$navbar-item-active-background-color: #121212;
+$navbar-background-color: #000;
+
+$navbar-item-color: #fff;
+$navbar-item-hover-color: #fff;
+$navbar-item-hover-background-color: #121212;
+
+$navbar-tab-active-color: #fff;
+$navbar-tab-active-background-color: transparent;
+$navbar-tab-active-border-bottom-color: #fc0;
+$navbar-tab-hover-border-bottom-color: #fc0;
+
 $navbar-box-shadow-color: transparent;
