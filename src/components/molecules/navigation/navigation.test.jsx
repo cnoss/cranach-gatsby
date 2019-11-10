@@ -22,4 +22,8 @@ describe('Molecules/GraphicCard', () => {
     expect(!!container.querySelector(navigationMenuSelector)).toBe(true);
     expect(!!container.querySelector(navigationEndSelector)).toBe(true);
   });
+
+  /*
+    TODO: Test for partiallyActive when nav-items are passed as props
+   */
 });
