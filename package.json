@@ -15,7 +15,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint src/",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "create": "node scripts/create.js"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",

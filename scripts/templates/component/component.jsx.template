@@ -1,0 +1,11 @@
+import React from 'react';
+
+import './<% HyphenatedName %>.scss';
+
+export default () => (
+  <div
+    className="<% HyphenatedName %>"
+    data-component="<% FullHyphenatedPath %>"
+  >
+  </div>
+);

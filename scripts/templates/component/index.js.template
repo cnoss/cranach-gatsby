@@ -1,0 +1,3 @@
+import <% CamelCaseName %> from './<% HyphenatedName %>';
+
+export default <% CamelCaseName %>;

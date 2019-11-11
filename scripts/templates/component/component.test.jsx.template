@@ -1,0 +1,18 @@
+
+import React from 'react';
+import { render } from '@testing-library/react';
+
+import <% CamelCaseName %> from '.';
+
+describe('<% FullCamelCasePath %>', () => {
+  /* Element selectors */
+  const <% LowerCaseCamelCaseName %>Selector = '[data-component="<% FullHyphenatedPath %>"]';
+
+  it('renders correctly', () => {
+    const { container } = render(
+      <<% CamelCaseName %> />,
+    );
+
+    expect(!!container.querySelector(<% LowerCaseCamelCaseName %>Selector)).toBe(true);
+  });
+});
