@@ -1,0 +1,41 @@
+
+.toggler {
+  $toggler-background-color: #fc0;
+  $toggler-color: #000;
+  $toggler-size: 2rem;
+  $toggler-chevron-size: 0.9rem;
+
+  border: 0;
+  border-radius: 100%;
+  width: $toggler-size;
+  height: $toggler-size;
+  background-color: $toggler-background-color;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3);
+
+  &:after {
+    content: ' ';
+    width: $toggler-chevron-size;
+    height: $toggler-chevron-size;
+    border: 4px solid $toggler-color;
+    border-right: 0;
+    border-top: 0;
+    transition: 0.3s all;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 30%;
+    top: 25%;
+  }
+
+  &.-is-toggled {
+    background-color: $toggler-color;
+
+    &:after {
+      border-color: $toggler-background-color;
+      transform: rotate(-45deg) scale(-1, -1);
+    }
+  }
+}
