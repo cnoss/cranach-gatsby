@@ -28,7 +28,7 @@ export default () => {
 
   return (
     <nav
-      className="navigation navbar has-shadow is-spaced"
+      className="navigation navbar"
       role="navigation"
       aria-label="main navigation"
       data-component="molecules/navigation"
