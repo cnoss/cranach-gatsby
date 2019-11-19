@@ -15,8 +15,6 @@ const PageTemplate = ({ pageContext }) => {
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
-  console.log(graphic);
-
   return (
     <div
       className="page"
