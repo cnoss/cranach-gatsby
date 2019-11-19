@@ -47,7 +47,8 @@ const extendGraphic = (item) => {
 const extendGraphicReferences = (items, item) => {
   const extendedReferences = item.references.map((referenceItem) => {
     const foundReferencesItem = items.find(
-      currItem => currItem.inventoryNumber === referenceItem.inventoryNumber,
+      currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
+        && currItem.langCode === item.langCode,
     );
 
     return {
