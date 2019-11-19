@@ -32,3 +32,6 @@
     - Aufruf unter ```http://localhost:6006```
   - Storybook bauen
     - ```npm run build-storybook```
+- Create
+  - Eine leere Komponente als Ausgangsbasis erstellen
+    - ```npm run create component atoms/new-component```
