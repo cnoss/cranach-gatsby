@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import './toggler.scss';
 
-export default ({ onToggle }) => {
-  const [toggled, setToggled] = useState(false);
+export default ({ isInitiallyToggled, onToggle }) => {
+  const [toggled, setToggled] = useState(!!isInitiallyToggled);
 
   const toggle = () => {
     setToggled(!toggled);

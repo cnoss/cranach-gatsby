@@ -11,6 +11,8 @@ const extendGraphic = (item) => {
     reference => reference.inventoryNumber,
   );
 
+  referenceInventoryNumbers.push(item.inventoryNumber);
+
   const graphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
     if (acc) {
       return acc;
@@ -40,17 +42,44 @@ const extendGraphic = (item) => {
   };
 };
 
+/* Grafikverknüpfung */
+/* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
+const extendGraphicReferences = (items, item) => {
+  const extendedReferences = item.references.map((referenceItem) => {
+    const foundReferencesItem = items.find(
+      currItem => currItem.inventoryNumber === referenceItem.inventoryNumber,
+    );
+
+    return {
+      ...referenceItem,
+      ref: foundReferencesItem ? { ...foundReferencesItem } : null,
+    };
+  });
+
+  return {
+    ...item,
+    references: extendedReferences,
+  };
+};
+
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  graphics.forEach((graphic) => {
-    const extendedGraphic = extendGraphic(graphic);
+  const extendedGraphics = graphics.map(graphic => extendGraphic(graphic));
+  const extendedGraphicsWithExtendedReferences = extendedGraphics.map(
+    graphic => extendGraphicReferences(extendedGraphics, graphic),
+  );
 
+  const virtualGraphics = extendedGraphicsWithExtendedReferences.filter(
+    graphic => graphic.isVirtual,
+  );
+
+  virtualGraphics.forEach((virtualGraphic) => {
     createPage({
-      path: `${graphic.langCode}/${graphic.slug}`,
+      path: `${virtualGraphic.langCode}/${virtualGraphic.slug}`,
       component: blogPostTemplate,
       context: {
-        ...extendedGraphic,
+        ...virtualGraphic,
       },
     });
   });
@@ -91,7 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
    */
   const pagesData = graphql(`
     query CranachGraphicObjects {
-      allGraphicsJson(filter: { items: { elemMatch: { isVirtual: { eq: true } } } }) {
+      allGraphicsJson {
         edges {
           node {
             items {
@@ -202,8 +231,10 @@ exports.createPages = ({ graphql, actions }) => {
       return;
     }
 
-    res.data.allGraphicsJson.edges.forEach((edge) => {
-      createGraphicPages(edge.node.items, actions);
-    });
+    const mergedAndFlattenedItems = res.data.allGraphicsJson.edges.reduce(
+      (acc, edge) => acc.concat(...edge.node.items), [],
+    );
+
+    createGraphicPages(mergedAndFlattenedItems, actions);
   });
 };

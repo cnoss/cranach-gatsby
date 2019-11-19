@@ -30,7 +30,7 @@ export default ({
       && (<div className="card-content">
         <div className="media">
           <div className="media-content">
-            <h2 className="title is-6">{ title }</h2>
+            <h2 className="content-title">{ title }</h2>
             <p className="content-subtitle">{ subtitle }</p>
           </div>
         </div>

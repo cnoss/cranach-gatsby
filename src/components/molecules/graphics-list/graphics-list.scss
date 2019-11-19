@@ -1,0 +1,19 @@
+
+.graphics-list {
+  .graphic-item {
+    margin-bottom: 2rem;
+
+    .image {
+      background-color: #efefef;
+      border: 1px solid #666;
+      border-left: 0;
+      border-right: 0;
+    }
+
+    .title {
+      font-size: 0.9rem;
+      font-weight: 300;
+      padding-top: 0.25rem;
+    }
+  }
+}

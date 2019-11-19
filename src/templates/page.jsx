@@ -4,26 +4,18 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Navigation from '~/components/molecules/navigation';
-import ZoomImage from '~/components/atoms/zoom-image';
-import DefinitionList from '~/components/atoms/definition-list';
+import Leporello from '~/components/atoms/leporello';
+import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphic-details-item';
+import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graphic-reprints-item';
+import LeporelloGraphicRelatedWorksItem from '~/components/organisms/leporello-graphic-related-works-item';
 
 
 const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
 
-  const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
-
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-  const subtitle = inventor ? inventor.name : ' ';
-  const description = graphic.description || ' ';
 
-  const {
-    classification,
-    dating,
-    dimensions,
-    inventoryNumber,
-    objectName,
-  } = graphic;
+  console.log(graphic);
 
   return (
     <div
@@ -36,55 +28,13 @@ const PageTemplate = ({ pageContext }) => {
 
       <Navigation />
 
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <ZoomImage
-              src={ graphic.image.xlarge }
-              baseSrc={ graphic.image.small }
-              alt={ title }
-            />
-          </div>
-
-          <div className="column">
-            <h1 className="title">{ title }</h1>
-            <h2 className="subtitle">{ subtitle }</h2>
-
-            <div className="content">
-              { description }
-            </div>
-
-            <div className="content">
-              <DefinitionList>
-                <DefinitionList.Entry
-                  term="Klassifikation"
-                  definition={ classification.classification }
-                />
-
-                <DefinitionList.Entry
-                  term="Datiert"
-                  definition={ dating.dated }
-                />
-
-                <DefinitionList.Entry
-                  term="Maße"
-                  definition={ dimensions }
-                />
-
-                <DefinitionList.Entry
-                  term="Inventarnummer"
-                  definition={ inventoryNumber }
-                />
-
-                <DefinitionList.Entry
-                  term="Objektname"
-                  definition={ objectName }
-                />
-              </DefinitionList>
-            </div>
-          </div>
-        </div>
-      </div>
+      <section className="body">
+        <Leporello>
+          <LeporelloGraphicDetailsItem graphic={ graphic } />
+          <LeporelloGraphicReprintsItem graphic={ graphic } />
+          <LeporelloGraphicRelatedWorksItem graphic={ graphic } />
+        </Leporello>
+      </section>
     </div>
   );
 };

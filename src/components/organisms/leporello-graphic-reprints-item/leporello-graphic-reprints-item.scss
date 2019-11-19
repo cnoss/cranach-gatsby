@@ -1,0 +1,46 @@
+
+.leporello-graphic-reprints-item {
+  $background-color: #fff;
+
+  padding: 2.5rem;
+  background-color: $background-color;
+  transition: max-height 0.3s;
+
+  &:not(.-is-open) {
+    max-height: 460px;
+    overflow: hidden;
+  }
+
+  .intro {
+    padding: 3rem 3rem 0 0;
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding-bottom: 0;
+      margin-bottom: 0.5rem;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1px;
+        background-color: #fc0;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
+  }
+
+  .reprints-list {
+    padding: 0 6rem 0 0;
+
+    & > .title {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}

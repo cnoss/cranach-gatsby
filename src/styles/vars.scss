@@ -1,8 +1,8 @@
 
 // Typography
 
-$family-sans-serif: "IBMPlexSansLight", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-monospace: "IBMPlexMonoMedium", monospace;
+$family-sans-serif: "IBMPlexSans", "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: "IBMPlexMono", monospace;
 
 $weight-normal: 300;
 
@@ -20,7 +20,7 @@ $radius: 0;
 
 $body-size: 18px;
 $body-background-color: #666;
-$body-color: #b5b5b5;
+$body-color: #000;
 
 
 // Elements
@@ -30,10 +30,10 @@ $card-background-color: #0a0a0a;
 $card-color: #b5b5b5;
 
 // Title
-$title-color: #dbdbdb;
-$title-weight: 500;
+$title-color: #000;
+$title-weight: 700;
 
-$subtitle-color: #b5b5b5;
+$subtitle-color: #000;
 
 // Navbar
 $navbar-background-color: #000;

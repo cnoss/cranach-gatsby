@@ -27,13 +27,14 @@
     transform: rotate(-45deg);
     position: absolute;
     left: 28%;
-    top: 25%;
+    top: 20%;
   }
 
   &.-is-toggled {
     background-color: $toggler-color;
 
     &:after {
+      top: 30%;
       border-color: $toggler-background-color;
       transform: rotate(-45deg) scale(-1, -1);
     }
