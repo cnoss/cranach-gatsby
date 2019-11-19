@@ -71,16 +71,12 @@ const createGraphicPages = (graphics, actions) => {
     graphic => extendGraphicReferences(extendedGraphics, graphic),
   );
 
-  const virtualGraphics = extendedGraphicsWithExtendedReferences.filter(
-    graphic => graphic.isVirtual,
-  );
-
-  virtualGraphics.forEach((virtualGraphic) => {
+  extendedGraphicsWithExtendedReferences.forEach((graphic) => {
     createPage({
-      path: `${virtualGraphic.langCode}/${virtualGraphic.slug}`,
+      path: `${graphic.langCode}/${graphic.slug}`,
       component: blogPostTemplate,
       context: {
-        ...virtualGraphic,
+        ...graphic,
       },
     });
   });
@@ -92,23 +88,8 @@ exports.onCreateNode = ({ node }) => {
   }
 
   node.items.forEach((item) => {
-    /* Slugifying der title fur Nutzung als URL-Pfad */
-    /* TODO: Entfernen, wenn slug bereits beim Importieren generiert wird */
-    const replaceMap = {
-      ä: 'a',
-      ö: 'o',
-      ü: 'u',
-      ß: 'ss',
-    };
-    const foundTitle = ((item.titles[0] && item.titles[0].title) || '').toLowerCase();
-    const slugifiedTitle = foundTitle && Object.entries(replaceMap).reduce(
-      (acc, pair) => acc.replace(pair[0], pair[1]),
-      foundTitle,
-    ).replace(/[^a-z0-9\s]*/g, '').replace(/\s+/g, '-');
-    const slug = slugifiedTitle || item.inventoryNumber;
-
     /* eslint-disable-next-line */
-    item.slug = slug;
+    item.slug = item.inventoryNumber;
   });
 };
 

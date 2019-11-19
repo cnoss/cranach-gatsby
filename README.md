@@ -1,7 +1,7 @@
 # Cranach Gatsby Test
 
 - npm start
-- http://localhost:8000/de/hl-christophorus
+- http://localhost:8000/de/LC_HVI-56_79
 
 
 
