@@ -116,6 +116,7 @@ export const query = graphql`
             small
             medium
             large
+            xlarge
           }
         }
       }
