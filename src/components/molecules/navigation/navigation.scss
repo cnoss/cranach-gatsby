@@ -5,8 +5,12 @@
   .navbar-menu {
     .navbar-item {
       font-weight: bold;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      justify-content: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      min-width: 200px;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }
