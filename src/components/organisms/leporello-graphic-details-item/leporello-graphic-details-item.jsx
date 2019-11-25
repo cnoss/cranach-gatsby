@@ -10,6 +10,7 @@ export default ({
   graphic,
   className = '',
 }) => {
+  /* Prepare main and important object infos for usage */
   const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
@@ -26,6 +27,7 @@ export default ({
     catalogWorkReferences,
   } = graphic;
 
+  /* Map catalog work references */
   const catalogWorkReferenceItems = catalogWorkReferences.map(
     reference => ({
       term: `${reference.description}-Nr.`,
@@ -34,22 +36,35 @@ export default ({
   );
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
+  const [imageColumnClassName, setImageColumnClassName] = useState('is-one-quarter-desktop');
+  const [isOpen, setIsOpen] = useState(false);
 
+  /* React on additional classnames change and open / close toggle */
   useEffect(() => {
-    setAdditionalClassNames(
-      [
-        ...className.split(' '),
-      ],
-    );
-  }, [className]);
+    setAdditionalClassNames([
+      ...className.split(' '),
+      /*
+        We add an extra classname, if the leporello item was opened,
+        to be able to react to it on style level
+      */
+      ...(isOpen ? ['-details-is-open'] : []),
+    ]);
+  }, [className, isOpen]);
+
+  /* React only on open / close toggle */
+  useEffect(() => {
+    setImageColumnClassName(isOpen ? 'is-half' : 'is-one-quarter-desktop');
+  }, [isOpen]);
 
   return (
     <LeporelloGraphicItem
       className={ `leporello-graphic-details-item ${additionalClassNames.join(' ')}` }
       data-component="organisms/leporello-graphic-details-item"
+      initiallyOpen={ isOpen }
+      toggled={ setIsOpen }
     >
       <div className="columns">
-        <div className="column is-one-quarter-desktop -is-non-fading">
+        <div className={ `column ${imageColumnClassName} -is-non-fading` }>
           <ZoomImage
             src={ image.xlarge }
             baseSrc={ image.small }

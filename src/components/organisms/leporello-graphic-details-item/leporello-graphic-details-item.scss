@@ -10,15 +10,7 @@
     z-index: 1;
   }
 
-  &.-is-open {
-    .columns {
-      .column {
-        flex-basis: 50%;
-      }
-    }
-  }
-
-  &:not(.-is-open) {
+  &:not(.-details-is-open) {
     max-height: 510px;
     overflow: hidden;
 

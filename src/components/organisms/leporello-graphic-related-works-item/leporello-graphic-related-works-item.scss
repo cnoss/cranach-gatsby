@@ -6,7 +6,7 @@
   background-color: $background-color;
   transition: max-height 0.3s;
 
-  &:not(.-is-open) {
+  &:not(.-related-works-is-open) {
     max-height: 510px;
     overflow: hidden;
   }

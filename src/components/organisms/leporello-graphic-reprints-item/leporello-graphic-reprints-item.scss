@@ -4,12 +4,6 @@
 
   padding: 2.5rem;
   background-color: $background-color;
-  transition: max-height 0.3s;
-
-  &:not(.-is-open) {
-    max-height: 460px;
-    overflow: hidden;
-  }
 
   .intro {
     padding: 3rem 3rem 0 0;

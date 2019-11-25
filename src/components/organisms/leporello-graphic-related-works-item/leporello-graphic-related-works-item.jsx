@@ -9,19 +9,26 @@ export default ({
   className = '',
 }) => {
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
 
+  /* React on additional classnames change and open / close toggle */
   useEffect(() => {
-    setAdditionalClassNames(
-      [
-        ...className.split(' '),
-      ],
-    );
-  }, [className]);
+    setAdditionalClassNames([
+      ...className.split(' '),
+      /*
+        We add an extra classname, if the leporello item was opened,
+        to be able to react to it on style level
+      */
+      ...(isOpen ? ['-related-works-is-open'] : []),
+    ]);
+  }, [className, isOpen]);
 
   return (
     <LeporelloGraphicItem
       className={ `leporello-graphic-related-works-item ${additionalClassNames.join(' ')}` }
       data-component="organisms/leporello-graphic-related-works-item"
+      initiallyOpen={ isOpen }
+      toggled={ setIsOpen }
     >
       <div className="columns">
         <div className="column is-one-quarter intro">

@@ -9,18 +9,12 @@ export default ({
   graphic,
   className = '',
 }) => {
-  const [additionalClassNames, setAdditionalClassNames] = useState([]);
+  /* Number of initial visible reprint items */
+  const reprintItemsLimit = 4;
 
-  useEffect(() => {
-    setAdditionalClassNames(
-      [
-        ...className.split(' '),
-      ],
-    );
-  }, [className]);
-
-  const referencedItems = graphic.references.map((referenceItem) => {
-    const item = referenceItem.ref;
+  /* Map reprints */
+  const reprintItems = graphic.references.map((reprintItem) => {
+    const item = reprintItem.ref;
 
     return {
       title: item.owner || '',
@@ -29,10 +23,28 @@ export default ({
     };
   });
 
+  const [additionalClassNames, setAdditionalClassNames] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [limitReprintItems, setLimitedReprintItems] = useState(!isOpen);
+
+  /* React on addtional classnames changes */
+  useEffect(() => {
+    setAdditionalClassNames([
+      ...className.split(' '),
+    ]);
+  }, [className, isOpen]);
+
+  /* React on open / close toggle */
+  useEffect(() => {
+    setLimitedReprintItems(!isOpen);
+  }, [isOpen]);
+
   return (
     <LeporelloGraphicItem
       className={ `leporello-graphic-reprints-item ${additionalClassNames.join(' ')}` }
       data-component="organisms/leporello-graphic-reprints-item"
+      initiallyOpen={ isOpen }
+      toggled={ setIsOpen }
     >
       <div className="columns">
         <div className="column is-one-quarter intro">
@@ -45,7 +57,13 @@ export default ({
 
         <div className="column reprints-list">
           <h2 className="title">Abzüge</h2>
-          <GraphicsList items={ referencedItems } />
+          <GraphicsList
+            items={
+              limitReprintItems
+                ? reprintItems.slice(0, reprintItemsLimit)
+                : reprintItems
+            }
+          />
         </div>
       </div>
     </LeporelloGraphicItem>

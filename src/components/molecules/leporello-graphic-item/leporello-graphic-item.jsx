@@ -10,6 +10,7 @@ export default ({
   initiallyOpen,
   children,
   className = '',
+  toggled = () => {},
   ...other
 }) => {
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
@@ -23,6 +24,11 @@ export default ({
     );
   }, [className]);
 
+  const handleTogglerEvent = (isToggled) => {
+    setIsOpen(isToggled);
+    toggled(isToggled);
+  };
+
   return (
     <Leporello.Item
       className={ `leporello-graphic-item ${additionalClassNames.join(' ')}` }
@@ -31,7 +37,7 @@ export default ({
       { ...other }
     >
       <div className="toggler-container is-hidden-mobile">
-        <Toggler onToggle={ setIsOpen } />
+        <Toggler onToggle={ handleTogglerEvent } />
       </div>
       { children }
     </Leporello.Item>
