@@ -35,12 +35,13 @@ describe('Atoms/Toggler', () => {
 
     const togglerEl = container.querySelector(togglerSelector);
 
+    expect(!!container.querySelector(toggledSelector)).toBe(false);
+
     expect(spy).toHaveBeenCalledTimes(0);
 
     fireEvent.click(togglerEl);
 
-    const isToggled = !!container.querySelector(toggledSelector);
-    expect(isToggled).toBe(true);
+    expect(!!container.querySelector(toggledSelector)).toBe(true);
 
     expect(spy).toHaveBeenCalledTimes(1);
     expect(spy).toHaveBeenCalledWith(true);
