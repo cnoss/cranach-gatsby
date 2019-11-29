@@ -61,7 +61,7 @@ export default ({
       className={ `leporello-graphic-details-item ${additionalClassNames.join(' ')}` }
       data-component="organisms/leporello-graphic-details-item"
       initiallyOpen={ isOpen }
-      toggled={ setIsOpen }
+      onToggle={ setIsOpen }
     >
       <div className="columns">
         <div className={ `column details-image ${imageColumnClassName} -is-non-fading` }>

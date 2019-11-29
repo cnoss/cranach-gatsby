@@ -10,7 +10,7 @@ export default ({
   initiallyOpen,
   children,
   className = '',
-  toggled = () => {},
+  onToggle = () => {},
   ...other
 }) => {
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
@@ -26,7 +26,7 @@ export default ({
 
   const handleTogglerEvent = (isToggled) => {
     setIsOpen(isToggled);
-    toggled(isToggled);
+    onToggle(isToggled);
   };
 
   return (

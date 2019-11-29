@@ -28,7 +28,7 @@ export default ({
       className={ `leporello-graphic-related-works-item ${additionalClassNames.join(' ')}` }
       data-component="organisms/leporello-graphic-related-works-item"
       initiallyOpen={ isOpen }
-      toggled={ setIsOpen }
+      onToggle={ setIsOpen }
     >
       <div className="columns">
         <div className="column is-one-quarter intro">
