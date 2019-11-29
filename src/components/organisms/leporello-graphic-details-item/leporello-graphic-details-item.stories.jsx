@@ -5,8 +5,9 @@ import '~/styles/main.scss';
 
 import LeporelloGraphicDetailsItem from '.';
 
+const exampleGraphic = require('./example-data');
 
 storiesOf('Components|Organisms/LeporelloGraphicDetailsItem', module)
   .add('default', () => (
-    <LeporelloGraphicDetailsItem />
+    <LeporelloGraphicDetailsItem graphic={ exampleGraphic } />
   ));

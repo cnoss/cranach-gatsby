@@ -5,6 +5,7 @@
   padding: 2.5rem;
   background-color: $background-color;
   transition: max-height 0.3s;
+  width: 100%;
 
   &:not(.-related-works-is-open) {
     max-height: 510px;

@@ -1,0 +1,917 @@
+{
+  "langCode": "de",
+  "slug": "LC_HVI-56_79",
+  "objectName": "Holzschnitt: http://vocab.getty.edu/aat/300041405",
+  "inventoryNumber": "LC_HVI-56_79",
+  "objectId": 940729,
+  "isVirtual": true,
+  "sortingNumber": "",
+  "titles": [
+    {
+      "remarks": "[cda 2019]",
+      "title": "Hl. Christophorus",
+      "type": "Beschreibender Titel"
+    }
+  ],
+  "bibliography": "",
+  "catalogWorkReferences": [
+    {
+      "description": "Bartsch",
+      "referenceNumber": "VII.283.58"
+    },
+    {
+      "description": "Hollstein",
+      "referenceNumber": "VI.56.79"
+    }
+  ],
+  "classification": {
+    "classification": "Druckgrafik",
+    "condition": ""
+  },
+  "dating": {
+    "begin": 1501,
+    "dated": "1506",
+    "end": 1511,
+    "historicEventInformations": [
+      {
+        "begin": 1549,
+        "end": 1559,
+        "eventType": "Auflage",
+        "remarks": "Datierung im block entfernt; mit Text von Johann Stigel und \"1554\" datiert",
+        "text": "1554"
+      },
+      {
+        "begin": 1551,
+        "end": 1561,
+        "eventType": "Auflage",
+        "remarks": "Datierung im block entfernt; mit Text von Johann Stigel und datiert \"1556\"",
+        "text": "1556"
+      },
+      {
+        "begin": 1551,
+        "end": 1561,
+        "eventType": "Auflage",
+        "remarks": "Datierung im block entfernt; mit Text rechts; datiert \"1556\"",
+        "text": "1556"
+      },
+      {
+        "begin": 1504,
+        "end": 1514,
+        "eventType": "Dating",
+        "remarks": "[cda 2019]",
+        "text": "1509"
+      }
+    ],
+    "remarks": "[vordatiert in Block]"
+  },
+  "description": "",
+  "dimensions": "Blockmaß: 28,1 x 19,7 cm (+ - 5 mm)\n[cda 2019]",
+  "exhibitionHistory": "",
+  "inscription": "",
+  "involvedPersons": [
+    {
+      "alternativeName": "Lucas Cranach der Ältere",
+      "date": "",
+      "id": "",
+      "isUnknown": false,
+      "name": "Lucas Cranach der Ältere",
+      "nameType": "Primärer Name",
+      "prefix": "",
+      "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 66]",
+      "role": "Inventor",
+      "suffix": ""
+    }
+  ],
+  "involvedPersonsNames": [
+    {
+      "constituentId": "32400",
+      "details": [
+        {
+          "name": "Lucas Cranach der Ältere",
+          "nameType": "Primärer Name"
+        },
+        {
+          "name": "Lucas Cranach the Elder",
+          "nameType": "Andere Suchform"
+        },
+        {
+          "name": "Lucas Sunders",
+          "nameType": "Falsche Namensform"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010501",
+      "term": "010501",
+      "type": "Schlagwort"
+    },
+    {
+      "path": "Attributes > Objekte > Cranach-Archiv > Inhalt > Christliche Religion / Bibel > Heilige, Aposteln, Propheten > Männliche Heilige > 010403030110",
+      "term": "010403030110",
+      "type": "Schlagwort"
+    }
+  ],
+  "markings": "",
+  "locations": [],
+  "medium": "",
+  "owner": "",
+  "provenance": "",
+  "publications": [
+    {
+      "pageNumber": "283",
+      "referenceId": "241",
+      "title": "Bartsch 1808"
+    },
+    {
+      "pageNumber": "295, 296",
+      "referenceId": "346",
+      "title": "Dodgson 1911"
+    },
+    {
+      "pageNumber": "546",
+      "referenceId": "160",
+      "title": "Exhib. Cat. Basel 1974"
+    },
+    {
+      "pageNumber": "56",
+      "referenceId": "736",
+      "title": "Hollstein 1959"
+    },
+    {
+      "pageNumber": "281, 335",
+      "referenceId": "1939",
+      "title": "Jahn, Bernhard 1972"
+    }
+  ],
+  "relatedWorks": "",
+  "references": [
+    {
+      "inventoryNumber": "AT_A_DG1929-104",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "AT_A_DG1929-104",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "AT_A_DG1929-104",
+        "objectId": 945964,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Albertina, revised 2019]",
+            "title": "Der heilige Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "I. Zustand (b)"
+        },
+        "dating": {
+          "begin": 1504,
+          "dated": "1509",
+          "end": 1514,
+          "historicEventInformations": [],
+          "remarks": "Vordatiert im Block [Albertina, revised 2019]"
+        },
+        "description": "",
+        "dimensions": "Blattmaß: 28,1 × 19,1 cm\n[Albertina, revised 2019]",
+        "exhibitionHistory": "",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Albertina, revised 2019]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010215",
+            "term": "010215",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier",
+        "owner": "Albertina <Wien>",
+        "provenance": "Hofbibliothek\n[Albertina, revised 2019]",
+        "publications": [],
+        "relatedWorks": "",
+        "references": [],
+        "repository": "Albertina <Wien>",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "28.10",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-xl.tif.jpg"
+        }
+      }
+    },
+    {
+      "inventoryNumber": "AT_A_DG1929-105",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "AT_A_DG1929-105",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "AT_A_DG1929-105",
+        "objectId": 945965,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Albertina, revised 2019]",
+            "title": "Der heilige Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "II. Zustand"
+        },
+        "dating": {
+          "begin": 1554,
+          "dated": "nach 1554",
+          "end": 1554,
+          "historicEventInformations": [],
+          "remarks": "[Albertina, revised 2019]"
+        },
+        "description": "",
+        "dimensions": "Blattmaß: 28,6 × 19,8 cm\n\n[Albertina, revised 2019]",
+        "exhibitionHistory": "",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Albertina, revised 2019]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010216",
+            "term": "010216",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier",
+        "owner": "Albertina <Wien>",
+        "provenance": "Albertina, Altbestand\n[Albertina, revised 2019]",
+        "publications": [],
+        "relatedWorks": "Schuchardt II.220.72; Geisberg 594",
+        "references": [],
+        "repository": "Albertina <Wien>",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "28.60",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-105/01_Overall/G_AT_A_DG1929-105_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-105/01_Overall/G_AT_A_DG1929-105_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-105/01_Overall/G_AT_A_DG1929-105_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_AT_A_DG1929-105/01_Overall/G_AT_A_DG1929-105_Overall-xl.tif.jpg"
+        }
+      }
+    },
+    {
+      "inventoryNumber": "AT_A_DG1929-106",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "AT_A_DG1929-106",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "AT_A_DG1929-106",
+        "objectId": 945966,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Albertina, revised 2019]",
+            "title": "Der heilige Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "II. Zustand"
+        },
+        "dating": {
+          "begin": 1549,
+          "dated": "nach 1554",
+          "end": 1559,
+          "historicEventInformations": [],
+          "remarks": "[Albertina, revised 2019]"
+        },
+        "description": "",
+        "dimensions": "Blattmaß: 28,8 × 20,4 cm\n\n[Albertina, revised 2019]",
+        "exhibitionHistory": "",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Albertina, revised 2019]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010216",
+            "term": "010216",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier",
+        "owner": "Albertina <Wien>",
+        "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+        "publications": [],
+        "relatedWorks": "",
+        "references": [],
+        "repository": "Albertina <Wien>",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "28.80",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-106/01_Overall/G_AT_A_DG1929-106_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-106/01_Overall/G_AT_A_DG1929-106_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-106/01_Overall/G_AT_A_DG1929-106_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_AT_A_DG1929-106/01_Overall/G_AT_A_DG1929-106_Overall-xl.tif.jpg"
+        }
+      }
+    },
+    {
+      "inventoryNumber": "AT_A_DG1929-107",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "AT_A_DG1929-107",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "AT_A_DG1929-107",
+        "objectId": 945967,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Albertina, revised 2019]",
+            "title": "Der heilige Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "II. Zustand"
+        },
+        "dating": {
+          "begin": 1504,
+          "dated": "1509",
+          "end": 1514,
+          "historicEventInformations": [],
+          "remarks": "[Albertina, revised 2019]"
+        },
+        "description": "",
+        "dimensions": "Blatt: 28,9 × 20,6 cm\n[Albertina, revised 2019]",
+        "exhibitionHistory": "",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Albertina, revised 2019]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010216",
+            "term": "010216",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010506",
+            "term": "010506",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Österreich > Wien > Wien",
+            "term": "Wien",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier",
+        "owner": "Albertina <Wien>",
+        "provenance": "- Hofbibliothek\n[Albertina, revised 2019]",
+        "publications": [],
+        "relatedWorks": "",
+        "references": [],
+        "repository": "Albertina <Wien>",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "28.90",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-107/01_Overall/G_AT_A_DG1929-107_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-107/01_Overall/G_AT_A_DG1929-107_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-107/01_Overall/G_AT_A_DG1929-107_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_AT_A_DG1929-107/01_Overall/G_AT_A_DG1929-107_Overall-xl.tif.jpg"
+        }
+      }
+    },
+    {
+      "inventoryNumber": "DE_SMKP_KA-FP-352D",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "DE_SMKP_KA-FP-352D",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "DE_SMKP_KA-FP-352D",
+        "objectId": 929035,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 65]",
+            "title": "Hl. Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [
+          {
+            "description": "Hollstein",
+            "referenceNumber": "VI.56.79"
+          },
+          {
+            "description": "Bartsch",
+            "referenceNumber": "VII.283.58"
+          }
+        ],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "I. Zustand (Hollstein Ia)"
+        },
+        "dating": {
+          "begin": 1504,
+          "dated": "um 1509",
+          "end": 1514,
+          "historicEventInformations": [],
+          "remarks": "vermutlich vordatiert '1506' [Exhib. Cat. Düsseldorf 2017, 155, No. 65]"
+        },
+        "description": "",
+        "dimensions": "Blatt: 28,7 x 19 cm\n[Exhib. Cat. Düsseldorf 2017, 155, No. 65]",
+        "exhibitionHistory": "Düsseldorf 2017, Nr. 65",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 65]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010215",
+            "term": "010215",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Technik > 010506",
+            "term": "010506",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Deutschland > Nordrhein-Westfalen > Düsseldorf > Düsseldorf",
+            "term": "Düsseldorf",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Deutschland > Nordrhein-Westfalen > Düsseldorf > Düsseldorf",
+            "term": "Düsseldorf",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier",
+        "owner": "Kunstakademie Düsseldorf",
+        "provenance": "",
+        "publications": [
+          {
+            "pageNumber": "154, 155",
+            "referenceId": "29687",
+            "title": "Exhib. Cat. Düsseldorf 2017"
+          },
+          {
+            "pageNumber": "38, 169",
+            "referenceId": "464",
+            "title": "Exhib. Cat. Hamburg 2003"
+          }
+        ],
+        "relatedWorks": "",
+        "references": [],
+        "repository": "Kunstpalast",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "28.70",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_DE_SMKP_KA-FP-352D/01_Overall/G_DE_SMKP_KA-FP-352D_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_DE_SMKP_KA-FP-352D/01_Overall/G_DE_SMKP_KA-FP-352D_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_DE_SMKP_KA-FP-352D/01_Overall/G_DE_SMKP_KA-FP-352D_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_DE_SMKP_KA-FP-352D/01_Overall/G_DE_SMKP_KA-FP-352D_Overall-xl.tif.jpg"
+        }
+      }
+    },
+    {
+      "inventoryNumber": "DE_KSVC_1-43-64",
+      "remark": "",
+      "text": "Abzug A",
+      "ref": {
+        "langCode": "de",
+        "slug": "DE_KSVC_1-43-64",
+        "objectName": "Holzschnitt",
+        "inventoryNumber": "DE_KSVC_1-43-64",
+        "objectId": 929439,
+        "isVirtual": false,
+        "sortingNumber": "",
+        "titles": [
+          {
+            "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 66]",
+            "title": "Hl. Christophorus",
+            "type": "Titel"
+          }
+        ],
+        "bibliography": "",
+        "catalogWorkReferences": [
+          {
+            "description": "Bartsch",
+            "referenceNumber": "VII.283.58"
+          },
+          {
+            "description": "Hollstein",
+            "referenceNumber": "VI.56.79"
+          }
+        ],
+        "classification": {
+          "classification": "Druckgrafik",
+          "condition": "II. Zustand (Hollstein IIa)"
+        },
+        "dating": {
+          "begin": 1509,
+          "dated": "nach 1509",
+          "end": 1519,
+          "historicEventInformations": [],
+          "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 66]"
+        },
+        "description": "",
+        "dimensions": "Blattmaß: 29,3 x 21,2 cm\n[Cat. Coburg 1972, 34, No. 65]",
+        "exhibitionHistory": "Düsseldorf 2017, Nr. 66",
+        "inscription": "",
+        "involvedPersons": [
+          {
+            "alternativeName": "Lucas Cranach der Ältere",
+            "date": "",
+            "id": "",
+            "isUnknown": false,
+            "name": "Lucas Cranach der Ältere",
+            "nameType": "Primärer Name",
+            "prefix": "",
+            "remarks": "[Exhib. Cat. Düsseldorf 2017, 155, No. 66]",
+            "role": "Inventor",
+            "suffix": ""
+          }
+        ],
+        "involvedPersonsNames": [
+          {
+            "constituentId": "32400",
+            "details": [
+              {
+                "name": "Lucas Cranach der Ältere",
+                "nameType": "Primärer Name"
+              },
+              {
+                "name": "Lucas Cranach the Elder",
+                "nameType": "Andere Suchform"
+              },
+              {
+                "name": "Lucas Sunders",
+                "nameType": "Falsche Namensform"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010205",
+            "term": "010205",
+            "type": "Schlagwort"
+          },
+          {
+            "path": "Attributes > Objekte > Cranach-Archiv > Form > 010216",
+            "term": "010216",
+            "type": "Schlagwort"
+          }
+        ],
+        "markings": "",
+        "locations": [
+          {
+            "path": "Deutschland > Bayern > Oberfranken > Coburg",
+            "term": "Coburg",
+            "type": "Standort Cranach Objekt"
+          },
+          {
+            "path": "Deutschland > Bayern > Oberfranken > Coburg",
+            "term": "Coburg",
+            "type": "Standort Cranach Objekt"
+          }
+        ],
+        "medium": "Druck auf Papier\n[cda 2018]",
+        "owner": "Kunstsammlungen der Veste Coburg, Coburg",
+        "provenance": "",
+        "publications": [
+          {
+            "pageNumber": "34",
+            "referenceId": "575",
+            "title": "Exhib. Cat. Coburg 1972"
+          },
+          {
+            "pageNumber": "155",
+            "referenceId": "29687",
+            "title": "Exhib. Cat. Düsseldorf 2017"
+          }
+        ],
+        "relatedWorks": "",
+        "references": [],
+        "repository": "Kunstsammlungen der Veste Coburg, Coburg",
+        "signature": "",
+        "structuredDimension": {
+          "element": "Maßstab CDA",
+          "height": "29.30",
+          "width": "0.00"
+        },
+        "additionalTextInformation": [],
+        "image": {
+          "small": "http://lucascranach.org/imageserver/G_DE_KSVC_1-43-64/01_Overall/G_DE_KSVC_1-43-64_Overall-s.tif.jpg",
+          "medium": "http://lucascranach.org/imageserver/G_DE_KSVC_1-43-64/01_Overall/G_DE_KSVC_1-43-64_Overall-m.tif.jpg",
+          "large": "http://lucascranach.org/imageserver/G_DE_KSVC_1-43-64/01_Overall/G_DE_KSVC_1-43-64_Overall-l.tif.jpg",
+          "xlarge": "http://lucascranach.org/imageserver/G_DE_KSVC_1-43-64/01_Overall/G_DE_KSVC_1-43-64_Overall-xl.tif.jpg"
+        }
+      }
+    }
+  ],
+  "repository": "",
+  "signature": "Bezeichnet  im Block, links oben am Baum Tafel: 'LC', Schlangensignet und datiert \"1506\" (5 spiegelverkehrt), I. Zustand\n\nspäter Datum entfernt, II. Zustand",
+  "structuredDimension": {
+    "element": "Maßstab CDA",
+    "height": "29.30",
+    "width": "19.70"
+  },
+  "additionalTextInformation": [
+    {
+      "text": "Während sich auf den ersten Abzügen die Datierung 1506 findet, wurde die Jahreszahl später aus dem Druckstock herausgeschnitten, was dem zweiten Zustand des Holzschnitts entspricht. Bereits Eduard Flechsig hat vermutet, das die Grafik erst 1509 entstanden ist und anfänglich vordatiert wurde [...]. Dies könnte mit dem verwendeten Verfahren des Farbholzschnitts in Zusammenhang stehen. [...] durch die Vordatierung hatte Cranach möglicherweise versucht, die Entwicklung der auch von Hans Burgkmair genutzten Technik für sich zu reklamieren.\n[Exhib. Cat. Düsseldorf 2017, 155, No. 65]",
+      "type": "Beschreibung/ Interpretation/ Kommentare",
+      "year": 2017
+    }
+  ],
+  "image": {
+    "small": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-s.tif.jpg",
+    "medium": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-m.tif.jpg",
+    "large": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-l.tif.jpg",
+    "xlarge": "http://lucascranach.org/imageserver/G_AT_A_DG1929-104/01_Overall/G_AT_A_DG1929-104_Overall-xl.tif.jpg"
+  }
+}
