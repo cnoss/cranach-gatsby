@@ -64,7 +64,7 @@ export default ({
       toggled={ setIsOpen }
     >
       <div className="columns">
-        <div className={ `column ${imageColumnClassName} -is-non-fading` }>
+        <div className={ `column details-image ${imageColumnClassName} -is-non-fading` }>
           <ZoomImage
             src={ image.xlarge }
             baseSrc={ image.small }
@@ -72,7 +72,7 @@ export default ({
           />
         </div>
 
-        <div className="column is-half">
+        <div className="column details-info is-half">
           <h1 className="title">{ title }</h1>
           <h2 className="subtitle">{ subtitle }</h2>
 

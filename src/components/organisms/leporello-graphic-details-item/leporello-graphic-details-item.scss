@@ -23,27 +23,36 @@
       width: 100%;
       background: linear-gradient(to bottom, transparent, $background-color);
     }
-  }
 
-  .title,
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .title {
-    padding-bottom: 0rem;
-
-    &:after {
-      content: '';
-      display: block;
-      width: 1.5rem;
-      height: 1px;
-      background-color: #fff;
-      margin-top: 0.5rem;
+    .details-image {
+      .zoom-image {
+        padding-top: inherit;
+        height: 325px;
+      }
     }
   }
 
-  .subtitle {
-    font-weight: 500;
+  .details-info {
+    .title,
+    .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .title {
+      padding-bottom: 0rem;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1px;
+        background-color: #fff;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .subtitle {
+      font-weight: 500;
+    }
   }
 }
