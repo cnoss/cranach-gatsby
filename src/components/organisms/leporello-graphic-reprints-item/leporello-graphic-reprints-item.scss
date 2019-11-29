@@ -6,7 +6,8 @@
   background-color: $background-color;
 
   .intro {
-    padding: 3rem 3rem 0 0;
+    padding-top: 3.5rem;
+    padding-right: 3rem;
 
     .title {
       font-size: 1.2rem;
@@ -30,7 +31,7 @@
   }
 
   .reprints-list {
-    padding: 0 6rem 0 0;
+    padding-right: 6rem;
 
     & > .title {
       font-size: 1.2rem;
