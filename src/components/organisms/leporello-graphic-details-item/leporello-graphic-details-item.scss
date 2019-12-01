@@ -1,4 +1,4 @@
-@import '~bulma/bulma.sass';
+@import '~bulma/sass/utilities/_all.sass';
 
 .leporello-graphic-details-item {
   $background-color: #dedede;
@@ -17,7 +17,7 @@
     overflow: hidden;
 
     @include mobile {
-      max-height: auto;
+      max-height: none;
       overflow: auto;
 
       &:after {
