@@ -91,7 +91,7 @@ export default ({
       { caption && <figcaption
           className="zoom-image-caption"
         >
-          { caption }
+          <p className="text">{ caption }</p>
         </figcaption>
       }
     </figure>
