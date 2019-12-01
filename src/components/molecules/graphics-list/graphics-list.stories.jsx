@@ -18,7 +18,6 @@ storiesOf('Components|Molecules/GraphicsList', module)
     <GraphicsList items={ [] } />
   ))
   .add('with dynamic number of items', () => {
-
     const graphicsNumber = number('Number of graphics', 5, {
       range: true,
       min: 1,

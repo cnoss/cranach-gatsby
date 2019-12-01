@@ -16,8 +16,8 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/fonts.css') } />
-        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/reset.css') }  />
-        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/global.css') }  />
+        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/reset.css') } />
+        <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/global.css') } />
         { props.headComponents }
       </head>
       <body

@@ -14,7 +14,7 @@
     "test:watch": "jest --watchAll --verbose",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src/",
+    "lint": "eslint --ext js --ext jsx src/",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "create": "node scripts/create.js"
   },
