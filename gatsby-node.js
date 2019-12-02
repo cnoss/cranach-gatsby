@@ -2,7 +2,7 @@
 const path = require('path');
 const graphicsList = require('./content/graphics-urls.json');
 
-const blogPostTemplate = path.resolve('src/templates/page.jsx');
+const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 
 const extendGraphic = (item) => {
   /* Grafikverknüpfung */
@@ -74,7 +74,7 @@ const createGraphicPages = (graphics, actions) => {
   extendedGraphicsWithExtendedReferences.forEach((graphic) => {
     createPage({
       path: `${graphic.langCode}/${graphic.slug}`,
-      component: blogPostTemplate,
+      component: virtualObjectPageTemplate,
       context: {
         ...graphic,
       },
