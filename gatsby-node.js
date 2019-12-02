@@ -3,6 +3,7 @@ const path = require('path');
 const graphicsList = require('./content/graphics-urls.json');
 
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
+const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
 const extendGraphic = (item) => {
   /* Grafikverknüpfung */
@@ -72,9 +73,13 @@ const createGraphicPages = (graphics, actions) => {
   );
 
   extendedGraphicsWithExtendedReferences.forEach((graphic) => {
+    const component = graphic.isVirtual
+      ? virtualObjectPageTemplate
+      : realObjectPageTemplate;
+
     createPage({
       path: `${graphic.langCode}/${graphic.slug}`,
-      component: virtualObjectPageTemplate,
+      component,
       context: {
         ...graphic,
       },

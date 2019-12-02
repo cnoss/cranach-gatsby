@@ -6,8 +6,6 @@ import Helmet from 'react-helmet';
 import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
 import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphic-details-item';
-import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graphic-reprints-item';
-import LeporelloGraphicRelatedWorksItem from '~/components/organisms/leporello-graphic-related-works-item';
 
 
 const PageTemplate = ({ pageContext }) => {
@@ -21,16 +19,16 @@ const PageTemplate = ({ pageContext }) => {
       data-template="page"
     >
       <Helmet>
-        <title>Grafiken | { title } | Virtual</title>
+        <title>Grafiken | { title } | Real</title>
       </Helmet>
 
       <Navigation />
 
       <section className="body">
         <Leporello>
-          <LeporelloGraphicDetailsItem graphic={ graphic } />
-          <LeporelloGraphicReprintsItem graphic={ graphic } />
-          <LeporelloGraphicRelatedWorksItem graphic={ graphic } />
+          <LeporelloGraphicDetailsItem
+            graphic={ graphic }
+          />
         </Leporello>
       </section>
     </div>
