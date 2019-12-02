@@ -11,6 +11,7 @@ export default ({
 }) => {
   /* Number of initial visible reprint items */
   const reprintItemsLimit = 4;
+  const hasMoreReprintItemsThanLimit = graphic.references.length > reprintItemsLimit;
 
   /* Map reprints */
   const reprintItems = graphic.references.map((reprintItem) => {
@@ -45,6 +46,7 @@ export default ({
       data-component="organisms/leporello-graphic-reprints-item"
       initiallyOpen={ isOpen }
       onToggle={ setIsOpen }
+      visibleToggler={ hasMoreReprintItemsThanLimit }
     >
       <div className="columns">
         <div className="column is-one-quarter intro">
