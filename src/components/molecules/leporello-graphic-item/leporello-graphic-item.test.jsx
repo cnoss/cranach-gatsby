@@ -59,4 +59,20 @@ describe('Molecules/LeporelloGraphicItem', () => {
     const secondTogglerEl = secondRender.container.querySelector(togglerSelector);
     expect(!!secondTogglerEl).toBe(false);
   });
+
+  it('is initially open if needed', () => {
+    const firstRender = render(
+      <LeporelloGraphicItem />,
+    );
+
+    const firstIsOpenEl = firstRender.container.querySelector(isOpenSelector);
+    expect(!!firstIsOpenEl).toBe(false);
+
+    const secondRender = render(
+      <LeporelloGraphicItem initiallyOpen={ true } />,
+    );
+
+    const secondIsOpenEl = secondRender.container.querySelector(isOpenSelector);
+    expect(!!secondIsOpenEl).toBe(true);
+  });
 });

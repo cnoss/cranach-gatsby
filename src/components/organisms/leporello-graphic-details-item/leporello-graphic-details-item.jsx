@@ -8,6 +8,7 @@ import './leporello-graphic-details-item.scss';
 
 export default ({
   graphic,
+  initiallyOpen = false,
   className = '',
 }) => {
   /* Prepare main and important object infos for usage */
@@ -37,7 +38,12 @@ export default ({
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [imageColumnClassName, setImageColumnClassName] = useState('is-one-quarter-desktop');
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(!!initiallyOpen);
+
+  /* React on isOpen change */
+  useEffect(() => {
+    setIsOpen(!!initiallyOpen);
+  }, [initiallyOpen]);
 
   /* React on additional classnames change and open / close toggle */
   useEffect(() => {

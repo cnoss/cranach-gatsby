@@ -39,7 +39,10 @@ export default ({
     >
       {visibleToggler
         && (<div className="toggler-container is-hidden-mobile">
-          <Toggler onToggle={ handleTogglerEvent } />
+          <Toggler
+            onToggle={ handleTogglerEvent }
+            isInitiallyToggled={ isOpen }
+          />
         </div>)
       }
       { children }

@@ -62,6 +62,7 @@ const slimDummyGraphic = {
 describe('Organisms/LeporelloGraphicDetailsItem', () => {
   /* Element selectors */
   const leporelloGraphicDetailsItemSelector = '[data-component="organisms/leporello-graphic-details-item"]';
+  const isOpenSelector = '.-is-open';
 
   it('renders correctly', () => {
     const { container } = render(
@@ -69,5 +70,24 @@ describe('Organisms/LeporelloGraphicDetailsItem', () => {
     );
 
     expect(!!container.querySelector(leporelloGraphicDetailsItemSelector)).toBe(true);
+  });
+
+  it('is initially open if needed', () => {
+    const firstRender = render(
+      <LeporelloGraphicDetailsItem graphic={ slimDummyGraphic } />,
+    );
+
+    const firstIsOpenEl = firstRender.container.querySelector(isOpenSelector);
+    expect(!!firstIsOpenEl).toBe(false);
+
+    const secondRender = render(
+      <LeporelloGraphicDetailsItem
+        graphic={ slimDummyGraphic }
+        initiallyOpen={ true }
+      />,
+    );
+
+    const secondIsOpenEl = secondRender.container.querySelector(isOpenSelector);
+    expect(!!secondIsOpenEl).toBe(true);
   });
 });
