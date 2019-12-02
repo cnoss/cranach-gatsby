@@ -43,4 +43,20 @@ describe('Molecules/LeporelloGraphicItem', () => {
     expect(spy).toHaveBeenCalledTimes(2);
     expect(spy).toHaveBeenCalledWith(false);
   });
+
+  it('hides the toggler if desired', () => {
+    const firstRender = render(
+      <LeporelloGraphicItem />,
+    );
+
+    const firstTogglerEl = firstRender.container.querySelector(togglerSelector);
+    expect(!!firstTogglerEl).toBe(true);
+
+    const secondRender = render(
+      <LeporelloGraphicItem visibleToggler={ false } />,
+    );
+
+    const secondTogglerEl = secondRender.container.querySelector(togglerSelector);
+    expect(!!secondTogglerEl).toBe(false);
+  });
 });
