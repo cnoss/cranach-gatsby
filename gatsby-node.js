@@ -168,11 +168,6 @@ exports.createPages = ({ graphql, actions }) => {
                   nameType
                 }
               }
-              keywords {
-                path
-                term
-                type
-              }
               markings
               locations {
                 path
