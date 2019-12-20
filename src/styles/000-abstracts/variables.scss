@@ -1,0 +1,57 @@
+/* Farben
+-----------------------------------------------------------------------------*/
+$dark:    #666666;
+$darker:  #333333;
+$darkest: #000;
+$light:   #B4B4B4;
+$lighter: #F2F2F2;
+$lightest:#fff;
+$accent:  #FFCC00;
+$error:   #cc0000;
+
+
+
+
+
+/* Viewports
+-----------------------------------------------------------------------------*/
+
+$vp-medium: 720px;
+$vp-large: 1024px;
+$vp-xlarge: 1400px;
+
+
+
+
+
+/* Größen und Abstände
+-----------------------------------------------------------------------------*/
+
+$bfs: 1rem;
+
+/* Entlang der Fibonacci Reihe */
+$xxs: $bfs * 0.3;
+$xs:  $bfs * 0.5;
+$s:   $bfs * 0.8;
+$m:   $bfs * 1.3;
+$l:   $bfs * 2.1;
+$xl:  $bfs * 3.4;
+$xxl: $bfs * 5.5;
+
+
+
+
+
+/* Schriften
+-----------------------------------------------------------------------------*/
+$font-sans-serif: "IBMPlexSans", sans-serif;
+$font-icons: 'Material Icons';
+$font-code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+
+
+
+
+/* Misc
+-----------------------------------------------------------------------------*/
+
+$borderStrokeWeight: 2px;

@@ -35,3 +35,12 @@
 - Create
   - Eine leere Komponente als Ausgangsbasis erstellen
     - ```npm run create component atoms/new-component```
+
+
+## CN Reminder
+
+### CSS Properties
+Use LAB for sorting:
+- L: Layout
+- A: Appearance
+- B: Behavior

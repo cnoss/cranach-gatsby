@@ -1,6 +1,10 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
 
 .logo {
-  color: #fc0;
-  font-size: 1.8em;
-  font-weight: bold;
+  display: block;
+  padding-right: $m;
+  padding-bottom: $xs;
+
+  color: $accent;
+  font-size: $l;
 }

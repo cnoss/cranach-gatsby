@@ -1,0 +1,14 @@
+*{
+  box-sizing: content-box;
+}
+
+body{
+  font-family: $font-sans-serif;
+  font-size: $bfs;
+  color: $lighter;
+}
+
+a{
+  color: $lighter;
+  text-decoration: none;
+}

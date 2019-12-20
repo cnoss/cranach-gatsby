@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
-@import './vars.scss';
+@import "./vendor/__vendor-dir";
+@import "./000-abstracts/__abstracts-dir";
+@import "./010-base/__base-dir";
 
-@import '~bulma/bulma.sass';
+//@import './vars.scss';
+
+// @import '~bulma/bulma.sass';

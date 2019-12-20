@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Navigation from '~/components/molecules/navigation';
-import GraphicsOverview from '~/components/organisms/graphics-overview';
+import ArtefactOverview from '~/components/organisms/artefact-overview';
 
 export default ({ data }) => {
   const graphics = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
@@ -66,14 +66,12 @@ export default ({ data }) => {
       </Helmet>
 
       <div
-        className="page"
+        className="pageDark"
       >
         <Navigation />
 
-        <main
-          className="container is-fluid"
-        >
-          <GraphicsOverview items={ items } />
+        <main>
+          <ArtefactOverview items={ items } />
         </main>
       </div>
     </div>

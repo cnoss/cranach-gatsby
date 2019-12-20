@@ -28,40 +28,33 @@ export default () => {
 
   return (
     <nav
-      className="navigation navbar"
+      className="main-navigation"
       role="navigation"
       aria-label="main navigation"
       data-component="molecules/navigation"
     >
-      <div className="navbar-brand">
-        <Link
-          className="navbar-item"
-          to="/"
-        >
-          <Logo />
-        </Link>
-      </div>
 
-      <div className="navbar-menu">
-        <div className="navbar-start">
-          {
-            navStructure.map(item => (
-              <Link
-                className="navbar-item is-tab"
-                to={ item.to }
-                key={ item.to }
-                activeClassName="is-active"
-                partiallyActive={ true }
-              >
-                { item.title }
-              </Link>
-            ))
-          }
-        </div>
+      <Link
+        className="logo"
+        to="/"
+      >
+        <Logo />
+      </Link>
 
-        <div className="navbar-end">
-        </div>
-      </div>
+      <ul className="menu">
+        {
+          navStructure.map(item => (
+            <li class="menu-item"><Link
+              to={ item.to }
+              key={ item.to }
+              activeClassName="is-active"
+              partiallyActive={ true }
+            >
+              { item.title }
+            </Link></li>
+          ))
+        }
+      </ul>
     </nav>
   );
 };

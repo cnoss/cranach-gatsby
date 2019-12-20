@@ -1,16 +1,46 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
 
-.navigation {
-  padding-top: 0.8rem;
+.main-navigation {
+  display: flex;
+  padding: $m;
+  padding-bottom: 0;
+  background-color: $darkest;
 
-  .navbar-menu {
-    .navbar-item {
-      font-weight: bold;
-      justify-content: center;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      min-width: 200px;
-      padding-left: 1rem;
-      padding-right: 1rem;
+  .menu {
+
+
+    .menu-item{
+
+      a{
+        display: block;
+        padding: $s $m;
+        border-bottom: solid $borderStrokeWeight transparent;
+      }
+    }
+
+    .menu-item a.is-active {
+      border-bottom: solid $borderStrokeWeight $accent;
+    }
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    .menu {
+      display: flex;
+      flex-direction: row;
+
+      .menu-item{
+        align-items: flex-end;
+        display: flex;
+        a{
+          display: block;
+          padding: $s $m;
+          border-bottom: solid $borderStrokeWeight transparent;
+        }
+      }
+
+      .menu-item a.is-active {
+        border-bottom: solid $borderStrokeWeight $accent;
+      }
     }
   }
 }
