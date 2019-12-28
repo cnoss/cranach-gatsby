@@ -1,0 +1,13 @@
+@mixin overlay($height, $color) {
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $height;
+    width: 100%;
+    background: linear-gradient(180deg, rgba($color, 0), $color 100%);
+  }
+
+}

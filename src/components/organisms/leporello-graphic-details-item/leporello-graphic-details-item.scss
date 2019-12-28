@@ -1,38 +1,33 @@
-@import '~bulma/sass/utilities/_all.sass';
+@import "~/styles/000-abstracts/__abstracts-dir";
+@import "~/styles/000-abstracts/mixins";
 
 .leporello-graphic-details-item {
-  $background-color: #dedede;
 
-  padding: 2.5rem;
-  background-color: $background-color;
-  transition: max-height 0.3s;
-  width: 100%;
+
+
+  padding: $m;
+  padding-bottom: $l;
+
+  background-color: $lighter;
+
+  color: $darkest;
 
   .-is-non-fading {
     z-index: 1;
   }
 
+  .details-further-info{
+    max-height: auto;
+    transition: all $tr-slow;
+  }
+
   &:not(.-details-is-open) {
-    max-height: 400px;
-    overflow: hidden;
 
-    @include mobile {
-      max-height: none;
-      overflow: auto;
+    @include overlay(25%, $lighter);
 
-      &:after {
-        display: none;
-      }
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 200px;
-      width: 100%;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #dedede 100%);
+    .details-further-info{
+      max-height: 0;
+      overflow: hidden;
     }
 
     .details-image {
@@ -43,27 +38,9 @@
     }
   }
 
-  .details-info {
-    .title,
-    .subtitle {
-      font-size: 1.2rem;
-    }
-
-    .title {
-      padding-bottom: 0rem;
-
-      &:after {
-        content: '';
-        display: block;
-        width: 1.5rem;
-        height: 1px;
-        background-color: #fff;
-        margin-top: 0.5rem;
-      }
-    }
-
-    .subtitle {
-      font-weight: 500;
-    }
+  .details-image{
+    margin-bottom: $l;
   }
+
+
 }

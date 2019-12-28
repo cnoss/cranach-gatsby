@@ -1,20 +1,24 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
 
 .toggler {
-  $toggler-background-color: #fc0;
-  $toggler-color: #000;
-  $toggler-size: 2rem;
-  $toggler-chevron-size: 0.9rem;
+  $toggler-background-color: $accent;
+  $toggler-color: $darkest;
+  $toggler-size: $l;
+  $toggler-chevron-size: 40%;
+
+  z-index: 1000;
+  position: relative;
+  width: $toggler-size;
+  height: $toggler-size;
 
   border: 0;
   border-radius: 100%;
-  width: $toggler-size;
-  height: $toggler-size;
   background-color: $toggler-background-color;
-  position: relative;
-  cursor: pointer;
-  transition: 0.3s all;
 
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: $tr-fast all;
+
+  box-shadow: $shadow;
 
   &:after {
     content: ' ';
@@ -23,11 +27,11 @@
     border: 4px solid $toggler-color;
     border-right: 0;
     border-top: 0;
-    transition: 0.3s all;
+    transition: all $tr-fast;
     transform: rotate(-45deg);
     position: absolute;
-    left: 28%;
-    top: 20%;
+    left: 25%;
+    top: 15%;
   }
 
   &.-is-toggled {
@@ -35,6 +39,7 @@
 
     &:after {
       top: 30%;
+      left: 23%;
       border-color: $toggler-background-color;
       transform: rotate(-45deg) scale(-1, -1);
     }

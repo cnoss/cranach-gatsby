@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
 import DefinitionList from '~/components/atoms/definition-list';
+import CopyText from '~/components/atoms/copy-text';
 
 import './leporello-graphic-details-item.scss';
 
@@ -37,7 +38,7 @@ export default ({
   );
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
-  const [imageColumnClassName, setImageColumnClassName] = useState('is-one-quarter-desktop');
+  const [imageColumnClassName, setImageColumnClassName] = useState('');
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
 
   /* React on isOpen change */
@@ -69,8 +70,8 @@ export default ({
       initiallyOpen={ isOpen }
       onToggle={ setIsOpen }
     >
-      <div className="columns">
-        <div className={ `column details-image ${imageColumnClassName} -is-non-fading` }>
+
+        <div className={ `details-image ${imageColumnClassName} -is-non-fading` }>
           <ZoomImage
             src={ image.xlarge }
             baseSrc={ image.small }
@@ -78,18 +79,16 @@ export default ({
           />
         </div>
 
-        <div className="column details-info is-half">
+        <div className="details-info">
           <h1 className="title">{ title }</h1>
           <h2 className="subtitle">{ subtitle }</h2>
 
-          <div className="content">
+          <div className="details-further-info">
             <DefinitionList>
-
               <DefinitionList.Entry
                 term="CDA ID"
                 definition={ inventoryNumber }
               />
-
               {
                 catalogWorkReferenceItems.map(
                   item => (
@@ -101,33 +100,29 @@ export default ({
                   ),
                 )
               }
-
               <DefinitionList.Entry
                 term="Klassifikation"
                 definition={ classification.classification }
               />
-
               <DefinitionList.Entry
                 term="Datiert"
                 definition={ dating.dated }
               />
-
               <DefinitionList.Entry
                 term="Maße"
                 definition={ dimensions }
               />
-
               <DefinitionList.Entry
                 term="Objektname"
                 definition={ objectName }
               />
             </DefinitionList>
-          </div>
-
-          <div className="content" dangerouslySetInnerHTML={ { __html: description } }>
+            <CopyText
+              text={ description }
+          />
           </div>
         </div>
-      </div>
+
     </LeporelloGraphicItem>
   );
 };

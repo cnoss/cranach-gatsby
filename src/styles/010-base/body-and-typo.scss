@@ -12,3 +12,44 @@ a{
   color: $lighter;
   text-decoration: none;
 }
+
+
+/* Title & Subtitle
+-----------------------------------------------------------------------------*/
+
+.title, .subtitle{
+  font-size: $m;
+  margin-bottom: $xl;
+}
+
+.title + .subtitle{
+  margin-top: -$xl + $xs;
+}
+
+.title{
+  font-weight: 500;
+
+  &:after{
+    content: " ";
+    display: block;
+    width: $xl;
+    margin-top: $xs;
+    margin-bottom: $xs;
+    border-top: solid $border-stroke-weight $accent;
+
+  }
+}
+
+
+
+
+/* Text
+-----------------------------------------------------------------------------*/
+
+p, th, td, dd{
+  font-weight: 100;
+}
+
+p, th, td {
+  line-height: 140%;
+}
