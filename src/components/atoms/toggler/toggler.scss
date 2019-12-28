@@ -4,7 +4,7 @@
   $toggler-background-color: $accent;
   $toggler-color: $darkest;
   $toggler-size: $l;
-  $toggler-chevron-size: 40%;
+  $toggler-chevron-size: 30%;
 
   z-index: 1000;
   position: relative;
@@ -24,22 +24,22 @@
     content: ' ';
     width: $toggler-chevron-size;
     height: $toggler-chevron-size;
-    border: 4px solid $toggler-color;
+    border: 3px solid $toggler-color;
     border-right: 0;
     border-top: 0;
     transition: all $tr-fast;
     transform: rotate(-45deg);
     position: absolute;
-    left: 25%;
-    top: 15%;
+    left: 33%;
+    top: 23%;
   }
 
   &.-is-toggled {
     background-color: $toggler-color;
 
     &:after {
-      top: 30%;
-      left: 23%;
+      top: 40%;
+      left: 31%;
       border-color: $toggler-background-color;
       transform: rotate(-45deg) scale(-1, -1);
     }

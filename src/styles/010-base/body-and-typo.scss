@@ -19,11 +19,11 @@ a{
 
 .title, .subtitle{
   font-size: $m;
-  margin-bottom: $xl;
+  margin-bottom: $l;
 }
 
 .title + .subtitle{
-  margin-top: -$xl + $xs;
+  margin-top: -$l + $xs;
 }
 
 .title{

@@ -3,17 +3,14 @@
 
 .leporello-graphic-details-item {
 
-
-
   padding: $m;
-  padding-bottom: $l;
-
   background-color: $lighter;
-
   color: $darkest;
 
-  .-is-non-fading {
-    z-index: 1;
+  .details-image{
+    margin-left: -$m;
+    margin-right: -$m;
+    margin-bottom: $m;
   }
 
   .details-further-info{
@@ -21,9 +18,13 @@
     transition: all $tr-slow;
   }
 
+  .-is-non-fading {
+    z-index: 1;
+  }
+
   &:not(.-details-is-open) {
 
-    @include overlay(25%, $lighter);
+    //@include overlay(25%, $lighter);
 
     .details-further-info{
       max-height: 0;
@@ -33,14 +34,16 @@
     .details-image {
       .zoom-image {
         padding-top: inherit;
-        height: 325px;
+        height: 50vh;
       }
+    }
+
+    .subtitle{
+      margin-bottom: $s;
     }
   }
 
-  .details-image{
-    margin-bottom: $l;
-  }
+
 
 
 }
