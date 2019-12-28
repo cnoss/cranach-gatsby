@@ -1,19 +1,32 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
 
 .graphics-list {
-  .graphic-item {
-    margin-bottom: 2rem;
+  &-item {
+    margin-bottom: $m;
 
-    .image {
-      background-color: #efefef;
-      border: 1px solid #666;
-      border-left: 0;
-      border-right: 0;
+    &-image {
+
+      &-holder{
+        height: $tile-small;
+        background-color:$lighter;
+        border: solid $border-stroke-weight-s $light;
+        border-left: 0;
+        border-right: 0;
+
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+          object-position: 50% 50%;
+         }
+      }
+
+
+       &-caption {
+        color: $darkest;
+      }
     }
 
-    .title {
-      font-size: 0.9rem;
-      font-weight: 300;
-      padding-top: 0.25rem;
-    }
+
   }
 }

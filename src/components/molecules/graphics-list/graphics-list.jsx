@@ -8,27 +8,27 @@ import './graphics-list.scss';
 export default ({
   items,
 }) => (
-  <div
-    className="graphics-list"
-    data-component="molecules/graphics-list"
-  >
-    <div className="columns is-multiline">
+    <ul
+      className="graphics-list"
+      data-component="molecules/graphics-list"
+    >
       {
         items.map(
-          item => <div
-            key={ item.imgSrc }
-            className="column is-one-quarter graphic-item"
+          item => <li
+            key={item.imgSrc}
+            className="graphics-list-item"
           >
-            <Link to={ item.to }>
+            <Link to={item.to}>
               <Image
-                src={ item.imgSrc }
-                alt={ item.title }
+                src={item.imgSrc}
+                alt={item.title}
+                classNamePrefix={'graphics-list-item'}
+                caption={item.title}
               ></Image>
             </Link>
-            <p className="title">{ item.title }</p>
-          </div>,
+          </li>,
         )
       }
-    </div>
-  </div>
+    </ul>
+
 );

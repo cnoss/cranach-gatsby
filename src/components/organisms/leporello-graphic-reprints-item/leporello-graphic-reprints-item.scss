@@ -1,47 +1,16 @@
-@import '~bulma/sass/utilities/_all.sass';
+@import "~/styles/000-abstracts/__abstracts-dir";
 
 .leporello-graphic-reprints-item {
-  $background-color: #fff;
 
-  padding: 2.5rem;
-  background-color: $background-color;
-  width: 100%;
+  padding: $l $m $l $m;
+  background-color: $lightest;
+  color: $darker;
 
-  .intro {
-    padding-top: 3.5rem;
-    padding-right: 3rem;
-
-    .title {
-      font-size: 1.2rem;
-      font-weight: 300;
-      padding-bottom: 0;
-      margin-bottom: 0.5rem;
-
-      &:after {
-        content: '';
-        display: block;
-        width: 1.5rem;
-        height: 1px;
-        background-color: #fc0;
-        margin-top: 0.5rem;
-      }
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
+  &-intro{
+    margin-bottom: $l;
   }
 
-  .reprints-list {
-    padding-right: 6rem;
+  &-list {
 
-    @include mobile {
-      padding-right: 0.75rem;
-    }
-
-    & > .title {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
   }
 }

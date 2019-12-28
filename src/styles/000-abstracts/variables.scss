@@ -49,6 +49,10 @@ $font-sans-serif: "IBMPlexSans", sans-serif;
 $font-icons: 'Material Icons';
 $font-code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 
+$fw-light: 100;
+$fw-regular: 200;
+$fw-semibold: 500;
+$fw-bold: 700;
 
 
 
@@ -59,6 +63,15 @@ $font-code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospac
 $tr-slow:   0.8s;
 $tr-medium: 0.5s;
 $tr-fast:   0.3s;
+
+
+
+
+/* Kacheln
+-----------------------------------------------------------------------------*/
+
+$tile-small: 21em;
+
 
 
 

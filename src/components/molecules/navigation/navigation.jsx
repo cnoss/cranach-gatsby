@@ -43,10 +43,10 @@ export default () => {
 
       <ul className="menu">
 
-        <li><i class="material-icons"></i></li>
+        <li><i className="material-icons"></i></li>
         {
           navStructure.map(item => (
-            <li class="menu-item"
+            <li className="menu-item"
               key={item.to}
 
             ><Link

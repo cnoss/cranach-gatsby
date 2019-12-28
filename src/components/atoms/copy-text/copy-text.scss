@@ -1,32 +1,5 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 
-.definition-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: $l;
-
-  .term {
-    width: 25%;
-    padding-top: 1em;
-    font-weight: 500;
-    border-bottom: solid $border-stroke-weight-s $light;
-    padding: $s 0;
-
-    &::after{
-      content: ":"
-    }
-  }
-
-  .definition {
-    border-bottom: solid $border-stroke-weight-s $light;
-    display: flex;
-    margin: 0;
-    padding: $s 0;
-  }
-
-  .term + .definition:not(:nth-child(2)),
-  .term:first-child + .definition:nth-child(2) {
-    width: 75%;
-  }
+.copy-text {
+  margin-bottom: $s;
 }

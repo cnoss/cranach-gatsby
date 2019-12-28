@@ -8,9 +8,7 @@
   color: $darkest;
 
   .details-image{
-    margin-left: -$m;
-    margin-right: -$m;
-    margin-bottom: $m;
+    margin: -$m 0 -$m $m;
   }
 
   .details-further-info{

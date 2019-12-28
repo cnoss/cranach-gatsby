@@ -119,7 +119,7 @@ export default ({
             </DefinitionList>
             <CopyText
               text={ description }
-          />
+            />
           </div>
         </div>
 
