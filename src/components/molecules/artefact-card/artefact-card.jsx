@@ -3,7 +3,7 @@ import React from 'react';
 import Image from '~/components/atoms/image';
 import Link from '~/components/atoms/link';
 
-import './graphic-card.scss';
+import './artefact-card.scss';
 
 export default ({
   title = '',
@@ -13,8 +13,8 @@ export default ({
   imgAlt = '',
 }) => (
   <div
-    className="graphic-card card"
-    data-component="molecules/graphic-card"
+    className="artefact-card"
+    data-component="molecules/artefact-card"
   >
     <div className="card-image">
       <Link
@@ -27,13 +27,10 @@ export default ({
       </Link>
     </div>
     { title
-      && (<div className="card-content">
-        <div className="media">
-          <div className="media-content">
-            <h2 className="content-title">{ title }</h2>
-            <p className="content-subtitle">{ subtitle }</p>
-          </div>
-        </div>
+      && (<div className="card-text">
+      <h2 className="card-title">{ title }</h2>
+      <h3 className="card-subtitle">{ subtitle }</h3>
+
       </div>)
     }
   </div>

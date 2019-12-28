@@ -1,46 +1,39 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 
 .main-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   display: flex;
   padding: $m;
   padding-bottom: 0;
   background-color: $darkest;
 
   .menu {
-
-
     .menu-item{
+      display: none;
 
       a{
         display: block;
         padding: $s $m;
-        border-bottom: solid $borderStrokeWeight transparent;
+        border-bottom: solid $border-stroke-weight transparent;
       }
     }
-
     .menu-item a.is-active {
-      border-bottom: solid $borderStrokeWeight $accent;
+      border-bottom: solid $border-stroke-weight $accent;
     }
+
   }
 
   @media only screen and (min-width: $vp-large) {
     .menu {
       display: flex;
       flex-direction: row;
-
-      .menu-item{
-        align-items: flex-end;
-        display: flex;
-        a{
-          display: block;
-          padding: $s $m;
-          border-bottom: solid $borderStrokeWeight transparent;
-        }
-      }
-
-      .menu-item a.is-active {
-        border-bottom: solid $borderStrokeWeight $accent;
-      }
+    }
+    .menu .menu-item{
+      align-items: flex-end;
+      display: flex;
     }
   }
 }

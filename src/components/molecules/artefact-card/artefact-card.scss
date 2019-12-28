@@ -1,0 +1,27 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+
+.artefact-card{
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $darker;
+
+  .card-image{
+    padding: 1px;
+  }
+  .card-text{
+    flex-grow: 1;
+    padding: $m;
+    padding-bottom: $l;
+
+    background-color: $dark;
+    border-top: solid 1px $darkest;
+
+    .card-title, .card-subtitle{
+      font-weight: 300;
+      line-height: 130%;
+    }
+  }
+}

@@ -66,11 +66,13 @@ export default ({ data }) => {
       </Helmet>
 
       <div
-        className="pageDark"
+        className="page-dark"
       >
         <Navigation />
 
-        <main>
+        <main
+          className="main-content"
+        >
           <ArtefactOverview items={ items } />
         </main>
       </div>

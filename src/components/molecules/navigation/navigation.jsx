@@ -42,9 +42,14 @@ export default () => {
       </Link>
 
       <ul className="menu">
+
+        <li><i class="material-icons"></i></li>
         {
           navStructure.map(item => (
-            <li class="menu-item"><Link
+            <li class="menu-item"
+              key={item.to}
+
+            ><Link
               to={ item.to }
               key={ item.to }
               activeClassName="is-active"
@@ -55,6 +60,7 @@ export default () => {
           ))
         }
       </ul>
+
     </nav>
   );
 };

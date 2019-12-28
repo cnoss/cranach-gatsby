@@ -1,8 +1,21 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
 
-.artefact-overview {
-  .item {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.artefact-overview{
+  @media only screen and (min-width: $vp-medium) {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $s;
+    grid-row-gap: $s;
+    grid-auto-rows: 1fr;
+    padding: $m;
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
+
+

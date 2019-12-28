@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GraphicCard from '~/components/molecules/graphic-card';
-
+import ArtefactCard from '~/components/molecules/artefact-card';
+import './artefact-overview.scss';
 
 export default ({ items = [] }) => (
   <div
@@ -14,7 +14,7 @@ export default ({ items = [] }) => (
           key={ item.inventoryNumber }
           className="overview-item"
         >
-          <GraphicCard
+          <ArtefactCard
             title={ (item.titles[0] && item.titles[0].title) || '' }
             subtitle={ item.dating.dated || '' }
             to={ `/${item.langCode}/${item.slug}` }

@@ -9,12 +9,12 @@ import {
   text,
 } from '@storybook/addon-knobs';
 
-import GraphicCard from '.';
+import ArtefactCard from '.';
 
 const dummyImage = require('./example-data.json').image.small;
 
 
-storiesOf('Components|Molecules/GraphicCard', module)
+storiesOf('Components|Molecules/ArtefactCard', module)
   .addDecorator(withKnobs)
   .add('with all properties', () => {
     const images = files('Image', 'image/*', [dummyImage]);
@@ -25,14 +25,14 @@ storiesOf('Components|Molecules/GraphicCard', module)
 
     return (
       <div style={{ width: '300px' }}>
-        <GraphicCard
+        <ArtefactCard
           title={ titleText }
           subtitle={ subtitleText }
           to={ urlText }
           imgSrc={ images[0] }
           imgAlt={ imgAltText }
         >
-        </GraphicCard>
+        </ArtefactCard>
       </div>
     );
   })
@@ -45,14 +45,14 @@ storiesOf('Components|Molecules/GraphicCard', module)
 
     return (
       <div style={{ width: '300px' }}>
-        <GraphicCard
+        <ArtefactCard
           title={ titleText }
           subtitle={ subtitleText }
           to={ urlText }
           imgSrc={ images[0] }
           imgAlt={ imgAltText }
         >
-        </GraphicCard>
+        </ArtefactCard>
       </div>
     );
   });
