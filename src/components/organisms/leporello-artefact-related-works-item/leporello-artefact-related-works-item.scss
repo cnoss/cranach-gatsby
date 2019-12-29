@@ -1,23 +1,14 @@
-
-.leporello-graphic-related-works-item {
-  $background-color: #fff;
-
-  padding: 2.5rem;
-  background-color: $background-color;
-  transition: max-height 0.3s;
-  width: 100%;
+@import "~/styles/000-abstracts/__abstracts-dir";
+.leporello-artefact-related-works-item {
+  padding: $l $m $l $m;
+  background-color: $lightest;
+  &-intro {
+    margin-bottom: $l;
+  }
+  &-list {}
 
   &:not(.-related-works-is-open) {
     max-height: 510px;
     overflow: hidden;
-  }
-
-  .intro {
-    padding-top: 3.5rem;
-    padding-right: 3rem;
-
-    .description {
-      font-size: 0.9rem;
-    }
   }
 }

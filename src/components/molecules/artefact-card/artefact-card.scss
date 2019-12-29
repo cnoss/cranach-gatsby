@@ -1,25 +1,21 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-
-.artefact-card{
-
+.artefact-card {
   height: 100%;
   display: flex;
   flex-direction: column;
-
   background-color: $darker;
-
-  .card-image{
+  .card-image {
     padding: 1px;
   }
-  .card-text{
+  .card-text {
     flex-grow: 1;
     padding: $m;
     padding-bottom: $l;
-
+    color: $lighter;
     background-color: $dark;
     border-top: solid 1px $darkest;
-
-    .card-title, .card-subtitle{
+    .card-title,
+    .card-subtitle {
       font-weight: 300;
       line-height: 130%;
     }
