@@ -19,29 +19,29 @@
 }
 
 @mixin grid-even-2-columns($viewport) {
-  @include base-grid;
   @media only screen and (min-width: #{$viewport}) {
+    @include base-grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @mixin grid-uneven-2-columns($viewport) {
-  @include base-grid;
   @media only screen and (min-width: #{$viewport}) {
+    @include base-grid;
     grid-template-columns: 342px 1fr;
   }
 }
 
 @mixin grid-even-3-columns($viewport) {
-  @include base-grid;
   @media only screen and (min-width: #{$viewport}) {
+    @include base-grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @mixin grid-even-columns($viewport, $columns) {
-  @include base-grid;
   @media only screen and (min-width: #{$viewport}) {
+    @include base-grid;
     grid-template-columns: repeat(#{$columns}, 1fr);
   }
 }

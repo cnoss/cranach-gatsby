@@ -38,6 +38,7 @@
 
 
 ## CN Reminder
+No numbers in css! Alle Zahlen stehen in styles/000-abstracts/variables.scss
 
 ### CSS Properties
 Use LAB for sorting:
