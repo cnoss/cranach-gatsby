@@ -1,10 +1,21 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-
 .logo {
   display: block;
   padding-right: $m;
   padding-bottom: $xs;
-
   color: $accent;
   font-size: $l;
+}
+
+.reverse-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $lighter;
+  font-size: $m;
+  padding-bottom: $xs;
+  i.material-icons {
+    color: $accent;
+    font-size: $l;
+  }
 }

@@ -7,12 +7,14 @@
   padding: $m;
   padding-bottom: 0;
   background-color: $darkest;
+
   .menu {
     .menu-item {
       display: none;
       a {
         display: block;
         padding: $s $m;
+        color: $lighter;
         border-bottom: solid $border-stroke-weight transparent;
       }
     }

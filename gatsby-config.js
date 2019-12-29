@@ -18,6 +18,14 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-eslint',
     {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'material icons',
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sass',
       options: {
         implementation: sass,

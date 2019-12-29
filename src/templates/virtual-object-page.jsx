@@ -24,7 +24,10 @@ const PageTemplate = ({ pageContext }) => {
         <title>Grafiken | { title } | Virtual</title>
       </Helmet>
 
-      <Navigation />
+      <Navigation
+        target="/"
+        targetText="zurück zur Übersicht"
+      />
 
       <section className="body">
         <Leporello>

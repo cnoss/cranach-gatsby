@@ -1,14 +1,3 @@
-// Font Face
-@font-face {
-  font-family: "$font-icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url('~/fonts/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
-  src: url('~/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
-       url('~/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
-       url('~/fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
-}
-
 // Icons
 i.icon {
   height: auto;
