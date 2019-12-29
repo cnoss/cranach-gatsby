@@ -7,7 +7,7 @@ import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
 import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphic-details-item';
 import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graphic-reprints-item';
-import LeporelloGraphicRelatedWorksItem from '~/components/organisms/leporello-graphic-related-works-item';
+import LeporelloArtefactRelatedWorksItem from '~/components/organisms/leporello-artefact-related-works-item';
 
 
 const PageTemplate = ({ pageContext }) => {
@@ -30,7 +30,7 @@ const PageTemplate = ({ pageContext }) => {
         <Leporello>
           <LeporelloGraphicDetailsItem graphic={ graphic } />
           <LeporelloGraphicReprintsItem graphic={ graphic } />
-          <LeporelloGraphicRelatedWorksItem graphic={ graphic } />
+          <LeporelloArtefactRelatedWorksItem graphic={ graphic } />
         </Leporello>
       </section>
     </div>

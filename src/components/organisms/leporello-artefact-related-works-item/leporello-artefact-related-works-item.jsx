@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 
-import './leporello-graphic-related-works-item.scss';
+import './leporello-artefact-related-works-item.scss';
 
 export default ({
   className = '',
@@ -25,8 +25,8 @@ export default ({
 
   return (
     <LeporelloGraphicItem
-      className={ `leporello-graphic-related-works-item ${additionalClassNames.join(' ')}` }
-      data-component="organisms/leporello-graphic-related-works-item"
+      className={ `leporello-artefact-related-works-item ${additionalClassNames.join(' ')}` }
+      data-component="organisms/leporello-artefact-related-works-item"
       initiallyOpen={ isOpen }
       onToggle={ setIsOpen }
     >

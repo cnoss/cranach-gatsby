@@ -1,47 +1,32 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
-
 .leporello-graphic-details-item {
-
   padding: $m;
   background-color: $lighter;
-  color: $darkest;
-
-  .details-image{
+  .details-image {
     margin: -$m 0 -$m $m;
   }
-
-  .details-further-info{
+  .details-further-info {
     max-height: auto;
     transition: all $tr-slow;
   }
-
   .-is-non-fading {
     z-index: $level-content;
   }
-
   &:not(.-details-is-open) {
-
     //@include overlay(25%, $lighter);
-
-    .details-further-info{
+    .details-further-info {
       max-height: 0;
       overflow: hidden;
     }
-
     .details-image {
       .zoom-image {
         padding-top: inherit;
         height: 50vh;
       }
     }
-
-    .subtitle{
+    .subtitle {
       margin-bottom: $s;
     }
   }
-
-
-
-
 }
