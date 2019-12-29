@@ -1,15 +1,15 @@
-*{
+* {
   box-sizing: content-box;
 }
 
-body{
+body {
   font-family: $font-sans-serif;
   font-size: $bfs;
   font-weight: $fw-light;
   color: $lighter;
 }
 
-a{
+a {
   color: $lighter;
   text-decoration: none;
 }
@@ -18,35 +18,36 @@ a{
 /* Title & Subtitle
 -----------------------------------------------------------------------------*/
 
-.title, .subtitle, .chapter{
+.title,
+.subtitle,
+.chapter {
   font-size: $m;
   margin-bottom: $l;
   line-height: 110%;
 }
 
-.title + .subtitle{
+.title+.subtitle {
   margin-top: -$l + $xs;
 }
 
-.title{
+.title {
   font-weight: $fw-bold;
-
-  &:after{
+  &:after {
     content: " ";
     display: block;
     width: $xl;
     margin-top: $xs;
     margin-bottom: $xs;
     border-top: solid $border-stroke-weight $accent;
-
   }
 }
 
-.subtitle, .chapter{
+.subtitle,
+.chapter {
   font-weight: $fw-regular;
 }
 
-.headline{
+.headline {
   font-size: $bfs;
   font-weight: $fw-semibold;
   margin-bottom: $m;
@@ -56,10 +57,15 @@ a{
 /* Text
 -----------------------------------------------------------------------------*/
 
-p, th, td, dd{
- // font-weight: 100;
+p,
+th,
+td,
+dd {
+  // font-weight: 100;
 }
 
-p, th, td {
+p,
+th,
+td {
   line-height: 140%;
 }

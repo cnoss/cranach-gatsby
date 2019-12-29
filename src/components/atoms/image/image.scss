@@ -1,26 +1,19 @@
-
+@import "~/styles/000-abstracts/__abstracts-dir";
 .image {
   display: block;
   position: relative;
-
   padding-top: 100%;
-
   img {
     position: absolute;
-
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-
     height: 100%;
     width: 100%;
-
     object-fit: contain;
-
     display: block;
   }
-
   .image-caption {
     &:before {
       content: '';
@@ -30,21 +23,16 @@
       right: 0;
       bottom: 0;
       background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-      z-index: 0;
+      z-index: $level-background;
     }
-
     position: absolute;
-
     bottom: 0;
     left: 0;
     right: 0;
-
     color: #fff;
-
     padding: 1.6rem;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
-
     .text {
       position: relative;
     }

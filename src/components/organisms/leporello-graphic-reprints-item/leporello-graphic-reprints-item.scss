@@ -1,16 +1,10 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-
 .leporello-graphic-reprints-item {
-
   padding: $l $m $l $m;
   background-color: $lightest;
   color: $darker;
-
-  &-intro{
+  &-intro {
     margin-bottom: $l;
   }
-
-  &-list {
-
-  }
+  &-list {}
 }

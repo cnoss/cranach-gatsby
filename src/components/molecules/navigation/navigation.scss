@@ -1,20 +1,16 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-
 .main-navigation {
   position: sticky;
   top: 0;
-  z-index: 10000;
-
+  z-index: $level-overall-nav;
   display: flex;
   padding: $m;
   padding-bottom: 0;
   background-color: $darkest;
-
   .menu {
-    .menu-item{
+    .menu-item {
       display: none;
-
-      a{
+      a {
         display: block;
         padding: $s $m;
         border-bottom: solid $border-stroke-weight transparent;
@@ -23,15 +19,13 @@
     .menu-item a.is-active {
       border-bottom: solid $border-stroke-weight $accent;
     }
-
   }
-
   @media only screen and (min-width: $vp-large) {
     .menu {
       display: flex;
       flex-direction: row;
     }
-    .menu .menu-item{
+    .menu .menu-item {
       align-items: flex-end;
       display: flex;
     }

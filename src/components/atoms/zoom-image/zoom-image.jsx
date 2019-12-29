@@ -41,6 +41,7 @@ const navImages = {
   },
 };
 
+
 export default ({
   src,
   baseSrc,
@@ -77,22 +78,22 @@ export default ({
 
   return (
     <figure
-      ref={ figureElRef }
-      className={ `zoom-image ${activeZoom ? 'has-active-zoom' : ''}` }
+      ref={figureElRef}
+      className={`zoom-image ${activeZoom ? 'has-active-zoom' : ''}`}
       data-component="atoms/zoom-image"
     >
       <img
         className="preload-image"
-        src={ baseSrc }
-        alt={ alt }
-        onLoad={ baseImageLoaded }
+        src={baseSrc}
+        alt={alt}
+        onLoad={baseImageLoaded}
       ></img>
 
-      { caption && <figcaption
-          className="zoom-image-caption"
-        >
-          <p className="text">{ caption }</p>
-        </figcaption>
+      {caption && <figcaption
+        className="zoom-image-caption"
+      >
+        <p className="text">{caption}</p>
+      </figcaption>
       }
     </figure>
   );

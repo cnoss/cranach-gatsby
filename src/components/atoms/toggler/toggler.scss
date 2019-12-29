@@ -1,25 +1,19 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-
 .toggler {
   $toggler-background-color: $accent;
   $toggler-color: $darkest;
   $toggler-size: $l;
   $toggler-chevron-size: 30%;
-
-  z-index: 1000;
+  z-index: $level-section-nav;
   position: relative;
   width: $toggler-size;
   height: $toggler-size;
-
   border: 0;
   border-radius: 100%;
   background-color: $toggler-background-color;
-
   cursor: pointer;
   transition: $tr-fast all;
-
   box-shadow: $shadow;
-
   &:after {
     content: ' ';
     width: $toggler-chevron-size;
@@ -33,10 +27,8 @@
     left: 33%;
     top: 23%;
   }
-
   &.-is-toggled {
     background-color: $toggler-color;
-
     &:after {
       top: 40%;
       left: 31%;
