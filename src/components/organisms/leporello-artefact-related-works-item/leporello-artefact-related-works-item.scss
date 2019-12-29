@@ -1,14 +1,28 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-.leporello-artefact-related-works-item {
-  padding: $l $m $l $m;
-  background-color: $lightest;
-  &-intro {
-    margin-bottom: $l;
-  }
-  &-list {}
-
-  &:not(.-related-works-is-open) {
-    max-height: 510px;
-    overflow: hidden;
+@import "~/styles/000-abstracts/mixins";
+.leporello-artefact-related-works-item-wrap {
+  .leporello-artefact-related-works-item {
+    padding: $l $m $l $m;
+    background-color: $lightest;
+    &-intro {
+      margin-bottom: $l;
+    }
+    &-list {}
+    &:not(.-related-works-is-open) {
+      max-height: 510px;
+      overflow: hidden;
+    }
+    /* Responsive Medium
+    -------------------------------------------------------------------------- */
+    @include grid-even-2-columns($vp-medium);
+    @media only screen and (min-width: $vp-medium) {
+      padding-top: $l;
+      &-info {
+        padding-right: $l;
+      }
+    }
+    /* Responsive Large
+    -------------------------------------------------------------------------- */
+    @include grid-uneven-2-columns($vp-large);
   }
 }

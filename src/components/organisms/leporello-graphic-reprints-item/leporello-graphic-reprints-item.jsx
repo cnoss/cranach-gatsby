@@ -45,27 +45,29 @@ export default ({
 
   return (
     <LeporelloGraphicItem
-      className={`leporello-graphic-reprints-item ${additionalClassNames.join(' ')}`}
+      className={`leporello-graphic-reprints-item-wrap ${additionalClassNames.join(' ')}`}
       data-component="organisms/leporello-graphic-reprints-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
       visibleToggler={hasMoreReprintItemsThanLimit}
     >
-      <div className="leporello-graphic-reprints-item-intro">
-        <h2 className="chapter">Abzüge</h2>
-        <h3 className="headline">1. Zustand</h3>
-        <CopyText
-          text={description}
-        />
-      </div>
-      <div className="leporello-graphic-reprints-item-list">
-        <GraphicsList
-          items={
-            limitReprintItems
-              ? reprintItems.slice(0, reprintItemsLimit)
-              : reprintItems
-          }
-        />
+      <div className="leporello-graphic-reprints-item">
+        <div className="leporello-graphic-reprints-item-intro">
+          <h2 className="chapter">Abzüge</h2>
+          <h3 className="headline">1. Zustand</h3>
+          <CopyText
+            text={description}
+          />
+        </div>
+        <div className="leporello-graphic-reprints-item-list">
+          <GraphicsList
+            items={
+              limitReprintItems
+                ? reprintItems.slice(0, reprintItemsLimit)
+                : reprintItems
+            }
+          />
+        </div>
       </div>
     </LeporelloGraphicItem>
   );

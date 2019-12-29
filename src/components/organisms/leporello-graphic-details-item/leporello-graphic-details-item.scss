@@ -17,7 +17,7 @@
     }
     /* Responsive Medium
   -------------------------------------------------------------------------- */
-    @include grid-vp-medium;
+    @include grid-even-2-columns($vp-medium);
     @media only screen and (min-width: $vp-medium) {
       padding-top: $l;
       &-info {

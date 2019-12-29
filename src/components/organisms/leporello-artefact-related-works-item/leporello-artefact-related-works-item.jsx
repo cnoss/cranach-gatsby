@@ -27,18 +27,20 @@ export default ({
 
   return (
     <LeporelloGraphicItem
-      className={`leporello-artefact-related-works-item ${additionalClassNames.join(' ')}`}
+      className={`leporello-artefact-related-works-item-wrap ${additionalClassNames.join(' ')}`}
       data-component="organisms/leporello-artefact-related-works-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
     >
-      <div className="leporello-artefact-related-works-item-intro">
-        <h2 className="chapter">Verwandte Arbeiten</h2>
-        <CopyText
-          text={description}
-        />
-        <div className="leporello-artefact-related-works-item-list">
-          <GraphicsList items={[]} />
+      <div className="leporello-artefact-related-works-item">
+        <div className="leporello-artefact-related-works-item-intro">
+          <h2 className="chapter">Verwandte Arbeiten</h2>
+          <CopyText
+            text={description}
+          />
+          <div className="leporello-artefact-related-works-item-list">
+            <GraphicsList items={[]} />
+          </div>
         </div>
       </div>
     </LeporelloGraphicItem>

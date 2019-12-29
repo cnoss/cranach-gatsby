@@ -1,4 +1,5 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
+@import "~/styles/000-abstracts/mixins";
 .graphics-list {
   &-item {
     margin-bottom: $m;
@@ -20,4 +21,11 @@
       &-caption {}
     }
   }
+  /* Responsive Medium
+  -------------------------------------------------------------------------- */
+  @include grid-even-2-columns($vp-large);
+  @include grid-even-columns($vp-xlarge, 3);
+  @include grid-even-columns($vp-xxlarge, 4);
+  @include grid-even-columns($vp-xxxlarge, 5);
+  @include grid-even-columns($vp-xxxxlarge, 6);
 }

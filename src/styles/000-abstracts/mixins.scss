@@ -10,19 +10,38 @@
   }
 }
 
-@mixin grid-vp-medium {
-  @media only screen and (min-width: $vp-medium) {
-    display: grid;
+@mixin base-grid {
+  display: grid;
+  grid-column-gap: $s;
+  grid-row-gap: $s;
+  grid-auto-rows: 1fr;
+  padding: $m;
+}
+
+@mixin grid-even-2-columns($viewport) {
+  @include base-grid;
+  @media only screen and (min-width: #{$viewport}) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: $s;
-    grid-row-gap: $s;
-    grid-auto-rows: 1fr;
-    padding: $m;
   }
 }
 
-@mixin grid-vp-large {
-  @media only screen and (min-width: $vp-large) {
+@mixin grid-uneven-2-columns($viewport) {
+  @include base-grid;
+  @media only screen and (min-width: #{$viewport}) {
+    grid-template-columns: 342px 1fr;
+  }
+}
+
+@mixin grid-even-3-columns($viewport) {
+  @include base-grid;
+  @media only screen and (min-width: #{$viewport}) {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@mixin grid-even-columns($viewport, $columns) {
+  @include base-grid;
+  @media only screen and (min-width: #{$viewport}) {
+    grid-template-columns: repeat(#{$columns}, 1fr);
   }
 }
