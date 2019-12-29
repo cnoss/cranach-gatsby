@@ -1,25 +1,43 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
-.leporello-graphic-details-item {
+.leporello-graphic-details-item-wrap {
   padding: $m;
   background-color: $lighter;
-  .details-image {
-    margin: -$m 0 -$m $m;
+  .leporello-graphic-details-item {
+    max-width: $vp-xlarge;
+    &-image {
+      margin: -$m 0 -$m $m;
+    }
+    &-further-info {
+      max-height: auto;
+      transition: all $tr-slow;
+    }
+    .-is-non-fading {
+      z-index: $level-content;
+    }
+    /* Responsive Medium
+  -------------------------------------------------------------------------- */
+    @include grid-vp-medium;
+    @media only screen and (min-width: $vp-medium) {
+      padding-top: $l;
+      &-info {
+        padding-right: $l;
+      }
+    }
+    /* Responsive xLarge
+  -------------------------------------------------------------------------- */
+    @media only screen and (min-width: $vp-xlarge) {
+      margin: 0 auto;
+    }
   }
-  .details-further-info {
-    max-height: auto;
-    transition: all $tr-slow;
-  }
-  .-is-non-fading {
-    z-index: $level-content;
-  }
+
   &:not(.-details-is-open) {
     //@include overlay(25%, $lighter);
-    .details-further-info {
+    .leporello-graphic-details-item-further-info {
       max-height: 0;
       overflow: hidden;
     }
-    .details-image {
+    .leporello-graphic-details-item-image {
       .zoom-image {
         padding-top: inherit;
         height: 50vh;

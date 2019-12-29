@@ -1,6 +1,5 @@
 @mixin overlay($height, $color) {
-
-  &::after{
+  &::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -9,5 +8,21 @@
     width: 100%;
     background: linear-gradient(180deg, rgba($color, 0), $color 100%);
   }
+}
 
+@mixin grid-vp-medium {
+  @media only screen and (min-width: $vp-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $s;
+    grid-row-gap: $s;
+    grid-auto-rows: 1fr;
+    padding: $m;
+  }
+}
+
+@mixin grid-vp-large {
+  @media only screen and (min-width: $vp-large) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

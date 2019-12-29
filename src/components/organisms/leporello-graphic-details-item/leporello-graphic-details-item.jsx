@@ -65,64 +65,64 @@ export default ({
 
   return (
     <LeporelloGraphicItem
-      className={ `leporello-graphic-details-item ${additionalClassNames.join(' ')}` }
+      className={`leporello-graphic-details-item-wrap ${additionalClassNames.join(' ')}`}
       data-component="organisms/leporello-graphic-details-item"
-      initiallyOpen={ isOpen }
-      onToggle={ setIsOpen }
+      initiallyOpen={isOpen}
+      onToggle={setIsOpen}
     >
-
-        <div className={ `details-image ${imageColumnClassName} -is-non-fading` }>
+      <div className="leporello-graphic-details-item">
+        <div className={`leporello-graphic-details-image ${imageColumnClassName} -is-non-fading`}>
           <ZoomImage
-            src={ image.xlarge }
-            baseSrc={ image.small }
-            alt={ title }
+            src={image.xlarge}
+            baseSrc={image.small}
+            alt={title}
           />
         </div>
 
-        <div className="details-info">
-          <h1 className="title">{ title }</h1>
-          <h2 className="subtitle">{ subtitle }</h2>
+        <div className="leporello-graphic-details-item-info">
+          <h1 className="title">{title}</h1>
+          <h2 className="subtitle">{subtitle}</h2>
 
-          <div className="details-further-info">
+          <div className="leporello-graphic-details-item-further-info">
             <DefinitionList>
               <DefinitionList.Entry
                 term="CDA ID"
-                definition={ inventoryNumber }
+                definition={inventoryNumber}
               />
               {
                 catalogWorkReferenceItems.map(
                   item => (
                     <DefinitionList.Entry
-                      key={ item.term }
-                      term={ item.term }
-                      definition={ item.definition }
+                      key={item.term}
+                      term={item.term}
+                      definition={item.definition}
                     />
                   ),
                 )
               }
               <DefinitionList.Entry
                 term="Klassifikation"
-                definition={ classification.classification }
+                definition={classification.classification}
               />
               <DefinitionList.Entry
                 term="Datiert"
-                definition={ dating.dated }
+                definition={dating.dated}
               />
               <DefinitionList.Entry
                 term="Maße"
-                definition={ dimensions }
+                definition={dimensions}
               />
               <DefinitionList.Entry
                 term="Objektname"
-                definition={ objectName }
+                definition={objectName}
               />
             </DefinitionList>
             <CopyText
-              text={ description }
+              text={description}
             />
           </div>
         </div>
-
+      </div>
     </LeporelloGraphicItem>
   );
 };

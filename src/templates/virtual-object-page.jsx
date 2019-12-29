@@ -9,10 +9,8 @@ import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphi
 import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graphic-reprints-item';
 import LeporelloArtefactRelatedWorksItem from '~/components/organisms/leporello-artefact-related-works-item';
 
-
 const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
-
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
   return (
@@ -21,7 +19,7 @@ const PageTemplate = ({ pageContext }) => {
       data-template="page"
     >
       <Helmet>
-        <title>Grafiken | { title } | Virtual</title>
+        <title>Grafiken | {title} | Virtual</title>
       </Helmet>
 
       <Navigation
@@ -31,9 +29,9 @@ const PageTemplate = ({ pageContext }) => {
 
       <section className="body">
         <Leporello>
-          <LeporelloGraphicDetailsItem graphic={ graphic } />
-          <LeporelloGraphicReprintsItem graphic={ graphic } />
-          <LeporelloArtefactRelatedWorksItem graphic={ graphic } />
+          <LeporelloGraphicDetailsItem graphic={graphic} />
+          <LeporelloGraphicReprintsItem graphic={graphic} />
+          <LeporelloArtefactRelatedWorksItem graphic={graphic} />
         </Leporello>
       </section>
     </div>
