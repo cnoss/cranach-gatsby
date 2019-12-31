@@ -86,6 +86,7 @@ export const query = graphql`
       edges {
         node {
           items {
+            imagebase
             langCode
             slug
             objectName

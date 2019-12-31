@@ -20,7 +20,7 @@ export default ({
   const description = graphic.description || ' ';
 
   const {
-    image,
+    imagebase,
     classification,
     dating,
     dimensions,
@@ -73,8 +73,8 @@ export default ({
       <div className="leporello-graphic-details-item">
         <div className={`leporello-graphic-details-image ${imageColumnClassName} -is-non-fading`}>
           <ZoomImage
-            src={image.xlarge}
-            baseSrc={image.small}
+            src={`${imagebase}-xl.jpg`}
+            baseSrc={`${imagebase}-s.jpg`}
             alt={title}
           />
         </div>

@@ -116,6 +116,7 @@ exports.createPages = ({ graphql, actions }) => {
               objectName
               inventoryNumber
               objectId
+              imagebase
               isVirtual
               sortingNumber
               titles {
