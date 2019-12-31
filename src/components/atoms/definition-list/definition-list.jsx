@@ -14,8 +14,8 @@ const DefinitionList = ({ children }) => (
 
 DefinitionList.Entry = ({ term, definition }) => (
   <React.Fragment>
-    <dt className="term">{ term }</dt>
-    <dd className="definition">{ definition }</dd>
+    <dt className="definition-list-term">{ term }</dt>
+    <dd className="definition-list-definition">{ definition }</dd>
   </React.Fragment>
 );
 

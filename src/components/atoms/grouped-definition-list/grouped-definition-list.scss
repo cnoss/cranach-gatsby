@@ -1,23 +1,24 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
-.definition-list {
+.grouped-definition-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: $l;
+  margin-top: 0;
+  padding-bottom: $s;
+  margin-bottom: $xs;
+  border-bottom: solid $border-stroke-weight-s $light;
   &-term {
     width: 25%;
-    font-weight: $fw-regular;
-    border-bottom: solid $border-stroke-weight-s $light;
-    padding: $s 0;
+    font-weight: $fw-regular;;
+    padding: $xxs 0;
     &::after {
       content: ":"
     }
   }
   &-definition {
-    border-bottom: solid $border-stroke-weight-s $light;
     display: flex;
     margin: 0;
-    padding: $s 0;
+    padding: $xxs 0;
   }
   &-term+&-definition:not(:nth-child(2)),
   &-term:first-child+&-definition:nth-child(2) {

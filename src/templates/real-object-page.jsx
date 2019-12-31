@@ -3,9 +3,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
-import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphic-details-item';
+import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-real-item';
 
 
 const PageTemplate = ({ pageContext }) => {
@@ -19,16 +18,13 @@ const PageTemplate = ({ pageContext }) => {
       data-template="page"
     >
       <Helmet>
-        <title>Grafiken | { title } | Real</title>
+        <title>Grafiken | {title} | Real</title>
       </Helmet>
-
-      <Navigation />
 
       <section className="body">
         <Leporello>
-          <LeporelloGraphicDetailsItem
-            graphic={ graphic }
-            initiallyOpen={ true }
+          <LeporelloGraphicRealItem
+            graphic={graphic}
           />
         </Leporello>
       </section>

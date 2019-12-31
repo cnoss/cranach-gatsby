@@ -1,9 +1,8 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
-.leporello-graphic-details-item-wrap {
+.leporello-graphic-real-item-wrap {
   padding: $m;
-  background-color: $lighter;
-  .leporello-graphic-details-item {
+  .leporello-graphic-real-item {
     max-width: $vp-xlarge;
     &-image {
       margin: -$m 0 -$m $m;
@@ -17,8 +16,8 @@
     }
     /* Responsive Medium
   -------------------------------------------------------------------------- */
-    @include grid-even-2-columns($vp-large);
-    @media only screen and (min-width: $vp-large) {
+    @include grid-even-2-columns($vp-medium);
+    @media only screen and (min-width: $vp-medium) {
       padding-top: $l;
       &-info {
         padding-right: $l;
@@ -28,23 +27,6 @@
   -------------------------------------------------------------------------- */
     @media only screen and (min-width: $vp-xlarge) {
       margin: 0 auto;
-    }
-  }
-
-  &:not(.-details-is-open) {
-    //@include overlay(25%, $lighter);
-    .leporello-graphic-details-item-further-info {
-      max-height: 0;
-      overflow: hidden;
-    }
-    .leporello-graphic-details-item-image {
-      .zoom-image {
-        padding-top: inherit;
-        height: 50vh;
-      }
-    }
-    .subtitle {
-      margin-bottom: $s;
     }
   }
 }

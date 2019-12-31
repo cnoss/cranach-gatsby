@@ -48,16 +48,13 @@ Consolas,
 Courier,
 "Liberation Mono",
 monospace;
-$fw-light: 100;
-$fw-regular: 200;
-$fw-semibold: 500;
-$fw-bold: 700;
+$fw-light: 200;
+$fw-regular: 300;
+$fw-semibold: 400;
+$fw-bold: 600;
 
-/* Animationen
+/* Animationen (Entlang der Fibonacci Reihe)
 -----------------------------------------------------------------------------*/
-
-
-/* Entlang der Fibonacci Reihe */
 
 $tr-slow: 0.8s;
 $tr-medium: 0.5s;
