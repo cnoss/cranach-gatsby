@@ -13,7 +13,7 @@ export default ({
   className = '',
 }) => {
   /* Number of initial visible reprint items */
-  const reprintItemsLimit = 1;
+  const reprintItemsLimit = 100;
   const hasMoreReprintItemsThanLimit = graphic.references.length > reprintItemsLimit;
 
   /* Map reprints */

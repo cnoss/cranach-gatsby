@@ -12,8 +12,8 @@
 
 @mixin base-grid {
   display: grid;
-  grid-column-gap: $s;
-  grid-row-gap: $s;
+  grid-column-gap: $m;
+  grid-row-gap: $m;
   grid-auto-rows: 1fr;
   padding: $m;
 }
