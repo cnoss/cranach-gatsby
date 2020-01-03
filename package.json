@@ -30,7 +30,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "babel-loader": "^8.0.6",
-    "bulma": "^0.8.0",
     "gatsby": "^2.18.5",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-fonts": "^1.0.1",
