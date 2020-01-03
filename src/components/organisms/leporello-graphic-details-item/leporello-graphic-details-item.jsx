@@ -38,7 +38,7 @@ export default ({
   );
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
-  const [imageColumnClassName, setImageColumnClassName] = useState('');
+  // const [imageColumnClassName, setImageColumnClassName] = useState('');
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
 
   /* React on isOpen change */
@@ -54,14 +54,14 @@ export default ({
         We add an extra classname, if the leporello item was opened,
         to be able to react to it on style level
       */
-      ...(isOpen ? ['-details-is-open'] : []),
+      ...(isOpen ? ['-is-open'] : []),
     ]);
   }, [className, isOpen]);
 
   /* React only on open / close toggle */
-  useEffect(() => {
+  /* useEffect(() => {
     setImageColumnClassName(isOpen ? 'is-half' : 'is-one-quarter-desktop');
-  }, [isOpen]);
+  }, [isOpen]); */
 
   return (
     <LeporelloGraphicItem
@@ -70,8 +70,8 @@ export default ({
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
     >
-      <div className="leporello-graphic-details-item">
-        <div className={`leporello-graphic-details-image ${imageColumnClassName} -is-non-fading`}>
+      <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
+        <div className={'leporello-graphic-details-item-image -is-non-fading'}>
           <ZoomImage
             src={image.xlarge}
             baseSrc={image.small}
@@ -83,7 +83,7 @@ export default ({
           <h1 className="title">{title}</h1>
           <h2 className="subtitle">{subtitle}</h2>
 
-          <div className="leporello-graphic-details-item-further-info">
+          <div className="leporello-graphic-details-item-info-further">
             <DefinitionList>
               <DefinitionList.Entry
                 term="CDA ID"

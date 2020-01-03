@@ -5,12 +5,21 @@
   background-color: $lighter;
   .leporello-graphic-details-item {
     max-width: $vp-xlarge;
-    &-image {
-      margin: -$m 0 -$m $m;
+    &-info {
+      position: relative;
+      &-further {
+        position: absolute;
+      }
     }
-    &-further-info {
-      max-height: auto;
-      transition: all $tr-slow;
+    &-image {
+      justify-self: right;
+      height: 50vh;
+      margin: -$m 0 -$m $m;
+      .zoom-image {
+        padding-top: inherit;
+        width: 100%;
+        height: 100%;
+      }
     }
     .-is-non-fading {
       z-index: $level-content;
@@ -21,7 +30,23 @@
     @media only screen and (min-width: $vp-large) {
       padding-top: $l;
       &-info {
-        padding-right: $l;
+        .title,
+        .subtitle {
+          padding-right: $l;
+        }
+      }
+      &-image {
+        width: $tile-s;
+        height: $tile-s;
+        margin: 0;
+      }
+      &.-is-open {
+        .leporello-graphic-details-item {
+          &-image {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
     /* Responsive xLarge
@@ -30,21 +55,12 @@
       margin: 0 auto;
     }
   }
-
-  &:not(.-details-is-open) {
-    //@include overlay(25%, $lighter);
-    .leporello-graphic-details-item-further-info {
-      max-height: 0;
-      overflow: hidden;
-    }
-    .leporello-graphic-details-item-image {
-      .zoom-image {
-        padding-top: inherit;
-        height: 50vh;
+  //&:not(.-is-open) {
+  &.-is-open {
+    .leporello-graphic-details-item {
+      &-info-further {
+        position: static;
       }
-    }
-    .subtitle {
-      margin-bottom: $s;
     }
   }
 }

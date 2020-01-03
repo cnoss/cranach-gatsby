@@ -1,6 +1,7 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-graphic-reprints-item-wrap {
+  box-shadow: $shadow-top-s;
   .leporello-graphic-reprints-item {
     padding: $l $m $l $m;
     background-color: $lightest;
@@ -18,7 +19,7 @@
       }
     }
     /* Responsive Large
-  -------------------------------------------------------------------------- */
+    -------------------------------------------------------------------------- */
     @include grid-uneven-2-columns($vp-large);
   }
 }
