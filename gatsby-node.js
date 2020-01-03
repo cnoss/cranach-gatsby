@@ -1,47 +1,8 @@
 // gatsby-node.js
 const path = require('path');
-const graphicsList = require('./content/graphics-urls.json');
 
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
-
-const extendGraphic = (item) => {
-  /* Grafikverknüpfung */
-  /* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
-  const referenceInventoryNumbers = item.references.map(
-    reference => reference.inventoryNumber,
-  );
-
-  referenceInventoryNumbers.push(item.inventoryNumber);
-
-  const graphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
-    if (acc) {
-      return acc;
-    }
-
-    const foundGraphic = graphicsList.find(
-      currGraphic => currGraphic.inventoryNumber === inventoryNumber,
-    );
-
-    if (!foundGraphic) {
-      return acc;
-    }
-
-    return foundGraphic;
-  }, null);
-
-  return {
-    ...item,
-    image: graphic
-      ? { ...graphic.image }
-      : {
-        small: '',
-        medium: '',
-        large: '',
-        xlarge: '',
-      },
-  };
-};
 
 /* Grafikverknüpfung */
 /* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
@@ -58,18 +19,23 @@ const extendGraphicReferences = (items, item) => {
     };
   });
 
+  const filteredExtendedReferences = extendedReferences.filter(
+    extendedReference => extendedReference.ref,
+  );
+
   return {
     ...item,
-    references: extendedReferences,
+    references: filteredExtendedReferences,
   };
 };
 
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  const extendedGraphics = graphics.map(graphic => extendGraphic(graphic));
-  const extendedGraphicsWithExtendedReferences = extendedGraphics.map(
-    graphic => extendGraphicReferences(extendedGraphics, graphic),
+  const graphicsWithImage = graphics.filter(graphic => graphic.hasImage);
+
+  const extendedGraphicsWithExtendedReferences = graphicsWithImage.map(
+    graphic => extendGraphicReferences(graphicsWithImage, graphic),
   );
 
   extendedGraphicsWithExtendedReferences.forEach((graphic) => {
@@ -200,6 +166,14 @@ exports.createPages = ({ graphql, actions }) => {
                 type
                 year
               }
+              image {
+                xsmall
+                small
+                medium
+                large
+                xlarge
+              }
+              hasImage
             }
           }
         }

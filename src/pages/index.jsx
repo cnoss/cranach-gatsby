@@ -8,53 +8,12 @@ import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 
 export default ({ data }) => {
-  const graphics = data.allGraphicsUrlsJson.edges.reduce((acc, edge) => {
-    acc.push(edge.node);
-    return acc;
-  }, []);
-
   const rawItems = data.allGraphicsJson.edges.reduce((acc, edge) => {
     acc.push(...edge.node.items);
     return acc;
   }, []);
 
-  const items = rawItems.map((rawItem) => {
-    const updatedItem = {
-      ...rawItem,
-      image: {
-        small: '',
-        medium: '',
-        large: '',
-        xlarge: '',
-      },
-    };
-
-    const referenceInventoryNumbers = rawItem.references.map(
-      reference => reference.inventoryNumber,
-    );
-
-    const foundGraphic = referenceInventoryNumbers.reduce((acc, inventoryNumber) => {
-      if (acc) {
-        return acc;
-      }
-
-      const foundMatchingGraphic = graphics.find(
-        currGraphics => currGraphics.inventoryNumber === inventoryNumber,
-      );
-
-      if (foundMatchingGraphic) {
-        return foundMatchingGraphic;
-      }
-
-      return acc;
-    }, null);
-
-    if (foundGraphic) {
-      updatedItem.image = foundGraphic.image;
-    }
-
-    return updatedItem;
-  });
+  const items = rawItems.filter(rawItem => rawItem.hasImage);
 
   return (
     <div
@@ -82,7 +41,18 @@ export default ({ data }) => {
 
 export const query = graphql`
   query VirtualCranachGraphicObjects {
-    allGraphicsJson(filter: {items: {elemMatch: {isVirtual: {eq: true}, langCode: {eq: "de"}}}}) {
+    allGraphicsJson(filter: {
+      items: {
+        elemMatch: {
+          isVirtual: {
+            eq: true
+          },
+          langCode: {
+            eq: "de"
+          },
+        }
+      }
+    }) {
       edges {
         node {
           items {
@@ -104,19 +74,14 @@ export const query = graphql`
             references {
               inventoryNumber
             }
-          }
-        }
-      }
-    }
-    allGraphicsUrlsJson {
-      edges {
-        node {
-          inventoryNumber
-          image {
-            small
-            medium
-            large
-            xlarge
+            image {
+              xsmall
+              small
+              medium
+              large
+              xlarge
+            }
+            hasImage
           }
         }
       }
