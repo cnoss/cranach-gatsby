@@ -3,6 +3,9 @@
   display: block;
   position: relative;
   padding-top: 100%;
+  background-color: rgba(0,0,0, .03);
+  border-top: solid $border-stroke-weight-s $light;
+  border-bottom: solid $border-stroke-weight-s $light;
   .preload-image {
     bottom: 0;
     left: 0;
