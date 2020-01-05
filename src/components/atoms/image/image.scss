@@ -3,6 +3,12 @@
   display: block;
   position: relative;
   padding-top: 100%;
+
+  &.-has-box{
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+  }
   img {
     position: absolute;
     bottom: 0;

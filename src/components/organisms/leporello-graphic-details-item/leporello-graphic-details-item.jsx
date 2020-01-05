@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
-import ZoomImage from '~/components/atoms/zoom-image';
+// import ZoomImage from '~/components/atoms/zoom-image';
 import DefinitionList from '~/components/atoms/definition-list';
 import CopyText from '~/components/atoms/copy-text';
-
+import Image from '~/components/atoms/image';
 import './leporello-graphic-details-item.scss';
 
 export default ({
@@ -72,11 +72,12 @@ export default ({
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <div className={'leporello-graphic-details-item-image -is-non-fading'}>
-          <ZoomImage
-            src={image.xlarge}
-            baseSrc={image.small}
+          <Image
+            src={image.large}
             alt={title}
-          />
+            additionalClass="-has-box"
+
+          ></Image>
         </div>
 
         <div className="leporello-graphic-details-item-info">
