@@ -7,9 +7,10 @@ export default ({
   alt,
   caption,
   classNamePrefix,
+  additionalClass,
 }) => (
   <figure
-    className={`${classNamePrefix ? `${classNamePrefix}-image` : 'image'}`}
+    className={`${classNamePrefix ? `${classNamePrefix}-image ${additionalClass}` : `image ${additionalClass}`}`}
     data-component="atoms/image"
     >
       <div

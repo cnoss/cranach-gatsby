@@ -7,10 +7,12 @@
   padding-bottom: $s;
   margin-bottom: $xs;
   border-bottom: solid $border-stroke-weight-s $light;
+  line-height: 130%;
   &-term {
     width: 25%;
     font-weight: $fw-regular;;
-    padding: $xxs 0;
+    padding: 0;
+    padding-bottom: $xxs;
     &::after {
       content: ":"
     }
@@ -18,7 +20,8 @@
   &-definition {
     display: flex;
     margin: 0;
-    padding: $xxs 0;
+    padding: 0;
+    padding-bottom: $xxs;
   }
   &-term+&-definition:not(:nth-child(2)),
   &-term:first-child+&-definition:nth-child(2) {
