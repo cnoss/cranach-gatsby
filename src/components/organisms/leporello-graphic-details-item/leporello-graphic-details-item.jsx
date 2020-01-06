@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
@@ -12,6 +13,8 @@ export default ({
   initiallyOpen = false,
   className = '',
 }) => {
+  const { t } = useTranslation('LeporelloGraphicDetailsItem');
+
   /* Prepare main and important object infos for usage */
   const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
 
@@ -32,7 +35,7 @@ export default ({
   /* Map catalog work references */
   const catalogWorkReferenceItems = catalogWorkReferences.map(
     reference => ({
-      term: `${reference.description}-Nr.`,
+      term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
       definition: reference.referenceNumber,
     }),
   );
@@ -101,19 +104,19 @@ export default ({
                 )
               }
               <DefinitionList.Entry
-                term="Klassifikation"
+                term={ t('Classification') }
                 definition={classification.classification}
               />
               <DefinitionList.Entry
-                term="Datiert"
+                term={ t('Dating') }
                 definition={dating.dated}
               />
               <DefinitionList.Entry
-                term="Maße"
+                term={ t('Measurments') }
                 definition={dimensions}
               />
               <DefinitionList.Entry
-                term="Objektname"
+                term={ t('Objectname') }
                 definition={objectName}
               />
             </DefinitionList>

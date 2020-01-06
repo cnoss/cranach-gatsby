@@ -7,7 +7,12 @@ import { graphql } from 'gatsby';
 import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 
+import i18n from '~/i18n';
+
+
 export default ({ data }) => {
+  i18n('en');
+
   const rawItems = data.allGraphicsJson.edges.reduce((acc, edge) => {
     acc.push(...edge.node.items);
     return acc;

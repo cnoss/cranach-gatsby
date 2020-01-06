@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Logo from '~/components/atoms/logo';
 import Link from '~/components/atoms/link';
@@ -6,32 +7,35 @@ import Link from '~/components/atoms/link';
 import './navigation.scss';
 
 export default ({
-  target, targetText,
+  goBack,
 }) => {
+  const { t } = useTranslation('Navigation');
+
   /* TODO: Pass through as parameter (?) */
-  let navStructure = [
+  const baseNavStructure = [
     {
-      title: 'Grafiken',
+      code: 'Graphics',
       to: '/',
     },
     {
-      title: 'Gemälde',
+      code: 'Paintings',
       to: 'http://lucascranach.org/gallery',
     },
     {
-      title: 'Archivalien',
+      code: 'Archival Documents',
       to: 'http://lucascranach.org/archival-documents',
     },
     {
-      title: 'Literatur',
+      code: 'Literature',
       to: 'http://lucascranach.org/publications',
     },
   ];
 
-  // TODO: cn -> häßlich, aber mir ist nix besseres auf die Schnelle eingefallen
-  if (target) {
-    navStructure = [];
-  }
+  const navStructure = baseNavStructure.map(item => ({
+    ...item,
+    title: t(item.code),
+  }));
+
   return (
     <nav
       className="main-navigation"
@@ -39,30 +43,38 @@ export default ({
       aria-label="main navigation"
       data-component="molecules/navigation"
     >
-      {target
-        ? (<Link className="reverse-navigation" to={target}><i className="material-icons">arrow_back_ios</i><span>{targetText}</span></Link>)
-        : (<Link className="logo" to="/"><Logo /></Link>)
+      {goBack
+        ? (
+          <Link className="reverse-navigation" to='.'>
+            <i className="material-icons">arrow_back_ios</i>
+            <span>{ t('back to the overview') }</span>
+          </Link>
+        )
+        : (
+          <Fragment>
+            <Link className="logo" to="/"><Logo /></Link>
+
+            <ul className="menu">
+              <li><i className="material-icons"></i></li>
+              {
+                navStructure.map(item => (
+                  <li className="menu-item"
+                    key={item.to}
+
+                  ><Link
+                    to={item.to}
+                    key={item.to}
+                    activeClassName="is-active"
+                    partiallyActive={true}
+                  >
+                      {item.title}
+                    </Link></li>
+                ))
+              }
+            </ul>
+          </Fragment>
+        )
       }
-
-      <ul className="menu">
-
-        <li><i className="material-icons"></i></li>
-        {
-          navStructure.map(item => (
-            <li className="menu-item"
-              key={item.to}
-
-            ><Link
-              to={item.to}
-              key={item.to}
-              activeClassName="is-active"
-              partiallyActive={true}
-            >
-                {item.title}
-              </Link></li>
-          ))
-        }
-      </ul>
     </nav>
   );
 };

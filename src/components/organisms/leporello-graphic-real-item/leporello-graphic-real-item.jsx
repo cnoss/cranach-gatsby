@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
@@ -9,6 +10,8 @@ import './leporello-graphic-real-item.scss';
 export default ({
   graphic,
 }) => {
+  const { t } = useTranslation('LeporelloGraphicRealItem');
+
   /* Prepare main and important object infos for usage */
   // const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
 
@@ -39,7 +42,7 @@ export default ({
   /* Map catalog work references */
   const catalogWorkReferenceItems = catalogWorkReferences.map(
     reference => ({
-      term: `${reference.description}-Nr.`,
+      term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
       definition: reference.referenceNumber,
     }),
   );
@@ -78,7 +81,7 @@ export default ({
               )
             }
             <GroupedDefinitionList.Entry
-              term="Datiert"
+              term={ t('Dating') }
               definition={dating.dated}
             />
           </GroupedDefinitionList>
@@ -86,19 +89,19 @@ export default ({
           {/* Physikalische Eigenschaften */}
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
-              term="Objektname"
+              term={ t('Objectname') }
               definition={objectName}
             />
             <GroupedDefinitionList.Entry
-              term="Klassifikation"
+              term={ t('Classification') }
               definition={classification}
             />
             <GroupedDefinitionList.Entry
-              term="Bildträger"
+              term={ t('Medium') }
               definition={medium}
             />
             <GroupedDefinitionList.Entry
-              term="Maße"
+              term={ t('Measurments') }
               definition={dimensions}
             />
           </GroupedDefinitionList>
@@ -106,15 +109,15 @@ export default ({
           {/* Besitz, Eigentümer und so */}
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
-              term="Eigentümer"
+              term={ t('Owner') }
               definition={owner}
             />
             <GroupedDefinitionList.Entry
-              term="Besitzer"
+              term={ t('Repository') }
               definition={repository}
             />
             <GroupedDefinitionList.Entry
-              term="Standort"
+              term={ t('Location') }
               definition={location}
             />
           </GroupedDefinitionList>
@@ -122,23 +125,23 @@ export default ({
           {/* Inschriften, Texte und so */}
           <GroupedDefinitionList>
             {signature && <GroupedDefinitionList.Entry
-              term="Signatur/ Datierung"
+              term={ t('Signature / Dating') }
               definition={signature}
             />}
             {inscription && <GroupedDefinitionList.Entry
-              term="Inschriften"
+              term={ t('Inscriptions') }
               definition={inscription}
             />}
             {markings && <GroupedDefinitionList.Entry
-              term="Stempel, Siegel, Beschriftungen"
+              term={ t('Stamps, Seals, Labels') }
               definition={markings}
             />}
             {description && <GroupedDefinitionList.Entry
-              term="Kurzbeschreibung"
+              term={ t('Short description') }
               definition={description}
             />}
             {provenance && <GroupedDefinitionList.Entry
-              term="Provenienz"
+              term={ t('Provenance') }
               definition={provenance}
             />}
           </GroupedDefinitionList>

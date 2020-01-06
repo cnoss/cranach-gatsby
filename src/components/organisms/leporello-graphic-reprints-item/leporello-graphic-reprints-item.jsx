@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
@@ -9,9 +10,10 @@ import './leporello-graphic-reprints-item.scss';
 
 export default ({
   graphic,
-  description = '          Hier wäre es gut, wenn wir den Text dynmaisch aus einer Datei ziehen könnten, in der so ein paar Helpertexte und die Headlines drin sind. (zweisprachig)',
   className = '',
 }) => {
+  const { t } = useTranslation('LeporelloGraphicReprintsItem');
+
   /* Number of initial visible reprint items */
   const reprintItemsLimit = 100;
   const hasMoreReprintItemsThanLimit = graphic.references.length > reprintItemsLimit;
@@ -53,10 +55,10 @@ export default ({
     >
       <div className="leporello-graphic-reprints-item">
         <div className="leporello-graphic-reprints-item-intro">
-          <h2 className="chapter">Abzüge</h2>
-          <h3 className="headline">1. Zustand</h3>
+          <h2 className="chapter">{ t('Reprints') }</h2>
+          <h3 className="headline">{ t('First State') }</h3>
           <CopyText
-            text={description}
+            text={ t('Description') }
           />
         </div>
         <div className="leporello-graphic-reprints-item-list">

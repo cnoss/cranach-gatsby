@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
@@ -8,8 +9,9 @@ import './leporello-artefact-related-works-item.scss';
 
 export default ({
   className = '',
-  description = 'Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte.',
 }) => {
+  const { t } = useTranslation('LeporelloGraphicRelatedWorksItem');
+
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,9 +36,9 @@ export default ({
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
-          <h2 className="chapter">Verwandte Arbeiten</h2>
+          <h2 className="chapter">{ t('Related works') }</h2>
           <CopyText
-            text={description}
+            text={ t('Description') }
           />
           <div className="leporello-artefact-related-works-item-list">
             <GraphicsList items={[]} />

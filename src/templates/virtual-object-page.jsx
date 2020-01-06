@@ -9,9 +9,14 @@ import LeporelloGraphicDetailsItem from '~/components/organisms/leporello-graphi
 import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graphic-reprints-item';
 import LeporelloArtefactRelatedWorksItem from '~/components/organisms/leporello-artefact-related-works-item';
 
+import i18n from '~/i18n';
+
+
 const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
+
+  i18n(graphic.langCode);
 
   return (
     <div
@@ -23,8 +28,7 @@ const PageTemplate = ({ pageContext }) => {
       </Helmet>
 
       <Navigation
-        target="/"
-        targetText="zurück zur Übersicht"
+        goBack={ true }
       />
 
       <section className="body">
