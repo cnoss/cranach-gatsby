@@ -72,6 +72,7 @@ export default ({
       data-component="organisms/leporello-graphic-details-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
+      visibleToggler={true}
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <div className={'leporello-graphic-details-item-image -is-non-fading'}>

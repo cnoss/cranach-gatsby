@@ -8,6 +8,7 @@ import GraphicsList from '~/components/molecules/graphics-list';
 import './leporello-artefact-related-works-item.scss';
 
 export default ({
+  /* relatedWorks, */
   className = '',
 }) => {
   const { t } = useTranslation('LeporelloGraphicRelatedWorksItem');
@@ -33,6 +34,7 @@ export default ({
       data-component="organisms/leporello-artefact-related-works-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
+      visibleToggler={true}
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">

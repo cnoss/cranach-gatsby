@@ -1,8 +1,10 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-graphic-real-item-wrap {
-  padding: $m;
+  box-shadow: $shadow-top-s;
   .leporello-graphic-real-item {
+    padding: $m;
+    background-color: $lightest;
     max-width: $vp-xlarge;
     &-image {
       margin: -$m 0 -$m $m;

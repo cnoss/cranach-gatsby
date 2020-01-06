@@ -16,7 +16,7 @@ describe('Organisms/LeporelloGraphicReprintsItem', () => {
 
   it('renders correctly', () => {
     const { container } = render(
-      <LeporelloGraphicReprintsItem graphic={ dummyGraphic } />,
+      <LeporelloGraphicReprintsItem reprints={ dummyGraphic.references } />,
     );
 
     expect(!!container.querySelector(leporelloGraphicReprintsItemSelector)).toBe(true);
@@ -24,7 +24,7 @@ describe('Organisms/LeporelloGraphicReprintsItem', () => {
 
   it('renders the correct number of reprint items when closed and opened', () => {
     const { container } = render(
-      <LeporelloGraphicReprintsItem graphic={ dummyGraphic } />,
+      <LeporelloGraphicReprintsItem reprints={ dummyGraphic.references } />,
     );
 
     const reprintItemEls = container.querySelectorAll(graphicsListItemSelector);

@@ -4,6 +4,7 @@ import './leporello-graphic-item.scss';
 
 import Leporello from '~/components/atoms/leporello';
 import Toggler from '~/components/atoms/toggler';
+import Closer from '~/components/atoms/closer';
 
 
 export default ({
@@ -11,7 +12,9 @@ export default ({
   children,
   className = '',
   onToggle = () => {},
-  visibleToggler = true,
+  visibleToggler = false,
+  onClose = () => {},
+  visibleCloser = false,
   ...other
 }) => {
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
@@ -37,14 +40,24 @@ export default ({
       isOpen={ isOpen }
       { ...other }
     >
-      {visibleToggler
-        && (<div className="toggler-container">
-          <Toggler
-            onToggle={ handleTogglerEvent }
-            isInitiallyToggled={ isOpen }
-          />
-        </div>)
-      }
+      <div className="controls-container">
+        {visibleToggler
+          && (
+            <Toggler
+              onToggle={ handleTogglerEvent }
+              isInitiallyToggled={ isOpen }
+            />
+          )
+        }
+
+        {visibleCloser
+          && (
+            <Closer
+              onClose={ onClose }
+            />
+          )
+        }
+      </div>
       { children }
     </Leporello.Item>
   );

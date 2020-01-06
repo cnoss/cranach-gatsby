@@ -7,6 +7,7 @@ import './graphics-list.scss';
 
 export default ({
   items,
+  onItemClick,
 }) => (
     <ul
       className="graphics-list"
@@ -18,7 +19,21 @@ export default ({
             key={item.imgSrc}
             className="graphics-list-item"
           >
-            <Link to={item.to}>
+            <Link
+              to={item.to}
+              onClick={ (e) => {
+                if (item.preventLinkFollowing) {
+                  if ((typeof onItemClick) === 'function') {
+                    onItemClick(item);
+                  }
+
+                  e.preventDefault();
+                  return false;
+                }
+
+                return true;
+              } }
+            >
               <Image
                 src={item.imgSrc}
                 alt={item.title}

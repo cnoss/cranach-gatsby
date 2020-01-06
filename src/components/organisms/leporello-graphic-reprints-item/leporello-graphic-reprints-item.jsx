@@ -9,23 +9,26 @@ import GraphicsList from '~/components/molecules/graphics-list';
 import './leporello-graphic-reprints-item.scss';
 
 export default ({
-  graphic,
+  reprints,
   className = '',
+  onItemClick,
 }) => {
   const { t } = useTranslation('LeporelloGraphicReprintsItem');
 
   /* Number of initial visible reprint items */
   const reprintItemsLimit = 100;
-  const hasMoreReprintItemsThanLimit = graphic.references.length > reprintItemsLimit;
+  const hasMoreReprintItemsThanLimit = reprints.length > reprintItemsLimit;
 
   /* Map reprints */
-  const reprintItems = graphic.references.map((reprintItem) => {
+  const reprintItems = reprints.map((reprintItem) => {
     const item = reprintItem.ref;
 
     return {
+      inventoryNumber: item.inventoryNumber,
       title: item.owner || '',
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.image && item.image.small),
+      preventLinkFollowing: true,
     };
   });
 
@@ -44,6 +47,16 @@ export default ({
   useEffect(() => {
     setLimitedReprintItems(!isOpen);
   }, [isOpen]);
+
+  const innerHandleItemClick = (item) => {
+    const foundSelectedItem = reprints.find(
+      refItem => refItem.inventoryNumber === item.inventoryNumber,
+    );
+
+    if (foundSelectedItem && (typeof onItemClick) === 'function') {
+      onItemClick(foundSelectedItem.ref);
+    }
+  };
 
   return (
     <LeporelloGraphicItem
@@ -68,6 +81,7 @@ export default ({
                 ? reprintItems.slice(0, reprintItemsLimit)
                 : reprintItems
             }
+            onItemClick={ innerHandleItemClick }
           />
         </div>
       </div>
