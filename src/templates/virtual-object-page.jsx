@@ -52,7 +52,7 @@ const PageTemplate = ({ pageContext }) => {
       </Helmet>
 
       <Navigation
-        goBackTo={withPrefix(`/${graphic.langCode}`)}
+        goBackTo={`/${graphic.langCode}`}
       />
 
       <section className="body">
