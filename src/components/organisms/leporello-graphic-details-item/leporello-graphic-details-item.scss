@@ -1,12 +1,12 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-graphic-details-item-wrap {
-  padding: $m;
   background-color: $lighter;
   .leporello-graphic-details-item {
     max-width: $vp-xlarge;
     &-info {
       position: relative;
+      padding: $m;
       &-further {
         position: absolute;
       }
@@ -30,14 +30,15 @@
     @media only screen and (min-width: $vp-large) {
       padding-top: $l;
       &-info {
+        padding: 0;
         .title,
         .subtitle {
           padding-right: $l;
         }
       }
       &-image {
-        width: $tile-s;
-        height: $tile-s;
+        width: $tile-xs;
+        height: auto;
         margin: 0;
       }
       &.-is-open {
@@ -53,7 +54,7 @@
     /* Responsive xLarge
   -------------------------------------------------------------------------- */
     @media only screen and (min-width: $vp-xlarge) {
-      margin: 0 auto;
+      //margin: 0 auto;
     }
   }
   //&:not(.-is-open) {

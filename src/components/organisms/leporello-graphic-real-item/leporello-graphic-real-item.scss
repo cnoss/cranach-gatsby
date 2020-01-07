@@ -2,9 +2,10 @@
 @import "~/styles/000-abstracts/mixins";
 .leporello-graphic-real-item-wrap {
   box-shadow: $shadow-top-s;
+  background-color: $lightest;
   .leporello-graphic-real-item {
     padding: $m;
-    background-color: $lightest;
+
     max-width: $vp-xlarge;
     &-image {
       margin: -$m 0 -$m $m;
@@ -21,6 +22,7 @@
     @include grid-even-2-columns($vp-medium);
     @media only screen and (min-width: $vp-medium) {
       padding-top: $l;
+      padding-bottom: $xl;
       &-info {
         padding-right: $l;
       }
@@ -28,7 +30,7 @@
     /* Responsive xLarge
   -------------------------------------------------------------------------- */
     @media only screen and (min-width: $vp-xlarge) {
-      margin: 0 auto;
+      //margin: 0 auto;
     }
   }
 }
