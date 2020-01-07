@@ -47,7 +47,7 @@ export default ({
         ? (
           <Link className="reverse-navigation" to='..'>
             <i className="material-icons">arrow_back_ios</i>
-            <span>{ t('back to the overview') }</span>
+            <span>{t('back to the overview')}</span>
           </Link>
         )
         : (
@@ -72,9 +72,13 @@ export default ({
                 ))
               }
             </ul>
+            <ul className="lang-switcher">
+              <li className="lang-switcher-item"><a href="/de">DE</a></li><li className="lang-switcher-item"><a href="/en">EN</a></li>
+            </ul>
           </Fragment>
         )
       }
+
     </nav>
   );
 };
