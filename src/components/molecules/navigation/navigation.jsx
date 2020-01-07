@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { withPrefix } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 
 import Logo from '~/components/atoms/logo';
@@ -73,7 +74,12 @@ export default ({
               }
             </ul>
             <ul className="lang-switcher">
-              <li className="lang-switcher-item"><a href="/de">DE</a></li><li className="lang-switcher-item"><a href="/en">EN</a></li>
+              <li className="lang-switcher-item">
+                <a href={withPrefix('/de')}>DE</a>
+              </li>
+              <li className="lang-switcher-item">
+                <a href={withPrefix('/en')}>EN</a>
+              </li>
             </ul>
           </Fragment>
         )
