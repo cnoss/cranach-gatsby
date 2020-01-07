@@ -10,10 +10,6 @@
       margin-bottom: $l;
     }
     &-list {}
-    &:not(.-related-works-is-open) {
-      max-height: 510px;
-      overflow: hidden;
-    }
     /* Responsive Medium
     -------------------------------------------------------------------------- */
     @include grid-even-2-columns($vp-medium);

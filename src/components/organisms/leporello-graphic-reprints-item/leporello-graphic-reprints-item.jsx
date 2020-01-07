@@ -5,18 +5,18 @@ import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 
-
 import './leporello-graphic-reprints-item.scss';
 
 export default ({
   reprints,
   className = '',
   onItemClick,
+  limitItemsTo = 100,
 }) => {
   const { t } = useTranslation('LeporelloGraphicReprintsItem');
 
   /* Number of initial visible reprint items */
-  const reprintItemsLimit = 100;
+  const reprintItemsLimit = limitItemsTo;
   const hasMoreReprintItemsThanLimit = reprints.length > reprintItemsLimit;
 
   /* Map reprints */
@@ -34,9 +34,9 @@ export default ({
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [limitReprintItems, setLimitedReprintItems] = useState(!isOpen);
+  const [limitReprintItems, setLimitReprintItems] = useState(!isOpen);
 
-  /* React on addtional classnames changes */
+  /* React on additional classnames changes */
   useEffect(() => {
     setAdditionalClassNames([
       ...className.split(' '),
@@ -45,7 +45,7 @@ export default ({
 
   /* React on open / close toggle */
   useEffect(() => {
-    setLimitedReprintItems(!isOpen);
+    setLimitReprintItems(!isOpen);
   }, [isOpen]);
 
   const innerHandleItemClick = (item) => {

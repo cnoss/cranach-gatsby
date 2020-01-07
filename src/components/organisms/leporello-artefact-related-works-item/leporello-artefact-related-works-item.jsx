@@ -11,8 +11,13 @@ export default ({
   relatedWorks,
   className = '',
   onItemClick,
+  limitItemsTo = 100,
 }) => {
   const { t } = useTranslation('LeporelloGraphicRelatedWorksItem');
+
+  /* Number of initial visible related works items */
+  const relatedWorkItemsLimit = limitItemsTo;
+  const hasMoreRelatedWorkItemsThanLimit = relatedWorks.length > relatedWorkItemsLimit;
 
   /* Map related works */
   const relatedWorksItems = relatedWorks.map((relatedWorksItem) => {
@@ -29,18 +34,19 @@ export default ({
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [limitRelatedWorkItems, setLimitRelatedWorkItems] = useState(!isOpen);
 
-  /* React on additional classnames change and open / close toggle */
+  /* React on additional classnames changes */
   useEffect(() => {
     setAdditionalClassNames([
       ...className.split(' '),
-      /*
-        We add an extra classname, if the leporello item was opened,
-        to be able to react to it on style level
-      */
-      ...(isOpen ? ['-related-works-is-open'] : []),
     ]);
   }, [className, isOpen]);
+
+  /* React on open / close toggle */
+  useEffect(() => {
+    setLimitRelatedWorkItems(!isOpen);
+  }, [isOpen]);
 
   const innerHandleItemClick = (item) => {
     const foundSelectedItem = relatedWorks.find(
@@ -58,7 +64,7 @@ export default ({
       data-component="organisms/leporello-artefact-related-works-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
-      visibleToggler={true}
+      visibleToggler={hasMoreRelatedWorkItemsThanLimit}
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
@@ -69,7 +75,11 @@ export default ({
         </div>
         <div className="leporello-artefact-related-works-item-list">
           <GraphicsList
-            items={relatedWorksItems}
+            items={
+              limitRelatedWorkItems
+                ? relatedWorksItems.slice(0, relatedWorkItemsLimit)
+                : relatedWorksItems
+            }
             onItemClick={innerHandleItemClick}
           />
         </div>
