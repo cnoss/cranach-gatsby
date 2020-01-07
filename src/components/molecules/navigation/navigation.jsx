@@ -8,7 +8,7 @@ import Link from '~/components/atoms/link';
 import './navigation.scss';
 
 export default ({
-  goBack,
+  goBackTo,
 }) => {
   const { t } = useTranslation('Navigation');
 
@@ -44,9 +44,9 @@ export default ({
       aria-label="main navigation"
       data-component="molecules/navigation"
     >
-      {goBack
+      {goBackTo
         ? (
-          <Link className="reverse-navigation" to='..'>
+          <Link className="reverse-navigation" to={goBackTo}>
             <i className="material-icons">arrow_back_ios</i>
             <span>{t('back to the overview')}</span>
           </Link>
