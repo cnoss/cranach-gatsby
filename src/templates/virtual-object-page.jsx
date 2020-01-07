@@ -17,6 +17,7 @@ const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
+  const [selectedRelatedWorkItem, setSelectedRelatedWorkItem] = useState(null);
 
   i18n(graphic.langCode);
 
@@ -31,7 +32,7 @@ const PageTemplate = ({ pageContext }) => {
         break;
 
       default:
-        /* Skip referenced item */
+      /* Skip referenced item */
     }
 
     return acc;
@@ -50,14 +51,14 @@ const PageTemplate = ({ pageContext }) => {
       </Helmet>
 
       <Navigation
-        goBack={ true }
+        goBack={true}
       />
 
       <section className="body">
         <Leporello>
           <LeporelloGraphicDetailsItem graphic={graphic} />
 
-          { selectedReprintItem
+          {selectedReprintItem
             ? (
               <LeporelloGraphicRealItem
                 graphic={selectedReprintItem}
@@ -71,10 +72,21 @@ const PageTemplate = ({ pageContext }) => {
               />
             )
           }
-          {referenceGroups.relatedWorks.length > 0
-            && <LeporelloArtefactRelatedWorksItem relatedWorks={referenceGroups.relatedWorks} />
-          }
 
+          {selectedRelatedWorkItem
+            ? (referenceGroups.relatedWorks.length > 0
+              && <LeporelloGraphicRealItem
+                graphic={selectedRelatedWorkItem}
+                onClose={() => setSelectedRelatedWorkItem(null)}
+              />
+            )
+            : (referenceGroups.relatedWorks.length > 0
+              && <LeporelloArtefactRelatedWorksItem
+                relatedWorks={referenceGroups.relatedWorks}
+                onItemClick={setSelectedRelatedWorkItem}
+              />
+            )
+          }
         </Leporello>
       </section>
     </div>

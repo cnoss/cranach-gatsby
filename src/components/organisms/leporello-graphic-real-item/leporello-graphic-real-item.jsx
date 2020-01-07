@@ -125,28 +125,32 @@ export default ({
           </GroupedDefinitionList>
 
           {/* Inschriften, Texte und so */}
-          <GroupedDefinitionList>
-            {signature && <GroupedDefinitionList.Entry
-              term={ t('Signature / Dating') }
-              definition={signature}
-            />}
-            {inscription && <GroupedDefinitionList.Entry
-              term={ t('Inscriptions') }
-              definition={inscription}
-            />}
-            {markings && <GroupedDefinitionList.Entry
-              term={ t('Stamps, Seals, Labels') }
-              definition={markings}
-            />}
-            {description && <GroupedDefinitionList.Entry
-              term={ t('Short description') }
-              definition={description}
-            />}
-            {provenance && <GroupedDefinitionList.Entry
-              term={ t('Provenance') }
-              definition={provenance}
-            />}
-          </GroupedDefinitionList>
+         { (signature || inscription || markings || description || provenance)
+            && (
+              <GroupedDefinitionList>
+                {signature && <GroupedDefinitionList.Entry
+                  term={ t('Signature / Dating') }
+                  definition={signature}
+                />}
+                {inscription && <GroupedDefinitionList.Entry
+                  term={ t('Inscriptions') }
+                  definition={inscription}
+                />}
+                {markings && <GroupedDefinitionList.Entry
+                  term={ t('Stamps, Seals, Labels') }
+                  definition={markings}
+                />}
+                {description && <GroupedDefinitionList.Entry
+                  term={ t('Short description') }
+                  definition={description}
+                />}
+                {provenance && <GroupedDefinitionList.Entry
+                  term={ t('Provenance') }
+                  definition={provenance}
+                />}
+              </GroupedDefinitionList>
+            )
+          }
         </div>
       </div>
     </LeporelloGraphicItem>
