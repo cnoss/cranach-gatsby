@@ -1,6 +1,7 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-artefact-related-works-item-wrap {
+  box-shadow: $shadow-top-s;
   .leporello-artefact-related-works-item {
     padding: $l $m $l $m;
     background-color: $lightest;
