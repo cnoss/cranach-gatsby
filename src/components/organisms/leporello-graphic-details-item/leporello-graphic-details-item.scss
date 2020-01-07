@@ -36,8 +36,8 @@
         }
       }
       &-image {
-        width: $tile-s;
-        height: $tile-s;
+        width: $tile-xs;
+        height: auto;
         margin: 0;
       }
       &.-is-open {

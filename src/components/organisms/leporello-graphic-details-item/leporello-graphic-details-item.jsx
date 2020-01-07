@@ -79,7 +79,7 @@ export default ({
           <Image
             src={images.sizes.l.src}
             alt={title}
-            additionalClass="-has-box"
+            additionalClass=""
 
           ></Image>
         </div>

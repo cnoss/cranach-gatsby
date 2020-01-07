@@ -2,23 +2,24 @@
 .image {
   display: block;
   position: relative;
-  padding-top: 100%;
-
-  &.-has-box{
-    background-color: rgba(0,0,0,.03);
-    border-top: 1px solid #b4b4b4;
-    border-bottom: 1px solid #b4b4b4;
-  }
   img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
     height: 100%;
     width: 100%;
-    object-fit: contain;
-    display: block;
+  }
+  &.-has-box {
+    padding-top: 100%;
+    background-color: $darken;
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      object-fit: contain;
+      display: block;
+    }
   }
   .image-caption {
     &:before {

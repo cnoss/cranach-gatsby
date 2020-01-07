@@ -7,14 +7,14 @@
   &-term {
     width: 25%;
     font-weight: $fw-regular;
-    border-bottom: solid $border-stroke-weight-s $light;
+    border-bottom: solid $border-stroke-weight-s $darken;
     padding: $s 0;
     &::after {
       content: ":"
     }
   }
   &-definition {
-    border-bottom: solid $border-stroke-weight-s $light;
+    border-bottom: solid $border-stroke-weight-s $darken;
     display: flex;
     margin: 0;
     padding: $s 0;
