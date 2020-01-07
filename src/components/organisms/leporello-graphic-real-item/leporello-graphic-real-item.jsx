@@ -24,7 +24,7 @@ export default ({
   // const signature = (graphic.signature && graphic.signature) || '';
 
   const {
-    image,
+    images,
     dating,
     dimensions,
     inventoryNumber,
@@ -59,8 +59,8 @@ export default ({
       <div className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-image">
           <ZoomImage
-            src={image.xlarge}
-            baseSrc={image.small}
+            src={images.sizes.xl.src}
+            baseSrc={images.sizes.s.src}
             alt={title}
           />
         </div>

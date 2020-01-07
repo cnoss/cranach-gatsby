@@ -17,7 +17,7 @@ export default ({ data }) => {
     return acc;
   }, []);
 
-  const items = rawItems.filter(rawItem => rawItem.hasImage);
+  const items = rawItems.filter(rawItem => rawItem.images);
 
   return (
     <div
@@ -78,14 +78,51 @@ export const query = graphql`
             references {
               inventoryNumber
             }
-            image {
-              xsmall
-              small
-              medium
-              large
-              xlarge
+            images {
+                infos {
+                  maxDimensions {
+                    width
+                    height
+                  }
+                }
+                sizes {
+                xs {
+                  dimensions {
+                    width
+                    height
+                  }
+                  src
+                }
+                s {
+                  dimensions {
+                    width
+                    height
+                  }
+                  src
+                }
+                m {
+                  dimensions {
+                    width
+                    height
+                  }
+                  src
+                }
+                l {
+                  dimensions {
+                    width
+                    height
+                  }
+                  src
+                }
+                xl {
+                  dimensions {
+                    width
+                    height
+                  }
+                  src
+                }
+              }
             }
-            hasImage
           }
         }
       }
