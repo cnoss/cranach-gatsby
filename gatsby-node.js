@@ -32,10 +32,10 @@ const extendGraphicReferences = (items, item) => {
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  const graphicsWithImage = graphics.filter(graphic => graphic.hasImage);
+  const graphicsWithImages = graphics.filter(graphic => graphic.images);
 
-  const extendedGraphicsWithExtendedReferences = graphicsWithImage.map(
-    graphic => extendGraphicReferences(graphicsWithImage, graphic),
+  const extendedGraphicsWithExtendedReferences = graphicsWithImages.map(
+    graphic => extendGraphicReferences(graphicsWithImages, graphic),
   );
 
   extendedGraphicsWithExtendedReferences.forEach((graphic) => {
@@ -166,14 +166,51 @@ exports.createPages = ({ graphql, actions }) => {
                 type
                 year
               }
-              image {
-                xsmall
-                small
-                medium
-                large
-                xlarge
+              images {
+                infos {
+                  maxDimensions {
+                    width
+                    height
+                  }
+                }
+                sizes {
+                  xs {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  s {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  m {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  l {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  xl {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                }
               }
-              hasImage
             }
           }
         }

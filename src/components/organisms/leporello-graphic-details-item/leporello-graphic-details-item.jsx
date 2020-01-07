@@ -23,7 +23,7 @@ export default ({
   const description = graphic.description || ' ';
 
   const {
-    image,
+    images,
     classification,
     dating,
     dimensions,
@@ -77,7 +77,7 @@ export default ({
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <div className={'leporello-graphic-details-item-image -is-non-fading'}>
           <Image
-            src={image.large}
+            src={images.sizes.l.src}
             alt={title}
             additionalClass="-has-box"
 

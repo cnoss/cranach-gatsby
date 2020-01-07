@@ -45,7 +45,7 @@ export default ({
     >
       {goBack
         ? (
-          <Link className="reverse-navigation" to='.'>
+          <Link className="reverse-navigation" to='..'>
             <i className="material-icons">arrow_back_ios</i>
             <span>{ t('back to the overview') }</span>
           </Link>

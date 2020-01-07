@@ -27,7 +27,7 @@ export default ({
       inventoryNumber: item.inventoryNumber,
       title: item.owner || '',
       to: `/${item.langCode}/${item.slug}`,
-      imgSrc: (item && item.image && item.image.small),
+      imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: true,
     };
   });
