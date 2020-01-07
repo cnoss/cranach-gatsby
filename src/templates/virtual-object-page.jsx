@@ -73,18 +73,20 @@ const PageTemplate = ({ pageContext }) => {
             )
           }
 
-          {selectedRelatedWorkItem
-            ? (referenceGroups.relatedWorks.length > 0
-              && <LeporelloGraphicRealItem
-                graphic={selectedRelatedWorkItem}
-                onClose={() => setSelectedRelatedWorkItem(null)}
-              />
-            )
-            : (referenceGroups.relatedWorks.length > 0
-              && <LeporelloArtefactRelatedWorksItem
-                relatedWorks={referenceGroups.relatedWorks}
-                onItemClick={setSelectedRelatedWorkItem}
-              />
+          {referenceGroups.relatedWorks.length > 0
+            && (selectedRelatedWorkItem
+              ? (
+                <LeporelloGraphicRealItem
+                  graphic={selectedRelatedWorkItem}
+                  onClose={() => setSelectedRelatedWorkItem(null)}
+                />
+              )
+              : (
+                <LeporelloArtefactRelatedWorksItem
+                  relatedWorks={referenceGroups.relatedWorks}
+                  onItemClick={setSelectedRelatedWorkItem}
+                />
+              )
             )
           }
         </Leporello>
