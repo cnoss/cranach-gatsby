@@ -21,24 +21,24 @@ export default ({
           >
             <Link
               to={item.to}
-              onClick={ (e) => {
+              onClick={(e) => {
                 if (item.preventLinkFollowing) {
                   if ((typeof onItemClick) === 'function') {
                     onItemClick(item);
                   }
-
                   e.preventDefault();
                   return false;
                 }
 
                 return true;
-              } }
+              }}
             >
               <Image
                 src={item.imgSrc}
                 alt={item.title}
                 classNamePrefix={'graphics-list-item'}
                 caption={item.title}
+                additionalClass="-has-box"
               ></Image>
             </Link>
           </li>,

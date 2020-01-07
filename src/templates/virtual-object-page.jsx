@@ -71,8 +71,10 @@ const PageTemplate = ({ pageContext }) => {
               />
             )
           }
+          {referenceGroups.relatedWorks.length > 0
+            && <LeporelloArtefactRelatedWorksItem relatedWorks={referenceGroups.relatedWorks} />
+          }
 
-          <LeporelloArtefactRelatedWorksItem relatedWorks={referenceGroups.relatedWorks} />
         </Leporello>
       </section>
     </div>

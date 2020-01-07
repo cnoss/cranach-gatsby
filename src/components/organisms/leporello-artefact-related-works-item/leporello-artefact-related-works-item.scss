@@ -1,11 +1,10 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-artefact-related-works-item-wrap {
-    border-top: solid $border-stroke-weight-s $light;
-    background-color: $lighter;
+  border-top: solid $border-stroke-weight-s $light;
+  background-color: $lighter;
   .leporello-artefact-related-works-item {
-    padding: $l $m $l $m;
-
+    padding: $m;
     &-intro {
       margin-bottom: $l;
     }
@@ -18,7 +17,8 @@
     -------------------------------------------------------------------------- */
     @include grid-even-2-columns($vp-medium);
     @media only screen and (min-width: $vp-medium) {
-      padding-top: $l;
+      padding-top: $xl;
+      padding-bottom: $xxl;
       &-info {
         padding-right: $l;
       }

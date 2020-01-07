@@ -15,7 +15,6 @@
   grid-column-gap: $m;
   grid-row-gap: $m;
   grid-auto-rows: 1fr;
-  padding: $m;
 }
 
 @mixin grid-even-2-columns($viewport) {

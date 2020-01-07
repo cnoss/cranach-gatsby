@@ -1,7 +1,7 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
 .leporello-graphic-reprints-item-wrap {
-  box-shadow: $shadow-top-s;
+  box-shadow: 0 -5px 10px -5px rgba(0,0,0,0.5);
   .leporello-graphic-reprints-item {
     padding: $l $m $l $m;
     background-color: $lightest;
@@ -13,7 +13,8 @@
     -------------------------------------------------------------------------- */
     @include grid-even-2-columns($vp-medium);
     @media only screen and (min-width: $vp-medium) {
-      padding-top: $l;
+      padding-top: $xl;
+      padding-bottom: $xl;
       &-info {
         padding-right: $l;
       }

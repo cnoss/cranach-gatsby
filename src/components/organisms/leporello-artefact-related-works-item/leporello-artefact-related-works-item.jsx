@@ -19,7 +19,7 @@ export default ({
 
     return {
       inventoryNumber: item.inventoryNumber,
-      title: item.owner || '',
+      title: item.titles[0].title || '',
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: true,

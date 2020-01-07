@@ -4,9 +4,13 @@
   background-color: $lighter;
   .leporello-graphic-details-item {
     max-width: $vp-xlarge;
+    padding: $m;
+    padding-bottom: $l;
+    overflow: hidden;
     &-info {
       position: relative;
       padding: $m;
+      background-color: $lighter;
       &-further {
         position: absolute;
       }
@@ -29,6 +33,7 @@
     @include grid-even-2-columns($vp-large);
     @media only screen and (min-width: $vp-large) {
       padding-top: $l;
+      padding-bottom: $xl;
       &-info {
         padding: 0;
         .title,

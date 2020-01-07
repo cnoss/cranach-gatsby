@@ -7,8 +7,8 @@
     &-image {
       &-holder {
         height: $tile-s;
-        margin-bottom: $xxs;
-        background-color: $lighter;
+        margin-bottom: $xs;
+        background-color: $darken;
         border: solid $border-stroke-weight-s $light;
         border-left: 0;
         border-right: 0;
@@ -19,7 +19,9 @@
           object-position: 50% 50%;
         }
       }
-      &-caption {}
+      &-caption {
+        padding-right: $l;
+      }
     }
   }
   /* Responsive Medium
