@@ -8,10 +8,23 @@ import GraphicsList from '~/components/molecules/graphics-list';
 import './leporello-artefact-related-works-item.scss';
 
 export default ({
-  /* relatedWorks, */
+  relatedWorks,
   className = '',
 }) => {
   const { t } = useTranslation('LeporelloGraphicRelatedWorksItem');
+
+  /* Map related works */
+  const relatedWorksItems = relatedWorks.map((relatedWorksItem) => {
+    const item = relatedWorksItem.ref;
+
+    return {
+      inventoryNumber: item.inventoryNumber,
+      title: item.owner || '',
+      to: `/${item.langCode}/${item.slug}`,
+      imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
+      preventLinkFollowing: true,
+    };
+  });
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +55,9 @@ export default ({
           <CopyText
             text={ t('Description') }
           />
-          <div className="leporello-artefact-related-works-item-list">
-            <GraphicsList items={[]} />
-          </div>
+        </div>
+        <div className="leporello-artefact-related-works-item-list">
+          <GraphicsList items={relatedWorksItems} />
         </div>
       </div>
     </LeporelloGraphicItem>
