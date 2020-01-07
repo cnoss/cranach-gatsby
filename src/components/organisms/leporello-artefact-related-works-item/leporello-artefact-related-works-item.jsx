@@ -10,6 +10,7 @@ import './leporello-artefact-related-works-item.scss';
 export default ({
   relatedWorks,
   className = '',
+  onItemClick,
 }) => {
   const { t } = useTranslation('LeporelloGraphicRelatedWorksItem');
 
@@ -41,6 +42,16 @@ export default ({
     ]);
   }, [className, isOpen]);
 
+  const innerHandleItemClick = (item) => {
+    const foundSelectedItem = relatedWorks.find(
+      refItem => refItem.inventoryNumber === item.inventoryNumber,
+    );
+
+    if (foundSelectedItem && (typeof onItemClick) === 'function') {
+      onItemClick(foundSelectedItem.ref);
+    }
+  };
+
   return (
     <LeporelloGraphicItem
       className={`leporello-artefact-related-works-item-wrap ${additionalClassNames.join(' ')}`}
@@ -51,13 +62,16 @@ export default ({
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
-          <h2 className="chapter">{ t('Related works') }</h2>
+          <h2 className="chapter">{t('Related works')}</h2>
           <CopyText
-            text={ t('Description') }
+            text={t('Description')}
           />
         </div>
         <div className="leporello-artefact-related-works-item-list">
-          <GraphicsList items={relatedWorksItems} />
+          <GraphicsList
+            items={relatedWorksItems}
+            onItemClick={innerHandleItemClick}
+          />
         </div>
       </div>
     </LeporelloGraphicItem>

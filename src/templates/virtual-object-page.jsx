@@ -17,6 +17,7 @@ const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
+  const [selectedRelatedWorkItem, setSelectedRelatedWorkItem] = useState(null);
 
   i18n(graphic.langCode);
 
@@ -72,7 +73,20 @@ const PageTemplate = ({ pageContext }) => {
             )
           }
 
-          <LeporelloArtefactRelatedWorksItem relatedWorks={referenceGroups.relatedWorks} />
+          { selectedRelatedWorkItem
+            ? (
+              <LeporelloGraphicRealItem
+                graphic={selectedRelatedWorkItem}
+                onClose={() => setSelectedRelatedWorkItem(null)}
+              />
+            )
+            : (
+              <LeporelloArtefactRelatedWorksItem
+                relatedWorks={referenceGroups.relatedWorks}
+                onItemClick={setSelectedRelatedWorkItem}
+              />
+            )
+          }
         </Leporello>
       </section>
     </div>
