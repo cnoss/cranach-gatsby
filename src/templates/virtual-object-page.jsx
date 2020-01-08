@@ -1,7 +1,6 @@
 // src/templates/page.js
 
 import React, { useState } from 'react';
-import { withPrefix } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import Navigation from '~/components/molecules/navigation';
