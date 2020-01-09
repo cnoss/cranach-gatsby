@@ -4,28 +4,36 @@ const path = require('path');
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
-/* Grafikverknüpfung */
-/* TODO: Entfernen, wenn Verknüpfung von Grafiken und Objekte vorher geschehen ist */
-const extendGraphicReferences = (items, item) => {
-  const extendedReferences = item.references.map((referenceItem) => {
-    const foundReferencesItem = items.find(
+const referenceResolver = (graphic, graphics, references) => {
+  return references.reduce((acc, referenceItem) => {
+    const foundReferencesItem = graphics.find(
       currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
-        && currItem.langCode === item.langCode,
+        && currItem.langCode === graphic.langCode,
     );
 
-    return {
+    if (!foundReferencesItem) {
+      return acc;
+    }
+
+    const newReferenceItem = {
       ...referenceItem,
-      ref: foundReferencesItem ? { ...foundReferencesItem } : null,
+      ref: { ...foundReferencesItem },
     };
-  });
 
-  const filteredExtendedReferences = extendedReferences.filter(
-    extendedReference => extendedReference.ref,
-  );
+    acc.push(newReferenceItem);
 
+    return acc;
+  }, []);
+};
+
+/* Grafikverknüpfung */
+const extendGraphicReferences = (items, item) => {
   return {
     ...item,
-    references: filteredExtendedReferences,
+    references: {
+      reprints: referenceResolver(item, items, item.references.reprints),
+      relatedWorks: referenceResolver(item, items, item.references.relatedWorks),
+    },
   };
 };
 
@@ -150,9 +158,16 @@ exports.createPages = ({ graphql, actions }) => {
               }
               relatedWorks
               references {
-                inventoryNumber
-                remark
-                text
+                reprints {
+                  inventoryNumber
+                  remark
+                  text
+                }
+                relatedWorks {
+                  inventoryNumber
+                  remark
+                  text
+                }
               }
               repository
               signature

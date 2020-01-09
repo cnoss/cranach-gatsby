@@ -21,26 +21,6 @@ const PageTemplate = ({ pageContext }) => {
 
   i18n(graphic.langCode);
 
-  const referenceGroups = graphic.references.reduce((acc, referenceItem) => {
-    switch (referenceItem.text) {
-      case 'Abzug A':
-        acc.reprints.push(referenceItem);
-        break;
-
-      case 'Teil eines Werkes':
-        acc.relatedWorks.push(referenceItem);
-        break;
-
-      default:
-      /* Skip referenced item */
-    }
-
-    return acc;
-  }, {
-    reprints: [],
-    relatedWorks: [],
-  });
-
   return (
     <div
       className="page"
@@ -67,13 +47,13 @@ const PageTemplate = ({ pageContext }) => {
             )
             : (
               <LeporelloGraphicReprintsItem
-                reprints={referenceGroups.reprints}
+                reprints={graphic.references.reprints}
                 onItemClick={setSelectedReprintItem}
               />
             )
           }
 
-          {referenceGroups.relatedWorks.length > 0
+          {graphic.references.relatedWorks.length > 0
             && (selectedRelatedWorkItem
               ? (
                 <LeporelloGraphicRealItem
@@ -83,7 +63,7 @@ const PageTemplate = ({ pageContext }) => {
               )
               : (
                 <LeporelloArtefactRelatedWorksItem
-                  relatedWorks={referenceGroups.relatedWorks}
+                  relatedWorks={graphic.references.relatedWorks}
                   onItemClick={setSelectedRelatedWorkItem}
                 />
               )

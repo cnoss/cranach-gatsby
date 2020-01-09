@@ -77,7 +77,12 @@ export const query = graphql`
               type
             }
             references {
-              inventoryNumber
+              reprints {
+                inventoryNumber
+              }
+              relatedWorks {
+                inventoryNumber
+              }
             }
             images {
                 infos {
