@@ -106,6 +106,7 @@ exports.createPages = ({ graphql, actions }) => {
                 classification
                 condition
               }
+              conditionLevel
               dating {
                 begin
                 dated
