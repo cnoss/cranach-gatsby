@@ -12,8 +12,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  pathPrefix: '/cranach-grafiken-gatsby',
-  pathPrefixLiveserver: '/admin/graphics',
+  pathPrefix: '/admin/graphics',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-transition-link',
