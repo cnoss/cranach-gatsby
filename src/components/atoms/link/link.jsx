@@ -21,10 +21,12 @@ export default ({
     return triggersInternalTransition
       ? (
         <AniLink
-          cover
+          swipe
           bg={ internalTransitionBgColor }
           direction={ internalTransitionDirection }
-          to={ to }
+          to={to}
+          duration={0.4}
+          bg="#ffffff"
           { ...other }
           data-component="atoms/link"
         >
