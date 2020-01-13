@@ -12,7 +12,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  pathPrefix: '/admin/graphics',
+  pathPrefix: process.env.PATH_REFIX || '/cranach-grafiken-gatsby',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-transition-link',
