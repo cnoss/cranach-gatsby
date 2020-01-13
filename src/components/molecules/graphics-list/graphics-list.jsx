@@ -21,6 +21,7 @@ export default ({
           >
             <Link
               to={item.to}
+              triggersInternalTransition={true}
               onClick={(e) => {
                 if (item.preventLinkFollowing) {
                   if ((typeof onItemClick) === 'function') {

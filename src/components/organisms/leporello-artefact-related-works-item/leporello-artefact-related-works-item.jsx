@@ -10,7 +10,6 @@ import './leporello-artefact-related-works-item.scss';
 export default ({
   relatedWorks,
   className = '',
-  onItemClick = () => {},
   limitItemsTo = 100,
 }) => {
   const { t } = useTranslation('LeporelloArtefactRelatedWorksItem');
@@ -28,7 +27,7 @@ export default ({
       title: item.titles[0].title || '',
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
-      preventLinkFollowing: true,
+      preventLinkFollowing: false,
     };
   });
 
@@ -47,16 +46,6 @@ export default ({
   useEffect(() => {
     setLimitRelatedWorkItems(!isOpen);
   }, [isOpen]);
-
-  const innerHandleItemClick = (item) => {
-    const foundSelectedItem = relatedWorks.find(
-      refItem => refItem.inventoryNumber === item.inventoryNumber,
-    );
-
-    if (foundSelectedItem && (typeof onItemClick) === 'function') {
-      onItemClick(foundSelectedItem.ref);
-    }
-  };
 
   return (
     <LeporelloGraphicItem
@@ -80,7 +69,6 @@ export default ({
                 ? relatedWorksItems.slice(0, relatedWorkItemsLimit)
                 : relatedWorksItems
             }
-            onItemClick={innerHandleItemClick}
           />
         </div>
       </div>

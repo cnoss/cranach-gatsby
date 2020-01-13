@@ -11,7 +11,7 @@ export default ({
   partiallyActive,
   triggersInternalTransition = false,
   internalTransitionDirection = 'left',
-  internalTransitionBgColor = '#000',
+  internalTransitionBgColor = '#fff',
   ...other
 }) => {
   /* See: https://www.gatsbyjs.org/docs/gatsby-link/#reminder-use-link-only-for-internal-links */
@@ -26,7 +26,6 @@ export default ({
           direction={ internalTransitionDirection }
           to={to}
           duration={0.4}
-          bg="#ffffff"
           { ...other }
           data-component="atoms/link"
         >

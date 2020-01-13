@@ -20,7 +20,6 @@ const PageTemplate = ({ pageContext }) => {
   i18n(graphic.langCode);
 
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
-  const [selectedRelatedWorkItem, setSelectedRelatedWorkItem] = useState(null);
 
   return (
     <div
@@ -54,19 +53,10 @@ const PageTemplate = ({ pageContext }) => {
           }
 
           {graphic.references.relatedWorks.length > 0
-            && (selectedRelatedWorkItem
-              ? (
-                <LeporelloGraphicRealItem
-                  graphic={selectedRelatedWorkItem}
-                  onClose={() => setSelectedRelatedWorkItem(null)}
-                />
-              )
-              : (
-                <LeporelloArtefactRelatedWorksItem
-                  relatedWorks={graphic.references.relatedWorks}
-                  onItemClick={setSelectedRelatedWorkItem}
-                />
-              )
+            && (
+              <LeporelloArtefactRelatedWorksItem
+                relatedWorks={graphic.references.relatedWorks}
+              />
             )
           }
         </Leporello>
