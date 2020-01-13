@@ -27,7 +27,7 @@ export default ({
       to: 'http://lucascranach.org/publications',
     },
   ];
-  { level = { level }; }
+
   return (
     <nav
       className="main-navigation"

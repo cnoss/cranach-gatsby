@@ -98,6 +98,6 @@ storiesOf('Components|Organisms/ArtefactOverview', module)
     });
 
     return (
-      <GraphicsOverview items={ items }></GraphicsOverview>
+      <ArtefactOverview items={ items }></ArtefactOverview>
     );
   });

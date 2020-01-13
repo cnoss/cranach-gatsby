@@ -6,14 +6,14 @@ import Closer from '.';
 
 describe('Atoms/Toggler', () => {
   /* Element selectors */
-  const togglerSelector = '[data-component="atoms/closer"]';
+  const closerSelector = '[data-component="atoms/closer"]';
 
   it('renders correctly', () => {
     const { container } = render(
       <Closer />,
     );
 
-    expect(!!container.querySelector(togglerSelector)).toBe(true);
+    expect(!!container.querySelector(closerSelector)).toBe(true);
   });
 
   it('emits close event on click', () => {
@@ -23,15 +23,15 @@ describe('Atoms/Toggler', () => {
       <Closer onClose={ closed => spy(closed) } />,
     );
 
-    const togglerEl = container.querySelector(togglerSelector);
+    const togglerEl = container.querySelector(closerSelector);
 
-    expect(!!container.querySelector(toggledSelector)).toBe(false);
+    expect(!!container.querySelector(closerSelector)).toBe(false);
 
     expect(spy).toHaveBeenCalledTimes(0);
 
     fireEvent.click(togglerEl);
 
-    expect(!!container.querySelector(toggledSelector)).toBe(true);
+    expect(!!container.querySelector(closerSelector)).toBe(true);
 
     expect(spy).toHaveBeenCalledTimes(1);
     expect(spy).toHaveBeenCalledWith(true);
