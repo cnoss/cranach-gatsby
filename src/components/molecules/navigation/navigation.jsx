@@ -46,7 +46,12 @@ export default ({
     >
       {goBackTo
         ? (
-          <Link className="reverse-navigation" to={goBackTo}>
+          <Link
+            className="reverse-navigation"
+            to={goBackTo}
+            triggersInternalTransition={ true }
+            internalTransitionDirection='right'
+          >
             <i className="material-icons">arrow_back_ios</i>
             <span>{t('back to the overview')}</span>
           </Link>

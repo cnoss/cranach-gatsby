@@ -19,6 +19,8 @@ export default ({
     <div className="card-image">
       <Link
         to={ to }
+        triggersInternalTransition={ true }
+        internalTransitionDirection='left'
       >
         <Image
           src={ imgSrc }

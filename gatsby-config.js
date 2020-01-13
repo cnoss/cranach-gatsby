@@ -15,6 +15,7 @@ module.exports = {
   pathPrefix: '/cranach-grafiken-gatsby',
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-transition-link',
     'gatsby-transformer-json',
     'gatsby-plugin-eslint',
     {
