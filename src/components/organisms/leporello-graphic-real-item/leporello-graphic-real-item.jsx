@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
+import CopyText from '~/components/atoms/copy-text';
 
 import './leporello-graphic-real-item.scss';
 
@@ -100,11 +101,11 @@ export default ({
             />
             <GroupedDefinitionList.Entry
               term={ t('Medium') }
-              definition={medium}
+              definition={<CopyText text={medium} />}
             />
             <GroupedDefinitionList.Entry
               term={ t('Measurments') }
-              definition={dimensions}
+              definition={<CopyText text={dimensions} />}
             />
           </GroupedDefinitionList>
 
@@ -134,7 +135,7 @@ export default ({
                 />}
                 {inscription && <GroupedDefinitionList.Entry
                   term={ t('Inscriptions') }
-                  definition={inscription}
+                  definition={<CopyText text={inscription} />}
                 />}
                 {markings && <GroupedDefinitionList.Entry
                   term={ t('Stamps, Seals, Labels') }
@@ -146,7 +147,7 @@ export default ({
                 />}
                 {provenance && <GroupedDefinitionList.Entry
                   term={ t('Provenance') }
-                  definition={provenance}
+                  definition={<CopyText text={provenance} />}
                 />}
               </GroupedDefinitionList>
             )
