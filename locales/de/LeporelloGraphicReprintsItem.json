@@ -1,11 +1,11 @@
 {
   "Reprints": "Abzüge",
   "1st state": "1.Zustand",
-  "1st state description": "Hier wäre es gut, wenn wir den Text dynamisch aus einer Datei ziehen könnten, in der so ein paar Helpertexte und die Headlines drin sind. (zweisprachig)",
+  "1st state description": "",
 
   "2nd state": "2.Zustand",
-  "2nd state description": "Hier wäre es gut, wenn wir den Text dynamisch aus einer Datei ziehen könnten, in der so ein paar Helpertexte und die Headlines drin sind. (zweisprachig)",
+  "2nd state description": "",
 
   "3rd state": "3.Zustand",
-  "3rd state description": "Hier wäre es gut, wenn wir den Text dynamisch aus einer Datei ziehen könnten, in der so ein paar Helpertexte und die Headlines drin sind. (zweisprachig)"
+  "3rd state description": ""
 }
