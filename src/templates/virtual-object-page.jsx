@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
@@ -20,6 +21,8 @@ const PageTemplate = ({ pageContext }) => {
   const [selectedRelatedWorkItem, setSelectedRelatedWorkItem] = useState(null);
 
   i18n(graphic.langCode);
+
+  const { t } = useTranslation('VirtualObjectPage');
 
   return (
     <div
@@ -47,6 +50,9 @@ const PageTemplate = ({ pageContext }) => {
             )
             : (
               <LeporelloGraphicReprintsItem
+                title={t('Reprints')}
+                subtitle={t('1st state')}
+                description={t('1st state description')}
                 reprints={graphic.references.reprints}
                 onItemClick={setSelectedReprintItem}
               />
@@ -63,6 +69,8 @@ const PageTemplate = ({ pageContext }) => {
               )
               : (
                 <LeporelloArtefactRelatedWorksItem
+                  title={t('Related works')}
+                  description={t('Related works description')}
                   relatedWorks={graphic.references.relatedWorks}
                   onItemClick={setSelectedRelatedWorkItem}
                 />

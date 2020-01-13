@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
@@ -12,9 +11,10 @@ export default ({
   className = '',
   onItemClick,
   limitItemsTo = 100,
+  title = '',
+  subtitle = '',
+  description = '',
 }) => {
-  const { t } = useTranslation('LeporelloGraphicReprintsItem');
-
   /* Number of initial visible reprint items */
   const reprintItemsLimit = limitItemsTo;
   const hasMoreReprintItemsThanLimit = reprints.length > reprintItemsLimit;
@@ -68,10 +68,10 @@ export default ({
     >
       <div className="leporello-graphic-reprints-item">
         <div className="leporello-graphic-reprints-item-intro">
-          <h2 className="chapter">{ t('Reprints') }</h2>
-          <h3 className="headline">{ t('First State') }</h3>
+          <h2 className="chapter">{title}</h2>
+          <h3 className="headline">{subtitle}</h3>
           <CopyText
-            text={ t('Description') }
+            text={description}
           />
         </div>
         <div className="leporello-graphic-reprints-item-list">

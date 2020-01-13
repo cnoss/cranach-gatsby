@@ -5,6 +5,10 @@ import i18nextXHRBackend from 'i18next-xhr-backend';
 import { withPrefix } from 'gatsby';
 
 export default (langCode) => {
+  if (i18n.isInitialized) {
+    return;
+  }
+
   i18n
     .use(initReactI18next)
     .use(i18nextXHRBackend)
