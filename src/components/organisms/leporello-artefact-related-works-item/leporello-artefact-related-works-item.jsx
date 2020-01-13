@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
@@ -9,11 +10,11 @@ import './leporello-artefact-related-works-item.scss';
 export default ({
   relatedWorks,
   className = '',
-  onItemClick,
+  onItemClick = () => {},
   limitItemsTo = 100,
-  title = '',
-  description = '',
 }) => {
+  const { t } = useTranslation('LeporelloArtefactRelatedWorksItem');
+
   /* Number of initial visible related works items */
   const relatedWorkItemsLimit = limitItemsTo;
   const hasMoreRelatedWorkItemsThanLimit = relatedWorks.length > relatedWorkItemsLimit;
@@ -67,9 +68,9 @@ export default ({
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
-          <h2 className="chapter">{title}</h2>
+          <h2 className="chapter">{t('Related works')}</h2>
           <CopyText
-            text={description}
+            text={t('Related works description')}
           />
         </div>
         <div className="leporello-artefact-related-works-item-list">

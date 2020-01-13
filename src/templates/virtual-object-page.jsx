@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import { useTranslation } from 'react-i18next';
 
 import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
@@ -20,68 +19,8 @@ const PageTemplate = ({ pageContext }) => {
 
   i18n(graphic.langCode);
 
-  const { t } = useTranslation('VirtualObjectPage');
-
-  const expectedReprintConditionLevelGroups = [
-    {
-      id: '1st-level',
-      translations: {
-        title: 'Reprints',
-        subtitle: '1st state',
-        description: '1st state description',
-      },
-      filter: reprintItem => reprintItem.ref && [0, 1].includes(reprintItem.ref.conditionLevel),
-      items: [],
-    },
-    {
-      id: '2nd-level',
-      translations: {
-        title: 'Reprints',
-        subtitle: '2nd state',
-        description: '2nd state description',
-      },
-      filter: reprintItem => reprintItem.ref && reprintItem.ref.conditionLevel === 2,
-      items: [],
-    },
-    {
-      id: '3rd-level',
-      translations: {
-        title: 'Reprints',
-        subtitle: '3rd state',
-        description: '3rd state description',
-      },
-      filter: reprintItem => reprintItem.ref && reprintItem.ref.conditionLevel === 3,
-      items: [],
-    },
-  ];
-
-  const reprintConditionLevelGroups = expectedReprintConditionLevelGroups.map(
-    conditionLevelGroup => ({
-      ...conditionLevelGroup,
-      items: graphic.references.reprints.filter(
-        conditionLevelGroup.filter,
-      ),
-      selectedReprintItem: null,
-    }),
-  ).filter(group => group.items.length > 0);
-
-  const [reprintGroups, setReprintGroups] = useState(reprintConditionLevelGroups);
+  const [selectedReprintItem, setSelectedReprintItem] = useState(null);
   const [selectedRelatedWorkItem, setSelectedRelatedWorkItem] = useState(null);
-
-  const updateSelectedReprintItemForReprintGroup = (selectedReprintItem, groupIdx) => {
-    const updatedReprintGroups = reprintGroups.map((reprintGroup, idx) => {
-      if (idx === groupIdx) {
-        return {
-          ...reprintGroup,
-          selectedReprintItem,
-        };
-      }
-
-      return reprintGroup;
-    });
-
-    setReprintGroups(updatedReprintGroups);
-  };
 
   return (
     <div
@@ -99,31 +38,19 @@ const PageTemplate = ({ pageContext }) => {
       <section className="body">
         <Leporello>
           <LeporelloGraphicDetailsItem graphic={graphic} />
-
-          {
-            reprintGroups.map((reprintGroup, idx) => {
-              if (reprintGroup.selectedReprintItem) {
-                return (
-                  <LeporelloGraphicRealItem
-                    key={`${reprintGroup.id}-real-item`}
-                    graphic={reprintGroup.selectedReprintItem}
-                    onClose={() => updateSelectedReprintItemForReprintGroup(null, idx)}
-                  />
-                );
-              }
-
-              return (<LeporelloGraphicReprintsItem
-                key={`${reprintGroup.id}-reprint-item`}
-                title={t(reprintGroup.translations.title)}
-                subtitle={t(reprintGroup.translations.subtitle)}
-                description={t(reprintGroup.translations.description)}
-                reprints={reprintGroup.items}
-                onItemClick={reprintItem => updateSelectedReprintItemForReprintGroup(
-                  reprintItem,
-                  idx,
-                )}
-              />);
-            })
+          {selectedReprintItem
+            ? (
+              <LeporelloGraphicRealItem
+                graphic={selectedReprintItem}
+                onClose={() => setSelectedReprintItem(null)}
+              />
+            )
+            : (
+              <LeporelloGraphicReprintsItem
+                reprints={graphic.references.reprints}
+                onItemClick={setSelectedReprintItem}
+              />
+            )
           }
 
           {graphic.references.relatedWorks.length > 0
@@ -136,8 +63,6 @@ const PageTemplate = ({ pageContext }) => {
               )
               : (
                 <LeporelloArtefactRelatedWorksItem
-                  title={t('Related works')}
-                  description={t('Related works description')}
                   relatedWorks={graphic.references.relatedWorks}
                   onItemClick={setSelectedRelatedWorkItem}
                 />
