@@ -29,6 +29,8 @@ export default ({
     dimensions,
     inventoryNumber,
     objectName,
+    inscription,
+    signature,
     catalogWorkReferences,
   } = graphic;
 
@@ -121,6 +123,19 @@ export default ({
                 term={ t('Objectname') }
                 definition={objectName}
               />
+              { signature && <DefinitionList.Entry
+                term={ t('Signature') }
+                definition={signature}
+              />
+              }
+
+              { inscription
+                && <DefinitionList.Entry
+                term={ t('Inscription') }
+                definition={inscription}
+              />
+              }
+
             </DefinitionList>
             <CopyText
               text={description}

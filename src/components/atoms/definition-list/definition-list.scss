@@ -7,17 +7,19 @@
   &-term {
     width: 25%;
     font-weight: $fw-regular;
-    border-bottom: solid $border-stroke-weight-s $darken;
-    padding: $s 0;
+    border-bottom: solid $border-stroke-weight-s $light;
+    padding: $xs 0;
+    line-height: 130%;
     &::after {
       content: ":"
     }
   }
   &-definition {
-    border-bottom: solid $border-stroke-weight-s $darken;
+    border-bottom: solid $border-stroke-weight-s $light;
     display: flex;
     margin: 0;
-    padding: $s 0;
+    padding: $xs 0;
+    line-height: 130%;
   }
   &-term+&-definition:not(:nth-child(2)),
   &-term:first-child+&-definition:nth-child(2) {
