@@ -28,6 +28,7 @@ export default ({
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: false,
+      triggersInternalTransition: true,
     };
   });
 
