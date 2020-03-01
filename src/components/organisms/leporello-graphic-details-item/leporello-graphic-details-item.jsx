@@ -28,7 +28,6 @@ export default ({
     dating,
     dimensions,
     inventoryNumber,
-    objectName,
     inscription,
     signature,
     catalogWorkReferences,
@@ -118,10 +117,6 @@ export default ({
               <DefinitionList.Entry
                 term={ t('Measurments') }
                 definition={dimensions}
-              />
-              <DefinitionList.Entry
-                term={ t('Objectname') }
-                definition={objectName}
               />
               { signature && <DefinitionList.Entry
                 term={ t('Signature') }
