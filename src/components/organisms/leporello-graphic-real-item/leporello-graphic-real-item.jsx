@@ -29,7 +29,6 @@ export default ({
     dating,
     dimensions,
     inventoryNumber,
-    objectName,
     catalogWorkReferences,
     medium,
     owner,
@@ -91,10 +90,6 @@ export default ({
 
           {/* Physikalische Eigenschaften */}
           <GroupedDefinitionList>
-            <GroupedDefinitionList.Entry
-              term={ t('Objectname') }
-              definition={objectName}
-            />
             <GroupedDefinitionList.Entry
               term={ t('Classification') }
               definition={classification}

@@ -5,7 +5,6 @@ import { render } from '@testing-library/react';
 import LeporelloGraphicDetailsItem from '.';
 
 const slimDummyGraphic = {
-  objectName: 'Holzschnitt: http://vocab.getty.edu/aat/300041405',
   inventoryNumber: 'LC_HVI-56_79',
   titles: [
     {
