@@ -24,7 +24,6 @@ export default ({
 
   const {
     images,
-    classification,
     dating,
     dimensions,
     inventoryNumber,
@@ -106,10 +105,6 @@ export default ({
                   ),
                 )
               }
-              <DefinitionList.Entry
-                term={ t('Classification') }
-                definition={classification.classification}
-              />
               <DefinitionList.Entry
                 term={ t('Dating') }
                 definition={dating.dated}
