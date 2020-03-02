@@ -35,13 +35,40 @@ export default ({
     objectName,
   } = graphic;
 
+  /* Sorting catalogWorkReferences */
+  const sortingWeight = [
+    {
+      name: 'Bartsch',
+      pos: 1,
+    },
+    {
+      name: 'Hollstein',
+      pos: 2,
+    },
+    {
+      name: 'GND',
+      pos: 3,
+    },
+  ];
+  const getPatternPos = (str) => {
+    const foundSortingWeight = sortingWeight.find(sw => str === sw.name);
+
+    return foundSortingWeight ? foundSortingWeight.pos : Number.MAX_SAFE_INTEGER;
+  };
+  const sortedCatalogWorkReferences = catalogWorkReferences.sort(
+    (a, b) => getPatternPos(b.description) - getPatternPos(a.description),
+  );
+
   /* Map catalog work references */
-  const catalogWorkReferenceItems = catalogWorkReferences.map(
+  const catalogWorkReferenceItems = sortedCatalogWorkReferences.map(
     reference => ({
       term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
       definition: reference.referenceNumber,
     }),
   );
+
+  /* Persistent link */
+  const persistenLink = window.location.toString();
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   // const [imageColumnClassName, setImageColumnClassName] = useState('');
@@ -94,21 +121,6 @@ export default ({
           <div className="leporello-graphic-details-item-info-further">
             <DefinitionList>
               <DefinitionList.Entry
-                term="CDA ID"
-                definition={inventoryNumber}
-              />
-              {
-                catalogWorkReferenceItems.map(
-                  item => (
-                    <DefinitionList.Entry
-                      key={item.term}
-                      term={item.term}
-                      definition={item.definition}
-                    />
-                  ),
-                )
-              }
-              <DefinitionList.Entry
                 term={ t('Classification') }
                 definition={ `${classification.classification}, ${objectName}` }
               />
@@ -131,6 +143,26 @@ export default ({
                 term={ t('Inscription') }
                 definition={inscription}
               />
+              }
+
+              <DefinitionList.Entry
+                term="CDA ID"
+                definition={inventoryNumber}
+              />
+              <DefinitionList.Entry
+                term={ t('Persistent Link') }
+                definition={persistenLink}
+              />
+              {
+                catalogWorkReferenceItems.map(
+                  item => (
+                    <DefinitionList.Entry
+                      key={item.term}
+                      term={item.term}
+                      definition={item.definition}
+                    />
+                  ),
+                )
               }
 
             </DefinitionList>
