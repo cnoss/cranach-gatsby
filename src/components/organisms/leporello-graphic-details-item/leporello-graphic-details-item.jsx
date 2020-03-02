@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
-// import ZoomImage from '~/components/atoms/zoom-image';
 import DefinitionList from '~/components/atoms/definition-list';
+import LiteratureTable from '~/components/molecules/literature-table';
 import CopyText from '~/components/atoms/copy-text';
 import Image from '~/components/atoms/image';
 import './leporello-graphic-details-item.scss';
@@ -30,6 +30,7 @@ export default ({
     inscription,
     signature,
     catalogWorkReferences,
+    publications,
   } = graphic;
 
   /* Map catalog work references */
@@ -127,9 +128,17 @@ export default ({
               }
 
             </DefinitionList>
+
             <CopyText
               text={description}
             />
+
+            <DefinitionList>
+              <DefinitionList.Entry
+                term={ t('Literature') }
+                definition={ <LiteratureTable data={ publications } /> }
+              />
+            </DefinitionList>
           </div>
         </div>
       </div>
