@@ -31,6 +31,8 @@ export default ({
     signature,
     catalogWorkReferences,
     publications,
+    classification,
+    objectName,
   } = graphic;
 
   /* Map catalog work references */
@@ -106,6 +108,10 @@ export default ({
                   ),
                 )
               }
+              <DefinitionList.Entry
+                term={ t('Classification') }
+                definition={ `${classification.classification}, ${objectName}` }
+              />
               <DefinitionList.Entry
                 term={ t('Dating') }
                 definition={dating.dated}
