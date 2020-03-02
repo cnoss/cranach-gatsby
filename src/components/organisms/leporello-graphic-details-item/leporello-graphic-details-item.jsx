@@ -11,6 +11,7 @@ import './leporello-graphic-details-item.scss';
 export default ({
   location,
   graphic,
+  visibleCloser = true,
   initiallyOpen = false,
   className = '',
 }) => {
@@ -100,7 +101,7 @@ export default ({
       data-component="organisms/leporello-graphic-details-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
-      visibleToggler={true}
+      visibleToggler={visibleCloser}
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <div className={'leporello-graphic-details-item-image -is-non-fading'}>

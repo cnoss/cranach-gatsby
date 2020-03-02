@@ -28,6 +28,7 @@ const PageTemplate = ({ pageContext }) => {
         <Leporello>
           <LeporelloGraphicRealItem
             graphic={graphic}
+            visibleCloser={false}
           />
         </Leporello>
       </section>

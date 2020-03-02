@@ -12,6 +12,7 @@ import './leporello-graphic-real-item.scss';
 
 export default ({
   graphic,
+  visibleCloser = true,
   onClose = () => {},
 }) => {
   const { t } = useTranslation('LeporelloGraphicRealItem');
@@ -56,7 +57,7 @@ export default ({
     <LeporelloGraphicItem
       className="leporello-graphic-real-item-wrap"
       data-component="organisms/leporello-graphic-real-item"
-      visibleCloser={true}
+      visibleCloser={visibleCloser}
       onClose={onClose}
     >
       <div className="leporello-graphic-real-item">
