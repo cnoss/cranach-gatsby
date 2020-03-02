@@ -8,7 +8,7 @@ export default ({ columns, data = [] }) => {
       const cellClassName = `cell ${column.centered ? '-center' : ''}`;
       const columnEl = (row[column.field])
         ? (<td className={cellClassName} key={ column.field }>{ row[column.field] }</td>)
-        : (<td className={cellClassName}></td>);
+        : (<td className={cellClassName} key={ column.field }></td>);
 
       acc.push(columnEl);
 
