@@ -1,10 +1,9 @@
 {
   "{{catalogWorkReferenceName}}-No": "{{catalogWorkReferenceName}}-Nr.",
-  "Classification": "Klassifikation",
+  "Classification": "Druckzustand, Version",
   "Dating": "Datierung",
   "Measurments": "Maße",
-  "Objectname": "Objektname",
-  "Medium": "Bildträger",
+  "Medium": "Material / Technik",
   "Owner": "Eigentümer",
   "Repository": "Besitzer",
   "Location": "Standort",
@@ -12,5 +11,6 @@
   "Inscriptions": "Inschriften",
   "Stamps, Seals, Labels": "Stempel, Siegel, Beschriftungen",
   "Short description": "Kurzbeschreibung",
-  "Provenance": "Provenienz"
+  "Provenance": "Provenienz",
+  "Literature": "Quellen / Publikationen"
 }

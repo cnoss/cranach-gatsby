@@ -1,9 +1,10 @@
 {
   "{{catalogWorkReferenceName}}-No": "{{catalogWorkReferenceName}}-No.",
+  "Persistent Link": "Persistent Link",
   "Classification": "Classification",
   "Dating": "Dating",
   "Measurments": "Measurments",
-  "Objectname": "Objectname",
   "Signature": "Signature/ Dating",
-  "Inscription": "Inscription"
+  "Inscription": "Inscription",
+  "Literature": "Sources / Publications"
 }

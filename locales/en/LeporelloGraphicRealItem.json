@@ -1,9 +1,8 @@
 {
   "{{catalogWorkReferenceName}}-No": "{{catalogWorkReferenceName}}-No.",
-  "Classification": "Classification",
+  "Classification": "State, Version",
   "Dating": "Dating",
   "Measurments": "Measurments",
-  "Objectname": "Objectname",
   "Medium": "Medium",
   "Owner": "Owner",
   "Repository": "Repository",
@@ -12,5 +11,6 @@
   "Inscriptions": "Inscriptions",
   "Stamps, Seals, Labels": "Stamps, Seals, Labels",
   "Short description": "Short description",
-  "Provenance": "Provenance"
+  "Provenance": "Provenance",
+  "Literature": "Sources / Publications"
 }
