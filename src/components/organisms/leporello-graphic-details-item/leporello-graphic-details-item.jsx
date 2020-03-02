@@ -9,6 +9,7 @@ import Image from '~/components/atoms/image';
 import './leporello-graphic-details-item.scss';
 
 export default ({
+  location,
   graphic,
   initiallyOpen = false,
   className = '',
@@ -66,9 +67,6 @@ export default ({
       definition: reference.referenceNumber,
     }),
   );
-
-  /* Persistent link */
-  const persistenLink = window.location.toString();
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   // const [imageColumnClassName, setImageColumnClassName] = useState('');
@@ -151,7 +149,7 @@ export default ({
               />
               <DefinitionList.Entry
                 term={ t('Persistent Link') }
-                definition={persistenLink}
+                definition={location}
               />
               {
                 catalogWorkReferenceItems.map(

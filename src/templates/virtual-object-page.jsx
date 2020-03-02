@@ -13,7 +13,7 @@ import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-r
 import i18n from '~/i18n';
 
 
-const PageTemplate = ({ pageContext }) => {
+const PageTemplate = ({ pageContext, location }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
@@ -36,7 +36,7 @@ const PageTemplate = ({ pageContext }) => {
 
       <section className="body">
         <Leporello>
-          <LeporelloGraphicDetailsItem graphic={graphic} />
+          <LeporelloGraphicDetailsItem graphic={graphic} location={location.href} />
           {selectedReprintItem
             ? (
               <LeporelloGraphicRealItem
