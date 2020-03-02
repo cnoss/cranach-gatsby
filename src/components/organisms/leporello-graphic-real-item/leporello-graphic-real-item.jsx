@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
+import DefinitionList from '~/components/atoms/definition-list';
+import LiteratureTable from '~/components/molecules/literature-table';
 import CopyText from '~/components/atoms/copy-text';
 
 import './leporello-graphic-real-item.scss';
@@ -38,6 +40,7 @@ export default ({
     markings,
     description,
     provenance,
+    publications,
   } = graphic;
 
   /* Map catalog work references */
@@ -147,6 +150,13 @@ export default ({
               </GroupedDefinitionList>
             )
           }
+
+          <DefinitionList>
+            <DefinitionList.Entry
+              term={ t('Literature') }
+              definition={ <LiteratureTable data={ publications } /> }
+            />
+          </DefinitionList>
         </div>
       </div>
     </LeporelloGraphicItem>
