@@ -152,12 +152,14 @@ export default ({
             )
           }
 
-          <DefinitionList>
+          {publications.length > 0
+            && <DefinitionList>
             <DefinitionList.Entry
               term={ t('Literature') }
               definition={ <LiteratureTable data={ publications } /> }
             />
           </DefinitionList>
+        }
         </div>
       </div>
     </LeporelloGraphicItem>

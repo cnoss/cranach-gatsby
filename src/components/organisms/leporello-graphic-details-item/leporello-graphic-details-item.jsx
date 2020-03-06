@@ -170,12 +170,14 @@ export default ({
               text={description}
             />
 
-            <DefinitionList>
+            {publications.length > 0
+              && <DefinitionList>
               <DefinitionList.Entry
                 term={ t('Literature') }
                 definition={ <LiteratureTable data={ publications } /> }
               />
             </DefinitionList>
+            }
           </div>
         </div>
       </div>
