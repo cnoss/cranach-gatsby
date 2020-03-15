@@ -37,3 +37,7 @@ public/
 
 # Storybook
 storybook-static/
+
+# IntelliJ
+.idea
+*.iml
