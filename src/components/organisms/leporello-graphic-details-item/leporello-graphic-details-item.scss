@@ -11,8 +11,13 @@
       position: relative;
       padding: $m;
       background-color: $lighter;
-      &-further {
-        position: absolute;
+
+      .inventor {
+        margin-bottom: 0.5rem;
+      }
+
+      .involved-persons-toggler {
+        margin-left: 0.5rem;
       }
     }
     &-image {
@@ -27,6 +32,10 @@
     }
     .-is-non-fading {
       z-index: $level-content;
+    }
+
+    .further-infos {
+      position: absolute;
     }
     /* Responsive Medium
   -------------------------------------------------------------------------- */

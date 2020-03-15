@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
+import Toggler from '~/components/atoms/toggler';
 import CopyText from '~/components/atoms/copy-text';
 import Image from '~/components/atoms/image';
 import './leporello-graphic-details-item.scss';
@@ -28,6 +29,7 @@ export default ({
     images,
     dating,
     dimensions,
+    involvedPersons,
     inventoryNumber,
     inscription,
     signature,
@@ -70,7 +72,7 @@ export default ({
   );
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
-  // const [imageColumnClassName, setImageColumnClassName] = useState('');
+  const [involvedPersonsAreVisible, setInvolvedPersonsAreVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
 
   /* React on isOpen change */
@@ -90,11 +92,6 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  /* React only on open / close toggle */
-  /* useEffect(() => {
-    setImageColumnClassName(isOpen ? 'is-half' : 'is-one-quarter-desktop');
-  }, [isOpen]); */
-
   return (
     <LeporelloGraphicItem
       className={`leporello-graphic-details-item-wrap ${additionalClassNames.join(' ')}`}
@@ -109,16 +106,31 @@ export default ({
             src={images.sizes.l.src}
             alt={title}
             additionalClass=""
-
-          ></Image>
+          />
         </div>
 
         <div className="leporello-graphic-details-item-info">
-          <h1 className="title">{title}</h1>
-          <h2 className="subtitle">{subtitle}</h2>
+          <h1 className="title">{ title }</h1>
+          <h2 className="subtitle inventor">
+            { subtitle }
 
-          <div className="leporello-graphic-details-item-info-further">
+            <Toggler
+              className="involved-persons-toggler"
+              isInitiallyToggled={ involvedPersonsAreVisible }
+              onToggle={ setInvolvedPersonsAreVisible }
+              size="small"
+            />
+          </h2>
+
+          <div className="further-infos">
             <DefinitionList>
+              { involvedPersonsAreVisible && involvedPersons.map(involvedPerson => (
+                <DefinitionList.Entry
+                  term={ involvedPerson.role }
+                  definition={ `${involvedPerson.name} ${involvedPerson.remarks}` }
+                />
+              )) }
+
               <DefinitionList.Entry
                 term={ t('Classification') }
                 definition={ `${classification.classification}, ${objectName}` }
