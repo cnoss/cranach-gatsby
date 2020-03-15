@@ -27,7 +27,7 @@ export default ({ columns, data = [] }) => {
         && <thead className="head">
           <tr className="row">
             { columns.map(column => (
-              <th className="cell" key={ column.field }>{ column.title }</th>
+              <th className="cell" key={ column.field }>{ column.title || '' }</th>
             ))
             }
           </tr>
