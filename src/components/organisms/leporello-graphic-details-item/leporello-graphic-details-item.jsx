@@ -137,7 +137,7 @@ export default ({
               />
               <DefinitionList.Entry
                 term={ t('Dating') }
-                definition={dating.dated}
+                definition={ `${dating.dated} ${dating.remarks}` }
               />
               <DefinitionList.Entry
                 term={ t('Measurments') }
