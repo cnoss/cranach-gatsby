@@ -6,12 +6,12 @@ body {
   font-family: $font-sans-serif;
   font-size: $bfs;
   font-weight: $fw-light;
-  color: $darkest;
-  background-color: $lightest;
+  color: $lightest;
+  background-color: $darkest;
 }
 
 a {
-  color: $darkest;
+  color: $lightest;
   text-decoration: none;
 }
 
