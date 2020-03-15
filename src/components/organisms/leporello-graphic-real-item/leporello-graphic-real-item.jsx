@@ -17,22 +17,15 @@ export default ({
 }) => {
   const { t } = useTranslation('LeporelloGraphicRealItem');
 
-  /* Prepare main and important object infos for usage */
-  // const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
-
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const location = (graphic.locations[0] && graphic.locations[0].term) || '';
-  // const description = graphic.description || ' ';
   const classification = `${graphic.classification.classification}; ${graphic.classification.condition}`;
-
-  // const signature = (graphic.signature && graphic.signature) || '';
 
   const {
     images,
     dating,
     dimensions,
     inventoryNumber,
-    catalogWorkReferences,
     medium,
     owner,
     repository,
@@ -43,15 +36,6 @@ export default ({
     provenance,
     publications,
   } = graphic;
-
-  /* Map catalog work references */
-  const catalogWorkReferenceItems = catalogWorkReferences.map(
-    reference => ({
-      term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
-      definition: reference.referenceNumber,
-    }),
-  );
-
 
   return (
     <LeporelloGraphicItem
@@ -75,17 +59,6 @@ export default ({
               term="CDA ID"
               definition={inventoryNumber}
             />
-            {
-              catalogWorkReferenceItems.map(
-                item => (
-                  <GroupedDefinitionList.Entry
-                    key={item.term}
-                    term={item.term}
-                    definition={item.definition}
-                  />
-                ),
-              )
-            }
             <GroupedDefinitionList.Entry
               term={ t('Dating') }
               definition={dating.dated}
