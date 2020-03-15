@@ -6,9 +6,15 @@ export default ({ columns, data = [] }) => {
   const rowEls = data.map((row, idx) => {
     const tdEls = columns.reduce((acc, column) => {
       const cellClassName = `cell ${column.centered ? '-center' : ''}`;
-      const columnEl = (row[column.field])
-        ? (<td className={cellClassName} key={ column.field }>{ row[column.field] }</td>)
-        : (<td className={cellClassName} key={ column.field }></td>);
+      const columnEl = (
+        <td
+          className={cellClassName}
+          data-field={ column.field }
+          key={ column.field }
+        >
+          { row[column.field] || '' }
+        </td>
+      );
 
       acc.push(columnEl);
 
@@ -27,7 +33,13 @@ export default ({ columns, data = [] }) => {
         && <thead className="head">
           <tr className="row">
             { columns.map(column => (
-              <th className="cell" key={ column.field }>{ column.title || '' }</th>
+              <th
+                className='cell'
+                data-field={ column.field }
+                key={ column.field }
+              >
+                { column.title || '' }
+              </th>
             ))
             }
           </tr>
