@@ -23,8 +23,8 @@ const PageTemplate = ({ pageContext, location }) => {
 
   return (
     <div
-      className="page"
-      data-template="page"
+      className="template"
+      data-template="virtual-object-page"
     >
       <Helmet>
         <title>Grafiken | {title} | Virtual</title>

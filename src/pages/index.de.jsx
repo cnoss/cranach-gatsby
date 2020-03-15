@@ -22,8 +22,8 @@ export default ({ data }) => {
 
   return (
     <div
-      className="index"
-      data-page="index"
+      className="page"
+      data-page="index.de"
     >
       <Helmet>
         <title>Cranach Digital Archive | Home</title>

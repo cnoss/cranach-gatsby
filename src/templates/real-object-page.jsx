@@ -17,8 +17,8 @@ const PageTemplate = ({ pageContext }) => {
 
   return (
     <div
-      className="page"
-      data-template="page"
+      className="template"
+      data-template="real-object-page"
     >
       <Helmet>
         <title>Grafiken | {title} | Real</title>

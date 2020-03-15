@@ -11,10 +11,17 @@ body {
 }
 
 a {
-  color: $lightest;
+  color: $darkest;
   text-decoration: none;
 }
 
+/* Templates
+-----------------------------------------------------------------------------*/
+
+.template {
+  color: $darkest;
+  background-color: $darkest;
+}
 
 /* Title & Subtitle
 -----------------------------------------------------------------------------*/

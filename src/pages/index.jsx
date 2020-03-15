@@ -21,7 +21,7 @@ export default ({ data }) => {
 
   return (
     <div
-      className="index"
+      className="page"
       data-page="index"
     >
       <Helmet>
