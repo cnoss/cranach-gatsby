@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 
 import './toggler.scss';
 
-export default ({ isInitiallyToggled, onToggle }) => {
+export default ({
+  isInitiallyToggled,
+  onToggle,
+  className = '',
+  size = 'medium',
+}) => {
   const [toggled, setToggled] = useState(!!isInitiallyToggled);
 
   const toggle = () => {
@@ -13,10 +18,13 @@ export default ({ isInitiallyToggled, onToggle }) => {
     }
   };
 
-  return <div
-      className={ `toggler ${toggled ? '-is-toggled' : ''}` }
+  return <span
+      className={ `toggler -${size} ${className} ${toggled ? '-is-toggled' : ''}` }
       onClick={ toggle }
       data-component="atoms/toggler"
     >
-    </div>;
+      <span className="chevron-container">
+        <span className="chevron" />
+      </span>
+    </span>;
 };
