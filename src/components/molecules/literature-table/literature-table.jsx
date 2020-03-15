@@ -8,16 +8,17 @@ export default ({ data }) => {
   const { t } = useTranslation('LiteratureTable');
 
   return (
-  <div
-    className="literature-table"
-    data-component="molecules/literature-table"
-  >
-    <DynamicTable
-      data={ data }
-      columns={ [
-        { field: 'title', title: '' },
-        { field: 'pageNumber', title: t('reference on page') },
-      ] }
-    />
-  </div>);
+    <div
+      className="literature-table"
+      data-component="molecules/literature-table"
+    >
+      <DynamicTable
+        data={ data }
+        columns={ [
+          { field: 'title', title: '' },
+          { field: 'pageNumber', title: t('reference on page') },
+        ] }
+      />
+    </div>
+  );
 };
