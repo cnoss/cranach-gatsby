@@ -9,19 +9,26 @@ export default ({ items = [] }) => (
     data-component="organisms/artefact-overview"
   >
     {
-      items.map(item => (
-        <div
-          key={ item.inventoryNumber }
-          className="overview-item"
-        >
-          <ArtefactCard
-            title={ (item.titles[0] && item.titles[0].title) || '' }
-            subtitle={ item.dating.dated || '' }
-            to={ `/${item.langCode}/${item.slug}` }
-            imgSrc={ (item && item.images && item.images.sizes.s && item.images.sizes.s.src) }
-          />
-        </div>
-      ))
+      items.map((item) => {
+        const title = (item.titles[0] && item.titles[0].title) || '';
+        const subtitle = item.dating.dated || '';
+        const to = `/${item.langCode}/${item.slug}`;
+        const imgSrc = (item && item.images && item.images.sizes.s && item.images.sizes.s.src);
+
+        return (
+          <div
+            key={ item.inventoryNumber }
+            className="overview-item"
+          >
+            <ArtefactCard
+              title={ title }
+              subtitle={ subtitle }
+              to={ to }
+              imgSrc={ imgSrc }
+            />
+          </div>
+        );
+      })
     }
   </div>
 );
