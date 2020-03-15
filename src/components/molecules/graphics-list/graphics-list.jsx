@@ -40,7 +40,7 @@ export default ({
                 classNamePrefix={'graphics-list-item'}
                 caption={item.title}
                 additionalClass="-has-box"
-              ></Image>
+              />
             </Link>
           </li>,
         )

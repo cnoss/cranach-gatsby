@@ -26,7 +26,7 @@ export default ({
           src={ imgSrc }
           alt={imgAlt}
           additionalClass="-has-box"
-        ></Image>
+        />
       </Link>
     </div>
     { title

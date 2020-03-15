@@ -61,7 +61,7 @@ export default ({
             <Link className="logo" to="/"><Logo /></Link>
 
             <ul className="menu">
-              <li><i className="material-icons"></i></li>
+              <li><i className="material-icons" /></li>
               {
                 navStructure.map(item => (
                   <li className="menu-item"
