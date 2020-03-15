@@ -8,15 +8,16 @@
   .card-image {
     padding: 1px;
   }
-  .card-text {
+  .card-content {
     flex-grow: 1;
     padding: $m;
     padding-bottom: $l;
     color: $lighter;
     background-color: $dark;
     .card-title,
-    .card-subtitle {
-      font-weight: 300;
+    .card-subtitle,
+    .card-text {
+      font-weight: 200;
       line-height: 130%;
     }
   }

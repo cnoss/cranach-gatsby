@@ -8,6 +8,7 @@ import './artefact-card.scss';
 export default ({
   title = '',
   subtitle = '',
+  text = '',
   to = '',
   imgSrc = '',
   imgAlt = '',
@@ -30,10 +31,10 @@ export default ({
       </Link>
     </div>
     { title
-      && (<div className="card-text">
-      <h2 className="card-title">{ title }</h2>
-      <h3 className="card-subtitle">{ subtitle }</h3>
-
+      && (<div className="card-content">
+        <h2 className="card-title">{ title }</h2>
+        <h3 className="card-subtitle">{ subtitle }</h3>
+        <p className="card-text">{ text }</p>
       </div>)
     }
   </div>

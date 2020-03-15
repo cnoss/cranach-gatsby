@@ -10,8 +10,11 @@ export default ({ items = [] }) => (
   >
     {
       items.map((item) => {
-        const title = (item.titles[0] && item.titles[0].title) || '';
-        const subtitle = item.dating.dated || '';
+        const inventor = item.involvedPersons.find(person => person.role === 'Inventor');
+
+        const title = inventor ? inventor.name : ' ';
+        const subtitle = (item.titles[0] && item.titles[0].title) || '';
+        const text = item.dating.dated || '';
         const to = `/${item.langCode}/${item.slug}`;
         const imgSrc = (item && item.images && item.images.sizes.s && item.images.sizes.s.src);
 
@@ -23,6 +26,7 @@ export default ({ items = [] }) => (
             <ArtefactCard
               title={ title }
               subtitle={ subtitle }
+              text={ text }
               to={ to }
               imgSrc={ imgSrc }
             />

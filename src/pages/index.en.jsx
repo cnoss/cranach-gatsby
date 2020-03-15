@@ -85,13 +85,13 @@ export const query = graphql`
               }
             }
             images {
-                infos {
-                  maxDimensions {
-                    width
-                    height
-                  }
+              infos {
+                maxDimensions {
+                  width
+                  height
                 }
-                sizes {
+              }
+              sizes {
                 xs {
                   dimensions {
                     width
@@ -128,6 +128,10 @@ export const query = graphql`
                   src
                 }
               }
+            }
+            involvedPersons {
+              name
+              role
             }
           }
         }
