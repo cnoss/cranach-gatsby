@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
 import { withPrefix } from 'gatsby';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import Logo from '~/components/atoms/logo';
 import Link from '~/components/atoms/link';
 
+import translations from './translations.json';
 import './navigation.scss';
 
 export default ({
   goBackTo,
 }) => {
-  const { t } = useTranslation('Navigation');
+  const { t } = useTranslation('Navigation', translations);
 
   /* TODO: Pass through as parameter (?) */
   const baseNavStructure = [

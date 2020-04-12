@@ -1,14 +1,16 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import DynamicTable from '~/components/atoms/dynamic-table';
+
+import translations from './translations.json';
 import './literature-table.scss';
 
 export default ({
   data,
   className = '',
 }) => {
-  const { t } = useTranslation('LiteratureTable');
+  const { t } = useTranslation('LiteratureTable', translations);
 
   return (
     <div

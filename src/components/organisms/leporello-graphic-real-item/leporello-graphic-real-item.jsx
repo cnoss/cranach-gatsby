@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
@@ -8,6 +8,7 @@ import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
 import CopyText from '~/components/atoms/copy-text';
 
+import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
 
 export default ({
@@ -15,7 +16,7 @@ export default ({
   visibleCloser = true,
   onClose = () => {},
 }) => {
-  const { t } = useTranslation('LeporelloGraphicRealItem');
+  const { t } = useTranslation('LeporelloGraphicRealItem', translations);
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const location = (graphic.locations[0] && graphic.locations[0].term) || '';

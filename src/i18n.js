@@ -1,24 +1,18 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import i18nextXHRBackend from 'i18next-xhr-backend';
-
-import { withPrefix } from 'gatsby';
+import {
+  initReactI18next,
+  useTranslation as i18nextUseTranslation,
+} from 'react-i18next';
 
 export default (langCode) => {
   if (i18n.isInitialized) {
-    return;
+    return Promise.resolve();
   }
 
-  i18n
+  return i18n
     .use(initReactI18next)
-    .use(i18nextXHRBackend)
     .init({
-      backend: {
-        loadPath: withPrefix('/locales/{{lng}}/{{ns}}.json'),
-      },
-
       lng: langCode,
-      fallbackLng: 'en',
 
       debug: false,
 
@@ -30,4 +24,12 @@ export default (langCode) => {
         useSuspense: false,
       },
     });
+};
+
+export const useTranslation = (namespace, resourceBundle = {}) => {
+  Object.entries(resourceBundle).forEach((entry) => {
+    i18n.addResourceBundle(entry[0], namespace, entry[1]);
+  });
+
+  return i18nextUseTranslation(namespace);
 };

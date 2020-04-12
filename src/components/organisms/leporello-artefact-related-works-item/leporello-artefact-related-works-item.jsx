@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 
+import translations from './translations.json';
 import './leporello-artefact-related-works-item.scss';
 
 export default ({
@@ -12,7 +13,7 @@ export default ({
   className = '',
   limitItemsTo = 5,
 }) => {
-  const { t } = useTranslation('LeporelloArtefactRelatedWorksItem');
+  const { t } = useTranslation('LeporelloArtefactRelatedWorksItem', translations);
 
   /* Number of initial visible related works items */
   const relatedWorkItemsLimit = limitItemsTo;

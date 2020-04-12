@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import DefinitionList from '~/components/atoms/definition-list';
@@ -8,6 +8,8 @@ import LiteratureTable from '~/components/molecules/literature-table';
 import Toggler from '~/components/atoms/toggler';
 import CopyText from '~/components/atoms/copy-text';
 import Image from '~/components/atoms/image';
+
+import translations from './translations.json';
 import './leporello-graphic-details-item.scss';
 
 export default ({
@@ -17,7 +19,7 @@ export default ({
   initiallyOpen = false,
   className = '',
 }) => {
-  const { t } = useTranslation('LeporelloGraphicDetailsItem');
+  const { t } = useTranslation('LeporelloGraphicDetailsItem', translations);
 
   /* Prepare main and important object infos for usage */
   const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
