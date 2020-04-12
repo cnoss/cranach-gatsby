@@ -2,7 +2,11 @@ import React from 'react';
 
 import './dynamic-table.scss';
 
-export default ({ columns, data = [] }) => {
+export default ({
+  columns,
+  data = [],
+  showHead = true,
+}) => {
   const rowEls = data.map((row, idx) => {
     const tdEls = columns.reduce((acc, column) => {
       const cellClassName = `cell ${column.centered ? '-center' : ''}`;
@@ -29,7 +33,7 @@ export default ({ columns, data = [] }) => {
     data-component="atoms/dynamic-table"
   >
     <table className="table">
-      { columns
+      { showHead && columns
         && <thead className="head">
           <tr className="row">
             { columns.map(column => (
