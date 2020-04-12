@@ -1,4 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, {
+  useState,
+  useEffect,
+  useRef,
+} from 'react';
 
 import './zoom-image.scss';
 
@@ -49,18 +53,27 @@ export default ({
   caption,
 }) => {
   const figureElRef = useRef(null);
+  const imageElRef = useRef(null);
+  const viewerRef = useRef(null);
   const [activeZoom, setActiveZoom] = useState(false);
 
-  const baseImageLoaded = () => {
+  useEffect(() => {
+    if (!figureElRef.current || !imageElRef.current) {
+      return;
+    }
     /* OpenSeaDragon references 'document',
-      so we have to skip the import to prevent an error
-      while building the site */
+    so we have to skip the import to prevent an error
+    while building the site */
     if (!window || !window.document) {
       return;
     }
 
+    if (viewerRef.current) {
+      viewerRef.current.destroy();
+    }
+
     import('openseadragon').then((OpenSeaDragon) => {
-      const viewer = new OpenSeaDragon.Viewer({
+      viewerRef.current = new OpenSeaDragon.Viewer({
         element: figureElRef.current,
         tileSources: {
           type: 'image',
@@ -70,11 +83,11 @@ export default ({
         navImages,
       });
 
-      viewer.addHandler('open', () => {
+      viewerRef.current.addOnceHandler('open', () => {
         setActiveZoom(true);
       });
     });
-  };
+  }, [src, imageElRef, figureElRef]);
 
   return (
     <figure
@@ -83,11 +96,11 @@ export default ({
       data-component="atoms/zoom-image"
     >
       <img
+        ref={imageElRef}
         className="preload-image"
         src={baseSrc}
         alt={alt}
-        onLoad={baseImageLoaded}
-      ></img>
+      />
 
       {caption && <figcaption
         className="zoom-image-caption"
