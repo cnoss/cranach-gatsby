@@ -128,6 +128,7 @@ export default ({
           }
 
           <div className="further-infos">
+
             <DefinitionList>
               <DefinitionList.Entry
                 term={ t('Classification') }
@@ -176,10 +177,6 @@ export default ({
 
             </DefinitionList>
 
-            <CopyText
-              text={description}
-            />
-
             {publications.length > 0
               && <DefinitionList>
               <DefinitionList.Entry
@@ -188,6 +185,10 @@ export default ({
               />
             </DefinitionList>
             }
+
+            <CopyText
+              text={description}
+            />
           </div>
         </div>
       </div>
