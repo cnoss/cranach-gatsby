@@ -1,4 +1,4 @@
-// src/templates/page.js
+/* src/templates/virtual-object-page.js */
 
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
