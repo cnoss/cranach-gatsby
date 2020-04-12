@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import DefinitionList from '~/components/atoms/definition-list';
+import InvolvedPersonsTable from '~/components/molecules/involved-persons-table';
 import LiteratureTable from '~/components/molecules/literature-table';
 import Toggler from '~/components/atoms/toggler';
 import CopyText from '~/components/atoms/copy-text';
@@ -122,15 +123,12 @@ export default ({
             />
           </h2>
 
+          {
+            involvedPersonsAreVisible && <InvolvedPersonsTable data={ involvedPersons } />
+          }
+
           <div className="further-infos">
             <DefinitionList>
-              { involvedPersonsAreVisible && involvedPersons.map(involvedPerson => (
-                <DefinitionList.Entry
-                  term={ involvedPerson.role }
-                  definition={ `${involvedPerson.name} ${involvedPerson.remarks}` }
-                />
-              )) }
-
               <DefinitionList.Entry
                 term={ t('Classification') }
                 definition={ `${classification.classification}, ${objectName}` }
