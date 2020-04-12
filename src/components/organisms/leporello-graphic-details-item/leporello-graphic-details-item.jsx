@@ -123,6 +123,7 @@ export default ({
           </h2>
 
           <div className="further-infos">
+
             <DefinitionList>
               { involvedPersonsAreVisible && involvedPersons.map(involvedPerson => (
                 <DefinitionList.Entry
@@ -178,10 +179,6 @@ export default ({
 
             </DefinitionList>
 
-            <CopyText
-              text={description}
-            />
-
             {publications.length > 0
               && <DefinitionList>
               <DefinitionList.Entry
@@ -190,6 +187,10 @@ export default ({
               />
             </DefinitionList>
             }
+
+            <CopyText
+              text={description}
+            />
           </div>
         </div>
       </div>

@@ -7,12 +7,19 @@
   &-term {
     width: 200px;
     font-weight: $fw-regular;
-    border-bottom: solid $border-stroke-weight-s $light;
+    /*border-bottom: solid $border-stroke-weight-s $light;*/
     padding: $xs 0;
     line-height: 130%;
     &::after {
       content: ":"
     }
+    &:last-of-type{
+      border-bottom: none !important;
+    }
+  }
+
+  .definition-list-term:last-child{
+    border-bottom: none;
   }
   &-definition {
     border-bottom: solid $border-stroke-weight-s $light;
@@ -20,6 +27,12 @@
     margin: 0;
     padding: $xs 0;
     line-height: 130%;
+    &:last-child{
+      border-bottom: none;
+    }
+    & > .literature-table{
+      margin-top: -$xs;
+    }
   }
   &-term+&-definition:not(:nth-child(2)),
   &-term:first-child+&-definition:nth-child(2) {
