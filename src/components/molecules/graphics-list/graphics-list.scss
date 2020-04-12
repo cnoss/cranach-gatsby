@@ -1,5 +1,8 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
+
+$maxItemsPerRow: 5;
+
 .graphics-list {
   &-item {
     display: block;
@@ -34,8 +37,5 @@
     }
   }
 
-  @include grid-even-columns($vp-xlarge, 3);
-  @include grid-even-columns($vp-xxlarge, 4);
-  @include grid-even-columns($vp-xxxlarge, 5);
-  @include grid-even-columns($vp-xxxxlarge, 6);
+  @include grid-even-columns($vp-xlarge, $maxItemsPerRow);
 }
