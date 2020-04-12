@@ -11,7 +11,7 @@ export default ({
   reprints,
   className = '',
   onItemClick = () => {},
-  limitItemsTo = 100,
+  limitItemsTo = 5,
 }) => {
   const { t } = useTranslation('LeporelloGraphicReprintsItem');
 

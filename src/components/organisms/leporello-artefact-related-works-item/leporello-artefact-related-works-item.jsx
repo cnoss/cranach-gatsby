@@ -10,7 +10,7 @@ import './leporello-artefact-related-works-item.scss';
 export default ({
   relatedWorks,
   className = '',
-  limitItemsTo = 100,
+  limitItemsTo = 5,
 }) => {
   const { t } = useTranslation('LeporelloArtefactRelatedWorksItem');
 
