@@ -7,10 +7,11 @@
     padding: $m;
 
     max-width: $vp-xlarge;
-    &-image {
-      margin: -$m 0 -$m $m;
+    &__image {
+      margin: -$m;
+      margin-bottom: $m;
     }
-    &-further-info {
+    &__further-info {
       max-height: auto;
       transition: all $tr-slow;
     }
@@ -23,7 +24,7 @@
     @media only screen and (min-width: $vp-medium) {
       padding-top: $l;
       padding-bottom: $xl;
-      &-info {
+      &__info {
         padding-right: $l;
       }
     }

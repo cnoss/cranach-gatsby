@@ -2,10 +2,12 @@
 .image {
   display: block;
   position: relative;
-  img {
+  width: 100%;
+  height: 100%;
+  /*img {
     height: 100%;
     width: 100%;
-  }
+  }*/
   &.-has-box {
     padding-top: 100%;
     background-color: $darken;
@@ -19,6 +21,8 @@
       top: 0;
       object-fit: contain;
       display: block;
+      height: 100%;
+      width: 100%;
     }
   }
   .image-caption {

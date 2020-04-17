@@ -15,7 +15,7 @@
 
     & > .body {
       & > .row {
-        border-top: solid $border-stroke-weight-s $light;
+        border-top: solid $border-stroke-weight-s $darken;
         & > .cell {
           &.-center {
             text-align: center;

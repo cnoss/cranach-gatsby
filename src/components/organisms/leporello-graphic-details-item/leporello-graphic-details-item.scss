@@ -1,56 +1,79 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
+
 .leporello-graphic-details-item-wrap {
   background-color: $lighter;
+
   .leporello-graphic-details-item {
     max-width: $vp-xlarge;
     padding: $m;
     padding-bottom: $l;
     overflow: hidden;
+
     &-info {
       position: relative;
-      padding: $m;
+      //padding: $m;
       background-color: $lighter;
 
       .involved-persons-toggler {
         margin-left: 0.5rem;
       }
     }
+
     &-image {
-      justify-self: right;
-      height: 50vh;
+      //justify-self: middle;
+      //width: 50%;
+      width: 100vw;
+      //height: 100vw;
+      overflow: hidden;
+
       margin: -$m 0 -$m $m;
+      //margin-bottom: $m;
+
+      & img{
+        width: 100vw;
+        height: 50vw;
+        object-position: center center;
+        object-fit: cover;
+      }
       .zoom-image {
         padding-top: inherit;
         width: 100%;
         height: 100%;
       }
     }
+
     .-is-non-fading {
       z-index: $level-content;
     }
 
     .further-infos {
-      position: absolute;
+      //position: absolute;
     }
+
     /* Responsive Medium
   -------------------------------------------------------------------------- */
-    @include grid-even-2-columns($vp-large);
+    @include grid-even-2-columns($vp-medium);
+
     @media only screen and (min-width: $vp-large) {
       padding-top: $l;
       padding-bottom: $xl;
+
       &-info {
         padding: 0;
+
         .title,
         .subtitle {
           padding-right: $l;
         }
       }
-      &-image {
+
+      /*&-image {
         width: $tile-xs;
         height: auto;
         margin: 0;
       }
+
       &.-is-open {
         .leporello-graphic-details-item {
           &-image {
@@ -59,14 +82,20 @@
             min-height: 50vh;
           }
         }
-      }
+      }*/
     }
+
+    /* Responsive Large
+    -------------------------------------------------------------------------- */
+    @include grid-uneven-2-columns($vp-large);
+
     /* Responsive xLarge
   -------------------------------------------------------------------------- */
     @media only screen and (min-width: $vp-xlarge) {
       //margin: 0 auto;
     }
   }
+
   //&:not(.-is-open) {
   &.-is-open {
     .leporello-graphic-details-item {
