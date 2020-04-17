@@ -105,7 +105,7 @@ export default ({
           <Image
             src={images.sizes.l.src}
             alt={title}
-            additionalClass=""
+            modifier=""
           />
         </div>
 

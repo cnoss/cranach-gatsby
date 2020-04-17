@@ -1,41 +1,21 @@
-@import "~/styles/000-abstracts/__abstracts-dir";
-@import "~/styles/000-abstracts/mixins";
+@import '~/styles/000-abstracts/__abstracts-dir';
+@import '~/styles/000-abstracts/mixins';
 .graphics-list {
-  &-item {
-    display: block;
-    margin-bottom: $m;
-    &-image {
-      &-holder {
-        height: $tile-s;
-        margin-bottom: $xs;
-        background-color: $darken;
-        border: solid $border-stroke-weight-s $light;
-        border-left: 0;
-        border-right: 0;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-          object-position: 50% 50%;
-        }
-      }
-      &-caption {
-        padding-right: $l;
-      }
-    }
-  }
   /* Responsive Medium
   -------------------------------------------------------------------------- */
   @include grid-even-2-columns($vp-large);
-  @media only screen and (min-width: $vp-large) {
-    grid-template-columns: 342px 1fr;
-    .graphics-list-item:nth-child(n+3){
-      //display: none;
-    }
-  }
-
   @include grid-even-columns($vp-xlarge, 3);
   @include grid-even-columns($vp-xxlarge, 4);
   @include grid-even-columns($vp-xxxlarge, 5);
   @include grid-even-columns($vp-xxxxlarge, 6);
+  &-item__image {
+    display: block;
+    margin-bottom: $m;
+  }
+  @media only screen and (min-width: $vp-large) {
+    //grid-template-columns: 342px 1fr;
+    .graphics-list-item:nth-child(n+3) {
+      //display: none;
+    }
+  }
 }

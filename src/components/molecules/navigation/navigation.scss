@@ -23,6 +23,12 @@
     }
   }
 
+  .reverse-navigation{
+    .material-icons + span{
+      margin-left: -$xs;
+    }
+  }
+
   .lang-switcher {
     position: absolute;
     right: $m;
