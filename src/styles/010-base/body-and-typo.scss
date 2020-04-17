@@ -31,7 +31,7 @@ a {
 .chapter {
   font-size: $m;
   margin-bottom: $l;
-  line-height: 110%;
+  line-height: $lh-headlines;
 }
 
 .title+.subtitle {
@@ -75,5 +75,5 @@ dd {
 p,
 th,
 td {
-  line-height: 140%;
+  line-height: $lh-normal;
 }

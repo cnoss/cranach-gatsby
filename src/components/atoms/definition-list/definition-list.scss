@@ -13,7 +13,7 @@
     //padding: $xs 0;
     padding-top: $s;
     padding-bottom: $xxs;
-    line-height: 130%;
+    line-height: $lh-normal;
 
     &::after {
       content: ":"
@@ -34,7 +34,7 @@
     margin: 0;
     //padding: $xs 0;
     padding-bottom: $s;
-    line-height: 130%;
+    line-height: $lh-normal;
 
     &:last-child {
       border-bottom: none;

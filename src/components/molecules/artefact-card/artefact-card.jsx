@@ -31,10 +31,10 @@ export default ({
       </Link>
     </div>
     { title
-      && (<div className="card-content">
-        <h2 className="card-title">{ title }</h2>
-        <h3 className="card-subtitle">{ subtitle }</h3>
-        <p className="card-text">{ text }</p>
+      && (<div className="artefact-card__content">
+        <h2 className="artefact-card__title">{ title }</h2>
+        <h3 className="artefact-card__subtitle">{ subtitle }</h3>
+        <p className="artefact-card__text">{ text }</p>
       </div>)
     }
   </div>

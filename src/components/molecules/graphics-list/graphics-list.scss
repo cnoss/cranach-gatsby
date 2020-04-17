@@ -6,8 +6,8 @@
   @include grid-even-2-columns($vp-large);
   @include grid-even-columns($vp-xlarge, 3);
   @include grid-even-columns($vp-xxlarge, 4);
-  @include grid-even-columns($vp-xxxlarge, 5);
-  @include grid-even-columns($vp-xxxxlarge, 6);
+  @include grid-even-columns($vp-3xlarge, 5);
+  @include grid-even-columns($vp-4xlarge, 6);
   &-item__image {
     display: block;
     margin-bottom: $m;
