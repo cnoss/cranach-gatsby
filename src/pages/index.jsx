@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 
 import { graphql } from 'gatsby';
@@ -19,6 +19,8 @@ export default ({ data }) => {
     .filter(graphic.byImageExistence)
     .map(graphic.toArtefact);
 
+  const [currentArtefactView, setCurrentArtefactView] = useState(ArtefactOverview.DefaultView);
+
   return (
     <div
       className="page"
@@ -31,12 +33,20 @@ export default ({ data }) => {
       <div
         className="page-dark"
       >
-        <Navigation />
+        <Navigation>
+          <ArtefactOverview.Switcher
+            view={ currentArtefactView }
+            handleChange={ setCurrentArtefactView }
+          />
+        </Navigation>
 
         <main
           className="main-content"
         >
-          <ArtefactOverview items={ items } />
+          <ArtefactOverview
+            view={ currentArtefactView }
+            items={ items }
+          />
         </main>
       </div>
     </div>

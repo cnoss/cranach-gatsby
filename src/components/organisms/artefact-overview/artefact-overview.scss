@@ -1,14 +1,40 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 @import "~/styles/000-abstracts/mixins";
+
 .artefact-overview {
-  @include grid-even-2-columns($vp-medium);
-  @include grid-even-3-columns($vp-large);
-  @include grid-even-columns($vp-xlarge, 4);
-  @include grid-even-columns($vp-xxlarge, 5);
-  @include grid-even-columns($vp-xxxlarge, 6);
-  @include grid-even-columns($vp-xxxxlarge, 7);
+  &[data-active-view='card'] {
+    @include grid-even-2-columns($vp-medium);
+    @include grid-even-3-columns($vp-large);
+    @include grid-even-columns($vp-xlarge, 4);
+    @include grid-even-columns($vp-xxlarge, 5);
+    @include grid-even-columns($vp-xxxlarge, 6);
+    @include grid-even-columns($vp-xxxxlarge, 7);
+  }
+
+  &[data-active-view='card-small'] {
+    @include grid-even-columns($vp-medium, 3);
+    @include grid-even-columns($vp-large, 5);
+    @include grid-even-columns($vp-xlarge, 6);
+    @include grid-even-columns($vp-xxlarge, 7);
+    @include grid-even-columns($vp-xxxlarge, 8);
+    @include grid-even-columns($vp-xxxxlarge, 9);
+  }
+
+  &[data-active-view='list'] {
+    @include base-grid();
+  }
 
   @media only screen and (min-width: $vp-medium) {
     padding: $m;
+  }
+
+  &-switcher {
+    &-item-icon {
+      cursor: pointer;
+
+      &.is-active {
+        opacity: 0.3;
+      }
+    }
   }
 }
