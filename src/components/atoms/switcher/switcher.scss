@@ -1,0 +1,34 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+
+.switcher {
+  position: absolute;
+  right: $m;
+  bottom: 0;
+
+  &-item {
+    display: inline-block;
+    margin: $s $xxs;
+    margin-right: 0;
+    justify-self: flex-end;
+    a {
+      display: block;
+      color: $lighter;
+      border-bottom: solid $border-stroke-weight transparent;
+    }
+  }
+
+  &-item + &-item{
+    padding-left: $xxs;
+    border-left: solid $border-stroke-weight-s $accent;
+  }
+}
+@media only screen and (min-width: $vp-large) {
+  .switcher {
+    display: flex;
+    flex-direction: row;
+  }
+  .switcher .switcher-item {
+    align-items: flex-end;
+    display: flex;
+  }
+}
