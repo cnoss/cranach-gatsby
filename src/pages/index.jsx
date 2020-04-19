@@ -7,17 +7,17 @@ import { graphql } from 'gatsby';
 import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 
+import graphic from '~/libs/transformers/graphic';
+
 import i18n from '~/i18n';
+
 
 export default ({ data }) => {
   i18n('de');
 
-  const rawItems = data.allGraphicsJson.edges.reduce((acc, edge) => {
-    acc.push(...edge.node.items);
-    return acc;
-  }, []);
-
-  const items = rawItems.filter(rawItem => rawItem.images);
+  const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
+    .filter(graphic.byImageExistence)
+    .map(graphic.toArtefact);
 
   return (
     <div
