@@ -1,10 +1,6 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 
 .switcher {
-  position: absolute;
-  right: $m;
-  bottom: 0;
-
   &-item {
     display: inline-block;
     margin: $s $xxs;
