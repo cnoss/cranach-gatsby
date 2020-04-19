@@ -38,6 +38,51 @@ export default ({
     title: t(item.code),
   }));
 
+  const goBackContent = (
+    <Link
+      className="reverse-navigation"
+      to={goBackTo}
+      triggersInternalTransition={ true }
+      internalTransitionDirection='right'
+    >
+      <i className="material-icons">arrow_back_ios</i>
+      <span>{t('back to the overview')}</span>
+    </Link>
+  );
+
+  const defaultContent = (
+    <Fragment>
+      <Link className="logo" to="/"><Logo /></Link>
+
+      <ul className="menu">
+        <li><i className="material-icons" /></li>
+        {
+          navStructure.map(item => (
+            <li className="menu-item"
+                key={item.to}
+
+            ><Link
+              to={item.to}
+              key={item.to}
+              activeClassName="is-active"
+              partiallyActive={true}
+            >
+              {item.title}
+            </Link></li>
+          ))
+        }
+      </ul>
+      <ul className="lang-switcher">
+        <li className="lang-switcher-item">
+          <a href={withPrefix('/de')}>DE</a>
+        </li>
+        <li className="lang-switcher-item">
+          <a href={withPrefix('/en')}>EN</a>
+        </li>
+      </ul>
+    </Fragment>
+  );
+
   return (
     <nav
       className="main-navigation"
@@ -45,50 +90,10 @@ export default ({
       aria-label="main navigation"
       data-component="molecules/navigation"
     >
-      {goBackTo
-        ? (
-          <Link
-            className="reverse-navigation"
-            to={goBackTo}
-            triggersInternalTransition={ true }
-            internalTransitionDirection='right'
-          >
-            <i className="material-icons">arrow_back_ios</i>
-            <span>{t('back to the overview')}</span>
-          </Link>
-        )
-        : (
-          <Fragment>
-            <Link className="logo" to="/"><Logo /></Link>
-
-            <ul className="menu">
-              <li><i className="material-icons" /></li>
-              {
-                navStructure.map(item => (
-                  <li className="menu-item"
-                    key={item.to}
-
-                  ><Link
-                    to={item.to}
-                    key={item.to}
-                    activeClassName="is-active"
-                    partiallyActive={true}
-                  >
-                      {item.title}
-                    </Link></li>
-                ))
-              }
-            </ul>
-            <ul className="lang-switcher">
-              <li className="lang-switcher-item">
-                <a href={withPrefix('/de')}>DE</a>
-              </li>
-              <li className="lang-switcher-item">
-                <a href={withPrefix('/en')}>EN</a>
-              </li>
-            </ul>
-          </Fragment>
-        )
+      {
+        goBackTo
+          ? goBackContent
+          : defaultContent
       }
 
     </nav>
