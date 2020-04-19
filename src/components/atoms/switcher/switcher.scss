@@ -20,11 +20,11 @@
 }
 @media only screen and (min-width: $vp-large) {
   .switcher {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
   }
   .switcher .switcher-item {
     align-items: flex-end;
-    display: flex;
+    display: inline-flex;
   }
 }
