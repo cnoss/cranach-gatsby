@@ -6,6 +6,9 @@ import {
 
 export default (langCode) => {
   if (i18n.isInitialized) {
+    if (i18n.language !== langCode) {
+      i18n.changeLanguage(langCode);
+    }
     return Promise.resolve();
   }
 
