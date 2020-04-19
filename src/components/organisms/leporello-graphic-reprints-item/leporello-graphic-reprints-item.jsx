@@ -16,10 +16,6 @@ export default ({
 }) => {
   const { t } = useTranslation('LeporelloGraphicReprintsItem', translations);
 
-  /* Number of initial visible reprint items */
-  const reprintItemsLimit = limitItemsTo;
-  const hasMoreReprintItemsThanLimit = reprints.length > reprintItemsLimit;
-
   /* Map reprints */
   const reprintItems = reprints.map((reprintItem) => {
     const item = reprintItem.ref;
@@ -102,13 +98,19 @@ export default ({
     }),
   ).filter(group => group.items.length > 0);
 
+  /* Toggler should be visible if at least one group has more items
+    as the given initial limit allows */
+  const atLeastOneGroupHasMoreReprintItemsThanLimit = reprintConditionLevelGroups.some(
+    group => group.items.length > limitItemsTo,
+  );
+
   return (
     <LeporelloGraphicItem
       className={`leporello-graphic-reprints-item-wrap ${additionalClassNames.join(' ')}`}
       data-component="organisms/leporello-graphic-reprints-item"
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
-      visibleToggler={hasMoreReprintItemsThanLimit}
+      visibleToggler={atLeastOneGroupHasMoreReprintItemsThanLimit}
     >
       {reprintConditionLevelGroups.map((reprintGroup, idx) => (
         <div
@@ -132,7 +134,7 @@ export default ({
               <GraphicsList
                 items={
                   limitReprintItems
-                    ? reprintGroup.items.slice(0, reprintItemsLimit)
+                    ? reprintGroup.items.slice(0, limitItemsTo)
                     : reprintGroup.items
                 }
                 onItemClick={ innerHandleItemClick }
