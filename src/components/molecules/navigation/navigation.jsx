@@ -10,6 +10,7 @@ import './navigation.scss';
 
 export default ({
   goBackTo,
+  children,
 }) => {
   const { t } = useTranslation('Navigation', translations);
 
@@ -67,14 +68,18 @@ export default ({
         }
       </ul>
 
-      <Switcher className="lang-switcher">
-        <Switcher.Item className="lang-switcher-item">
-          <Link activeClassName="is-active" to="/de">DE</Link>
-        </Switcher.Item>
-        <Switcher.Item className="lang-switcher-item">
-          <Link activeClassName="is-active" to="/en">EN</Link>
-        </Switcher.Item>
-      </Switcher>
+      <div className="right-end">
+        { children }
+
+        <Switcher className="lang-switcher">
+          <Switcher.Item className="lang-switcher-item">
+            <Link activeClassName="is-active" to="/de/">DE</Link>
+          </Switcher.Item>
+          <Switcher.Item className="lang-switcher-item">
+            <Link activeClassName="is-active" to="/en/">EN</Link>
+          </Switcher.Item>
+        </Switcher>
+      </div>
     </Fragment>
   );
 

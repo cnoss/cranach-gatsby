@@ -23,15 +23,24 @@
     }
   }
 
-  .lang-switcher {
+  .right-end {
+    display: flex;
+    align-items: center;
     position: absolute;
     right: $m;
     bottom: 0;
 
-    &-item a.is-active {
-      border-bottom: solid $border-stroke-weight $accent;
+    .lang-switcher {
+      margin-left: $l;
+
+      &-item {
+        a.is-active {
+          border-bottom: solid $border-stroke-weight $accent;
+        }
+      }
     }
   }
+
   @media only screen and (min-width: $vp-large) {
     .menu {
       display: flex;
