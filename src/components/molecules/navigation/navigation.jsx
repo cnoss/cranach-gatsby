@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { withPrefix } from 'gatsby';
 import { useTranslation } from '~/i18n';
 
 import Logo from '~/components/atoms/logo';
 import Link from '~/components/atoms/link';
+import Switcher from '~/components/atoms/switcher';
 
 import translations from './translations.json';
 import './navigation.scss';
@@ -14,29 +14,24 @@ export default ({
   const { t } = useTranslation('Navigation', translations);
 
   /* TODO: Pass through as parameter (?) */
-  const baseNavStructure = [
+  const navStructure = [
     {
-      code: 'Graphics',
+      title: 'Graphics',
       to: '/',
     },
     {
-      code: 'Paintings',
+      title: 'Paintings',
       to: 'http://lucascranach.org/gallery',
     },
     {
-      code: 'Archival Documents',
+      title: 'Archival Documents',
       to: 'http://lucascranach.org/archival-documents',
     },
     {
-      code: 'Literature',
+      title: 'Literature',
       to: 'http://lucascranach.org/publications',
     },
   ];
-
-  const navStructure = baseNavStructure.map(item => ({
-    ...item,
-    title: t(item.code),
-  }));
 
   const goBackContent = (
     <Link
@@ -63,23 +58,23 @@ export default ({
 
             ><Link
               to={item.to}
-              key={item.to}
               activeClassName="is-active"
               partiallyActive={true}
             >
-              {item.title}
+              {t(item.title)}
             </Link></li>
           ))
         }
       </ul>
-      <ul className="lang-switcher">
-        <li className="lang-switcher-item">
-          <a href={withPrefix('/de')}>DE</a>
-        </li>
-        <li className="lang-switcher-item">
-          <a href={withPrefix('/en')}>EN</a>
-        </li>
-      </ul>
+
+      <Switcher className="lang-switcher">
+        <Switcher.Item className="lang-switcher-item">
+          <Link activeClassName="is-active" to="/de">DE</Link>
+        </Switcher.Item>
+        <Switcher.Item className="lang-switcher-item">
+          <Link activeClassName="is-active" to="/en">EN</Link>
+        </Switcher.Item>
+      </Switcher>
     </Fragment>
   );
 
