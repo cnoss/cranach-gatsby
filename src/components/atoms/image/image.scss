@@ -1,38 +1,40 @@
-@import "~/styles/000-abstracts/__abstracts-dir";
+@import '~/styles/000-abstracts/__abstracts-dir';
 .image {
-  display: block;
   position: relative;
+
+  display: block;
+
   width: 100%;
   height: 100%;
-
-  /*img {
-    height: 100%;
-    width: 100%;
-  }*/
   &--with-box {
     background-color: $darken-light;
-    .image__holder{
-      padding-top: 100%;
-      border-top: 1px solid $darken;
+    .image__holder {
       position: relative;
+
       width: 100%;
+      padding-top: 100%;
+
+      border-top: 1px solid $darken;
     }
 
-    //border-bottom: 1px solid #b4b4b4;
     img {
       position: absolute;
+      top: 0;
+      right: 0;
       bottom: 0;
       left: 0;
-      right: 0;
-      top: 0;
-      object-fit: contain;
+
       display: block;
-      height: 100%;
+
       width: 100%;
+      height: 100%;
+
+      object-fit: contain;
     }
   }
   &__caption {
-    background-color: $darken-light;
     padding: $m;
+
+    background-color: $darken-light;
   }
 }

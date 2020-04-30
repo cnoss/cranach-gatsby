@@ -16,9 +16,7 @@ $maxItemsPerRow: 5;
     margin-bottom: $m;
   }
   @media only screen and (min-width: $vp-large) {
-    //grid-template-columns: 342px 1fr;
     .graphics-list-item:nth-child(n+3) {
-      //display: none;
     }
   }
 

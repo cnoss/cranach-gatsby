@@ -8,12 +8,6 @@
     padding: $l $m $l $m;
     background-color: $lightest;
 
-    &-intro {
-      //margin-bottom: $l;
-    }
-
-    &-list {}
-
     /* Responsive Medium
     -------------------------------------------------------------------------- */
     @include grid-even-2-columns($vp-medium);

@@ -41,3 +41,6 @@ storybook-static/
 # IntelliJ
 .idea
 *.iml
+
+# VS Code
+.vscode/

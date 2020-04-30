@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '~/i18n';
 
-// import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 

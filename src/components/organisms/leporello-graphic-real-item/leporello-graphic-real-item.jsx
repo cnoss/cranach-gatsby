@@ -6,7 +6,6 @@ import ZoomImage from '~/components/atoms/zoom-image';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
-// import CopyText from '~/components/atoms/copy-text';
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';

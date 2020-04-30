@@ -1,7 +1,5 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 .grouped-definition-list {
-  //display: flex;
-  //flex-wrap: wrap;
   width: 100%;
   margin-top: 0;
   padding-bottom: $s;
@@ -9,7 +7,6 @@
   border-bottom: solid $border-stroke-weight-s $darken;
   line-height: $lh-normal;
   &__term {
-    //width: 200px;
     font-weight: $fw-regular;;
     padding: $s 0 $xxs 0;
     &::after {
@@ -19,12 +16,9 @@
   &__definition {
     display: flex;
     margin: 0;
-    //padding: 0;
-    //padding-bottom: $xxs;
   }
   &__term+&-definition:not(:nth-child(2)),
   &__term:first-child+&__definition:nth-child(2) {
-    //width: calc(100% - 200px);
   }
 
   & + .grouped-definition-list{

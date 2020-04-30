@@ -1,16 +1,12 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 
 .definition-list {
-  //display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: $l;
 
   &__term {
-    //width: 200px;
     font-weight: $fw-regular;
-    /*border-bottom: solid $border-stroke-weight-s $light;*/
-    //padding: $xs 0;
     padding-top: $s;
     padding-bottom: $xxs;
     line-height: $lh-normal;
@@ -32,7 +28,6 @@
     border-bottom: solid $border-stroke-weight-s $darken;
     display: flex;
     margin: 0;
-    //padding: $xs 0;
     padding-bottom: $s;
     line-height: $lh-normal;
 
@@ -47,6 +42,6 @@
 
   &-term+&-definition:not(:nth-child(2)),
   &-term:first-child+&-definition:nth-child(2) {
-    //width: calc(100% - 200px);
+
   }
 }
