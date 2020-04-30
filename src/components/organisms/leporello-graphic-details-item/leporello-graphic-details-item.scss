@@ -18,6 +18,14 @@
       .involved-persons-toggler {
         margin-left: 0.5rem;
       }
+
+      .involved-persons-table {
+        margin-bottom: 1rem;
+
+        [data-field="name"] {
+          white-space: nowrap;
+        }
+      }
     }
 
     &-image {
@@ -96,10 +104,9 @@
     }
   }
 
-  //&:not(.-is-open) {
   &.-is-open {
     .leporello-graphic-details-item {
-      &-info-further {
+      .further-infos {
         position: static;
       }
     }

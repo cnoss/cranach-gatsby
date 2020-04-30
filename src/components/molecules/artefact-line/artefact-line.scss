@@ -1,0 +1,32 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+
+.artefact-line {
+  display: flex;
+  background-color: $darker;
+  height: 100%;
+
+  &-image {
+    width: 200px;
+  }
+
+  .line-content {
+    flex-grow: 1;
+    padding: $m;
+    padding-bottom: $l;
+    color: $lighter;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+
+    .line-title {
+    }
+
+    .line-subtitle {
+      margin-top: $s;
+    }
+
+    .line-text {
+      margin-top: $s;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-// src/templates/page.js
+/* src/templates/real-object-page.js */
 
 import React from 'react';
 import Helmet from 'react-helmet';

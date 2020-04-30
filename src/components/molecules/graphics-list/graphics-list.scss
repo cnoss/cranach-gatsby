@@ -1,5 +1,8 @@
-@import '~/styles/000-abstracts/__abstracts-dir';
-@import '~/styles/000-abstracts/mixins';
+@import "~/styles/000-abstracts/__abstracts-dir";
+@import "~/styles/000-abstracts/mixins";
+
+$maxItemsPerRow: 5;
+
 .graphics-list {
   /* Responsive Medium
   -------------------------------------------------------------------------- */
@@ -18,4 +21,6 @@
       //display: none;
     }
   }
+
+  @include grid-even-columns($vp-xlarge, $maxItemsPerRow);
 }

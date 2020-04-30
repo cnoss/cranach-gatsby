@@ -25,8 +25,8 @@ export default ({
       >
         <Image
           src={ imgSrc }
-          alt={imgAlt}
-          modifier="--with-box"
+          alt={ imgAlt }
+          additionalClass="-has-box"
         />
       </Link>
     </div>

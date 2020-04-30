@@ -1,41 +1,87 @@
 import React, { Fragment } from 'react';
-import { withPrefix } from 'gatsby';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/i18n';
 
 import Logo from '~/components/atoms/logo';
 import Link from '~/components/atoms/link';
+import Switcher from '~/components/atoms/switcher';
 
+import translations from './translations.json';
 import './navigation.scss';
 
 export default ({
   goBackTo,
+  children,
 }) => {
-  const { t } = useTranslation('Navigation');
+  const { t } = useTranslation('Navigation', translations);
 
   /* TODO: Pass through as parameter (?) */
-  const baseNavStructure = [
+  const navStructure = [
     {
-      code: 'Graphics',
+      title: 'Graphics',
       to: '/',
     },
     {
-      code: 'Paintings',
+      title: 'Paintings',
       to: 'http://lucascranach.org/gallery',
     },
     {
-      code: 'Archival Documents',
+      title: 'Archival Documents',
       to: 'http://lucascranach.org/archival-documents',
     },
     {
-      code: 'Literature',
+      title: 'Literature',
       to: 'http://lucascranach.org/publications',
     },
   ];
 
-  const navStructure = baseNavStructure.map(item => ({
-    ...item,
-    title: t(item.code),
-  }));
+  const goBackContent = (
+    <Link
+      className="reverse-navigation"
+      to={goBackTo}
+      triggersInternalTransition={ true }
+      internalTransitionDirection='right'
+    >
+      <i className="material-icons">arrow_back_ios</i>
+      <span>{t('back to the overview')}</span>
+    </Link>
+  );
+
+  const defaultContent = (
+    <Fragment>
+      <Link className="logo" to="/"><Logo /></Link>
+
+      <ul className="menu">
+        <li><i className="material-icons" /></li>
+        {
+          navStructure.map(item => (
+            <li className="menu-item"
+                key={item.to}
+
+            ><Link
+              to={item.to}
+              activeClassName="is-active"
+              partiallyActive={true}
+            >
+              {t(item.title)}
+            </Link></li>
+          ))
+        }
+      </ul>
+
+      <div className="right-end">
+        { children }
+
+        <Switcher className="lang-switcher">
+          <Switcher.Item className="lang-switcher-item">
+            <Link activeClassName="is-active" to="/de/">DE</Link>
+          </Switcher.Item>
+          <Switcher.Item className="lang-switcher-item">
+            <Link activeClassName="is-active" to="/en/">EN</Link>
+          </Switcher.Item>
+        </Switcher>
+      </div>
+    </Fragment>
+  );
 
   return (
     <nav
@@ -44,50 +90,10 @@ export default ({
       aria-label="main navigation"
       data-component="molecules/navigation"
     >
-      {goBackTo
-        ? (
-          <Link
-            className="reverse-navigation"
-            to={goBackTo}
-            triggersInternalTransition={ true }
-            internalTransitionDirection='right'
-          >
-            <i className="material-icons">arrow_back_ios</i>
-            <span>{t('back to the overview')}</span>
-          </Link>
-        )
-        : (
-          <Fragment>
-            <Link className="logo" to="/"><Logo /></Link>
-
-            <ul className="menu">
-              <li><i className="material-icons" /></li>
-              {
-                navStructure.map(item => (
-                  <li className="menu-item"
-                    key={item.to}
-
-                  ><Link
-                    to={item.to}
-                    key={item.to}
-                    activeClassName="is-active"
-                    partiallyActive={true}
-                  >
-                      {item.title}
-                    </Link></li>
-                ))
-              }
-            </ul>
-            <ul className="lang-switcher">
-              <li className="lang-switcher-item">
-                <a href={withPrefix('/de')}>DE</a>
-              </li>
-              <li className="lang-switcher-item">
-                <a href={withPrefix('/en')}>EN</a>
-              </li>
-            </ul>
-          </Fragment>
-        )
+      {
+        goBackTo
+          ? goBackContent
+          : defaultContent
       }
 
     </nav>

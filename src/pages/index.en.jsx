@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 
 import { graphql } from 'gatsby';
@@ -7,18 +7,19 @@ import { graphql } from 'gatsby';
 import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 
+import graphic from '~/libs/transformers/graphic';
+
 import i18n from '~/i18n';
 
 
 export default ({ data }) => {
   i18n('en');
 
-  const rawItems = data.allGraphicsJson.edges.reduce((acc, edge) => {
-    acc.push(...edge.node.items);
-    return acc;
-  }, []);
+  const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
+    .filter(graphic.byImageExistence)
+    .map(graphic.toArtefact);
 
-  const items = rawItems.filter(rawItem => rawItem.images);
+  const [currentArtefactView, setCurrentArtefactView] = useState(ArtefactOverview.DefaultView);
 
   return (
     <div
@@ -32,12 +33,20 @@ export default ({ data }) => {
       <div
         className="page-dark"
       >
-        <Navigation />
+        <Navigation>
+          <ArtefactOverview.Switcher
+            view={ currentArtefactView }
+            handleChange={ setCurrentArtefactView }
+          />
+        </Navigation>
 
         <main
           className="main-content"
         >
-          <ArtefactOverview items={ items } />
+          <ArtefactOverview
+            view={ currentArtefactView }
+            items={ items }
+          />
         </main>
       </div>
     </div>
