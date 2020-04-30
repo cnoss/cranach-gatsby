@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "build:with-prefix": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
+    "dev-network": "gatsby develop -H $HOSTNAME -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

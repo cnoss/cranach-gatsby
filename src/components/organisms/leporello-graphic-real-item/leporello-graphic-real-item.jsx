@@ -6,7 +6,6 @@ import ZoomImage from '~/components/atoms/zoom-image';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
-import CopyText from '~/components/atoms/copy-text';
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
@@ -46,7 +45,7 @@ export default ({
       onClose={onClose}
     >
       <div className="leporello-graphic-real-item">
-        <div className="leporello-graphic-real-image">
+        <div className="leporello-graphic-real-item__image">
           <ZoomImage
             src={images.sizes.xl.src}
             baseSrc={images.sizes.s.src}
@@ -54,7 +53,7 @@ export default ({
           />
         </div>
 
-        <div className="leporello-graphic-real-item-info">
+        <div className="leporello-graphic-real-item__info">
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
               term="CDA ID"
@@ -74,11 +73,11 @@ export default ({
             />
             <GroupedDefinitionList.Entry
               term={ t('Medium') }
-              definition={<CopyText text={medium} />}
+              definition={medium}
             />
             <GroupedDefinitionList.Entry
               term={ t('Measurments') }
-              definition={<CopyText text={dimensions} />}
+              definition={dimensions}
             />
           </GroupedDefinitionList>
 
@@ -108,7 +107,7 @@ export default ({
                 />}
                 {inscription && <GroupedDefinitionList.Entry
                   term={ t('Inscriptions') }
-                  definition={<CopyText text={inscription} />}
+                  definition={inscription}
                 />}
                 {markings && <GroupedDefinitionList.Entry
                   term={ t('Stamps, Seals, Labels') }
@@ -120,7 +119,7 @@ export default ({
                 />}
                 {provenance && <GroupedDefinitionList.Entry
                   term={ t('Provenance') }
-                  definition={<CopyText text={provenance} />}
+                  definition={provenance}
                 />}
               </GroupedDefinitionList>
             )

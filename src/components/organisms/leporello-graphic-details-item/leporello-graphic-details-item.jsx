@@ -104,15 +104,15 @@ export default ({
       visibleToggler={visibleCloser}
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
-        <div className={'leporello-graphic-details-item-image -is-non-fading'}>
+        <div className={'leporello-graphic-details-item__image'}>
           <Image
             src={images.sizes.l.src}
             alt={title}
-            additionalClass=""
+            modifier=""
           />
         </div>
 
-        <div className="leporello-graphic-details-item-info">
+        <div className="leporello-graphic-details-item__info">
           <h1 className="title">{ title }</h1>
           <h2 className="subtitle inventor">
             { subtitle }

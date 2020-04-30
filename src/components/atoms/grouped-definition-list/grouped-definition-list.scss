@@ -1,30 +1,27 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 .grouped-definition-list {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   margin-top: 0;
   padding-bottom: $s;
-  margin-bottom: $xs;
-  border-bottom: solid $border-stroke-weight-s $light;
-  line-height: 130%;
-  &-term {
-    width: 200px;
+  margin-bottom: $l;
+  border-bottom: solid $border-stroke-weight-s $darken;
+  line-height: $lh-normal;
+  &__term {
     font-weight: $fw-regular;;
-    padding: 0;
-    padding-bottom: $xxs;
+    padding: $s 0 $xxs 0;
     &::after {
       content: ":"
     }
   }
-  &-definition {
+  &__definition {
     display: flex;
     margin: 0;
-    padding: 0;
-    padding-bottom: $xxs;
   }
-  &-term+&-definition:not(:nth-child(2)),
-  &-term:first-child+&-definition:nth-child(2) {
-    width: calc(100% - 200px);
+  &__term+&-definition:not(:nth-child(2)),
+  &__term:first-child+&__definition:nth-child(2) {
+  }
+
+  & + .grouped-definition-list{
+    margin-top: -$l;
   }
 }

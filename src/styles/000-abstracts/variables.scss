@@ -10,7 +10,8 @@ $lighter: #F2F2F2;
 $lightest:#fff;
 $accent: #FFCC00;
 $error: #cc0000;
-$darken: rgba(0,0,0,.06);
+$darken: rgba(0,0,0,.2);
+$darken-light: rgba(0,0,0,.04);
 
 /* Viewports
 -----------------------------------------------------------------------------*/
@@ -19,8 +20,8 @@ $vp-medium: 720px;
 $vp-large: 1024px;
 $vp-xlarge: 1400px;
 $vp-xxlarge: 1700px;
-$vp-xxxlarge: 2000px;
-$vp-xxxxlarge: 2300px;
+$vp-3xlarge: 2000px;
+$vp-4xlarge: 2300px;
 
 /* Größen und Abstände
 -----------------------------------------------------------------------------*/
@@ -50,10 +51,24 @@ Consolas,
 Courier,
 "Liberation Mono",
 monospace;
+
+
+/* Schriftgewichte
+-----------------------------------------------------------------------------*/
 $fw-light: 200;
 $fw-regular: 300;
 $fw-semibold: 400;
 $fw-bold: 600;
+
+
+/* Zeilenabstände
+-----------------------------------------------------------------------------*/
+$lh-tight: 120%;
+$lh-normal: 130%;
+$lh-loose: 140%;
+
+$lh-headlines: $lh-tight;
+
 
 /* Animationen (Entlang der Fibonacci Reihe)
 -----------------------------------------------------------------------------*/

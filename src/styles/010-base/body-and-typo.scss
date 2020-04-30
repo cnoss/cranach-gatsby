@@ -31,7 +31,7 @@ a {
 .chapter {
   font-size: $m;
   margin-bottom: $l;
-  line-height: 110%;
+  line-height: $lh-headlines;
 }
 
 .title+.subtitle {
@@ -65,15 +65,9 @@ a {
 /* Text
 -----------------------------------------------------------------------------*/
 
-p,
-th,
-td,
-dd {
-  // font-weight: 100;
-}
 
 p,
 th,
 td {
-  line-height: 140%;
+  line-height: $lh-normal;
 }

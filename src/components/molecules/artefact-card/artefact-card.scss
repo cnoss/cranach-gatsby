@@ -5,20 +5,30 @@
   flex-direction: column;
   background-color: $darker;
 
-  .card-image {
+  &__image {
     padding: 1px;
   }
-  .card-content {
+  &__content {
     flex-grow: 1;
     padding: $m;
-    padding-bottom: $l;
     color: $lighter;
     background-color: $dark;
-    .card-title,
-    .card-subtitle,
-    .card-text {
-      font-weight: 200;
-      line-height: 130%;
-    }
   }
+
+  &__title{
+    font-weight: $fw-semibold;
+    margin-bottom: $xs;
+    line-height: $lh-headlines;
+  }
+  &__subtitle{
+    font-weight: $fw-regular;
+    margin-bottom: $xs;
+    line-height: $lh-headlines;
+  }
+  &__text {
+    font-weight: $fw-light;
+    line-height: $lh-normal;
+    margin-bottom: $xs;
+  }
+
 }

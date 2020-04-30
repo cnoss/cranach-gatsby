@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '~/i18n';
 
-import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 
@@ -126,9 +125,7 @@ export default ({
                 )
               }
               <h3 className="headline">{t(reprintGroup.translations.subtitle)}</h3>
-              <CopyText
-                text={t(reprintGroup.translations.description)}
-              />
+
             </div>
             <div className="leporello-graphic-reprints-item-list">
               <GraphicsList

@@ -37,9 +37,9 @@ export default ({
               <Image
                 src={item.imgSrc}
                 alt={item.title}
-                classNamePrefix={'graphics-list-item'}
+                classNamePrefix={'graphics-list-item__image'}
                 caption={item.title}
-                additionalClass="-has-box"
+                modifier="--with-box"
               />
             </Link>
           </li>,

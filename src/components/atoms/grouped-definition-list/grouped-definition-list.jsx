@@ -14,8 +14,8 @@ const GroupedDefinitionList = ({ children }) => (
 
 GroupedDefinitionList.Entry = ({ term, definition }) => (
   <React.Fragment>
-    <dt className="grouped-definition-list-term">{ term }</dt>
-    <dd className="grouped-definition-list-definition">{ definition }</dd>
+    <dt className="grouped-definition-list__term">{ term }</dt>
+    <dd className="grouped-definition-list__definition">{ definition }</dd>
   </React.Fragment>
 );
 

@@ -7,14 +7,14 @@ export default ({
   alt,
   caption,
   classNamePrefix,
-  additionalClass = '',
+  modifier,
 }) => (
   <figure
-    className={`${classNamePrefix ? `${classNamePrefix}-image ${additionalClass}` : `image ${additionalClass}`}`}
+    className={`${classNamePrefix ? `${classNamePrefix} image${modifier}` : `image${modifier}`}`}
     data-component="atoms/image"
     >
       <div
-        className={`${classNamePrefix ? `${classNamePrefix}-image-holder` : 'image-holder'}`}
+        className="image__holder"
       >
         <img
           src={src}
@@ -23,7 +23,7 @@ export default ({
       </div>
 
     { caption && <figcaption
-        className= {`${classNamePrefix ? `${classNamePrefix}-image-caption` : 'image-caption'}`}
+        className= {`${classNamePrefix ? `${classNamePrefix} image__caption` : 'image__caption'}`}
       >
         <p className="text">{ caption }</p>
       </figcaption>
