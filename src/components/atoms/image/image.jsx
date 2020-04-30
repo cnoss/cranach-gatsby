@@ -7,7 +7,7 @@ export default ({
   alt,
   caption,
   classNamePrefix,
-  additionalClass = '',
+  modifier,
 }) => (
   <figure
     className={`${classNamePrefix ? `${classNamePrefix} image${modifier}` : `image${modifier}`}`}

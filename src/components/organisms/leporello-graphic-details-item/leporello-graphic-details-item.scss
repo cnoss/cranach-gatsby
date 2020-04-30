@@ -10,7 +10,7 @@
     padding-bottom: $l;
     overflow: hidden;
 
-    &-info {
+    &__info {
       position: relative;
       //padding: $m;
       background-color: $lighter;
@@ -28,10 +28,10 @@
       }
     }
 
-    &-image {
+    &__image {
       //justify-self: middle;
       //width: 50%;
-      width: 100vw;
+      //width: 100vw;
       //height: 100vw;
       overflow: hidden;
 
@@ -40,7 +40,7 @@
 
       & img{
         width: 100vw;
-        height: 50vw;
+        //height: 50vw;
         object-position: center center;
         object-fit: cover;
       }
@@ -67,7 +67,7 @@
       padding-top: $l;
       padding-bottom: $xl;
 
-      &-info {
+      &__info {
         padding: 0;
 
         .title,
@@ -76,6 +76,12 @@
         }
       }
 
+      &__image{
+        padding: $m;
+        & img{
+          width: 100%;
+        }
+      }
       /*&-image {
         width: $tile-xs;
         height: auto;
