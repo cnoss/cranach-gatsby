@@ -2,7 +2,6 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 
 .leporello-graphic-item {
-  $self: &;
   position: relative;
 
   .controls-container {
