@@ -11,10 +11,7 @@
     max-width: $vp-xlarge;
     padding: $m;
     padding-bottom: $l;
-    /* Responsive Medium
-  -------------------------------------------------------------------------- */
 
-    // @include grid-even-2-columns($vp-medium);
     /* Responsive Large
   -------------------------------------------------------------------------- */
     @include grid-uneven-2-columns($vp-large);
