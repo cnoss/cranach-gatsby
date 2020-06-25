@@ -9,11 +9,12 @@ $maxItemsPerRow: 5;
 
   /* Responsive Medium
   -------------------------------------------------------------------------- */
-  @include grid-even-columns($vp-medium, 2);
-  @include grid-even-columns($vp-xlarge, 3);
-  @include grid-even-columns($vp-xxlarge, 4);
-  @include grid-even-columns($vp-3xlarge, 5);
-  @include grid-even-columns($vp-4xlarge, 6);
+  @include grid-even-columns($vp-medium, 3);
+  @include grid-even-columns($vp-large, 4);
+  @include grid-even-columns($vp-xlarge, 5);
+  @include grid-even-columns($vp-xxlarge, 6);
+  @include grid-even-columns($vp-3xlarge, 7);
+  @include grid-even-columns($vp-4xlarge, 8);
 
   &-item{
 
