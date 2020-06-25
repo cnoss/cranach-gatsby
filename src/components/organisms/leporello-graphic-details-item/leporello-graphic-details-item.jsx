@@ -102,6 +102,7 @@ export default ({
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
       visibleToggler={visibleCloser}
+      closerType="with-cover"
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <div className={'leporello-graphic-details-item__image'}>

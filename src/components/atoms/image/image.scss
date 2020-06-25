@@ -7,14 +7,14 @@
   width: 100%;
   height: 100%;
   &--with-box {
-    background-color: $darken-light;
+    background-color: $darken;
     .image__holder {
       position: relative;
 
       width: 100%;
       padding-top: 100%;
 
-      border-top: 1px solid $darken;
+      border-top: 1px solid $darken-strong;
     }
 
     img {
@@ -35,6 +35,6 @@
   &__caption {
     padding: $m;
 
-    background-color: $darken-light;
+    background-color: $darken-strong;
   }
 }

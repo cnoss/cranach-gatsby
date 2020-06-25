@@ -23,7 +23,7 @@ export default ({
       </div>
 
     { caption && <figcaption
-        className= {`${classNamePrefix ? `${classNamePrefix} image__caption` : 'image__caption'}`}
+        className= 'image__caption'
       >
         <p className="text">{ caption }</p>
       </figcaption>

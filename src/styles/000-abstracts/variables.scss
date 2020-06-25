@@ -8,10 +8,13 @@ $darkest: #000;
 $light: #B4B4B4;
 $lighter: #F2F2F2;
 $lightest:#fff;
+$lighten: rgba(255,255,255,0.04);
+$lighten-strong: rgba(255,255,255,0.2);
 $accent: #FFCC00;
 $error: #cc0000;
-$darken: rgba(0,0,0,.2);
-$darken-light: rgba(0,0,0,.04);
+$darken: rgba(0,0,0,.04);
+$darken-strong: rgba(0,0,0,.2);
+
 
 /* Viewports
 -----------------------------------------------------------------------------*/

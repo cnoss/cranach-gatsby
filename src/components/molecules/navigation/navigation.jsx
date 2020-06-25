@@ -41,8 +41,7 @@ export default ({
       triggersInternalTransition={ true }
       internalTransitionDirection='right'
     >
-      <i className="material-icons">arrow_back_ios</i>
-      <span>{t('back to the overview')}</span>
+      <i className="material-icons">arrow_back_ios</i><span>{t('back to the overview')}</span>
     </Link>
   );
 

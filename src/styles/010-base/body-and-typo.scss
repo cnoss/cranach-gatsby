@@ -32,6 +32,7 @@ a {
   font-size: $m;
   margin-bottom: $l;
   line-height: $lh-headlines;
+  position: relative;
 }
 
 .title+.subtitle {

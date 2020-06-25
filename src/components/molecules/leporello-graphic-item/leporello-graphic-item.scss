@@ -1,11 +1,34 @@
 
+@import "~/styles/000-abstracts/__abstracts-dir";
+
 .leporello-graphic-item {
+  $self: &;
   position: relative;
 
   .controls-container {
-    padding: 1.5rem;
+    padding: $m;
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  .unfold-container {
+    padding: $xxl $m $m $m;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    &--with-cover{
+      background: linear-gradient(180deg, rgba(242,242,242,0) 0, $lighter 100%);
+    }
+  }
+
+  &.-is-open{
+    .unfold-container {
+      &--with-cover{
+        background: none;
+      }
+    }
   }
 }

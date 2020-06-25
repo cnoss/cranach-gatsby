@@ -11,14 +11,16 @@ export default ({
   initiallyOpen,
   children,
   className = '',
-  onToggle = () => {},
+  closerType,
+  onToggle = () => { },
   visibleToggler = false,
-  onClose = () => {},
+  onClose = () => { },
   visibleCloser = false,
   ...other
 }) => {
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
+  const closerClass = (closerType) ? `unfold-container--${closerType}` : '';
 
   useEffect(() => {
     setAdditionalClassNames(
@@ -35,30 +37,34 @@ export default ({
 
   return (
     <Leporello.Item
-      className={ `leporello-graphic-item ${additionalClassNames.join(' ')}` }
+      className={`leporello-graphic-item ${additionalClassNames.join(' ')}`}
       data-component="molecules/leporello-graphic-item"
-      isOpen={ isOpen }
-      { ...other }
+      isOpen={isOpen}
+      {...other}
     >
       <div className="controls-container">
-        {visibleToggler
-          && (
-            <Toggler
-              onToggle={ handleTogglerEvent }
-              isInitiallyToggled={ isOpen }
-            />
-          )
-        }
-
         {visibleCloser
           && (
             <Closer
-              onClose={ onClose }
+              onClose={onClose}
             />
           )
         }
       </div>
-      { children }
+      {children}
+
+      {visibleToggler
+        && (
+        <div className={`unfold-container ${closerClass}`}>
+            <Toggler
+              onToggle={handleTogglerEvent}
+            isInitiallyToggled={isOpen}
+            className="toogler--right"
+            />
+          </div>
+        )
+      }
+
     </Leporello.Item>
   );
 };
