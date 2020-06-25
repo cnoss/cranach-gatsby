@@ -75,6 +75,7 @@ export const query = graphql`
             objectName
             inventoryNumber
             objectId
+            dimensions
             dating {
               dated
             }
@@ -84,6 +85,10 @@ export const query = graphql`
               remarks
               title
               type
+            }
+            classification {
+              classification
+              condition
             }
             references {
               reprints {
