@@ -11,6 +11,9 @@
   - Projekt im Development-Modus starten (Hot-Reload)
     - ```npm run develop``` / ```npm run start```
     - Aufruf unter ```http://localhost:8080```
+  - Projekt im Development-Modus starten (Hot-Reload) mit Erreichbarkeit im lokalen Netzwerk
+    - ```npm run dev-network```
+    - Aufruf URL wird ausgegeben
   - Projekt bauen
     - ```npm run build```
   - Production-Build über WebServer ausliefern
