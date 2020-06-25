@@ -17,13 +17,15 @@
 
   &__title{
     font-weight: $fw-semibold;
-    margin-bottom: $xs;
+    margin-bottom: $xxs;
     line-height: $lh-headlines;
+    color: $lightest;
   }
   &__subtitle{
     font-weight: $fw-regular;
     margin-bottom: $xs;
     line-height: $lh-headlines;
+    color: $light;
   }
   &__text {
     font-weight: $fw-light;

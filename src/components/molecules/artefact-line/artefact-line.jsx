@@ -8,32 +8,44 @@ import './artefact-line.scss';
 export default ({
   title = '',
   subtitle = '',
-  text = '',
+  date = '',
   to = '',
+  masterData = '',
   imgSrc = '',
   imgAlt = '',
 }) => (
-  <div
-    className="artefact-line"
-    data-component="molecules/artefact-line"
-  >
-    <span>
-      <Link
-        to={ to }
-        triggersInternalTransition={ true }
-        internalTransitionDirection='left'
-      >
-        <Image
-          src={ imgSrc }
-          alt={ imgAlt }
-          additionalClass="-has-box artefact-line-image"
-        />
-      </Link>
-    </span>
-    <span className="line-content">
-      <span className="line-title">{ title }</span>
-      <span className="line-subtitle">{ subtitle }</span>
-      <span className="line-text">{ text }</span>
-    </span>
-  </div>
+    <div
+      className="artefact-line"
+      data-component="molecules/artefact-line"
+    >
+      <div className="artefact-line__image">
+        <Link
+          to={to}
+          triggersInternalTransition={true}
+          internalTransitionDirection='left'
+        >
+          <Image
+            src={imgSrc}
+            alt={imgAlt}
+            modifier="--with-box" // -has-box artefact-line-image
+          />
+        </Link>
+      </div>
+
+      <div className="artefact-line__content">
+        <Link
+          to={to}
+          triggersInternalTransition={true}
+          internalTransitionDirection='left'
+        >
+          <h2 className="artefact-line__title">{title}</h2>
+          <h3 className="artefact-line__subtitle">{subtitle}, {date}</h3>
+          <ul className="artefact-line__master-data">
+            <li>{masterData.classification.classification}, {masterData.objectName}</li>
+            <li>{masterData.dimensions}</li>
+          </ul>
+        </Link>
+      </div>
+
+    </div>
 );

@@ -18,7 +18,8 @@ export default {
       inventoryNumber: item.inventoryNumber,
       title: (item.titles[0] && item.titles[0].title) || '',
       subtitle: inventor ? inventor.name : ' ',
-      text: item.dating.dated || '',
+      date: item.dating.dated || '',
+      masterData: item,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
     };

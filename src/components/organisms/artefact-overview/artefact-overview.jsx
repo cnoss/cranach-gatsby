@@ -47,7 +47,7 @@ const ArtefactOverview = ({
         { CardView === view && <ArtefactCard
             title={ item.title }
             subtitle={ item.subtitle }
-            text={ item.text }
+            date={ item.date }
             to={ item.to }
             imgSrc={ item.imgSrc }
           />
@@ -62,7 +62,8 @@ const ArtefactOverview = ({
         { ListView === view && <ArtefactLine
             title={ item.title }
             subtitle={ item.subtitle }
-            text={ item.text }
+            date={item.date}
+            masterData={item.masterData}
             to={ item.to }
             imgSrc={ item.imgSrc }
           />
