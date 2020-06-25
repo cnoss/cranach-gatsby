@@ -7,7 +7,6 @@
   background-color: $lightest;
 
   .leporello-graphic-real-item {
-    // max-width: $vp-xlarge;
 
     &__image {
       background-color: $dark;
@@ -26,14 +25,9 @@
       z-index: $level-content;
     }
 
-    // Responsive Medium
+    // Responsive Large
     // --------------------------------------------------------------------------
-
-    // @include grid-uneven-2-columns($vp-large);
-
     @media only screen and (min-width: $vp-large) {
-     /* max-width: $vp-xxlarge;
-      margin: 0 auto; */
       display: grid;
       grid-template-columns: 1fr $vp-medium;
     }
