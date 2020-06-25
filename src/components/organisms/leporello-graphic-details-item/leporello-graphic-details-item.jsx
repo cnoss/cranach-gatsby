@@ -3,9 +3,8 @@ import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import DefinitionList from '~/components/atoms/definition-list';
-import InvolvedPersonsTable from '~/components/molecules/involved-persons-table';
+import InvolvedPersonsList from '~/components/molecules/involved-persons-list';
 import LiteratureTable from '~/components/molecules/literature-table';
-import Toggler from '~/components/atoms/toggler';
 import CopyText from '~/components/atoms/copy-text';
 import Image from '~/components/atoms/image';
 
@@ -75,7 +74,6 @@ export default ({
   );
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
-  const [involvedPersonsAreVisible, setInvolvedPersonsAreVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
 
   /* React on isOpen change */
@@ -117,22 +115,18 @@ export default ({
           <h1 className="title">{ title }</h1>
           <h2 className="subtitle inventor">
             { subtitle }
-
-            <Toggler
-              className="involved-persons-toggler"
-              isInitiallyToggled={ involvedPersonsAreVisible }
-              onToggle={ setInvolvedPersonsAreVisible }
-              size="small"
-            />
           </h2>
-
-          {
-            involvedPersonsAreVisible && <InvolvedPersonsTable data={ involvedPersons } />
-          }
 
           <div className="further-infos">
 
             <DefinitionList>
+
+
+              <DefinitionList.Entry
+                term={ t('Attribution') }
+                definition={ <InvolvedPersonsList data={ involvedPersons } /> }
+              />
+
               <DefinitionList.Entry
                 term={ t('Classification') }
                 definition={ `${classification.classification}, ${objectName}` }
