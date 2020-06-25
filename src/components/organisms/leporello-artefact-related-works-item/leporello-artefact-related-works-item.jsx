@@ -55,7 +55,7 @@ export default ({
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
       visibleToggler={hasMoreRelatedWorkItemsThanLimit}
-      closerType="with-cover"
+
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
