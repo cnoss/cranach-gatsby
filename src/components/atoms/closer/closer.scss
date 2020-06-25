@@ -1,7 +1,7 @@
 @import "~/styles/000-abstracts/__abstracts-dir";
 .closer {
-  $closer-background-color: $accent;
-  $closer-color: $lightest;
+  $closer-background-color: $darkest;
+  $closer-color: $accent;
   $closer-size: $l;
   $closer-font-size: $l;
   z-index: $level-section-nav;

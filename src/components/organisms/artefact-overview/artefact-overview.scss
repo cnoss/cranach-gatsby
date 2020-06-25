@@ -2,6 +2,9 @@
 @import "~/styles/000-abstracts/mixins";
 
 .artefact-overview {
+
+  padding-top: $m;
+
   &[data-active-view='card'] {
     @include grid-even-2-columns($vp-medium);
     @include grid-even-3-columns($vp-large);

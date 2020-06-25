@@ -18,13 +18,13 @@ export default ({
     }
   };
 
-  return <span
-      className={ `toggler -${size} ${className} ${toggled ? '-is-toggled' : ''}` }
+  return <div
+      className={ `toggler toggler--${size} ${className} ${toggled ? 'toggler--toggled' : ''}` }
       onClick={ toggle }
       data-component="atoms/toggler"
-    >
-      <span className="chevron-container">
-        <span className="chevron" />
-      </span>
-    </span>;
+  >
+      <div className="icon-holder">
+        <i className="material-icons">expand_more</i>
+      </div>
+    </div>;
 };

@@ -1,62 +1,55 @@
-@import "~/styles/000-abstracts/__abstracts-dir";
+@import '~/styles/000-abstracts/__abstracts-dir';
+
 .toggler {
+
+  $self: &;
+
   $toggler-background-color: $accent;
   $toggler-color: $darkest;
   $toggler-size: $l;
-  $toggler-chevron-line-width: $toggler-size / 10;
-  $toggler-chevron-size: 30%;
+  $toggler-font-size: $l;
+
+
   z-index: $level-section-nav;
-  position: relative;
+  display: inline-block;
+
   width: $toggler-size;
   height: $toggler-size;
+
+  cursor: pointer;
+
+  color: $toggler-color;
   border: 0;
   border-radius: 100%;
   background-color: $toggler-background-color;
-  cursor: pointer;
-  transition: $tr-fast all;
-  box-shadow: $shadow-xs;
-  display: inline-block;
+  box-shadow: $shadow;
 
-  /* Sizes */
-  &.-small {
-    $toggler-small-size: $bfs;
-    $toggler-small-chevron-line-width: $toggler-small-size / 10;
+  & .icon-holder{
 
-    width: $toggler-small-size;
-    height: $toggler-small-size;
-
-    & > .chevron-container {
-      & > .chevron {
-        border-width: $toggler-small-chevron-line-width;
-      }
-    }
-  }
-
-  & > .chevron-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    & > .chevron {
-      width: $toggler-chevron-size;
-      height: $toggler-chevron-size;
-      border: $toggler-chevron-line-width solid $toggler-color;
-      border-right: 0;
-      border-top: 0;
-      transition: all $tr-fast;
-      transform: rotate(-45deg);
-      box-sizing: border-box;
+
+    & > i{
+      font-size: $toggler-font-size;
+      transition: $tr-fast all;
     }
   }
-  &.-is-toggled {
+
+  &--small{
+    width: $m;
+    height: $m;
+
+    & .icon-holder > i{
+      font-size: $m;
+    }
+  }
+
+  &--toggled{
     background-color: $toggler-color;
-    & > .chevron-container {
-      & .chevron {
-        border-color: $toggler-background-color;
-        transform: rotate(-45deg) scale(-1, -1);
-      }
+    color: $toggler-background-color;
+    & .icon-holder > i{
+      transform: rotate(180deg);
     }
   }
 }

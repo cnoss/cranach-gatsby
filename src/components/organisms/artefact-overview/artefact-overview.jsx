@@ -33,13 +33,14 @@ const ArtefactOverview = ({
   items = [],
   view = DefaultView,
 }) => (
-  <div
+    <div
+
     className="artefact-overview"
     data-component="organisms/artefact-overview"
     data-active-view={ view.type }
   >
     {
-      items.map(item => (<div
+        items.map(item => (<div
           key={ item.inventoryNumber }
           className="overview-item"
         >
@@ -67,7 +68,7 @@ const ArtefactOverview = ({
           />
         }
         </div>
-      ))
+        ))
     }
   </div>
 );

@@ -1,37 +1,41 @@
-@import "~/styles/000-abstracts/__abstracts-dir";
-@import "~/styles/000-abstracts/mixins";
-.leporello-graphic-real-item-wrap {
-  box-shadow: $shadow-top-s;
-  background-color: $lightest;
-  .leporello-graphic-real-item {
-    padding: $m;
+@import '~/styles/000-abstracts/__abstracts-dir';
 
-    max-width: $vp-xlarge;
+@import '~/styles/000-abstracts/mixins';
+
+.leporello-graphic-real-item-wrap {
+  border-top: solid $border-stroke-weight-s $light;
+  background-color: $lightest;
+
+  .leporello-graphic-real-item {
+    // max-width: $vp-xlarge;
+
     &__image {
-      margin: -$m;
-      margin-bottom: $m;
+      background-color: $dark;
     }
+
+    &__info{
+      padding: $m;
+    }
+
     &__further-info {
       max-height: auto;
       transition: all $tr-slow;
     }
+
     .-is-non-fading {
       z-index: $level-content;
     }
-    /* Responsive Medium
-  -------------------------------------------------------------------------- */
-    @include grid-even-2-columns($vp-medium);
-    @media only screen and (min-width: $vp-medium) {
-      padding-top: $l;
-      padding-bottom: $xl;
-      &__info {
-        padding-right: $l;
-      }
-    }
-    /* Responsive xLarge
-  -------------------------------------------------------------------------- */
-    @media only screen and (min-width: $vp-xlarge) {
 
+    // Responsive Medium
+    // --------------------------------------------------------------------------
+
+    // @include grid-uneven-2-columns($vp-large);
+
+    @media only screen and (min-width: $vp-large) {
+     /* max-width: $vp-xxlarge;
+      margin: 0 auto; */
+      display: grid;
+      grid-template-columns: 1fr $vp-medium;
     }
   }
 }

@@ -4,23 +4,15 @@
   border-top: solid $border-stroke-weight-s $light;
   background-color: $lighter;
   .leporello-artefact-related-works-item {
-    padding: $m;
+    padding: $l $m $l $m;
     &-intro {
       margin-bottom: $l;
     }
     &-list {}
-    /* Responsive Medium
-    -------------------------------------------------------------------------- */
-    @include grid-even-2-columns($vp-medium);
-    @media only screen and (min-width: $vp-medium) {
-      padding-top: $xl;
-      padding-bottom: $xxl;
-      &-info {
-        padding-right: $l;
-      }
-    }
-    /* Responsive Large
-    -------------------------------------------------------------------------- */
+
+    // Responsive Medium
+    // --------------------------------------------------------------------------
     @include grid-uneven-2-columns($vp-large);
+
   }
 }

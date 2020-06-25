@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '~/i18n';
 
-import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import GraphicsList from '~/components/molecules/graphics-list';
 
@@ -56,13 +55,11 @@ export default ({
       initiallyOpen={isOpen}
       onToggle={setIsOpen}
       visibleToggler={hasMoreRelatedWorkItemsThanLimit}
+      closerType="with-cover"
     >
       <div className="leporello-artefact-related-works-item">
         <div className="leporello-artefact-related-works-item-intro">
           <h2 className="chapter">{t('Related works')}</h2>
-          <CopyText
-            text={t('Related works description')}
-          />
         </div>
         <div className="leporello-artefact-related-works-item-list">
           <GraphicsList

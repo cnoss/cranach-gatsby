@@ -2,10 +2,8 @@
 .zoom-image {
   display: block;
   position: relative;
-  padding-top: 100%;
-  background-color: rgba(0,0,0, .03);
-  border-top: solid $border-stroke-weight-s $light;
-  border-bottom: solid $border-stroke-weight-s $light;
+  height: 100vw;
+
   .preload-image {
     bottom: 0;
     left: 0;
@@ -20,10 +18,15 @@
     transition: opacity ease-in 1.5s;
   }
   .openseadragon-container {
-    position: absolute !important;
+     position: absolute !important;
     .openseadragon-canvas {
       opacity: 0;
       transition: opacity 1s;
+
+      & + div{
+        margin-top: $s !important;
+        margin-left: $s !important;
+      }
     }
   }
   &.has-active-zoom {
@@ -60,4 +63,9 @@
       position: relative;
     }
   }
+
+  @media only screen and (min-width: $vp-large) {
+    height: 100%;
+    min-height: 50vw;
+   }
 }
