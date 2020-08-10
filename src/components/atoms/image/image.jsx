@@ -7,11 +7,14 @@ export default ({
   alt,
   caption,
   classNamePrefix,
-  modifier,
-}) => (
-  <figure
-    className={`${classNamePrefix ? `${classNamePrefix} image${modifier}` : `image${modifier}`}`}
-    data-component="atoms/image"
+  modifierWithBox,
+}) => {
+  const classNameModifier = modifierWithBox ? '--with-box' : '';
+  const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
+  return (
+    <figure
+      className={className}
+      data-component="atoms/image"
     >
       <div
         className="image__holder"
@@ -22,11 +25,12 @@ export default ({
         ></img>
       </div>
 
-    { caption && <figcaption
-        className= 'image__caption'
+      {caption && <figcaption
+        className='image__caption'
       >
-        <p className="text">{ caption }</p>
+        <p className="text">{caption}</p>
       </figcaption>
-    }
-  </figure>
-);
+      }
+    </figure>
+  );
+};

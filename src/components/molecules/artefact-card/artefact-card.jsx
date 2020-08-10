@@ -24,9 +24,9 @@ export default ({
         internalTransitionDirection='left'
       >
         <Image
-          src={ imgSrc }
-          alt={ imgAlt }
-          modifier="--with-box"
+            src={imgSrc}
+            alt={imgAlt}
+            modifierWithBox={true}
 
         />
       </Link>
