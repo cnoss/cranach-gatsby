@@ -27,7 +27,7 @@ export default ({
           <Image
             src={imgSrc}
             alt={imgAlt}
-            modifier="--with-box" // -has-box artefact-line-image
+            modifierWithBox={true} // -has-box artefact-line-image
           />
         </Link>
       </div>
