@@ -24,7 +24,7 @@ export default ({
 
     return {
       inventoryNumber: item.inventoryNumber,
-      title: item.titles[0].title || '',
+      title: `${item.titles[0].title}, ${item.dating.dated}`,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: false,

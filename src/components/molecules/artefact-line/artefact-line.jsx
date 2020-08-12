@@ -38,8 +38,8 @@ export default ({
           triggersInternalTransition={true}
           internalTransitionDirection='left'
         >
-          <h2 className="artefact-line__title">{title}</h2>
-          <h3 className="artefact-line__subtitle">{subtitle}, {date}</h3>
+          <h2 className="artefact-line__title">{title}, {date}</h2>
+          <h3 className="artefact-line__subtitle">{subtitle}</h3>
           <ul className="artefact-line__master-data">
             <li>{masterData.classification.classification}, {masterData.objectName}</li>
             <li>{masterData.dimensions}</li>

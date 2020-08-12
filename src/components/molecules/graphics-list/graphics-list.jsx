@@ -39,7 +39,7 @@ export default ({
                 alt={item.title}
                 classNamePrefix={'graphics-list-item__image'}
                 caption={item.title}
-                modifier="--with-box"
+                modifierWithBox={true}
               />
             </Link>
           </li>,

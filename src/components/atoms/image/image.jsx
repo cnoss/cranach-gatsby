@@ -28,7 +28,12 @@ export default ({
       {caption && <figcaption
         className='image__caption'
       >
-        <p className="text">{caption}</p>
+        {
+          (Array.isArray(caption)) && caption.map(item => <p className="text">{item}</p>)
+        }
+        {
+          (!Array.isArray(caption)) && <p className="text">{caption}</p>
+        }
       </figcaption>
       }
     </figure>

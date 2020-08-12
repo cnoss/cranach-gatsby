@@ -21,7 +21,7 @@ export default ({
 
     return {
       inventoryNumber: item.inventoryNumber,
-      title: item.owner || '',
+      title: [item.dating.dated, item.owner],
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: true,
@@ -59,7 +59,7 @@ export default ({
     {
       id: '1st-state',
       translations: {
-        title: 'Reprints',
+        title: 'Impressions',
         subtitle: '1st state',
         description: '1st state description',
       },
@@ -69,7 +69,7 @@ export default ({
     {
       id: '2nd-state',
       translations: {
-        title: 'Reprints',
+        title: 'Impressions',
         subtitle: '2nd state',
         description: '2nd state description',
       },
@@ -79,7 +79,7 @@ export default ({
     {
       id: '3rd-state',
       translations: {
-        title: 'Reprints',
+        title: 'Impressions',
         subtitle: '3rd state',
         description: '3rd state description',
       },

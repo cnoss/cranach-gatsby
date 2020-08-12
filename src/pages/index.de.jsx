@@ -147,6 +147,12 @@ export const query = graphql`
               name
               role
             }
+            exhibitionHistory
+            catalogWorkReferences {
+              description
+              referenceNumber
+              remarks
+            }
           }
         }
       }
