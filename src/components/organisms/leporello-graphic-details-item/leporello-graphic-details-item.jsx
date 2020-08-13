@@ -38,7 +38,6 @@ export default ({
     catalogWorkReferences,
     publications,
     classification,
-    objectName,
   } = graphic;
 
   /* Sorting catalogWorkReferences */
@@ -129,7 +128,7 @@ export default ({
 
               <DefinitionList.Entry
                 term={ t('Classification') }
-                definition={ `${classification.classification}, ${objectName}` }
+                definition={ `${classification.classification}, ${classification.printProcess}` }
               />
               <DefinitionList.Entry
                 term={ t('Dating') }
