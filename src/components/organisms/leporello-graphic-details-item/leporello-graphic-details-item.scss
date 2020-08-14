@@ -43,13 +43,12 @@
           & .column {
             flex-basis: calc(calc(600px - 100%)*999);
             flex-grow: 1;
+            padding-right: $m;
             & .definition-list__term:first-child {
               padding-top: 0;
             }
           }
-          & .column+.column {
-            margin-left: $m;
-          }
+
         }
       }
       &-image {
