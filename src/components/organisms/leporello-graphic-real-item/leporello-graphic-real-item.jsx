@@ -138,10 +138,10 @@ export default ({
               definition={inventoryNumber}
             />
             {catalogWorkReferences.length > 0
-              && <GroupedDefinitionList.Entry
-              term={t('VD16-No.')}
-              definition={catalogWorkReferences}
-            />}
+              && catalogWorkReferences.map(ref => <GroupedDefinitionList.Entry
+                term={ref.description}
+                definition={ref.referenceNumber}
+              />)}
           </GroupedDefinitionList>
 
           {/* Publikationen */}

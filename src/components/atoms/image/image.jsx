@@ -10,6 +10,8 @@ export default ({
   modifierWithBox,
 }) => {
   const classNameModifier = modifierWithBox ? '--with-box' : '';
+  const capArray = (Array.isArray(caption) ? caption : [caption]);
+  const captions = caption ? capArray : [];
   const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
   return (
     <figure
@@ -27,13 +29,7 @@ export default ({
 
       {caption && <figcaption
         className='image__caption'
-      >
-        {
-          (Array.isArray(caption)) && caption.map(item => <p className="text">{item}</p>)
-        }
-        {
-          (!Array.isArray(caption)) && <p className="text">{caption}</p>
-        }
+      >{captions}
       </figcaption>
       }
     </figure>
