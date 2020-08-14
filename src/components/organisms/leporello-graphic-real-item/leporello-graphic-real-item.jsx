@@ -92,7 +92,7 @@ export default ({
           </GroupedDefinitionList>
 
           {/* Inschriften, Texte und so */}
-          {(signature || inscription || markings || description)
+          {(signature || inscription || markings)
             && (
               <GroupedDefinitionList>
                 {signature && <GroupedDefinitionList.Entry
