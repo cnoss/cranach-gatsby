@@ -115,7 +115,6 @@ export default ({
             <Image
               src={images.sizes.l.src}
               alt={title}
-              modifierWithBox={false}
             />
           </div>
           <div className="leporello-graphic-details-item__content-info">
