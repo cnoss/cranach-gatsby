@@ -7,7 +7,7 @@ export default ({
   alt,
   caption,
   classNamePrefix,
-  modifierWithBox,
+  modifierWithBox = false,
 }) => {
   const classNameModifier = modifierWithBox ? '--with-box' : '';
   const capArray = (Array.isArray(caption) ? caption : [caption]);
