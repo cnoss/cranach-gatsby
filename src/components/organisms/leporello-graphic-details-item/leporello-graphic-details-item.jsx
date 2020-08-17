@@ -37,7 +37,6 @@ export default ({
     catalogWorkReferences,
     publications,
     classification,
-    objectName,
   } = graphic;
 
   /* Sorting catalogWorkReferences */
@@ -106,7 +105,7 @@ export default ({
 
           <h1 className="title">{title}</h1>
           <h2 className="subtitle">
-            {classification.classification}, {objectName}
+            {classification.classification}, {classification.printProcess}
           </h2>
         </header>
 

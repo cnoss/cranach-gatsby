@@ -65,14 +65,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-4_3",
             "objectId": 940687,
             "isVirtual": true,
-            "dimensions": "plate mark: 13.2 x 11.8 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 132 x 118 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1510",
                 "begin": 1510,
@@ -148,7 +149,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010209",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010221",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -227,350 +244,6 @@
                     "suffix": "",
                     "nameType": "Andere Suchform",
                     "alternativeName": "Lucas Cranach the Elder",
-                    "remarks": "",
-                    "date": "",
-                    "isUnknown": false
-                }
-            ],
-            "involvedPersonsNames": [
-                {
-                    "constituentId": "32400",
-                    "details": [
-                        {
-                            "name": "Lucas Cranach der \u00c4ltere",
-                            "nameType": "Prim\u00e4rer Name"
-                        },
-                        {
-                            "name": "Lucas Cranach the Elder",
-                            "nameType": "Andere Suchform"
-                        },
-                        {
-                            "name": "Lucas Sunders",
-                            "nameType": "Falsche Namensform"
-                        }
-                    ]
-                }
-            ],
-            "titles": [
-                {
-                    "type": "Beschreibender Titel",
-                    "title": "Luther as Junker J\u00f6rg",
-                    "remarks": ""
-                }
-            ],
-            "classification": {
-                "classification": "Druckgrafik",
-                "condition": ""
-            },
-            "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
-            "inventoryNumber": "GWN_LC_HVI-107_132",
-            "objectId": 940712,
-            "isVirtual": true,
-            "dimensions": "block marks: 28.5 x 20.6 cm (+- 2 mm)\n[cda 2019]",
-            "dating": {
-                "dated": "1522",
-                "begin": 1517,
-                "end": 1527,
-                "remarks": "[llater editions dated]",
-                "historicEventInformations": []
-            },
-            "description": "This woodcut showing 'Luther as Junker J\u00f6rg' was Cranach's  last portrait of Luther in printed form. After leaving Worms on the 26 April, 1521, Luther was arrested near Altenburg on the 4th of May by two masked men (friends) and taken to the Wartburg where he remained in retreat dressed as a knight and letting his beard grow until the 3rd March 1522. During this time he paid a hasty visit to Wittenberg where he remained in complete seclusion seeing only Cranach who recognized him straight away.  Cranach portrayed him with a beard, looking out to the left and this image was to mark his return to the public stage in 1522. It was widely disseminated with at least four different textual variants and continued to be printed until late into the 16th century. The inscription celebrates Luther's return employing the island of Patmos (where St John wrote the Apocalypse) as a metaphor for his time at the Wartburg.",
-            "provenance": "",
-            "medium": "",
-            "signature": "None",
-            "inscription": "",
-            "markings": "",
-            "relatedWorks": "",
-            "exhibitionHistory": "AT_A_DG1929-242",
-            "bibliography": "",
-            "references": {
-                "reprints": [
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-242",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "BE_KBR_S-II20715",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_GNMN_Mp14637a",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-74",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_V3-1696",
-                        "remark": "Hollstein VI.107.132d"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SKD_A 6645",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_H64",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_DK-181-83",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SGSM_1912-997D",
-                        "remark": "Hollstein VI.107.132d"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SMBKSK_66-1898",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "US_MMANY_27-54-27",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "US_MMANY_41-1-163",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_1895-0122-279",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_O-3-190",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBB_I-L-44",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_WSE_G1359",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "US_NGA_1943-3-2875",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SKD_A6645",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_1870-0625-561",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "PRIVATE_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_smbKK_66-1898",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_DK 181-83",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBB_Portr-Slg_Slg-Luther_ A-II-3",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "BE_KBR_S-II-20715",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AU_NGVM_425-5",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_II-3313",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_smbKK_759-2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_LCranachdA-V-3-1696",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SGSM_191-997D",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_UBTue_Kg385a-4-R-104",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBBam_I-L-44",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_LCranachdA-AB-3-74",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "PRIVATE_NONE-007",
-                        "remark": ""
-                    }
-                ],
-                "relatedWorks": []
-            },
-            "additionalTextInformation": [
-                {
-                    "type": "Description\/ Interpretation\/ Comments",
-                    "text": "Two editions of the woodcut. The earlier reproduced by Lippmann is in Dresden; fine impression with broad margins; sheet size: 442 x 312; old inscription in verse, in red chalk, running round the woodcut. It has above the portrait only the name \u2018Lutherus\u2019 (sic), and beneath it the four verses\u00b4, with different orthography. This edition must have appeared before Luther\u2019s final return to Wittenberg, to which allusion is made in the second edition. In the first edition there is no break in the outline of the r. shoulder.\n[Dodgson 1911, 317]",
-                    "date": "",
-                    "year": 1911,
-                    "author": ""
-                },
-                {
-                    "type": "Description\/ Interpretation\/ Comments",
-                    "text": "An early print in the Prints and Drawing Department in Dresden, which only has the name 'Lutherus' above the portrait and below the two couplets: Quaesitus-vale. \n[Schuchardt 1871,vol. III, 254, No. 179]",
-                    "date": "",
-                    "year": null,
-                    "author": ""
-                }
-            ],
-            "publications": [
-                {
-                    "title": "",
-                    "pageNumber": "18",
-                    "referenceId": "30162"
-                },
-                {
-                    "title": "Dodgson 1911",
-                    "pageNumber": "316",
-                    "referenceId": "346"
-                },
-                {
-                    "title": "Hollstein 1959",
-                    "pageNumber": "107",
-                    "referenceId": "736"
-                },
-                {
-                    "title": "Jahn, Bernhard 1972",
-                    "pageNumber": "405",
-                    "referenceId": "1939"
-                },
-                {
-                    "title": "Warnke 1984",
-                    "pageNumber": "49-51",
-                    "referenceId": "1445"
-                }
-            ],
-            "keywords": [],
-            "locations": [],
-            "repository": "",
-            "owner": "",
-            "sortingNumber": "",
-            "catalogWorkReferences": [
-                {
-                    "description": "Hollstein",
-                    "referenceNumber": "VI.107.132",
-                    "remarks": ""
-                }
-            ],
-            "structuredDimension": {
-                "element": "Ma\u00dfstab CDA",
-                "width": "0.00",
-                "height": "28.50"
-            },
-            "images": {
-                "infos": {
-                    "maxDimensions": {
-                        "width": 1377,
-                        "height": 2233
-                    }
-                },
-                "sizes": {
-                    "xs": {
-                        "dimensions": {
-                            "width": 200,
-                            "height": 324
-                        },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xs.jpg"
-                    },
-                    "s": {
-                        "dimensions": {
-                            "width": 300,
-                            "height": 486
-                        },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-s.jpg"
-                    },
-                    "m": {
-                        "dimensions": {
-                            "width": 800,
-                            "height": 1297
-                        },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-m.jpg"
-                    },
-                    "l": {
-                        "dimensions": {
-                            "width": 1200,
-                            "height": 1946
-                        },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-l.jpg"
-                    },
-                    "xl": {
-                        "dimensions": {
-                            "width": 1377,
-                            "height": 2233
-                        },
-                        "src": "http:\/\/lucascranach.org\/imageserver\/G_AT_A_DG1929-242\/01_Overall\/G_AT_A_DG1929-242_Overall-xl.jpg"
-                    }
-                }
-            }
-        },
-        {
-            "langCode": "en",
-            "involvedPersons": [
-                {
-                    "id": "",
-                    "role": "Inventor",
-                    "name": "Lucas Cranach the Elder",
-                    "prefix": "",
-                    "suffix": "",
-                    "nameType": "Andere Suchform",
-                    "alternativeName": "Lucas Cranach the Elder",
                     "remarks": "[cda 2019]",
                     "date": "",
                     "isUnknown": false
@@ -604,14 +277,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-92_115",
             "objectId": 940721,
             "isVirtual": true,
-            "dimensions": "block marks: 37.9 x 51.3 cm (using 2 blocks) (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 379 x 513 mm (using 2 blocks) (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1506",
                 "begin": 1501,
@@ -679,7 +353,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040401",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -791,14 +476,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-56_79",
             "objectId": 940729,
             "isVirtual": true,
-            "dimensions": "block marks: 28.1 x 19.4 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 281 x 197 mm (+ - 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1501,
@@ -907,7 +593,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030110",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -1019,14 +716,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_10",
             "objectId": 940731,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -1212,7 +910,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020405",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -1324,14 +1038,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_11",
             "objectId": 940749,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -1517,7 +1232,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020406",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -1634,14 +1365,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_13",
             "objectId": 940758,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -1830,7 +1562,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -1947,14 +1690,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_12",
             "objectId": 940760,
             "isVirtual": true,
-            "dimensions": "Block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -2143,7 +1887,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -2255,14 +2010,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-66_89",
             "objectId": 940764,
             "isVirtual": true,
-            "dimensions": "block marks: 21.5 x 14.9 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 215 x 149 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1502",
                 "begin": 1497,
@@ -2347,7 +2103,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030147",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -2454,14 +2221,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": "1st state"
+                "condition": "1st state",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 1,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-54_78a",
             "objectId": 940824,
             "isVirtual": true,
-            "dimensions": "block marks: 38.9 x 29.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 389 x 292 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -2542,7 +2310,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010209",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "01040310",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -2659,14 +2443,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-55_78b",
             "objectId": 940845,
             "isVirtual": true,
-            "dimensions": "block marks: 12 x 29 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 120 x 290 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -2730,7 +2515,13 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -2837,14 +2628,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-52_76",
             "objectId": 940846,
             "isVirtual": true,
-            "dimensions": "block marks: 40 x 26.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 400 x 268 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1501,
@@ -2899,7 +2691,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030106",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -3011,14 +2814,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_53",
             "objectId": 940866,
             "isVirtual": true,
-            "dimensions": "block marks: 16.3 x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -3185,7 +2989,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030138",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -3302,14 +3122,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-1_2",
             "objectId": 946471,
             "isVirtual": true,
-            "dimensions": "Plate mark: 25.6 x 20 cm",
+            "dimensions": "Image: 256 x 200 mm",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -3382,7 +3203,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030111",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -3494,14 +3326,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-5_4",
             "objectId": 946475,
             "isVirtual": true,
-            "dimensions": "plate mark: 18.7 x 16.5 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 187 x 165 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "after 1510",
                 "begin": 1510,
@@ -3564,7 +3397,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010209",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030108",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -3676,14 +3525,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-3_2",
             "objectId": 946541,
             "isVirtual": true,
-            "dimensions": "Plate mark: 16.8 x 11.5 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 168 x 115 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1520",
                 "begin": 1520,
@@ -3743,7 +3593,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010201",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -3855,14 +3716,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-7_6",
             "objectId": 946551,
             "isVirtual": true,
-            "dimensions": "plate mark: 14 x 9.7 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 140 x 97 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1520",
                 "begin": 1515,
@@ -3888,7 +3750,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_DK 36-79",
+                        "inventoryNumber": "DE_KSW_DK36-79",
                         "remark": ""
                     },
                     {
@@ -3958,6 +3820,16 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-78",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-79",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "US_DACM_1938-D1-16",
                         "remark": ""
                     },
@@ -4008,7 +3880,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_DK 37-81",
+                        "inventoryNumber": "DE_KSW_DK37-81",
                         "remark": ""
                     },
                     {
@@ -4019,16 +3891,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_LHW_fl-IIIa-208",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-78",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-79",
                         "remark": ""
                     },
                     {
@@ -4067,7 +3929,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -4179,14 +4052,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-27_29",
             "objectId": 946569,
             "isVirtual": true,
-            "dimensions": "block marks: 22 x 15.4 cm\n[cda 2019]",
+            "dimensions": "Image: 220 x 154 mm \n[cda 2019]",
             "dating": {
                 "dated": "about 1502 - 1503",
                 "begin": 1497,
@@ -4251,8 +4125,24 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [
+                {
+                    "type": "Location Cranach Object",
+                    "term": "Wien",
+                    "path": ""
+                },
                 {
                     "type": "Location Cranach Object",
                     "term": "Wien",
@@ -4364,14 +4254,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-44_69",
             "objectId": 946577,
             "isVirtual": true,
-            "dimensions": "block marks: 38 x 28.4 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 380 x 284 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1505",
                 "begin": 1505,
@@ -4426,7 +4317,38 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040304",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030124",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030140",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030143",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -4538,14 +4460,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-86_109",
             "objectId": 946625,
             "isVirtual": true,
-            "dimensions": "block marks (2 blocks) each: 24.3 x 9.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image (from 2 blocks) each: 243 x 92 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1504",
                 "begin": 1499,
@@ -4600,7 +4523,13 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -4717,14 +4646,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-65_88",
             "objectId": 946629,
             "isVirtual": true,
-            "dimensions": "block marks: 24.5 x 14.3 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 245 x 143 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -4784,7 +4714,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040311",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -4896,14 +4837,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-70_94",
             "objectId": 946632,
             "isVirtual": true,
-            "dimensions": "block marks: 24.5 x 14.3 cm (+- 4 mm)\n[cda 2019]",
+            "dimensions": "Image: 245 x 143 mm (+- 4 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -4958,7 +4900,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030213",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -5070,14 +5023,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-60_83",
             "objectId": 946665,
             "isVirtual": true,
-            "dimensions": "block marks: 37.8 x 27.8 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 378 x 278 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -5137,7 +5091,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030117",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -5249,14 +5214,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-57_80",
             "objectId": 946680,
             "isVirtual": true,
-            "dimensions": "block marks: 22.8 x 15.8 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 228 x 158 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -5431,14 +5397,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-88_111",
             "objectId": 946719,
             "isVirtual": true,
-            "dimensions": "block marks: 17.4 x 11.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 174 x 118 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -5590,14 +5557,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-91_114",
             "objectId": 946724,
             "isVirtual": true,
-            "dimensions": "block marks: 17.5 x 12.3 cm (+- 4 mm)\n[cda 2019]",
+            "dimensions": "Image: 175 \u00d7 123 mm (+- 4 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -5769,14 +5737,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-87_110",
             "objectId": 946778,
             "isVirtual": true,
-            "dimensions": "block  marks: 18.2 x 12.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 182 x 122 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -5836,7 +5805,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010223",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -5948,14 +5928,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-90_113",
             "objectId": 946786,
             "isVirtual": true,
-            "dimensions": "block marks: 18 x 12.4 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 180 \u00d7 124 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1506",
                 "begin": 1501,
@@ -6023,7 +6004,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040401",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -6135,14 +6127,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-93_116",
             "objectId": 946794,
             "isVirtual": true,
-            "dimensions": "block marks: 25.6 x 37.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 256 x 372 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1506",
                 "begin": 1506,
@@ -6210,7 +6203,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040402",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -6322,14 +6326,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-58_81",
             "objectId": 946837,
             "isVirtual": true,
-            "dimensions": "block marks: 23.3 x 15.9 cm\n[cda 2019]",
+            "dimensions": "Image: 233 \u00d7 159 mm\n[cda 2019]",
             "dating": {
                 "dated": "um 1507",
                 "begin": 1502,
@@ -6392,7 +6397,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030117",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -6504,14 +6520,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-82_106",
             "objectId": 946854,
             "isVirtual": true,
-            "dimensions": "block marks: 33.5 x 23.5 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 335 \u00d7 235 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "um 1506",
                 "begin": 1501,
@@ -6574,7 +6591,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "01040513",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -6680,14 +6708,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-26_28",
             "objectId": 948064,
             "isVirtual": true,
-            "dimensions": "block marks: 21.5 x 15 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 215 \u00d7 150 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "",
                 "begin": 1490,
@@ -6732,7 +6761,18 @@
                     "referenceId": "30160"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -6833,14 +6873,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-25_27",
             "objectId": 948065,
             "isVirtual": true,
-            "dimensions": "block marks: 26.8 x 16.8 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 268 x 168 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1516",
                 "begin": 1511,
@@ -6922,7 +6963,18 @@
                     "referenceId": "30159"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7034,14 +7086,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-80_104",
             "objectId": 948144,
             "isVirtual": true,
-            "dimensions": "block marks: 36.3 x 25.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 363 x 252 mm (+- 2 mm)\n[cda 2019]]",
             "dating": {
                 "dated": "1508",
                 "begin": 1503,
@@ -7116,7 +7169,18 @@
                     "referenceId": "28094"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040503",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7228,14 +7292,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-81_105",
             "objectId": 948223,
             "isVirtual": true,
-            "dimensions": "block marks: 28 x 19.4 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 280 x 194 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1509",
                 "begin": 1504,
@@ -7320,7 +7385,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040512",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010205",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7437,14 +7518,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "H077"
             },
             "conditionLevel": 0,
-            "objectName": "H077",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-53_77",
             "objectId": 948345,
             "isVirtual": true,
-            "dimensions": "block marks: 13.1 x 10.8 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 131 x 108 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1515 - 1518",
                 "begin": 1510,
@@ -7517,7 +7599,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "0104030504",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030107",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7629,14 +7727,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-75_96-93",
             "objectId": 948391,
             "isVirtual": true,
-            "dimensions": "block marks: 13.5 x 9.1 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 135 \u00d7 91 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -7713,7 +7812,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030138",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7825,14 +7935,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-76_96a",
             "objectId": 948605,
             "isVirtual": true,
-            "dimensions": "block marks: 12.8 x 10.5 cm\n[cda 2019]",
+            "dimensions": "Image: 128 \u00d7 105 mm\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1504,
@@ -7890,7 +8001,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010315",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -7997,14 +8119,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19_9",
             "objectId": 948610,
             "isVirtual": true,
-            "dimensions": "block marks: 23 x 16.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 230 \u00d7 162 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1509",
                 "begin": 1504,
@@ -8067,7 +8190,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040302030204",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -8179,14 +8313,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-10_1",
             "objectId": 948652,
             "isVirtual": true,
-            "dimensions": "block marks: 33.3 x 23 cm (+- 1 cm)\n[cda 2019]",
+            "dimensions": "Image: 333 x 230 cm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -8241,7 +8376,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403010101",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010205",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -8353,14 +8504,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-17_7",
             "objectId": 948660,
             "isVirtual": true,
-            "dimensions": "block marks: 28.5 x 18.5 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 285 x 185 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1504,
@@ -8430,7 +8582,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020205",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010205",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -8542,14 +8710,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-12_3",
             "objectId": 948677,
             "isVirtual": true,
-            "dimensions": "block marks: 24.3 x 17.2 cm (+- 5 mm) \n[cda 2019]",
+            "dimensions": "Image: 243 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1504,
@@ -8619,7 +8788,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010205",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403010204",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -8731,14 +8916,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-61_84",
             "objectId": 948787,
             "isVirtual": true,
-            "dimensions": "block marks: 33.5 x 22.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 335 x 226 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -8798,7 +8984,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030120",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -8910,14 +9107,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-95_118",
             "objectId": 949007,
             "isVirtual": true,
-            "dimensions": "block marks: 29.2 x 41.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 292 x 416 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -8977,7 +9175,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040402",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -9089,14 +9298,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-96_119",
             "objectId": 949045,
             "isVirtual": true,
-            "dimensions": "block marks: 29.6 x 41.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 296 x 418 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -9156,7 +9366,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040402",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -9268,14 +9489,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-94_117",
             "objectId": 949118,
             "isVirtual": true,
-            "dimensions": "block marks: 29.5 x 41.9 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 295 x 419 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -9338,7 +9560,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040402",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -9450,14 +9683,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_14",
             "objectId": 949223,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -9638,7 +9872,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -9750,14 +9995,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_15",
             "objectId": 949238,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -9938,7 +10184,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020408",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -10050,14 +10312,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_16",
             "objectId": 949241,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -10238,7 +10501,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020410",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -10350,14 +10629,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_17",
             "objectId": 949243,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -10538,7 +10818,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020411",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -10650,14 +10946,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_18",
             "objectId": 949246,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -10838,7 +11135,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -10950,14 +11258,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_19",
             "objectId": 949250,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -11138,7 +11447,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020412",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -11250,14 +11575,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_20",
             "objectId": 949257,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -11438,7 +11764,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -11550,14 +11892,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_21",
             "objectId": 949262,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -11738,7 +12081,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020416",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -11850,14 +12209,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_22",
             "objectId": 949271,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -12038,7 +12398,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020417",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -12150,14 +12526,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-19-21_23",
             "objectId": 949272,
             "isVirtual": true,
-            "dimensions": "block marks: 25 x 17.2 cm (+- 5 mm)\n[cda 2019]",
+            "dimensions": "Image: 250 x 172 mm (+- 5 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -12338,7 +12715,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020604",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -12450,14 +12843,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-22_24",
             "objectId": 952852,
             "isVirtual": true,
-            "dimensions": "block marks: 38.9 x 28.1 cm (+- 1mm)\n[cda 2019]",
+            "dimensions": "Image: 389 x 281 mm (+- 1mm)\n[cda 2019]",
             "dating": {
                 "dated": "1503",
                 "begin": 1498,
@@ -12502,7 +12896,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020405",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -12565,14 +12970,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-75_96-90",
             "objectId": 953339,
             "isVirtual": true,
-            "dimensions": "block marks: 13.5 x 11.1 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 135 \u00d7 111 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -12647,7 +13053,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030137",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -12759,14 +13176,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-67_91",
             "objectId": 954113,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 24,8 \u00d7 16,8 cm (+- 3 mm)\n[cda 2019]\nblock marks: 24.8 \u00d7 16.8 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image:  248 \u00d7 168 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1509",
                 "begin": 1504,
@@ -12834,7 +13252,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030204",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -12946,14 +13375,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-8_7",
             "objectId": 954608,
             "isVirtual": true,
-            "dimensions": "plate marks: 16.5 x 11.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 165 x 116 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1520",
                 "begin": 1515,
@@ -13038,7 +13468,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -13145,14 +13586,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-9_8",
             "objectId": 954634,
             "isVirtual": true,
-            "dimensions": "plate marks: 20.9 x 15 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 209 \u00d7 150 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1521",
                 "begin": 1516,
@@ -13178,7 +13620,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_URSJC_XXX",
+                        "inventoryNumber": "US_URSJC_NONE-001",
                         "remark": ""
                     },
                     {
@@ -13322,7 +13764,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -13434,14 +13887,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_54",
             "objectId": 954694,
             "isVirtual": true,
-            "dimensions": "block marks: 16.3 x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -13598,7 +14052,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030105",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -13710,14 +14180,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_56",
             "objectId": 954736,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -13879,7 +14350,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030124",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -13991,14 +14478,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_57",
             "objectId": 954762,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -14150,7 +14638,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030139",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -14262,14 +14766,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_58",
             "objectId": 954782,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -14426,7 +14931,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030108",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -14538,14 +15059,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_59",
             "objectId": 954844,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -14707,7 +15229,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030148",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -14780,14 +15318,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_60",
             "objectId": 954877,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -14944,7 +15483,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030137",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -15056,14 +15611,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_61",
             "objectId": 954883,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -15215,7 +15771,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030123",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -15327,14 +15899,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_62",
             "objectId": 955191,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -15491,7 +16064,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030145",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -15603,14 +16192,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_64",
             "objectId": 955218,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -15767,7 +16357,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030132",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -15879,14 +16485,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_63",
             "objectId": 955300,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2  x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 162 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -16043,7 +16650,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030126",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -16155,14 +16778,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-36-37_55",
             "objectId": 955309,
             "isVirtual": true,
-            "dimensions": "block marks: 16.3 x 12.6 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 163 x 126 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -16324,7 +16948,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030122",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -16436,14 +17076,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-83_107",
             "objectId": 955450,
             "isVirtual": true,
-            "dimensions": "block marks: 16.2 x 12.6 cm\n[cda 2019]",
+            "dimensions": "Image: 162 \u00d7 126 mm\n[cda 2019]",
             "dating": {
                 "dated": "about 1512",
                 "begin": 1507,
@@ -16498,7 +17139,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "01040404",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -16610,14 +17262,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-59_82",
             "objectId": 955461,
             "isVirtual": true,
-            "dimensions": "block marks: 16.4 x 12.8 cm\n[cda 2019]",
+            "dimensions": "Image: 164 x 128 mm\n[cda 2019]",
             "dating": {
                 "dated": "before 1511",
                 "begin": 1506,
@@ -16672,7 +17325,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030117",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -16784,14 +17448,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LG_HVI-39_65e",
             "objectId": 955570,
             "isVirtual": true,
-            "dimensions": "block marks: 11.2 \u00d7 7.5 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 112 \u00d7 75 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1512",
                 "begin": 1507,
@@ -16894,7 +17559,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020414",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -16957,14 +17633,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-46_71",
             "objectId": 955660,
             "isVirtual": true,
-            "dimensions": "block marks: 22.5 x 32.5 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 225 \u00d7 325 cm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1509",
                 "begin": 1504,
@@ -17019,7 +17696,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040309",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -17131,14 +17819,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-51_75",
             "objectId": 955666,
             "isVirtual": true,
-            "dimensions": "block marks: 24.7 x 16.8 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 247 \u00d7 168 mm\n (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1511",
                 "begin": 1506,
@@ -17193,7 +17882,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "0104030408",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -17305,14 +18005,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-45_70",
             "objectId": 955703,
             "isVirtual": true,
-            "dimensions": "block marks: 24.3 x 16.5 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 243 \u00d7 165 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1515",
                 "begin": 1510,
@@ -17367,7 +18068,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "0104030501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -17479,14 +18191,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-18_8",
             "objectId": 955708,
             "isVirtual": true,
-            "dimensions": "block marks: 33.8 x 23.6 cm \n[cda 2019]",
+            "dimensions": "Image: 338 x 236 mm\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -17546,7 +18259,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403020206",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -17658,14 +18382,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": "- early impression"
+                "condition": "- early impression",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-62_85",
             "objectId": 955717,
             "isVirtual": true,
-            "dimensions": "block marks: 33.5 x 23.6 cm\n[cda 2019]",
+            "dimensions": "Image: 335 x 236 mm\n[cda 2019]",
             "dating": {
                 "dated": "1516",
                 "begin": 1511,
@@ -17725,7 +18450,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040303012503",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -17837,14 +18573,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-99_122",
             "objectId": 955754,
             "isVirtual": true,
-            "dimensions": "block marks: 28.4 x 36.7 cm\n[cda 2019]",
+            "dimensions": "Image: 284 x 367 mm\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -17912,7 +18649,13 @@
                     "referenceId": "29169"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -18019,14 +18762,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-16_6",
             "objectId": 955766,
             "isVirtual": true,
-            "dimensions": "block marks: 24.5 x 16.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 245 \u00d7 168 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -18198,14 +18942,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_31",
             "objectId": 955855,
             "isVirtual": true,
-            "dimensions": "block marks: 32.9 x 18.4 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 329 x 184 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -18336,7 +19081,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "0104030503",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -18448,14 +19209,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_32",
             "objectId": 955952,
             "isVirtual": true,
-            "dimensions": "block marks: 30.9 x 18.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 309 x 182 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -18586,7 +19348,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030138",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -18698,14 +19476,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_33",
             "objectId": 955988,
             "isVirtual": true,
-            "dimensions": "block marks: 31.2 x 18.7 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 312 x 187 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -18836,7 +19615,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030105",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -18948,14 +19743,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_34",
             "objectId": 955989,
             "isVirtual": true,
-            "dimensions": "block marks: 31.3 x 18.5 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 313 x 185 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -19086,7 +19882,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030122",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -19198,14 +20010,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_35",
             "objectId": 955998,
             "isVirtual": true,
-            "dimensions": "block marks: 30.2 x 18.2 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 302 x 182 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -19336,7 +20149,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030124",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -19448,14 +20277,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_36",
             "objectId": 956037,
             "isVirtual": true,
-            "dimensions": "block marks: 31 x 18.6 cm (+- 4 mm)\n[cda 2019]",
+            "dimensions": "Image: 310 x 186 mm (+- 4 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -19586,7 +20416,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030139",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -19698,14 +20544,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_37",
             "objectId": 956038,
             "isVirtual": true,
-            "dimensions": "block marks: 31,4 x 18.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 314 x 188 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -19836,7 +20683,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030108",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -19948,14 +20811,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_38",
             "objectId": 956062,
             "isVirtual": true,
-            "dimensions": "block marks: 31.2 x 18.9 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 312 x 189 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -20086,7 +20950,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030148",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -20198,14 +21078,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_39",
             "objectId": 956071,
             "isVirtual": true,
-            "dimensions": "block marks: 31.2 x 18.7 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 312 x 187 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -20336,7 +21217,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030131",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -20448,14 +21345,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_40",
             "objectId": 956085,
             "isVirtual": true,
-            "dimensions": "block marks: 31.3 x 18.7 cm (+- 4 mm)\n[cda 2019]",
+            "dimensions": "Image: 313 x 187 mm (+- 4 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -20586,7 +21484,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030123",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -20698,14 +21612,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_41",
             "objectId": 959151,
             "isVirtual": true,
-            "dimensions": "block marks: 31.5 x 18.7 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 315 x 187 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -20836,7 +21751,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030145",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -20948,14 +21879,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_42",
             "objectId": 959172,
             "isVirtual": true,
-            "dimensions": "block marks: 31.1 x 18.5 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image: 311 x 185 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -21086,7 +22018,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030126",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -21198,14 +22146,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_43",
             "objectId": 959221,
             "isVirtual": true,
-            "dimensions": "block marks: 31 x 18.5 cm (+- 3 mm)\n[cda 2019]",
+            "dimensions": "Image:  310 x 185 mm (+- 3 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -21336,7 +22285,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030132",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -21448,14 +22413,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-30_44",
             "objectId": 959233,
             "isVirtual": true,
-            "dimensions": "block marks: 31.4 x 18.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 314 x 188 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1510 - 1515",
                 "begin": 1505,
@@ -21586,7 +22552,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030137",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010212",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -21698,14 +22680,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-47_72",
             "objectId": 959754,
             "isVirtual": true,
-            "dimensions": "block marks: 36.7 x 22.8 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 367 \u00d7 228 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1513",
                 "begin": 1508,
@@ -21765,7 +22748,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010209",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "0104030403",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -21877,14 +22876,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-63_86",
             "objectId": 959849,
             "isVirtual": true,
-            "dimensions": "block marks: 40.2 x 27.8 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 402 \u00d7 278 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1508",
                 "begin": 1504,
@@ -21939,7 +22939,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040303012505",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22051,14 +23062,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-64_87",
             "objectId": 959911,
             "isVirtual": true,
-            "dimensions": "block marks: 33.2 x 23.3 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 332 \u00d7 233 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1509",
                 "begin": 1504,
@@ -22121,7 +23133,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "01040303012505",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22233,14 +23256,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-89_112",
             "objectId": 959958,
             "isVirtual": true,
-            "dimensions": "block marks: 24.7 x 16.5 cm (+- 1 mm)\n[cda 2019]",
+            "dimensions": "Image: 247 \u00d7 165 mm (+- 1 mm)\n[cda 2019]",
             "dating": {
                 "dated": "about 1506",
                 "begin": 1501,
@@ -22308,7 +23332,13 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22420,14 +23450,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-68_92",
             "objectId": 960774,
             "isVirtual": true,
-            "dimensions": "block marks: 21.5 x 12.6 cm\n[cda 2019]",
+            "dimensions": "Image: 215 \u00d7 126 mm\n[cda 2019]",
             "dating": {
                 "dated": "1519",
                 "begin": 1519,
@@ -22488,7 +23519,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010103",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030204",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22600,14 +23647,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-69_93",
             "objectId": 960823,
             "isVirtual": true,
-            "dimensions": "block marks: 21.4 x 12.5 cm\n[cda 2019]",
+            "dimensions": "Image: 214 \u00d7 125 mm\n[cda 2019]",
             "dating": {
                 "dated": "1519",
                 "begin": 1519,
@@ -22668,7 +23716,23 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010103",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030211",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22780,14 +23844,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-104_129",
             "objectId": 960893,
             "isVirtual": true,
-            "dimensions": "block marks: 27.5 x 22 cm\n[cda 2019]",
+            "dimensions": "Image: 275 \u00d7 220 mm\n[cda 2019]",
             "dating": {
                 "dated": "about 1525",
                 "begin": 1520,
@@ -22837,7 +23902,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010209",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -22905,14 +23981,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-75_96-75",
             "objectId": 961070,
             "isVirtual": true,
-            "dimensions": "block marks: 12.8 x 6.5 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 128 \u00d7 65 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -22975,7 +24052,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403030143",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23025,10 +24113,11 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-001",
             "objectId": 961195,
             "isVirtual": true,
@@ -23055,7 +24144,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23088,10 +24188,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-002",
             "objectId": 961196,
             "isVirtual": true,
@@ -23124,7 +24225,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23167,14 +24279,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HBG_H-NONE-001",
             "objectId": 961197,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 15,4 x 11,5 cm [http:\/\/diglib.hab.de?grafik=bibel-s-4f-258-00001]",
+            "dimensions": "Image: 154 x 115 mm [http:\/\/diglib.hab.de?grafik=bibel-s-4f-258-00001]",
             "dating": {
                 "dated": "",
                 "begin": 0,
@@ -23203,7 +24316,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23246,10 +24370,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HBG_HII-154_270",
             "objectId": 961198,
             "isVirtual": true,
@@ -23279,7 +24404,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KHMMIX-30",
+                        "inventoryNumber": "DE_KHMM_IX-30",
                         "remark": ""
                     },
                     {
@@ -23317,7 +24442,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23350,10 +24486,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_HVI-8_7-8",
             "objectId": 961199,
             "isVirtual": true,
@@ -23411,7 +24548,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23493,10 +24641,11 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-003",
             "objectId": 961200,
             "isVirtual": true,
@@ -23529,7 +24678,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23572,14 +24732,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Radierung"
             },
             "conditionLevel": 0,
-            "objectName": "Radierung",
+            "objectName": "",
             "inventoryNumber": "GWN_HH_HXV-238_69",
             "objectId": 961201,
             "isVirtual": true,
-            "dimensions": "21,4 x 15,6 cm [Ausst.-Kat. Eisenach, 2015, Abb. 13]",
+            "dimensions": "Image: 214 x 156 mm [Ausst.-Kat. Eisenach, 2015, Abb. 13]",
             "dating": {
                 "dated": "nach 1519",
                 "begin": 0,
@@ -23613,7 +24774,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23720,14 +24892,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HSB_HIII-210",
             "objectId": 961202,
             "isVirtual": true,
-            "dimensions": "10,8 x 7,6 cm (Darstellungsma\u00df?) [Hollstein German III.210]",
+            "dimensions": "108 x 76 mm (image?) [Hollstein German III.210]",
             "dating": {
                 "dated": "1520 (?)\n1524",
                 "begin": 0,
@@ -23766,7 +24939,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -23799,14 +24983,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_HVI-8_7-3",
             "objectId": 961203,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 20,5 x 12,3 cm",
+            "dimensions": "Image: 205 x 123 mm",
             "dating": {
                 "dated": "",
                 "begin": 0,
@@ -23985,7 +25170,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24018,10 +25214,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-004",
             "objectId": 961204,
             "isVirtual": true,
@@ -24054,7 +25251,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24097,10 +25305,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HBG_HVI-8_7-4",
             "objectId": 961205,
             "isVirtual": true,
@@ -24158,7 +25367,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24191,10 +25411,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-005",
             "objectId": 961206,
             "isVirtual": true,
@@ -24227,7 +25448,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24270,10 +25502,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_HVI-8_7-1",
             "objectId": 961207,
             "isVirtual": true,
@@ -24323,7 +25556,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "NL_RM_I-L-90",
+                        "inventoryNumber": "DE_SBBam_I-L-90",
                         "remark": ""
                     },
                     {
@@ -24356,7 +25589,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24389,14 +25633,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-006",
             "objectId": 961208,
             "isVirtual": true,
-            "dimensions": "13 x 10 cm",
+            "dimensions": "130 x 100 mm",
             "dating": {
                 "dated": "",
                 "begin": 0,
@@ -24425,7 +25670,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24532,14 +25788,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HSB_HIII-223-I",
             "objectId": 961209,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 39,4 x 27,9 cm (= Berlin) [Strau\u00df-Geisberg 1974, G.302]",
+            "dimensions": "Image: 394 x 279 mm (= Berlin) [Strau\u00df-Geisberg 1974, G.302]",
             "dating": {
                 "dated": "1522",
                 "begin": 0,
@@ -24575,7 +25832,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SBBam_I-L-49",
+                        "inventoryNumber": "DE_SBBa_IL49",
                         "remark": ""
                     },
                     {
@@ -24587,13 +25844,49 @@
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HAABW_Gr-2008-4822",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SMBKSK_857-2",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SMBKSK_858-2",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DI-21-57-1936-1133",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_GNMN_StN365",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_GNMN_Mp14642",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24636,14 +25929,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Eisenradierung"
             },
             "conditionLevel": 0,
-            "objectName": "Eisenradierung",
+            "objectName": "",
             "inventoryNumber": "GWN_DH_HHo-96_I",
             "objectId": 961210,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 22,9 x 15,6 \/15,7 cm [Ausst.-Kat. Hopfer M\u00fcnchen 2009, Nr. 102]\nPlattenrand 23 x 15,5 cm [https:\/\/skd-online-collection.skd.museum\/Details\/Index\/965636]",
+            "dimensions": "Image: 229 x 156 \/157 mm [Ausst.-Kat. Hopfer M\u00fcnchen 2009, Nr. 102]\nPlate marks: 230 x 155 mm [https:\/\/skd-online-collection.skd.museum\/Details\/Index\/965636]",
             "dating": {
                 "dated": "",
                 "begin": 0,
@@ -24771,13 +26065,29 @@
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SGSM_15831D",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_Dhopfer-V-3-2881-02",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -24820,14 +26130,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich",
+            "objectName": "",
             "inventoryNumber": "GWN_AA_HI-210_80",
             "objectId": 961211,
             "isVirtual": true,
-            "dimensions": "Plate marks: 6.1 x 4 cm \n[http:\/\/kk.haum-bs.de\/?id=a-altdorfer-ab3-0029]",
+            "dimensions": "Image: 61 x 40 mm \n[http:\/\/kk.haum-bs.de\/?id=a-altdorfer-ab3-0029]",
             "dating": {
                 "dated": "1523 or later",
                 "begin": 1523,
@@ -24848,7 +26159,7 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "CH_KMB_K-III-27 FM",
+                        "inventoryNumber": "CH_KMB_K-III-27-FM",
                         "remark": ""
                     },
                     {
@@ -24923,7 +26234,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_GNMN_K 337",
+                        "inventoryNumber": "DE_GNMN_K337",
                         "remark": ""
                     },
                     {
@@ -24966,7 +26277,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25042,14 +26364,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HB_HIV-595_259",
             "objectId": 961212,
             "isVirtual": true,
-            "dimensions": "35,9 x 25,4 cm",
+            "dimensions": "359 x 254 mm",
             "dating": {
                 "dated": "1530-1540",
                 "begin": 0,
@@ -25078,7 +26401,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25125,14 +26459,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HB_HIV-259_596",
             "objectId": 961213,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 35,6 x 28,4 cm ohne untere Inschrift [New Holl., Nr. 1312]\nSatzspiegel: 36,8 x 29 cm; Darstellungsma\u00df: 35,6 x 29 cm [Sch\u00e4fer, Eydinger, Rekow 2016 - Fliegende Bl\u00e4tter, Nr. 122]",
+            "dimensions": "Image: 356 x 284 mm (without text block) [New Holl., Nr. 1312]\nBlock marks: 368 x 290 mm; Image: 356 x 290 mm [Sch\u00e4fer, Eydinger, Rekow 2016 - Fliegende Bl\u00e4tter, Nr. 122]",
             "dating": {
                 "dated": "1530",
                 "begin": 0,
@@ -25196,7 +26531,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25239,14 +26585,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Kupferstich"
             },
             "conditionLevel": 0,
-            "objectName": "Kupferstich",
+            "objectName": "",
             "inventoryNumber": "GWN_MIB_H-NONE-001",
             "objectId": 961214,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df:  90 x 73 mm [http:\/\/www.portraitindex.de\/documents\/obj\/33900061]\nDarstellungsma\u00df:  88 x 69 mm [http:\/\/www.portraitindex.de\/documents\/obj\/34701250]",
+            "dimensions": "Image: 90 x 73 mm [http:\/\/www.portraitindex.de\/documents\/obj\/33900061]\nImage: 88 x 69 mm [http:\/\/www.portraitindex.de\/documents\/obj\/34701250]",
             "dating": {
                 "dated": "1530",
                 "begin": 0,
@@ -25345,7 +26692,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25392,14 +26750,15 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HHJ_HXIVb-27-113",
             "objectId": 961215,
             "isVirtual": true,
-            "dimensions": "Darstellungsma\u00df: 6,5 cm Durchmesser",
+            "dimensions": "Image: 65 mm diameter",
             "dating": {
                 "dated": "um 1532 [M\u00fcller 1997, S. 171, Nr. 111]",
                 "begin": 0,
@@ -25420,7 +26779,7 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "CH_KMB_1920-67 (Buch",
+                        "inventoryNumber": "CH_KMB_1920-67",
                         "remark": ""
                     },
                     {
@@ -25438,7 +26797,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25471,10 +26841,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_ANO_H-NONE-007",
             "objectId": 961216,
             "isVirtual": true,
@@ -25507,7 +26878,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25614,10 +26996,11 @@
             "titles": [],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_HSB_H-NONE-001",
             "objectId": 961217,
             "isVirtual": true,
@@ -25655,7 +27038,18 @@
             },
             "additionalTextInformation": [],
             "publications": [],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010402010129",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
@@ -25712,14 +27106,15 @@
             ],
             "classification": {
                 "classification": "Druckgrafik",
-                "condition": ""
+                "condition": "",
+                "printProcess": "Holzschnitt"
             },
             "conditionLevel": 0,
-            "objectName": "Holzschnitt",
+            "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-76_96-107",
             "objectId": 961480,
             "isVirtual": true,
-            "dimensions": "block marks: 13.2 x 6.7 cm (+- 2 mm)\n[cda 2019]",
+            "dimensions": "Image: 132 \u00d7 67 mm (+- 2 mm)\n[cda 2019]",
             "dating": {
                 "dated": "1509",
                 "begin": 1509,
@@ -25796,7 +27191,18 @@
                     "referenceId": "1939"
                 }
             ],
-            "keywords": [],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010403010101",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": ""
+                }
+            ],
             "locations": [],
             "repository": "",
             "owner": "",
