@@ -8,6 +8,7 @@ export default ({
   caption,
   classNamePrefix,
   modifierWithBox,
+  isLazy = true,
 }) => {
   const classNameModifier = modifierWithBox ? '--with-box' : '';
   const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
@@ -22,7 +23,8 @@ export default ({
         <img
           src={src}
           alt={alt}
-        ></img>
+          loading={ isLazy ? 'lazy' : '' }
+        />
       </div>
 
       {caption && <figcaption
