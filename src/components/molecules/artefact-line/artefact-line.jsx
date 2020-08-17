@@ -41,7 +41,9 @@ export default ({
           <h2 className="artefact-line__title">{title}, {date}</h2>
           <h3 className="artefact-line__subtitle">{subtitle}</h3>
           <ul className="artefact-line__master-data">
-            <li>{masterData.classification.classification}, {masterData.objectName}</li>
+            <li>
+              {masterData.classification.classification}, {masterData.classification.printProcess}
+            </li>
             <li>{masterData.dimensions}</li>
           </ul>
         </Link>
