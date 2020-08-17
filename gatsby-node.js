@@ -1,6 +1,22 @@
 // gatsby-node.js
-const path = require('path');
 
+const path = require('path');
+const graphicTransformer = require('./libs/transformers/graphic');
+
+const locals = [
+  {
+    name: 'German',
+    code: 'de',
+    path: 'de',
+  },
+  {
+    name: 'English',
+    code: 'en',
+    path: 'en',
+  },
+];
+
+const indexPageTemplate = path.resolve('src/templates/index.jsx');
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
@@ -72,7 +88,7 @@ exports.onCreateNode = ({ node }) => {
   });
 };
 
-exports.createPages = ({ graphql, actions }) => {
+const triggerGraphicPagesCreation = (graphql, actions) => {
   /*
     Filterung per grapqhql möglich:
 
@@ -247,4 +263,138 @@ exports.createPages = ({ graphql, actions }) => {
 
     createGraphicPages(mergedAndFlattenedItems, actions);
   });
+};
+
+
+const triggerIndexPagesCreation = async (graphql, actions) => {
+  const { createPage } = actions;
+
+  const localizedIndexPageData = async (lang) => await graphql(`
+    query ${lang.name}VirtualCranachGraphicObjects {
+      allGraphicsJson(filter: {
+        items: {
+          elemMatch: {
+            isVirtual: {
+              eq: true
+            },
+            langCode: {
+              eq: "${lang.code}"
+            },
+          }
+        }
+      }) {
+        edges {
+          node {
+            items {
+              langCode
+              slug
+              objectName
+              inventoryNumber
+              objectId
+              dimensions
+              dating {
+                dated
+              }
+              isVirtual
+              sortingNumber
+              titles {
+                remarks
+                title
+                type
+              }
+              classification {
+                classification
+                condition
+                printProcess
+              }
+              references {
+                reprints {
+                  inventoryNumber
+                }
+                relatedWorks {
+                  inventoryNumber
+                }
+              }
+              images {
+                infos {
+                  maxDimensions {
+                    width
+                    height
+                  }
+                }
+                sizes {
+                  xs {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  s {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  m {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  l {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                  xl {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
+                }
+              }
+              involvedPersons {
+                name
+                role
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const localPromises = locals.map((lang) => {
+    return localizedIndexPageData(lang).then((res) => {
+      const graphics = graphicTransformer.flattenGraphQlEdges(res.data.allGraphicsJson)
+        .filter(graphicTransformer.byImageExistence)
+        .map(graphicTransformer.toArtefact);
+
+      createPage({
+        path: lang.path,
+        component: indexPageTemplate,
+        context: {
+          lang,
+          graphics,
+        },
+      });
+    });
+  });
+
+  return Promise.all(localPromises);
+};
+
+
+exports.createPages = ({ graphql, actions }) => {
+  return Promise.all([
+    triggerGraphicPagesCreation(graphql, actions),
+    triggerIndexPagesCreation(graphql, actions),
+  ]);
 };
