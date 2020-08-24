@@ -25,6 +25,12 @@
       z-index: $level-content;
     }
 
+    &__title{
+      font-size: $m;
+      font-weight: $fw-semibold;
+      margin-bottom: $m;
+    }
+
     // Responsive Large
     // --------------------------------------------------------------------------
     @media only screen and (min-width: $vp-large) {

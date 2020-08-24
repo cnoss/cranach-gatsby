@@ -10,11 +10,10 @@
   }
   &__content {
     flex-grow: 1;
-    padding: $m;
+    padding: $s;
     color: $lighter;
     background-color: $dark;
   }
-
   &__title{
     font-weight: $fw-semibold;
     margin-bottom: $xxs;
@@ -23,7 +22,7 @@
   }
   &__subtitle{
     font-weight: $fw-regular;
-    margin-bottom: $xs;
+    margin-bottom: $xxs;
     line-height: $lh-headlines;
     color: $light;
   }

@@ -21,10 +21,10 @@ export default ({
   const { t } = useTranslation('LeporelloGraphicDetailsItem', translations);
 
   /* Prepare main and important object infos for usage */
-  const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
+  // const inventor = graphic.involvedPersons.find(person => person.role === 'Inventor');
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-  const subtitle = inventor ? inventor.name : ' ';
+  // const subtitle = inventor ? inventor.name : ' ';
   const description = graphic.description || ' ';
 
   const {
@@ -33,7 +33,6 @@ export default ({
     dimensions,
     involvedPersons,
     inventoryNumber,
-    inscription,
     signature,
     catalogWorkReferences,
     publications,
@@ -102,89 +101,89 @@ export default ({
       closerType="with-cover"
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
-        <div className={'leporello-graphic-details-item__image'}>
-          <Image
-            src={images.sizes.l.src}
-            alt={title}
-            modifierWithBox={false}
-          />
-        </div>
+        <header className="leporello-graphic-details-item__header">
 
-        <div className="leporello-graphic-details-item__info">
-          <h1 className="title">{ title }</h1>
-          <h2 className="subtitle inventor">
-            { subtitle }
+          <h1 className="title">{title}</h1>
+          <h2 className="subtitle">
+            {classification.classification}, {classification.printProcess}
           </h2>
+        </header>
 
-          <div className="further-infos">
-
-            <DefinitionList>
-
-
-              <DefinitionList.Entry
-                term={ t('Attribution') }
-                definition={ <InvolvedPersonsList data={ involvedPersons } /> }
-              />
-
-              <DefinitionList.Entry
-                term={ t('Classification') }
-                definition={ `${classification.classification}, ${classification.printProcess}` }
-              />
-              <DefinitionList.Entry
-                term={ t('Dating') }
-                definition={ `${dating.dated} ${dating.remarks}` }
-              />
-              <DefinitionList.Entry
-                term={ t('Measurments') }
-                definition={dimensions}
-              />
-              { signature && <DefinitionList.Entry
-                term={ t('Signature') }
-                definition={signature}
-              />
-              }
-
-              { inscription
-                && <DefinitionList.Entry
-                term={ t('Inscription') }
-                definition={inscription}
-              />
-              }
-
-              <DefinitionList.Entry
-                term="CDA ID"
-                definition={inventoryNumber}
-              />
-              <DefinitionList.Entry
-                term={ t('Persistent Link') }
-                definition={location}
-              />
-              {
-                catalogWorkReferenceItems.map(
-                  item => (
-                    <DefinitionList.Entry
-                      key={item.term}
-                      term={item.term}
-                      definition={item.definition}
-                    />
-                  ),
-                )
-              }
-
-            </DefinitionList>
-
-            {publications.length > 0
-              && <DefinitionList>
-              <DefinitionList.Entry
-                term={ t('Literature') }
-                definition={ <LiteratureTable data={ publications } /> }
-              />
-            </DefinitionList>
-            }
-
-            <CopyText
-              text={description}
+        <div className="leporello-graphic-details-item__content">
+          <div className={'leporello-graphic-details-item__content-image'}>
+            <Image
+              src={images.sizes.l.src}
+              alt={title}
             />
+          </div>
+          <div className="leporello-graphic-details-item__content-info">
+            <header className="leporello-graphic-details-item__content-info-header">
+              <h2 className="chapter">{t('Master Data')}</h2>
+            </header>
+            <div className="leporello-graphic-details-item__content-info-content">
+              <div className="column">
+                <CopyText
+                  text={description}
+                />
+              </div>
+
+              <div className="column">
+                <DefinitionList>
+                  <DefinitionList.Entry
+                    term={t('Attribution')}
+                    definition={<InvolvedPersonsList data={involvedPersons} />}
+                  />
+                  <DefinitionList.Entry
+                    term={t('Production date')}
+                    definition={`${dating.dated} ${dating.remarks}`}
+                  />
+
+
+                  <DefinitionList.Entry
+                    term={t('Dimensions')}
+                    definition={dimensions}
+                  />
+                  {signature && <DefinitionList.Entry
+                    term={t('Signature')}
+                    definition={signature}
+                  />
+                  }
+
+
+                  {
+                    catalogWorkReferenceItems.map(
+                      item => (
+                        <DefinitionList.Entry
+                          key={item.term}
+                          term={item.term}
+                          definition={item.definition}
+                        />
+                      ),
+                    )
+                  }
+
+                  <DefinitionList.Entry
+                    term="CDA ID"
+                    definition={inventoryNumber}
+                  />
+                  <DefinitionList.Entry
+                    term={t('Persistent Link')}
+                    definition={location}
+                  />
+
+                </DefinitionList>
+
+                {publications.length > 0
+                  && <DefinitionList>
+                    <DefinitionList.Entry
+                      term={t('Literature')}
+                      definition={<LiteratureTable data={publications} />}
+                    />
+                  </DefinitionList>
+                }
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

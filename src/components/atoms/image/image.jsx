@@ -7,9 +7,11 @@ export default ({
   alt,
   caption,
   classNamePrefix,
-  modifierWithBox,
+  modifierWithBox = false,
 }) => {
   const classNameModifier = modifierWithBox ? '--with-box' : '';
+  const capArray = (Array.isArray(caption) ? caption : [caption]);
+  const captions = caption ? capArray : [];
   const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
   return (
     <figure
@@ -27,8 +29,7 @@ export default ({
 
       {caption && <figcaption
         className='image__caption'
-      >
-        <p className="text">{caption}</p>
+      >{captions}
       </figcaption>
       }
     </figure>

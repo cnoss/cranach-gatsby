@@ -17,7 +17,7 @@ export default ({
   /* TODO: Pass through as parameter (?) */
   const navStructure = [
     {
-      title: 'Graphics',
+      title: 'Prints and Drawings',
       to: '/',
     },
     {
