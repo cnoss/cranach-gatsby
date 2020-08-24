@@ -187,7 +187,6 @@
                 "width": "0.00",
                 "height": "13.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -387,7 +386,6 @@
                 "width": "0.00",
                 "height": "37.90"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -628,7 +626,6 @@
                 "width": "19.70",
                 "height": "29.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -951,7 +948,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1274,7 +1270,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1600,7 +1595,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -1926,7 +1920,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2138,7 +2131,6 @@
                 "width": "0.00",
                 "height": "21.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2361,7 +2353,6 @@
                 "width": "0.00",
                 "height": "38.90"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2547,7 +2538,6 @@
                 "width": "0.00",
                 "height": "12.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2734,7 +2724,6 @@
                 "width": "0.00",
                 "height": "40.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -2890,11 +2879,6 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-307v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-158",
                         "remark": ""
                     },
@@ -2906,6 +2890,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-294",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-307v",
                         "remark": ""
                     }
                 ],
@@ -3043,7 +3032,6 @@
                 "width": "0.00",
                 "height": "16.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3248,7 +3236,6 @@
                 "width": "0.00",
                 "height": "25.60"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3448,7 +3435,6 @@
                 "width": "0.00",
                 "height": "18.70"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3640,7 +3626,6 @@
                 "width": "0.00",
                 "height": "16.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -3977,7 +3962,6 @@
                 "width": "0.00",
                 "height": "14.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4180,7 +4164,6 @@
                 "width": "0.00",
                 "height": "22.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4387,7 +4370,6 @@
                 "width": "0.00",
                 "height": "38.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4574,7 +4556,6 @@
                 "width": "0.00",
                 "height": "24.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4766,7 +4747,6 @@
                 "width": "0.00",
                 "height": "24.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -4953,7 +4933,6 @@
                 "width": "0.00",
                 "height": "24.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5145,7 +5124,6 @@
                 "width": "0.00",
                 "height": "37.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5329,7 +5307,6 @@
                 "width": "0.00",
                 "height": "22.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5490,7 +5467,6 @@
                 "width": "0.00",
                 "height": "17.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5671,7 +5647,6 @@
                 "width": "0.00",
                 "height": "17.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -5863,7 +5838,6 @@
                 "width": "0.00",
                 "height": "18.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6063,7 +6037,6 @@
                 "width": "0.00",
                 "height": "18.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6263,7 +6236,6 @@
                 "width": "0.00",
                 "height": "25.60"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6458,7 +6430,6 @@
                 "width": "0.00",
                 "height": "23.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6653,7 +6624,6 @@
                 "width": "0.00",
                 "height": "33.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -6819,7 +6789,6 @@
                 "width": "0.00",
                 "height": "21.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7027,7 +6996,6 @@
                 "width": "0.00",
                 "height": "26.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7234,7 +7202,6 @@
                 "width": "0.00",
                 "height": "36.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7456,7 +7423,6 @@
                 "width": "0.00",
                 "height": "28.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7671,7 +7637,6 @@
                 "width": "0.00",
                 "height": "13.10"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -7880,7 +7845,6 @@
                 "width": "0.00",
                 "height": "13.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8065,7 +8029,6 @@
                 "width": "0.00",
                 "height": "12.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8260,7 +8223,6 @@
                 "width": "0.00",
                 "height": "23.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8452,7 +8414,6 @@
                 "width": "0.00",
                 "height": "33.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8659,7 +8620,6 @@
                 "width": "0.00",
                 "height": "28.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -8866,7 +8826,6 @@
                 "width": "0.00",
                 "height": "24.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9058,7 +9017,6 @@
                 "width": "0.00",
                 "height": "33.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9250,7 +9208,6 @@
                 "width": "0.00",
                 "height": "29.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9442,7 +9399,6 @@
                 "width": "0.00",
                 "height": "29.60"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9637,7 +9593,6 @@
                 "width": "0.00",
                 "height": "29.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -9807,12 +9762,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-132",
+                        "inventoryNumber": "DE_HAUMB_AB3-14",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-14",
+                        "inventoryNumber": "AT_A_DG1929-132",
                         "remark": ""
                     },
                     {
@@ -9950,7 +9905,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10268,7 +10222,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10586,7 +10539,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -10904,7 +10856,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11217,7 +11168,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11387,17 +11337,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-25",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-137",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-151",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KSVC_1-42-25",
                         "remark": ""
                     }
                 ],
@@ -11535,7 +11485,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -11853,7 +11802,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12023,12 +11971,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-28",
+                        "inventoryNumber": "AT_A_DG1929-139",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-139",
+                        "inventoryNumber": "DE_KSVC_1-42-28",
                         "remark": ""
                     },
                     {
@@ -12171,7 +12119,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12489,7 +12436,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12659,17 +12605,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_AB3-25",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-141",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-155",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-25",
                         "remark": ""
                     }
                 ],
@@ -12807,7 +12753,6 @@
                 "width": "0.00",
                 "height": "25.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -12979,7 +12924,6 @@
                 "width": "0.00",
                 "height": "38.90"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -13142,7 +13086,6 @@
                 "width": "0.00",
                 "height": "13.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13342,7 +13285,6 @@
                 "width": "0.00",
                 "height": "24.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13477,12 +13419,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_1854-1113-232",
+                        "inventoryNumber": "AT_A_DG1929-80",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-80",
+                        "inventoryNumber": "UK_BM_1854-1113-232",
                         "remark": ""
                     },
                     {
@@ -13554,7 +13496,6 @@
                 "width": "0.00",
                 "height": "16.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -13719,6 +13660,11 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_SKD_A5389",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "US_FMC_1876-12-16-78",
                         "remark": ""
                     },
@@ -13730,11 +13676,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "US_MAC_1925-55",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SKD_A5389",
                         "remark": ""
                     },
                     {
@@ -13856,7 +13797,6 @@
                 "width": "0.00",
                 "height": "20.90"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14064,12 +14004,12 @@
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
                     {
@@ -14150,7 +14090,6 @@
                 "width": "0.00",
                 "height": "16.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14449,7 +14388,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -14738,7 +14676,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15032,7 +14969,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15220,12 +15156,12 @@
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
                     {
@@ -15331,7 +15267,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -15586,7 +15521,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -15875,7 +15809,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16169,7 +16102,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16463,7 +16395,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -16757,7 +16688,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17056,7 +16986,6 @@
                 "width": "0.00",
                 "height": "16.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17243,7 +17172,6 @@
                 "width": "0.00",
                 "height": "16.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17430,7 +17358,6 @@
                 "width": "0.00",
                 "height": "16.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17660,7 +17587,6 @@
                 "width": "0.00",
                 "height": "11.20"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -17803,7 +17729,6 @@
                 "width": "0.00",
                 "height": "22.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -17990,7 +17915,6 @@
                 "width": "0.00",
                 "height": "24.70"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18177,7 +18101,6 @@
                 "width": "0.00",
                 "height": "24.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18369,7 +18292,6 @@
                 "width": "0.00",
                 "height": "33.80"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18561,7 +18483,6 @@
                 "width": "0.00",
                 "height": "33.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18751,7 +18672,6 @@
                 "width": "0.00",
                 "height": "28.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -18932,7 +18852,6 @@
                 "width": "0.00",
                 "height": "24.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19200,7 +19119,6 @@
                 "width": "0.00",
                 "height": "32.90"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19468,7 +19386,6 @@
                 "width": "0.00",
                 "height": "30.90"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -19736,7 +19653,6 @@
                 "width": "0.00",
                 "height": "31.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20004,7 +19920,6 @@
                 "width": "0.00",
                 "height": "31.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20272,7 +20187,6 @@
                 "width": "0.00",
                 "height": "30.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20540,7 +20454,6 @@
                 "width": "0.00",
                 "height": "31.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -20808,7 +20721,6 @@
                 "width": "0.00",
                 "height": "31.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21076,7 +20988,6 @@
                 "width": "0.00",
                 "height": "31.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21344,7 +21255,6 @@
                 "width": "0.00",
                 "height": "31.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21612,7 +21522,6 @@
                 "width": "0.00",
                 "height": "31.30"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -21737,12 +21646,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-231",
+                        "inventoryNumber": "AT_A_DG1929-217",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-217",
+                        "inventoryNumber": "AT_A_DG1929-231",
                         "remark": ""
                     }
                 ],
@@ -21880,7 +21789,6 @@
                 "width": "0.00",
                 "height": "31.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22148,7 +22056,6 @@
                 "width": "0.00",
                 "height": "31.10"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22416,7 +22323,6 @@
                 "width": "0.00",
                 "height": "31.00"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22684,7 +22590,6 @@
                 "width": "0.00",
                 "height": "31.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -22881,7 +22786,6 @@
                 "width": "0.00",
                 "height": "36.70"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23068,7 +22972,6 @@
                 "width": "0.00",
                 "height": "40.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23263,7 +23166,6 @@
                 "width": "0.00",
                 "height": "33.20"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23458,7 +23360,6 @@
                 "width": "0.00",
                 "height": "24.70"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23656,7 +23557,6 @@
                 "width": "0.00",
                 "height": "21.50"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -23854,7 +23754,6 @@
                 "width": "0.00",
                 "height": "21.40"
             },
-            "restorationSurveys": [],
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -24036,7 +23935,6 @@
                 "width": "0.00",
                 "height": "27.50"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24187,7 +24085,6 @@
                 "width": "0.00",
                 "height": "12.80"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24269,7 +24166,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24351,7 +24247,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24443,7 +24338,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24570,7 +24464,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24677,7 +24570,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24808,7 +24700,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -24905,7 +24796,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25071,7 +24961,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25303,7 +25192,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25385,7 +25273,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25502,7 +25389,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25584,7 +25470,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25726,7 +25611,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -25808,7 +25692,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26014,7 +25897,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26216,7 +26098,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26434,7 +26315,6 @@
                 "width": "4.00",
                 "height": "6.10"
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26543,7 +26423,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26674,7 +26553,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26836,7 +26714,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -26942,7 +26819,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27024,7 +26900,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27185,7 +27060,6 @@
                 "width": null,
                 "height": null
             },
-            "restorationSurveys": [],
             "images": null
         },
         {
@@ -27350,7 +27224,6 @@
                 "width": "0.00",
                 "height": "13.20"
             },
-            "restorationSurveys": [],
             "images": null
         }
     ]
