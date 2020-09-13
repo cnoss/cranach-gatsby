@@ -3,11 +3,12 @@
     "{{catalogWorkReferenceName}}-No": "{{catalogWorkReferenceName}}-Nr.",
     "Persistent Link": "Permanent Link",
     "Classification": "Klassifikation",
-    "Dating": "Datierung",
-    "Measurments": "Maße",
+    "Production date": "Datierung",
+    "Dimensions": "Maße",
     "Signature": "Signatur/ Datierung",
     "Inscription": "Inschrift",
     "Literature": "Quellen / Publikationen",
-    "Attribution": "Zuschreibung"
+    "Attribution": "Zuschreibung",
+    "Master Data": "Werknormdaten"
   }
 }

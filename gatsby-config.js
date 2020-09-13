@@ -37,6 +37,7 @@ module.exports = {
       options: {
         name: 'content',
         path: './content/',
+        ignore: ['**/_archiv/*'],
       },
     },
     {

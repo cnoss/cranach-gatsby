@@ -20,6 +20,7 @@ const Transformers = {
       subtitle: inventor ? inventor.name : ' ',
       date: item.dating.dated || '',
       masterData: item,
+      classification: item.classification.classification,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
     };

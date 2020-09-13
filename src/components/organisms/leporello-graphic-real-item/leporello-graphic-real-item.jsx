@@ -13,7 +13,7 @@ import './leporello-graphic-real-item.scss';
 export default ({
   graphic,
   visibleCloser = true,
-  onClose = () => {},
+  onClose = () => { },
 }) => {
   const { t } = useTranslation('LeporelloGraphicRealItem', translations);
 
@@ -35,6 +35,8 @@ export default ({
     description,
     provenance,
     publications,
+    exhibitionHistory,
+    catalogWorkReferences,
   } = graphic;
 
   return (
@@ -54,29 +56,21 @@ export default ({
         </div>
 
         <div className="leporello-graphic-real-item__info">
-          <GroupedDefinitionList>
-            <GroupedDefinitionList.Entry
-              term="CDA ID"
-              definition={inventoryNumber}
-            />
-            <GroupedDefinitionList.Entry
-              term={ t('Dating') }
-              definition={dating.dated}
-            />
-          </GroupedDefinitionList>
+
+          <h2 className="leporello-graphic-real-item__title">{title}, {dating.dated}</h2>
 
           {/* Physikalische Eigenschaften */}
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
-              term={ t('Classification') }
+              term={t('Classification')}
               definition={classification}
             />
             <GroupedDefinitionList.Entry
-              term={ t('Medium') }
+              term={t('Medium')}
               definition={medium}
             />
             <GroupedDefinitionList.Entry
-              term={ t('Measurments') }
+              term={t('Dimensions')}
               definition={dimensions}
             />
           </GroupedDefinitionList>
@@ -84,55 +78,81 @@ export default ({
           {/* Besitz, Eigentümer und so */}
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
-              term={ t('Owner') }
+              term={t('Owner')}
               definition={owner}
             />
             <GroupedDefinitionList.Entry
-              term={ t('Repository') }
+              term={t('Repository')}
               definition={repository}
             />
             <GroupedDefinitionList.Entry
-              term={ t('Location') }
+              term={t('Location')}
               definition={location}
             />
           </GroupedDefinitionList>
 
           {/* Inschriften, Texte und so */}
-         { (signature || inscription || markings || description || provenance)
+          {(signature || inscription || markings)
             && (
               <GroupedDefinitionList>
                 {signature && <GroupedDefinitionList.Entry
-                  term={ t('Signature / Dating') }
+                  term={t('Signature / Dating')}
                   definition={signature}
                 />}
                 {inscription && <GroupedDefinitionList.Entry
-                  term={ t('Inscriptions') }
+                  term={t('Inscriptions')}
                   definition={inscription}
                 />}
                 {markings && <GroupedDefinitionList.Entry
-                  term={ t('Stamps, Seals, Labels') }
+                  term={t('Stamps, Seals, Labels')}
                   definition={markings}
-                />}
-                {description && <GroupedDefinitionList.Entry
-                  term={ t('Short description') }
-                  definition={description}
-                />}
-                {provenance && <GroupedDefinitionList.Entry
-                  term={ t('Provenance') }
-                  definition={provenance}
                 />}
               </GroupedDefinitionList>
             )
           }
 
+          {/* Beschreibung, Provenienz, Ausstellungen */}
+          {(provenance || exhibitionHistory || description)
+            && (
+              <GroupedDefinitionList>
+                {description && <GroupedDefinitionList.Entry
+                  term={t('Short description')}
+                  definition={description}
+                />}
+                {provenance && <GroupedDefinitionList.Entry
+                  term={t('Provenance')}
+                  definition={provenance}
+                />}
+                {exhibitionHistory && <GroupedDefinitionList.Entry
+                  term={t('Exhibitions')}
+                  definition={exhibitionHistory}
+                />}
+              </GroupedDefinitionList>
+            )
+          }
+
+          {/* Kennungen */}
+          <GroupedDefinitionList>
+            <GroupedDefinitionList.Entry
+              term="CDA ID"
+              definition={inventoryNumber}
+            />
+            {catalogWorkReferences.length > 0
+              && catalogWorkReferences.map(ref => <GroupedDefinitionList.Entry
+                term={ref.description}
+                definition={ref.referenceNumber}
+              />)}
+          </GroupedDefinitionList>
+
+          {/* Publikationen */}
           {publications.length > 0
             && <DefinitionList>
-            <DefinitionList.Entry
-              term={ t('Literature') }
-              definition={ <LiteratureTable data={ publications } /> }
-            />
-          </DefinitionList>
-        }
+              <DefinitionList.Entry
+                term={t('Literature')}
+                definition={<LiteratureTable data={publications} />}
+              />
+            </DefinitionList>
+          }
         </div>
       </div>
     </LeporelloGraphicItem>

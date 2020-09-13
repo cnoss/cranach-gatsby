@@ -21,10 +21,10 @@ export default ({
   /* Map related works */
   const relatedWorksItems = relatedWorks.map((relatedWorksItem) => {
     const item = relatedWorksItem.ref;
-
+    const title = (item.titles[0].title) ? `${item.titles[0].title}, ${item.dating.dated}` : item.dating.dated;
     return {
       inventoryNumber: item.inventoryNumber,
-      title: item.titles[0].title || '',
+      title,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
       preventLinkFollowing: false,

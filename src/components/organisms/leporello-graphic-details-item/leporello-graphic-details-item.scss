@@ -1,99 +1,98 @@
 @import '~/styles/000-abstracts/__abstracts-dir';
-
 @import '~/styles/000-abstracts/mixins';
-
 .leporello-graphic-details-item-wrap {
   background-color: $lighter;
-
   .leporello-graphic-details-item {
-    overflow: hidden;
-
-    max-width: $vp-xlarge;
-    padding: $m;
-    padding-bottom: $l;
-
-    /* Responsive Large
-  -------------------------------------------------------------------------- */
-    @include grid-uneven-2-columns($vp-large);
-
-    &__info {
-      position: relative;
-
-      background-color: $lighter;
-
-      .involved-persons-toggler {
-        margin-left: .5rem;
+    &__header{
+      padding: $l $m $l $m;
+      .subtitle{
+        margin-bottom: $s;
       }
 
-      .involved-persons-table {
-        margin-bottom: 1rem;
-
-        [data-field='name'] {
-          white-space: nowrap;
-        }
-      }
-
-      .further-infos{
-        max-height: 5vh;
-        transition: max-height $tr-slow;
+      @media only screen and (min-width: $vp-large) {
+        padding-bottom: 0;
       }
     }
-
-    &__image {
+    &__content {
       overflow: hidden;
-
-      margin: -$m 0 -$m $m;
-
-      & img {
-        width: 100vw;
-        height: 50vh;
-        object-position: center center;
-        object-fit: cover;
-      }
-
-      .zoom-image {
-        width: 100%;
-        height: 100%;
-        padding-top: inherit;
-      }
-    }
-
-    .-is-non-fading {
-      z-index: $level-content;
-    }
-
-    @media only screen and (min-width: $vp-large) {
-      padding-top: $l;
-      padding-bottom: $xl;
-
-      &__info {
-        padding: 0;
-
-        .title,
-        .subtitle {
-          padding-right: $l;
-        }
-      }
-
-      &__image {
-        padding: $m;
-
-        & img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-
-    /* Responsive xLarge
+      max-width: $vp-xlarge;
+      padding: $m;
+      padding-bottom: $l;
+      /* Responsive Large
   -------------------------------------------------------------------------- */
-    @media only screen and (min-width: $vp-xlarge) {
+      @include grid-uneven-2-columns($vp-large);
+      &-info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $lighter;
+        .involved-persons-toggler {
+          margin-left: .5rem;
+        }
+        .involved-persons-table {
+          margin-bottom: 1rem;
+          [data-field='name'] {
+            white-space: nowrap;
+          }
+        }
+        &-content {
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 5vh;
+          transition: max-height $tr-slow;
+          & .column {
+            flex-basis: calc(calc(600px - 100%)*999);
+            flex-grow: 1;
+            & .definition-list__term:first-child {
+              padding-top: 0;
+            }
+          }
+          & .column+.column {
+            margin-left: $m;
+          }
+        }
+      }
+      &-image {
+        overflow: hidden;
+        margin: -$m 0 -$m $m;
+        & img {
+          width: 100vw;
+          height: 50vh;
+          object-position: center center;
+          object-fit: cover;
+        }
+        .zoom-image {
+          width: 100%;
+          height: 100%;
+          padding-top: inherit;
+        }
+      }
+      .-is-non-fading {
+        z-index: $level-content;
+      }
+      @media only screen and (min-width: $vp-large) {
+        // padding-top: $l;
+        padding-bottom: $xl;
+        &-info {
+          padding: 0;
+          .title,
+          .subtitle {
+            padding-right: $l;
+          }
+        }
+        &-image {
+          padding: $m;
+          & img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
     }
   }
-
   &.-is-open {
-    .leporello-graphic-details-item {
-      .further-infos {
+    .leporello-graphic-details-item__content {
+      &-info-content {
         max-height: 10000px;
       }
     }

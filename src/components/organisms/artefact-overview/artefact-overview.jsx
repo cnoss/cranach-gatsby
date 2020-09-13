@@ -48,7 +48,8 @@ const ArtefactOverview = ({
             title={ item.title }
             subtitle={ item.subtitle }
             date={ item.date }
-            to={ item.to }
+            to={item.to}
+            classification={item.classification}
             imgSrc={ item.imgSrc }
           />
         }
@@ -64,6 +65,7 @@ const ArtefactOverview = ({
             subtitle={ item.subtitle }
             date={item.date}
             masterData={item.masterData}
+            classification={item.classification}
             to={ item.to }
             imgSrc={ item.imgSrc }
           />

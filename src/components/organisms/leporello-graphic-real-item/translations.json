@@ -2,7 +2,7 @@
   "de": {
     "Classification": "Druckzustand, Version",
     "Dating": "Datierung",
-    "Measurments": "Maße",
+    "Dimensions": "Maße",
     "Medium": "Material / Technik",
     "Owner": "Eigentümer",
     "Repository": "Besitzer",
@@ -12,6 +12,8 @@
     "Stamps, Seals, Labels": "Stempel, Siegel, Beschriftungen",
     "Short description": "Kurzbeschreibung",
     "Provenance": "Provenienz",
-    "Literature": "Quellen / Publikationen"
+    "Literature": "Quellen / Publikationen",
+    "Exhibitions": "Ausstellungen",
+    "VD16-No.": "VD16-Nr."
   }
 }
