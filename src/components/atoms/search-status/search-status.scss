@@ -1,0 +1,9 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.search-status {
+  display: flex;
+  align-items: center;
+
+  .entity-names {
+    color: $accent;
+  }
+}

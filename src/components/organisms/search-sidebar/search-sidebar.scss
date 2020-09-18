@@ -1,0 +1,26 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.search-sidebar {
+  position: absolute;
+  right: 0;
+  width: 20rem;
+  background-color: $darkest;
+  padding: 0 $m $m;
+
+  & > .block {
+    padding: 0;
+
+    & + .block {
+      margin-top: $xl;
+    }
+
+    > .search-input {
+      & + .search-input {
+        margin-top: $s;
+      }
+    }
+
+    > .search-button {
+      margin-top: $xl / 2;
+    }
+  }
+}

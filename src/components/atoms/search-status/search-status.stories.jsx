@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react';
 
 import '~/styles/main.scss';
 
-import SearchOverview from '.';
+import SearchStatus from '.';
 
 
-storiesOf('Components|Organisms/SearchOverview', module)
+storiesOf('Components|Atoms/SearchStatus', module)
   .add('default', () => (
-    <SearchOverview />
+    <SearchStatus />
   ));

@@ -1,0 +1,29 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.search-header {
+  position: sticky;
+  top: 0;
+  z-index: $level-overall-nav;
+  display: flex;
+  padding: $m;
+  padding-bottom: 0;
+  background-color: $darkest;
+
+  display: flex;
+  align-items: center;
+
+  .highlight {
+    color: $accent;
+  }
+
+  .control {
+    margin: auto $m / 2;
+    cursor: pointer;
+  }
+
+  .right-end {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: $m;
+  }
+}

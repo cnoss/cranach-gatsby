@@ -1,0 +1,11 @@
+{
+  "de": {
+    "paintings": "Gemälde",
+    "graphics": "Grafiken",
+    "archivals": "Archivalien",
+    "and": "und",
+    "found": "gefunden",
+
+    "status_text": "{{ paintings }} <1>Gemälde</1>, {{ graphics }} <2>Grafiken<2> and {{ archivals }} <3>Archivalien<3> gefunden"
+  }
+}

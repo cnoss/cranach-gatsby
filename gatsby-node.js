@@ -17,6 +17,7 @@ const locals = [
 ];
 
 const indexPageTemplate = path.resolve('src/templates/index.jsx');
+const searchPageTemplate = path.resolve('src/templates/search.jsx');
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
@@ -88,7 +89,7 @@ exports.onCreateNode = ({ node }) => {
   });
 };
 
-const triggerGraphicPagesCreation = (graphql, actions) => {
+const triggerGraphicPagesCreation = (actions, graphql) => {
   /*
     Filterung per grapqhql möglich:
 
@@ -266,7 +267,7 @@ const triggerGraphicPagesCreation = (graphql, actions) => {
 };
 
 
-const triggerIndexPagesCreation = async (graphql, actions) => {
+const triggerIndexPagesCreation = async (actions, graphql) => {
   const { createPage } = actions;
 
   const localizedIndexPageData = async (lang) => await graphql(`
@@ -392,9 +393,25 @@ const triggerIndexPagesCreation = async (graphql, actions) => {
 };
 
 
+const triggerSearchPagesCreation = (actions) => {
+  const { createPage } = actions;
+
+  locals.forEach((lang) => {
+    createPage({
+      path: `${lang.path}/search`,
+      component: searchPageTemplate,
+      context: {
+        lang,
+      },
+    });
+  });
+};
+
+
 exports.createPages = ({ graphql, actions }) => {
   return Promise.all([
-    triggerGraphicPagesCreation(graphql, actions),
-    triggerIndexPagesCreation(graphql, actions),
+    triggerGraphicPagesCreation(actions, graphql),
+    triggerIndexPagesCreation(actions, graphql),
+    triggerSearchPagesCreation(actions),
   ]);
 };

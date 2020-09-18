@@ -1,0 +1,13 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.btn {
+  background-color: $accent;
+  color: $darkest;
+  border-width: 0;
+  padding: $xs $s;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:active {
+    background-color: darken($accent, 10%);
+  }
+}
