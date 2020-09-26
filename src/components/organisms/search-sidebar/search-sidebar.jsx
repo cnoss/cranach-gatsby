@@ -18,36 +18,6 @@ export default () => {
   const cdaIDInventorynumber = useState('*');
   const catalogWorkReferenceNames = 'Friedländer, Rosenberg (1978)';
 
-  const accordionEntries = [
-    <Accordion.Entry title={ t('Attribution') } toggle={ useState(false) }>
-      Attribution
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Kind') } toggle={ useState(false) }>
-      Kind
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Dating') } toggle={ useState(false) }>
-      Dating
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Collection / Location') } toggle={ useState(false) }>
-      Collection / Location
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Examination Techniques') } toggle={ useState(false) }>
-      Examination Techniques
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Content') } toggle={ useState(false) }>
-      Content
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Form') } toggle={ useState(false) }>
-      Form
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Function') } toggle={ useState(false) }>
-      Function
-    </Accordion.Entry>,
-    <Accordion.Entry title={ t('Constituents') } toggle={ useState(false) }>
-      Constituents
-    </Accordion.Entry>,
-  ];
-
   return (
     <div
       className="search-sidebar"
@@ -74,7 +44,33 @@ export default () => {
         <legend className="headline">{ t('Filter results by') }</legend>
 
         <Accordion>
-          { accordionEntries }
+          <Accordion.Entry title={ t('Attribution') } toggle={ useState(false) }>
+            Attribution
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Kind') } toggle={ useState(false) }>
+            Kind
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Dating') } toggle={ useState(false) }>
+            Dating
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Collection / Location') } toggle={ useState(false) }>
+            Collection / Location
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Examination Techniques') } toggle={ useState(false) }>
+            Examination Techniques
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Content') } toggle={ useState(false) }>
+            Content
+          </Accordion.Entry>,
+          <Accordion.Entry title={ t('Form') } toggle={ useState(false) }>
+            Form
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Function') } toggle={ useState(false) }>
+            Function
+          </Accordion.Entry>
+          <Accordion.Entry title={ t('Constituents') } toggle={ useState(false) }>
+            Constituents
+          </Accordion.Entry>
         </Accordion>
       </fieldset>
     </div>
