@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from '~/i18n';
 
 import Btn from '~/components/atoms/btn';
 import TextInput from '~/components/atoms/text-input';
 import Accordion from '~/components/molecules/accordion';
+
+import {
+  searchForAllFieldsTerm,
+  getAllFieldsTerm,
+} from '~/store/features/globalSearch/globalSearchSlice';
 
 import translations from './translations.json';
 import './search-sidebar.scss';
@@ -11,36 +17,62 @@ import './search-sidebar.scss';
 export default () => {
   const { t } = useTranslation('SearchSidebar', translations);
 
-  const allFields = useState('*');
   const title = useState('*');
   const catalogWorkReferenceNumber = useState('*');
   const location = useState('*');
   const cdaIDInventorynumber = useState('*');
   const catalogWorkReferenceNames = 'Friedländer, Rosenberg (1978)';
 
+  const dispatch = useDispatch();
+  const allFieldsTerm = useSelector(getAllFieldsTerm);
+
   return (
     <div
       className="search-sidebar"
       data-component="organisms/search-sidebar"
     >
-      <fieldset class="block">
+      <fieldset className="block">
         <legend className="headline">{ t('Search archive') }</legend>
 
-        <TextInput className="search-input" label={ t('all fields') } value={ allFields }></TextInput>
+        <TextInput
+          className="search-input"
+          label={ t('all Fields') }
+          value={ allFieldsTerm }
+          onChange={ term => dispatch(searchForAllFieldsTerm(term)) }
+        ></TextInput>
 
-        <TextInput className="search-input" label={ t('Title') } value={ title }></TextInput>
+        <TextInput
+          className="search-input"
+          label={ t('Title') }
+          value={ title[0] }
+          onChange={ title[1] }
+        ></TextInput>
 
-        <TextInput className="search-input" label={ t('{{catalogWorkReferenceNames}} No.', { catalogWorkReferenceNames }) } value={ catalogWorkReferenceNumber }></TextInput>
+        <TextInput
+          className="search-input"
+          label={ t('{{catalogWorkReferenceNames}} No.', { catalogWorkReferenceNames }) } value={ catalogWorkReferenceNumber[0] }
+          onChange={ catalogWorkReferenceNumber[1] }
+        ></TextInput>
 
-        <TextInput className="search-input" label={ t('Location') } value={ location }></TextInput>
+        <TextInput
+          className="search-input"
+          label={ t('Location') }
+          value={ location[0] }
+          onChange={ location[1] }
+        ></TextInput>
 
-        <TextInput className="search-input" label={ t('CDA ID / Inventorynumber') } value={ cdaIDInventorynumber }></TextInput>
+        <TextInput
+          className="search-input"
+          label={ t('CDA ID / Inventorynumber') }
+          value={ cdaIDInventorynumber[0] }
+          onChange={ cdaIDInventorynumber[1] }
+        ></TextInput>
 
         <Btn className="search-button">{ t('find') }</Btn>
       </fieldset>
 
 
-      <fieldset class="block">
+      <fieldset className="block">
         <legend className="headline">{ t('Filter results by') }</legend>
 
         <Accordion>

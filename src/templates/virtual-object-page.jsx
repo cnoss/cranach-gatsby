@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
+import i18n from '~/i18n';
 
 import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
@@ -10,13 +11,10 @@ import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graph
 import LeporelloArtefactRelatedWorksItem from '~/components/organisms/leporello-artefact-related-works-item';
 import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-real-item';
 
-import i18n from '~/i18n';
-
 
 const PageTemplate = ({ pageContext, location }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-
   i18n(graphic.langCode);
 
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);

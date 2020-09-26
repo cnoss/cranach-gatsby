@@ -1,35 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useDispatch, useSelector } from 'react-redux';
-
-import SearchHeader from '~/components/molecules/search-header';
-import ArtefactOverview from '~/components/organisms/artefact-overview';
-import SearchSidebar from '~/components/organisms/search-sidebar';
-
 import i18n from '~/i18n';
 
-import {
-  searchFor,
-  getSearchTerm,
-  getSearchLoading,
-  getSearchResultItems,
-} from '~/features/globalSearch/globalSearchSlice';
+import SearchHeader from '~/components/molecules/search-header';
+import ArtefactSearch from '~/components/organisms/artefact-search';
 
 
 export default ({ pageContext }) => {
   const { lang } = pageContext;
   i18n(lang.code);
-
-  const dispatch = useDispatch();
-  const searchTerm = useSelector(getSearchTerm);
-  const searchIsCurrentlyLoading = useSelector(getSearchLoading);
-  const searchResultItems = useSelector(getSearchResultItems);
-
-  console.log(searchIsCurrentlyLoading, searchResultItems, dispatch, searchFor, searchTerm);
-
-  // onChange={e => dispatch(searchFor(e.target.value.trim()))}
-
-  const foundArtefacts = [];
 
   return (
     <div
@@ -44,11 +23,7 @@ export default ({ pageContext }) => {
         <SearchHeader />
 
         <main className="main-content">
-          <ArtefactOverview
-            items={ foundArtefacts }
-          />
-
-          <SearchSidebar />
+          <ArtefactSearch />
         </main>
       </div>
     </div>

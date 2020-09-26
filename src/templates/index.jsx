@@ -1,11 +1,10 @@
 
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
+import i18n from '~/i18n';
 
 import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
-
-import i18n from '~/i18n';
 
 
 export default ({ pageContext }) => {
