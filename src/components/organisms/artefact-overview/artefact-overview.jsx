@@ -63,9 +63,9 @@ const ArtefactOverview = ({
         { ListView === view && <ArtefactLine
             title={ item.title }
             subtitle={ item.subtitle }
-            date={item.date}
-            masterData={item.masterData}
-            classification={item.classification}
+            date={ item.date }
+            additionalInfoList={ item.additionalInfoList }
+            classification={ item.classification }
             to={ item.to }
             imgSrc={ item.imgSrc }
           />

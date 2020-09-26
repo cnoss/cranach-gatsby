@@ -10,7 +10,7 @@ export default ({
   subtitle = '',
   date = '',
   to = '',
-  masterData = '',
+  additionalInfoList = [],
   imgSrc = '',
   imgAlt = '',
 }) => (
@@ -41,10 +41,9 @@ export default ({
           <h2 className="artefact-line__title">{title}, {date}</h2>
           <h3 className="artefact-line__subtitle">{subtitle}</h3>
           <ul className="artefact-line__master-data">
-            <li>
-              {masterData.classification.classification}, {masterData.classification.printProcess}
-            </li>
-            <li>{masterData.dimensions}</li>
+            {
+              additionalInfoList.map((datalistItem, i) => (<li key={ i }>{ datalistItem }</li>))
+            }
           </ul>
         </Link>
       </div>

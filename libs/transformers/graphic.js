@@ -19,7 +19,10 @@ const Transformers = {
       title: (item.titles[0] && item.titles[0].title) || '',
       subtitle: inventor ? inventor.name : ' ',
       date: item.dating.dated || '',
-      masterData: item,
+      additionalInfoList: [
+        `${item.classification.classification}, ${item.classification.printProcess}`,
+        item.dimensions,
+      ],
       classification: item.classification.classification,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
