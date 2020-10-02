@@ -103,11 +103,7 @@ export default ({
     >
       <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
         <header className="leporello-graphic-details-item__header">
-
-          <h1 className="title">{title}</h1>
-          <h2 className="subtitle">
-            {classification.classification}, {objectName}
-          </h2>
+          <h2 className="chapter">{t('Master Data')}</h2>
         </header>
 
         <div className="leporello-graphic-details-item__content">
@@ -119,7 +115,10 @@ export default ({
           </div>
           <div className="leporello-graphic-details-item__content-info">
             <header className="leporello-graphic-details-item__content-info-header">
-              <h2 className="chapter">{t('Master Data')}</h2>
+              <h1 className="title">{title}</h1>
+              <h2 className="subtitle">
+                {classification.classification}, {objectName}
+              </h2>
             </header>
             <div className="leporello-graphic-details-item__content-info-content">
               <div className="column">
