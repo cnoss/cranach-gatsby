@@ -13,6 +13,9 @@ export default {
 
   toArtefact(item) {
     const inventor = item.involvedPersons.find(person => person.role === 'Inventor');
+    const classificationLevel2 = (item.objectName) ? item.objectName.replace(/:.*/, '') : false;
+    const classification = (item.objectName) ? `${item.classification.classification}, ${classificationLevel2}` : item.classification.classification;
+
 
     return {
       inventoryNumber: item.inventoryNumber,
@@ -20,7 +23,7 @@ export default {
       subtitle: inventor ? inventor.name : ' ',
       date: item.dating.dated || '',
       masterData: item,
-      classification: item.classification.classification,
+      classification,
       to: `/${item.langCode}/${item.slug}`,
       imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
     };
