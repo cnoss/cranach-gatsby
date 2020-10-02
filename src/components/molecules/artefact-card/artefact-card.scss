@@ -13,6 +13,7 @@
     padding: $s;
     color: $lighter;
     background-color: $dark;
+    border-top: solid $border-stroke-weight-s $accent;
   }
   &__title{
     font-weight: $fw-semibold;
