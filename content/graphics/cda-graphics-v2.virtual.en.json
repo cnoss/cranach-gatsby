@@ -246,7 +246,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -336,20 +340,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010209",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010402010221",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -431,6 +447,7 @@
                     "suffix": "",
                     "nameType": "Andere Suchform",
                     "alternativeName": "Lucas Cranach the Elder",
+<<<<<<< HEAD
                     "remarks": "[KKL 2020]",
                     "date": "",
                     "isUnknown": false
@@ -797,6 +814,8 @@
                     "suffix": "",
                     "nameType": "Andere Suchform",
                     "alternativeName": "Lucas Cranach the Elder",
+=======
+>>>>>>> master
                     "remarks": "[cda 2019]",
                     "date": "",
                     "isUnknown": false
@@ -829,7 +848,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -911,14 +934,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040401",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -1032,7 +1063,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1155,14 +1190,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030110",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -1276,7 +1319,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1476,20 +1523,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020405",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -1603,7 +1662,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -1803,20 +1866,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020406",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -1935,7 +2010,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -2138,14 +2217,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -2264,7 +2351,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -2467,14 +2558,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -2588,7 +2687,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -2687,14 +2790,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030147",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -2803,11 +2914,19 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
             "conditionLevel": 0,
+=======
+                "classification": "Druckgrafik",
+                "condition": "1st state",
+                "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
+            },
+            "conditionLevel": 1,
+>>>>>>> master
             "objectName": "",
             "inventoryNumber": "GWN_LC_HVI-54_78a",
             "objectId": 940824,
@@ -2898,20 +3017,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010209",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "01040310",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -3030,7 +3161,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -3108,8 +3243,12 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -3218,7 +3357,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -3287,14 +3430,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030106",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -3408,7 +3559,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -3475,6 +3630,11 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-307v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-158",
                         "remark": ""
                     },
@@ -3486,11 +3646,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-294",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-307v",
                         "remark": ""
                     }
                 ],
@@ -3589,20 +3744,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030138",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -3721,7 +3888,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -3808,14 +3979,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030111",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -3929,7 +4108,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -4006,20 +4189,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010209",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030108",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -4133,7 +4328,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich: http:\/\/vocab.getty.edu\/aat\/300041341"
             },
@@ -4207,14 +4406,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010201",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -4328,7 +4535,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -4547,14 +4758,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -4668,7 +4887,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -4747,22 +4970,40 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [
                 {
                     "type": "Location Cranach Object",
+<<<<<<< HEAD
                     "term": "Vienna",
                     "path": "\u00d6sterreich > states > Wien > inhabited places > Wien",
                     "url": ""
+=======
+                    "term": "Wien",
+                    "path": ""
+                },
+                {
+                    "type": "Location Cranach Object",
+                    "term": "Wien",
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "repository": "",
@@ -4870,7 +5111,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -4939,38 +5184,62 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040304",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030124",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030140",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030143",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -5084,7 +5353,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5153,8 +5426,12 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -5273,7 +5550,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5347,14 +5628,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040311",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -5468,7 +5757,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5537,14 +5830,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030213",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -5658,7 +5959,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -5732,14 +6037,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030117",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -5853,7 +6166,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6038,7 +6355,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6200,7 +6521,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6382,7 +6707,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6456,14 +6785,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010223",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -6577,7 +6914,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6659,14 +7000,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040401",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -6780,7 +7129,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -6862,14 +7215,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040402",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -6983,7 +7344,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7060,14 +7425,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030117",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -7181,7 +7554,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7258,14 +7635,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "01040513",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -7373,7 +7758,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7432,14 +7821,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -7542,7 +7939,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7638,14 +8039,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -7759,7 +8168,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -7848,14 +8261,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040503",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -7969,7 +8390,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8068,20 +8493,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040512",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010205",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -8200,7 +8637,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "H077"
             },
@@ -8287,20 +8728,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "0104030504",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030107",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -8414,7 +8867,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8505,14 +8962,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030138",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -8626,7 +9091,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8698,14 +9167,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010315",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -8814,7 +9291,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -8891,14 +9372,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040302030204",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -9012,7 +9501,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9081,20 +9574,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403010101",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010205",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -9208,7 +9713,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9292,20 +9801,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020205",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010205",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -9419,7 +9940,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9503,20 +10028,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010205",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403010204",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -9630,7 +10167,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9704,14 +10245,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030120",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -9825,7 +10374,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -9899,14 +10452,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040402",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -10020,7 +10581,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10094,14 +10659,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040402",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -10215,7 +10788,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10292,14 +10869,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040402",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -10413,7 +10998,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10494,12 +11083,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-14",
+                        "inventoryNumber": "AT_A_DG1929-132",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-132",
+                        "inventoryNumber": "DE_HAUMB_AB3-14",
                         "remark": ""
                     },
                     {
@@ -10608,14 +11197,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -10729,7 +11326,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -10924,20 +11525,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020408",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -11051,7 +11664,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11246,20 +11863,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020410",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -11373,7 +12002,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11568,20 +12201,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020411",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -11695,7 +12340,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -11890,14 +12539,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -12011,7 +12668,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12092,17 +12753,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_KSVC_1-42-25",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-137",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-151",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-25",
                         "remark": ""
                     }
                 ],
@@ -12206,20 +12867,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020412",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -12333,7 +13006,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12528,20 +13205,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -12655,7 +13344,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -12736,12 +13429,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-139",
+                        "inventoryNumber": "DE_KSVC_1-42-28",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-28",
+                        "inventoryNumber": "AT_A_DG1929-139",
                         "remark": ""
                     },
                     {
@@ -12850,20 +13543,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020416",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -12977,7 +13682,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13172,20 +13881,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020417",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -13299,7 +14020,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13380,17 +14105,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-25",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-141",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-155",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_AB3-25",
                         "remark": ""
                     }
                 ],
@@ -13494,20 +14219,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020604",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -13621,7 +14358,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13680,14 +14421,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020405",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -13752,7 +14501,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -13841,14 +14594,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030137",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -13962,7 +14723,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -14044,14 +14809,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030204",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -14165,7 +14938,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -14211,12 +14988,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-80",
+                        "inventoryNumber": "UK_BM_1854-1113-232",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_1854-1113-232",
+                        "inventoryNumber": "AT_A_DG1929-80",
                         "remark": ""
                     },
                     {
@@ -14264,14 +15041,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -14380,7 +15165,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -14456,11 +15245,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SKD_A5389",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_FMC_1876-12-16-78",
                         "remark": ""
                     },
@@ -14472,6 +15256,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "US_MAC_1925-55",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SKD_A5389",
                         "remark": ""
                     },
                     {
@@ -14564,14 +15353,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -14685,7 +15482,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -14804,12 +15605,12 @@
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
                     {
@@ -14856,20 +15657,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030105",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -14983,7 +15796,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15159,20 +15976,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030124",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -15286,7 +16115,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15452,20 +16285,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030139",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -15579,7 +16424,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15750,20 +16599,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030108",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -15877,7 +16738,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -15976,12 +16841,12 @@
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
                     {
@@ -16053,20 +16918,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030148",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -16141,7 +17018,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16312,20 +17193,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030137",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -16439,7 +17332,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16605,20 +17502,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030123",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -16732,7 +17641,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -16903,20 +17816,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030145",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -17030,7 +17955,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -17201,20 +18130,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030132",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -17328,7 +18269,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -17499,20 +18444,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030126",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -17626,7 +18583,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt: http:\/\/vocab.getty.edu\/aat\/300041405"
             },
@@ -17802,20 +18763,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030122",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -17929,7 +18902,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -17998,6 +18975,19 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+                    "path": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "01040404",
+                    "path": ""
+                }
+            ],
+<<<<<<< HEAD
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
                     "path": "",
                     "url": ""
                 },
@@ -18008,6 +18998,8 @@
                     "url": ""
                 }
             ],
+=======
+>>>>>>> master
             "locations": [],
             "repository": "",
             "owner": "",
@@ -18119,7 +19111,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18188,14 +19184,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030117",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -18309,7 +19313,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18426,14 +19434,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020414",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -18498,7 +19514,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18567,14 +19587,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040309",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -18688,7 +19716,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18757,14 +19789,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "0104030408",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -18878,7 +19918,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -18947,14 +19991,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "0104030501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -19068,7 +20120,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19142,14 +20198,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403020206",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -19263,7 +20327,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "- early impression",
                 "printProcess": "Holzschnitt"
             },
@@ -19337,14 +20405,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040303012503",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -19458,7 +20534,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19540,8 +20620,12 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -19650,7 +20734,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19832,7 +20920,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -19977,20 +21069,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "0104030503",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -20104,7 +21208,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20249,20 +21357,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030138",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -20376,7 +21496,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20521,20 +21645,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030105",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -20648,7 +21784,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -20793,20 +21933,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030122",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -20920,7 +22072,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21065,20 +22221,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030124",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -21192,7 +22360,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21337,20 +22509,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030139",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -21464,7 +22648,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21609,20 +22797,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030108",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -21736,7 +22936,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -21881,20 +23085,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030148",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -22008,7 +23224,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22153,20 +23373,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030131",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -22280,7 +23512,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22425,20 +23661,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030123",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -22552,7 +23800,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22588,12 +23840,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-217",
+                        "inventoryNumber": "AT_A_DG1929-231",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-231",
+                        "inventoryNumber": "AT_A_DG1929-217",
                         "remark": ""
                     }
                 ],
@@ -22697,20 +23949,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030145",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -22824,7 +24088,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -22969,20 +24237,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030126",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -23096,7 +24376,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23241,20 +24525,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030132",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -23368,7 +24664,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23513,20 +24813,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030137",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010212",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -23640,7 +24952,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23714,20 +25030,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010209",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "0104030403",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -23841,7 +25169,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -23910,14 +25242,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040303012505",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24031,7 +25371,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24108,14 +25452,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "01040303012505",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24229,7 +25581,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24311,8 +25667,12 @@
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24426,7 +25786,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24501,20 +25865,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010103",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030204",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24628,7 +26004,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24703,20 +26083,32 @@
                 {
                     "type": "Schlagwort",
                     "term": "010103",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010403030211",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24830,7 +26222,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -24894,14 +26290,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010209",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -24971,7 +26375,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25048,14 +26456,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403030143",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25107,7 +26523,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25144,14 +26564,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25186,7 +26614,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25229,14 +26661,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25281,7 +26721,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25324,14 +26768,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25376,7 +26828,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25454,14 +26910,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25496,7 +26960,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25564,14 +27032,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25655,7 +27131,11 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25698,14 +27178,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25750,7 +27238,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Radierung"
             },
@@ -25798,14 +27290,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -25914,7 +27414,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -25967,14 +27471,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26009,7 +27521,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26202,14 +27718,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26244,7 +27768,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26287,14 +27815,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26339,7 +27875,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26407,14 +27947,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26449,7 +27997,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26492,14 +28044,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26544,7 +28104,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26637,14 +28201,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26679,7 +28251,11 @@
             "involvedPersonsNames": [],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -26722,14 +28298,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26838,6 +28422,7 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
                 "condition": "",
                 "printProcess": "Holzschnitt#Woodcut"
@@ -26848,6 +28433,18 @@
             "objectId": 961209,
             "isVirtual": true,
             "dimensions": "Image:  366 (+\/-3) x 176 (+\/-1) mm\n[Thomas Klinke, KKL 2020]\n394 x 279 mm (= Berlin) [Strau\u00df-Geisberg 1974, G.302]",
+=======
+                "classification": "Druckgrafik",
+                "condition": "",
+                "printProcess": "Holzschnitt"
+            },
+            "conditionLevel": 0,
+            "objectName": "",
+            "inventoryNumber": "GWN_HSB_HIII-223-I",
+            "objectId": 961209,
+            "isVirtual": true,
+            "dimensions": "Image: 394 x 279 mm (= Berlin) [Strau\u00df-Geisberg 1974, G.302]",
+>>>>>>> master
             "dating": {
                 "dated": "1522",
                 "begin": 0,
@@ -26899,22 +28496,38 @@
                     },
                     {
                         "text": "Abzug A",
+<<<<<<< HEAD
                         "inventoryNumber": "DE_SMBKSK_858-2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DI-21-57-1936-1133",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_GNMN_StN365",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
+=======
                         "inventoryNumber": "DE_SMBKSK_857-2",
+>>>>>>> master
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+<<<<<<< HEAD
+                        "inventoryNumber": "AT_A_DI-21-57-1936-1133",
+=======
+                        "inventoryNumber": "DE_SMBKSK_858-2",
+>>>>>>> master
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+<<<<<<< HEAD
+                        "inventoryNumber": "DE_GNMN_StN365",
+=======
+                        "inventoryNumber": "AT_A_DI-21-57-1936-1133",
+>>>>>>> master
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+<<<<<<< HEAD
+                        "inventoryNumber": "DE_SMBKSK_857-2",
+=======
+                        "inventoryNumber": "DE_GNMN_StN365",
+>>>>>>> master
                         "remark": ""
                     },
                     {
@@ -26931,14 +28544,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -26958,6 +28579,7 @@
                 "height": null
             },
             "restorationSurveys": [],
+<<<<<<< HEAD
             "images": {
                 "infos": {
                     "maxDimensions": {
@@ -27003,6 +28625,9 @@
                     }
                 }
             }
+=======
+            "images": null
+>>>>>>> master
         },
         {
             "langCode": "en",
@@ -27033,7 +28658,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Eisenradierung"
             },
@@ -27186,14 +28815,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -27238,7 +28875,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -27391,14 +29032,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010502",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -27476,7 +29125,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27519,14 +29172,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -27575,7 +29236,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27653,14 +29318,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -27705,7 +29378,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Kupferstich"
             },
@@ -27818,14 +29495,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -27874,7 +29559,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -27927,14 +29616,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -28007,7 +29704,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -28050,14 +29751,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -28166,7 +29875,11 @@
             ],
             "titles": [],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
+=======
+                "classification": "Druckgrafik",
+>>>>>>> master
                 "condition": "",
                 "printProcess": "Holzschnitt"
             },
@@ -28214,14 +29927,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010402010129",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -28262,6 +29983,7 @@
                 }
             ],
             "classification": {
+<<<<<<< HEAD
                 "classification": "Prints",
                 "condition": "",
                 "printProcess": "Holzschnitt#Woodcut"
@@ -28272,6 +29994,18 @@
             "objectId": 961345,
             "isVirtual": true,
             "dimensions": "Sheet: 264\/263 x 196\/192 mm\nImage: 253\/252 x (196\/192) mm (cropped on both sides and at the bottom)\n[KKL 2020]",
+=======
+                "classification": "Druckgrafik",
+                "condition": "",
+                "printProcess": "Holzschnitt"
+            },
+            "conditionLevel": 0,
+            "objectName": "",
+            "inventoryNumber": "GWN_LC_HVI-76_96-107",
+            "objectId": 961480,
+            "isVirtual": true,
+            "dimensions": "Image: 132 \u00d7 67 mm (+- 2 mm)\n[cda 2019]",
+>>>>>>> master
             "dating": {
                 "dated": "about 1522",
                 "begin": 1522,
@@ -28616,14 +30350,22 @@
                 {
                     "type": "Schlagwort",
                     "term": "010403010101",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 },
                 {
                     "type": "Schlagwort",
                     "term": "010501",
+<<<<<<< HEAD
                     "path": "",
                     "url": ""
+=======
+                    "path": ""
+>>>>>>> master
                 }
             ],
             "locations": [],
@@ -28648,6 +30390,7 @@
                 "height": "13.20"
             },
             "restorationSurveys": [],
+<<<<<<< HEAD
             "images": null
         },
         {
@@ -30253,6 +31996,8 @@
                 "height": null
             },
             "restorationSurveys": [],
+=======
+>>>>>>> master
             "images": null
         }
     ]

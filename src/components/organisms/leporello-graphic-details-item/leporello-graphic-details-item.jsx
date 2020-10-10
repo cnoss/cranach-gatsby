@@ -37,7 +37,6 @@ export default ({
     catalogWorkReferences,
     publications,
     classification,
-    objectName,
   } = graphic;
 
   /* Sorting catalogWorkReferences */
@@ -117,7 +116,7 @@ export default ({
             <header className="leporello-graphic-details-item__content-info-header">
               <h1 className="title">{title}</h1>
               <h2 className="subtitle">
-                {classification.classification}, {objectName}
+                {classification.classification}, {classification.printProcess}
               </h2>
             </header>
             <div className="leporello-graphic-details-item__content-info-content">

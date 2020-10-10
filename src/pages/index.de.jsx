@@ -89,6 +89,7 @@ export const query = graphql`
             classification {
               classification
               condition
+              printProcess
             }
             references {
               reprints {
