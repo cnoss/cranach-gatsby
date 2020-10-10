@@ -86,6 +86,78 @@ export default ({
       filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 3,
       items: [],
     },
+    {
+      id: '4th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '4th state',
+        description: '4th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 4,
+      items: [],
+    },
+
+
+    {
+      id: '5th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '5th state',
+        description: '5th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 5,
+      items: [],
+    },
+    {
+      id: '6th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '6th state',
+        description: '6th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 6,
+      items: [],
+    },
+    {
+      id: '7th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '7th state',
+        description: '7th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 7,
+      items: [],
+    },
+    {
+      id: '8th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '8th state',
+        description: '8th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 8,
+      items: [],
+    },
+    {
+      id: '9th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '9th state',
+        description: '9th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 9,
+      items: [],
+    },
+    {
+      id: '10th-state',
+      translations: {
+        title: 'Impressions',
+        subtitle: '10th state',
+        description: '10th state description',
+      },
+      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 10,
+      items: [],
+    },
   ];
 
   const reprintConditionLevelGroups = expectedReprintConditionLevelGroups.map(
