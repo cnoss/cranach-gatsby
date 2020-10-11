@@ -13,7 +13,6 @@ export default ({
   masterData = '',
   imgSrc = '',
   imgAlt = '',
-  classification = '',
 }) => (
     <div
       className="artefact-line"
