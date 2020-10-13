@@ -45,7 +45,7 @@ const ArtefactOverview = ({
           className="overview-item"
         >
         { CardView === view && <ArtefactCard
-            title={ item.title }
+            title={ item.titleShort }
             subtitle={ item.subtitle }
             date={ item.date }
             to={item.to}

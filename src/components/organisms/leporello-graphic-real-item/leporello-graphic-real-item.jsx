@@ -19,7 +19,7 @@ export default ({
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const location = (graphic.locations[0] && graphic.locations[0].term) || '';
-  const classification = `${graphic.classification.classification}; ${graphic.classification.condition}`;
+  const condition = `${graphic.classification.classification}; ${graphic.classification.condition}`;
 
   const {
     images,
@@ -62,8 +62,8 @@ export default ({
           {/* Physikalische Eigenschaften */}
           <GroupedDefinitionList>
             <GroupedDefinitionList.Entry
-              term={t('Classification')}
-              definition={classification}
+              term={t('Condition')}
+              definition={condition}
             />
             <GroupedDefinitionList.Entry
               term={t('Medium')}
