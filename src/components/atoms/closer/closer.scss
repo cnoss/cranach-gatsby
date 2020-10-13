@@ -1,20 +1,25 @@
-@import "~/styles/000-abstracts/__abstracts-dir";
+@import '~/styles/000-abstracts/__abstracts-dir';
+
 .closer {
-  $closer-background-color: $darkest;
-  $closer-color: $accent;
-  $closer-size: $l;
-  $closer-font-size: $l;
-  z-index: $level-section-nav;
+  font-size: $l;
+
   position: relative;
-  width: $closer-size;
-  height: $closer-size;
-  font-size: $closer-font-size;
-  border: 0;
-  border-radius: 100%;
-  background-color: $closer-background-color;
+  z-index: $level-section-nav;
+
+  width: $l;
+  height: $l;
+
   cursor: pointer;
   transition: $tr-fast all;
-  box-shadow: $shadow;
-  color: $closer-color;
   text-align: center;
+
+  color: $accent;
+  border: 0;
+  border-radius: 100%;
+  background-color: $darkest;
+  box-shadow: $shadow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
