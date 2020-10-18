@@ -4,7 +4,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import IndexTemplate from '~/templates/index';
 
-const graphicTransformer = require('~/../libs/transformers/graphic');
+const {
+  flattenGraphQlEdges,
+  byImageExistence,
+  toArtefactWithOptions,
+} = require('~/../libs/transformers/graphic');
+const cranachCfg = require('~/cranach.config');
 
 
 export default ({ data }) => {
@@ -13,9 +18,9 @@ export default ({ data }) => {
     code: 'de',
     path: 'de',
   };
-  const graphics = graphicTransformer.flattenGraphQlEdges(data.allGraphicsJson)
-    .filter(graphicTransformer.byImageExistence)
-    .map(graphicTransformer.toArtefact);
+  const graphics = flattenGraphQlEdges(data.allGraphicsJson)
+    .filter(byImageExistence)
+    .map(toArtefactWithOptions({ titleLength: cranachCfg.titleLength }));
 
   return (<IndexTemplate pageContext={{ lang, graphics }} />);
 };

@@ -1,7 +1,12 @@
 // gatsby-node.js
 
 const path = require('path');
-const graphicTransformer = require('./libs/transformers/graphic');
+const {
+  flattenGraphQlEdges,
+  byImageExistence,
+  toArtefactWithOptions,
+} = require('./libs/transformers/graphic');
+const cranachCfg = require('./src/cranach.config');
 
 const locals = [
   {
@@ -370,9 +375,9 @@ const triggerIndexPagesCreation = async (actions, graphql) => {
 
   const localPromises = locals.map((lang) => {
     return localizedIndexPageData(lang).then((res) => {
-      const graphics = graphicTransformer.flattenGraphQlEdges(res.data.allGraphicsJson)
-        .filter(graphicTransformer.byImageExistence)
-        .map(graphicTransformer.toArtefact);
+      const graphics = flattenGraphQlEdges(res.data.allGraphicsJson)
+        .filter(byImageExistence)
+        .map(toArtefactWithOptions({ titleLength: cranachCfg.titleLength }));
 
       createPage({
         path: lang.path,
