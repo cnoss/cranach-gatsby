@@ -4,6 +4,30 @@ const path = require('path');
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
+/* TODO: use function already found in graphics transformer lib */
+const getRepresentativeImageVariant = (item) => {
+  const emptyImageType = {
+    infos: {
+      maxDimensions: {
+        width: 0,
+        height: 0,
+      },
+    },
+    variants: [
+      ['xs', 's', 'm', 'l', 'xl'].reduce(
+        (acc, size) => {
+          acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
+          return acc;
+        },
+        {},
+      ),
+    ],
+  };
+  const imageType = item.images.representative || item.images.overall || emptyImageType;
+
+  return imageType.variants[imageType.variants.length - 1];
+};
+
 const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
   const foundReferencesItem = graphics.find(
     currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
@@ -36,7 +60,12 @@ const extendGraphicReferences = (items, item) => ({
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  const graphicsWithImages = graphics.filter(graphic => graphic.images);
+  const graphicsWithImages = graphics
+    .filter(graphic => graphic.images)
+    .map(graphic => ({
+      ...graphic,
+      representativeImage: getRepresentativeImageVariant(graphic),
+    }));
 
   const extendedGraphicsWithExtendedReferences = graphicsWithImages.map(
     graphic => extendGraphicReferences(graphicsWithImages, graphic),
@@ -180,47 +209,94 @@ exports.createPages = ({ graphql, actions }) => {
                 year
               }
               images {
-                infos {
-                  maxDimensions {
-                    width
-                    height
+                representative {
+                  infos {
+                    maxDimensions {
+                      width
+                      height
+                    }
+                  }
+                  variants {
+                    xs {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    s {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    m {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    l {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    xl {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
                   }
                 }
-                sizes {
-                  xs {
-                    dimensions {
+                overall {
+                  infos {
+                    maxDimensions {
                       width
                       height
                     }
-                    src
                   }
-                  s {
-                    dimensions {
-                      width
-                      height
+                  variants {
+                    xs {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  m {
-                    dimensions {
-                      width
-                      height
+                    s {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  l {
-                    dimensions {
-                      width
-                      height
+                    m {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  xl {
-                    dimensions {
-                      width
-                      height
+                    l {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
+                    xl {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
                   }
                 }
               }

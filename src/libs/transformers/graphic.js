@@ -3,6 +3,29 @@ import cranachCfg from '~/cranach.config';
 
 const { titleLength } = cranachCfg;
 
+const getRepresentativeImageVariant = (item) => {
+  const emptyImageType = {
+    infos: {
+      maxDimensions: {
+        width: 0,
+        height: 0,
+      },
+    },
+    variants: [
+      ['xs', 's', 'm', 'l', 'xl'].reduce(
+        (acc, size) => {
+          acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
+          return acc;
+        },
+        {},
+      ),
+    ],
+  };
+  const imageType = item.images.representative || item.images.overall || emptyImageType;
+
+  return imageType.variants[imageType.variants.length - 1];
+};
+
 export default {
   flattenGraphQlEdges(rawItems) {
     return rawItems.edges.reduce((acc, edge) => {
@@ -22,6 +45,8 @@ export default {
     const title = (item.titles[0] && item.titles[0].title) || '';
     const titleShort = (title.length > titleLength) ? `${title.substr(0, titleLength)}…` : title;
 
+    const imgSrc = item.representativeImage.s.src || '';
+
     return {
       inventoryNumber: item.inventoryNumber,
       title,
@@ -31,7 +56,14 @@ export default {
       masterData: item,
       classification,
       to: `/${item.langCode}/${item.slug}`,
-      imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
+      imgSrc,
+    };
+  },
+
+  toAddedRepresentativeImage(item) {
+    return {
+      ...item,
+      representativeImage: getRepresentativeImageVariant(item),
     };
   },
 };

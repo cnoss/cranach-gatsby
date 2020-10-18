@@ -28,7 +28,7 @@ export default ({
   const description = graphic.description || ' ';
 
   const {
-    images,
+    representativeImage,
     dating,
     dimensions,
     involvedPersons,
@@ -91,6 +91,8 @@ export default ({
     ]);
   }, [className, isOpen]);
 
+  const largestImageSrc = representativeImage.l.src;
+
   return (
     <LeporelloGraphicItem
       className={`leporello-graphic-details-item-wrap ${additionalClassNames.join(' ')}`}
@@ -108,7 +110,7 @@ export default ({
         <div className="leporello-graphic-details-item__content">
           <div className={'leporello-graphic-details-item__content-image'}>
             <Image
-              src={images.sizes.l.src}
+              src={largestImageSrc}
               alt={title}
             />
           </div>

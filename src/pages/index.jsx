@@ -17,6 +17,7 @@ export default ({ data }) => {
 
   const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
     .filter(graphic.byImageExistence)
+    .map(graphic.toAddedRepresentativeImage)
     .map(graphic.toArtefact);
 
   const [currentArtefactView, setCurrentArtefactView] = useState(ArtefactOverview.DefaultView);
@@ -100,47 +101,49 @@ export const query = graphql`
               }
             }
             images {
-              infos {
-                maxDimensions {
-                  width
-                  height
-                }
-              }
-              sizes {
-                xs {
-                  dimensions {
+              representative {
+                infos {
+                  maxDimensions {
                     width
                     height
                   }
-                  src
                 }
-                s {
-                  dimensions {
-                    width
-                    height
+                variants {
+                  xs {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                m {
-                  dimensions {
-                    width
-                    height
+                  s {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                l {
-                  dimensions {
-                    width
-                    height
+                  m {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                xl {
-                  dimensions {
-                    width
-                    height
+                  l {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
+                  xl {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
                 }
               }
             }
