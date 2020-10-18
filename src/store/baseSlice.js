@@ -18,7 +18,6 @@ const slice = createSlice({
 export const getLanguage = state => state.base.lang;
 
 export const setLanguage = lang => (dispatch) => {
-  console.log('>>>>>', lang);
   dispatch(slice.actions.setLanguage(lang));
 };
 
