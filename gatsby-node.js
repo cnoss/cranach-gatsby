@@ -21,38 +21,34 @@ const searchPageTemplate = path.resolve('src/templates/search.jsx');
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
-const referenceResolver = (graphic, graphics, references) => {
-  return references.reduce((acc, referenceItem) => {
-    const foundReferencesItem = graphics.find(
-      currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
+const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
+  const foundReferencesItem = graphics.find(
+    currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
         && currItem.langCode === graphic.langCode,
-    );
+  );
 
-    if (!foundReferencesItem) {
-      return acc;
-    }
-
-    const newReferenceItem = {
-      ...referenceItem,
-      ref: { ...foundReferencesItem },
-    };
-
-    acc.push(newReferenceItem);
-
+  if (!foundReferencesItem) {
     return acc;
-  }, []);
-};
+  }
+
+  const newReferenceItem = {
+    ...referenceItem,
+    ref: { ...foundReferencesItem },
+  };
+
+  acc.push(newReferenceItem);
+
+  return acc;
+}, []);
 
 /* Grafikverknüpfung */
-const extendGraphicReferences = (items, item) => {
-  return {
-    ...item,
-    references: {
-      reprints: referenceResolver(item, items, item.references.reprints),
-      relatedWorks: referenceResolver(item, items, item.references.relatedWorks),
-    },
-  };
-};
+const extendGraphicReferences = (items, item) => ({
+  ...item,
+  references: {
+    reprints: referenceResolver(item, items, item.references.reprints),
+    relatedWorks: referenceResolver(item, items, item.references.relatedWorks),
+  },
+});
 
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
