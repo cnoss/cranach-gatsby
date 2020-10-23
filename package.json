@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext js --ext jsx src/",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy-live": "gatsby build --prefix-paths && cp deploy-helper/htaccess public/.htaccess && node deploy-helper/zip-public.js",
+    "deploy-live": "gatsby build --prefix-paths && cp deploy-helper/htaccess public/.htaccess && node deploy-helper/copy-public-folder.js && node deploy-helper/zip-and-remove-folder.js",
     "create": "node scripts/create.js"
   },
   "dependencies": {
