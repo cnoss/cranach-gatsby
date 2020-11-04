@@ -18,6 +18,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext js --ext jsx src/",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy-live": "gatsby build --prefix-paths && cp deploy-helper/htaccess public/.htaccess && node deploy-helper/copy-public-folder.js && node deploy-helper/zip-and-remove-folder.js",
     "create": "node scripts/create.js",
     "clean": "gatsby clean"
   },
@@ -53,6 +54,7 @@
   "devDependencies": {
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.36",
+    "child_process": "^1.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-react-app": "^5.2.1",
