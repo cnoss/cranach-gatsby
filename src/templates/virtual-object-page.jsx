@@ -1,8 +1,8 @@
 /* src/templates/virtual-object-page.js */
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Helmet from 'react-helmet';
-import i18n from '~/i18n';
+import { observer } from 'mobx-react-lite';
 
 import Navigation from '~/components/molecules/navigation';
 import Leporello from '~/components/atoms/leporello';
@@ -11,13 +11,16 @@ import LeporelloGraphicReprintsItem from '~/components/organisms/leporello-graph
 import LeporelloArtefactRelatedWorksItem from '~/components/organisms/leporello-artefact-related-works-item';
 import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-real-item';
 
+import StoreContext from '~/store/StoreContext';
 
 const PageTemplate = ({ pageContext, location }) => {
+  const { ui } = useContext(StoreContext);
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-  i18n(graphic.langCode);
 
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
+
+  ui.setLanguage(graphic.langCode);
 
   return (
     <div
@@ -63,4 +66,4 @@ const PageTemplate = ({ pageContext, location }) => {
   );
 };
 
-export default PageTemplate;
+export default observer(PageTemplate);

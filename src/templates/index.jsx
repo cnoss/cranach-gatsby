@@ -1,17 +1,20 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Helmet from 'react-helmet';
-import i18n from '~/i18n';
+import { observer } from 'mobx-react-lite';
+
 
 import Navigation from '~/components/molecules/navigation';
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 
+import StoreContext from '~/store/StoreContext';
 
-export default ({ pageContext }) => {
+const Index = ({ pageContext }) => {
+  const { ui } = useContext(StoreContext);
   const { lang, graphics } = pageContext;
-  i18n(lang.code);
-
   const [currentArtefactView, setCurrentArtefactView] = useState(ArtefactOverview.DefaultView);
+
+  ui.setLanguage(lang.code);
 
   return (
     <div
@@ -44,3 +47,5 @@ export default ({ pageContext }) => {
     </div>
   );
 };
+
+export default observer(Index);

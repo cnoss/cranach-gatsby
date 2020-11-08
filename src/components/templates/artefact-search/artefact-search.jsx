@@ -1,19 +1,16 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useContext } from 'react';
+
+import { observer } from 'mobx-react-lite';
 
 import ArtefactOverview from '~/components/organisms/artefact-overview';
 import SearchSidebar from '~/components/organisms/search-sidebar';
 
-import {
-  getSearchLoading,
-  getSearchResultItems,
-} from '~/store/features/globalSearch/globalSearchSlice';
-
 import './artefact-search.scss';
 
-export default () => {
-  const searchIsCurrentlyLoading = useSelector(getSearchLoading);
-  const searchResultItems = useSelector(getSearchResultItems);
+import StoreContext from '~/store/StoreContext';
+
+const ArtefactSearch = () => {
+  const { globalSearch } = useContext(StoreContext);
 
   return (
     <div
@@ -21,10 +18,10 @@ export default () => {
       data-component="organisms/artefact-search"
     >
       <div className="artefact-search__results-area">
-      { searchIsCurrentlyLoading && 'Loading...' }
-      { !searchIsCurrentlyLoading
+      { globalSearch.loading && 'Loading...' }
+      { !globalSearch.loading
         && <ArtefactOverview
-          items={ searchResultItems }
+          items={ globalSearch.flattenedSearchResultItems }
         />
       }
       </div>
@@ -34,3 +31,5 @@ export default () => {
     </div>
   );
 };
+
+export default observer(ArtefactSearch);

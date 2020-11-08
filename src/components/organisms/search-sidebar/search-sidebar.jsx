@@ -1,30 +1,25 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState, useContext } from 'react';
+import { observer } from 'mobx-react-lite';
 import { useTranslation } from '~/i18n';
 
 import Btn from '~/components/atoms/btn';
 import TextInput from '~/components/atoms/text-input';
 import Accordion from '~/components/molecules/accordion';
 
-import {
-  searchForAllFieldsTerm,
-  getAllFieldsTerm,
-} from '~/store/features/globalSearch/globalSearchSlice';
-
 import translations from './translations.json';
 import './search-sidebar.scss';
 
-export default () => {
+import StoreContext from '~/store/StoreContext';
+
+const SearchSidebar = () => {
   const { t } = useTranslation('SearchSidebar', translations);
+  const { globalSearch } = useContext(StoreContext);
 
   const title = useState('*');
   const catalogWorkReferenceNumber = useState('*');
   const location = useState('*');
   const cdaIDInventorynumber = useState('*');
   const catalogWorkReferenceNames = 'Friedländer, Rosenberg (1978)';
-
-  const dispatch = useDispatch();
-  const allFieldsTerm = useSelector(getAllFieldsTerm);
 
   return (
     <div
@@ -37,8 +32,8 @@ export default () => {
         <TextInput
           className="search-input"
           label={ t('all Fields') }
-          value={ allFieldsTerm }
-          onChange={ term => dispatch(searchForAllFieldsTerm(term)) }
+          value={ globalSearch.allFieldsTerm }
+          onChange={ term => globalSearch.searchForAllFieldsTerm(term) }
         ></TextInput>
 
         <TextInput
@@ -108,3 +103,5 @@ export default () => {
     </div>
   );
 };
+
+export default observer(SearchSidebar);

@@ -84,4 +84,6 @@ const searchGloballyRandomizedByLang = lang => fetch(
   }));
 
 
-export const searchGloballyFor = (_, lang) => searchGloballyRandomizedByLang(lang);
+export default {
+  searchGloballyFor: (_, lang) => searchGloballyRandomizedByLang(lang),
+};

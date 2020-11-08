@@ -1,6 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './rootReducer';
 
-export default () => configureStore({
-  reducer: rootReducer,
-});
+import UI_ from './domains/ui';
+import GlobalSearch_ from './domains/globalSearch';
+
+export const UI = UI_;
+export const GlobalSearch = GlobalSearch_;

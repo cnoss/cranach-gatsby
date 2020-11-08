@@ -1,5 +1,15 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import createStore from './store';
 
-export default ({ element }) => (<Provider store={createStore()}>{element}</Provider>);
+import StoreContext from '~/store/StoreContext';
+
+import { UI, GlobalSearch } from './store';
+import globalSearchAPI from '~/api/globalSearch';
+
+const ui = new UI();
+const globalSearch = new GlobalSearch(ui, globalSearchAPI);
+
+export default ({ element }) => (
+  <StoreContext.Provider value={ { ui, globalSearch } }>
+    {element}
+  </StoreContext.Provider>
+);

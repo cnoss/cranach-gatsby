@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Helmet from 'react-helmet';
-import i18n from '~/i18n';
+import { observer } from 'mobx-react-lite';
 
 import SearchHeader from '~/components/molecules/search-header';
-import ArtefactSearch from '~/components/organisms/artefact-search';
+import ArtefactSearch from '~/components/templates/artefact-search';
 
+import StoreContext from '~/store/StoreContext';
 
-export default ({ pageContext }) => {
+const Search = ({ pageContext }) => {
+  const { ui } = useContext(StoreContext);
   const { lang } = pageContext;
-  i18n(lang.code);
+
+  ui.setLanguage(lang.code);
 
   return (
     <div
@@ -29,3 +32,6 @@ export default ({ pageContext }) => {
     </div>
   );
 };
+
+
+export default observer(Search);

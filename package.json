@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
-    "@reduxjs/toolkit": "^1.4.0",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.21",
     "@storybook/addon-links": "^5.3.21",
@@ -44,11 +43,12 @@
     "gatsby-transformer-json": "^2.4.14",
     "gsap": "^3.5.1",
     "i18next": "^19.8.2",
+    "mobx": "^6.0.3",
+    "mobx-react-lite": "^3.1.5",
     "openseadragon": "^2.4.2",
     "react": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.7.3",
-    "react-redux": "^7.2.1",
     "sass": "^1.27.0"
   },
   "devDependencies": {

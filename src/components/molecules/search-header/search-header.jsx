@@ -1,15 +1,15 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useContext } from 'react';
+import { observer } from 'mobx-react-lite';
 
 import Logo from '~/components/atoms/logo';
 import SearchStatus from '~/components/atoms/search-status';
 
-import { getSearchResults } from '~/store/features/globalSearch/globalSearchSlice';
-
 import './search-header.scss';
 
-export default () => {
-  const results = useSelector(getSearchResults);
+import StoreContext from '~/store/StoreContext';
+
+const SearchHeader = () => {
+  const { globalSearch } = useContext(StoreContext);
 
   return (<div
       className="search-header"
@@ -18,9 +18,9 @@ export default () => {
       <Logo />
 
       <SearchStatus status={{
-        graphics: results.graphics.length,
-        paintings: results.paintings.length,
-        archivals: results.archivals.length,
+        graphics: globalSearch.results.graphics.length,
+        paintings: globalSearch.results.paintings.length,
+        archivals: globalSearch.results.archivals.length,
       }} />
 
       <div className="right-end">
@@ -30,3 +30,6 @@ export default () => {
     </div>
   );
 };
+
+
+export default observer(SearchHeader);

@@ -3,18 +3,11 @@ import {
   initReactI18next,
   useTranslation as i18nextUseTranslation,
 } from 'react-i18next';
-import { useDispatch } from 'react-redux';
-
-import { setLanguage } from '~/store/baseSlice';
 
 export default (langCode) => {
-  const dispatch = useDispatch();
-
   if (i18n.isInitialized) {
     if (i18n.language !== langCode) {
-      return i18n.changeLanguage(langCode).then(() => {
-        dispatch(setLanguage(langCode));
-      });
+      return i18n.changeLanguage(langCode);
     }
     return Promise.resolve();
   }
@@ -33,8 +26,6 @@ export default (langCode) => {
       react: {
         useSuspense: false,
       },
-    }).then(() => {
-      dispatch(setLanguage(langCode));
     });
 };
 

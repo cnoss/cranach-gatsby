@@ -1,17 +1,20 @@
 /* src/templates/real-object-page.js */
 
-import React from 'react';
+import React, { useContext } from 'react';
 import Helmet from 'react-helmet';
-import i18n from '~/i18n';
+import { observer } from 'mobx-react-lite';
 
 import Leporello from '~/components/atoms/leporello';
 import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-real-item';
 
+import StoreContext from '~/store/StoreContext';
 
 const PageTemplate = ({ pageContext }) => {
+  const { ui } = useContext(StoreContext);
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
-  i18n(graphic.langCode);
+
+  ui.setLanguage(graphic.langCode);
 
   return (
     <div
@@ -34,4 +37,4 @@ const PageTemplate = ({ pageContext }) => {
   );
 };
 
-export default PageTemplate;
+export default observer(PageTemplate);
