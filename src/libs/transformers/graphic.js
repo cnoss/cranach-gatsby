@@ -22,7 +22,6 @@ const getRepresentativeImageVariant = (item) => {
     ],
   };
   const imageType = item.images.representative || item.images.overall || emptyImageType;
-
   return imageType.variants[imageType.variants.length - 1];
 };
 

@@ -35,14 +35,15 @@ const ArtefactOverview = ({
 }) => (
     <div
 
-    className="artefact-overview"
-    data-component="organisms/artefact-overview"
-    data-active-view={ view.type }
-  >
+      className="artefact-overview"
+      data-component="organisms/artefact-overview"
+      data-active-view={ view.type }
+    >
     {
         items.map(item => (<div
           key={ item.inventoryNumber }
           className="overview-item"
+          data-src={JSON.stringify(item)}
         >
         { CardView === view && <ArtefactCard
             title={ item.titleShort }
