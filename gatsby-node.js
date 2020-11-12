@@ -117,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
               objectId
               isVirtual
               sortingNumber
+              representativeObject
               titles {
                 remarks
                 title
@@ -126,6 +127,7 @@ exports.createPages = ({ graphql, actions }) => {
               catalogWorkReferences {
                 description
                 referenceNumber
+                remarks
               }
               classification {
                 classification
@@ -207,6 +209,34 @@ exports.createPages = ({ graphql, actions }) => {
                 text
                 type
                 year
+              }
+              keywords {
+                type
+                term
+                path
+                url
+              }
+              restorationSurveys {
+                type
+                project
+                overallAnalysis
+                remarks
+                tests {
+                  kind
+                  text
+                  purpose
+                  remarks
+                }
+                involvedPersons {
+                  role
+                  name
+                }
+                processingDates {
+                  beginDate
+                  beginYear
+                  endDate
+                  endYear
+                }
               }
               images {
                 representative {
