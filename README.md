@@ -16,6 +16,10 @@
     - Aufruf URL wird ausgegeben
   - Projekt bauen
     - ```npm run build```
+  - Deploy für Live Server liefert eine Zipdatei mit dem aktuellen Datum als Dateiname
+    - ```npm run deploy-live```
+  - Eine leere Komponente als Ausgangsbasis erstellen
+    - ```npm run create component atoms/new-component```
   - Production-Build über WebServer ausliefern
     - ```npm run serve```
     - Aufruf unter ```http://localhost:9000```
@@ -38,6 +42,7 @@
 - Create
   - Eine leere Komponente als Ausgangsbasis erstellen
     - ```npm run create component atoms/new-component```
+
 
 
 ## CN Reminder

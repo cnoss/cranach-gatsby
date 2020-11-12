@@ -5,8 +5,9 @@ const {
   flattenGraphQlEdges,
   byImageExistence,
   toArtefactWithOptions,
+  toAddedRepresentativeImage,
 } = require('./libs/transformers/graphic');
-const cranachCfg = require('./src/cranach.config');
+const { titleLength } = require('./cranach.config');
 
 const locals = [
   {
@@ -58,7 +59,9 @@ const extendGraphicReferences = (items, item) => ({
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  const graphicsWithImages = graphics.filter(graphic => graphic.images);
+  const graphicsWithImages = graphics
+    .filter(graphic => graphic.images)
+    .map(toAddedRepresentativeImage);
 
   const extendedGraphicsWithExtendedReferences = graphicsWithImages.map(
     graphic => extendGraphicReferences(graphicsWithImages, graphic),
@@ -202,47 +205,94 @@ const triggerGraphicPagesCreation = (actions, graphql) => {
                 year
               }
               images {
-                infos {
-                  maxDimensions {
-                    width
-                    height
+                representative {
+                  infos {
+                    maxDimensions {
+                      width
+                      height
+                    }
+                  }
+                  variants {
+                    xs {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    s {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    m {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    l {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
+                    xl {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
                   }
                 }
-                sizes {
-                  xs {
-                    dimensions {
+                overall {
+                  infos {
+                    maxDimensions {
                       width
                       height
                     }
-                    src
                   }
-                  s {
-                    dimensions {
-                      width
-                      height
+                  variants {
+                    xs {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  m {
-                    dimensions {
-                      width
-                      height
+                    s {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  l {
-                    dimensions {
-                      width
-                      height
+                    m {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  xl {
-                    dimensions {
-                      width
-                      height
+                    l {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
+                    xl {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
                   }
                 }
               }
@@ -318,47 +368,49 @@ const triggerIndexPagesCreation = async (actions, graphql) => {
                 }
               }
               images {
-                infos {
-                  maxDimensions {
-                    width
-                    height
-                  }
-                }
-                sizes {
-                  xs {
-                    dimensions {
+                representative {
+                  infos {
+                    maxDimensions {
                       width
                       height
                     }
-                    src
                   }
-                  s {
-                    dimensions {
-                      width
-                      height
+                  variants {
+                    xs {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  m {
-                    dimensions {
-                      width
-                      height
+                    s {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  l {
-                    dimensions {
-                      width
-                      height
+                    m {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
-                  }
-                  xl {
-                    dimensions {
-                      width
-                      height
+                    l {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
                     }
-                    src
+                    xl {
+                      dimensions {
+                        width
+                        height
+                      }
+                      src
+                    }
                   }
                 }
               }
@@ -377,7 +429,8 @@ const triggerIndexPagesCreation = async (actions, graphql) => {
     return localizedIndexPageData(lang).then((res) => {
       const graphics = flattenGraphQlEdges(res.data.allGraphicsJson)
         .filter(byImageExistence)
-        .map(toArtefactWithOptions({ titleLength: cranachCfg.titleLength }));
+        .map(toAddedRepresentativeImage)
+        .map(toArtefactWithOptions({ titleLength }));
 
       createPage({
         path: lang.path,

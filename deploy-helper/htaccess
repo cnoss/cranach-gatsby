@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password required"
+AuthUserFile /home/cnoss/graphics.htpass
+Require valid-user

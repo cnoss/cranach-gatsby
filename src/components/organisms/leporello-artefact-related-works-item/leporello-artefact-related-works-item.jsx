@@ -22,11 +22,14 @@ export default ({
   const relatedWorksItems = relatedWorks.map((relatedWorksItem) => {
     const item = relatedWorksItem.ref;
     const title = (item.titles[0].title) ? `${item.titles[0].title}, ${item.dating.dated}` : item.dating.dated;
+
+    const smallestImageSrc = item.representativeImage.s.src;
+
     return {
       inventoryNumber: item.inventoryNumber,
       title,
       to: `/${item.langCode}/${item.slug}`,
-      imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
+      imgSrc: smallestImageSrc,
       preventLinkFollowing: false,
       triggersInternalTransition: true,
     };

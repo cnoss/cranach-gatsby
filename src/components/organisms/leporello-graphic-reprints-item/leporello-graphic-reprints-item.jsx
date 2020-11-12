@@ -19,11 +19,13 @@ export default ({
   const reprintItems = reprints.map((reprintItem) => {
     const item = reprintItem.ref;
 
+    const smallestImageSrc = item.representativeImage.s.src;
+
     return {
       inventoryNumber: item.inventoryNumber,
       title: [item.dating.dated, ', ', item.owner],
       to: `/${item.langCode}/${item.slug}`,
-      imgSrc: (item && item.images && item.images.sizes.s && item.images.sizes.s.src),
+      imgSrc: smallestImageSrc,
       preventLinkFollowing: true,
       conditionLevel: item.conditionLevel,
     };

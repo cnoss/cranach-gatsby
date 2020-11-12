@@ -22,7 +22,7 @@ export default ({
   const condition = `${graphic.classification.classification}; ${graphic.classification.condition}`;
 
   const {
-    images,
+    representativeImage,
     dating,
     dimensions,
     inventoryNumber,
@@ -39,6 +39,9 @@ export default ({
     catalogWorkReferences,
   } = graphic;
 
+  const largestImageSrc = representativeImage.xl.src;
+  const smallestImageSrc = representativeImage.s.src;
+
   return (
     <LeporelloGraphicItem
       className="leporello-graphic-real-item-wrap"
@@ -49,8 +52,8 @@ export default ({
       <div className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-item__image">
           <ZoomImage
-            src={images.sizes.xl.src}
-            baseSrc={images.sizes.s.src}
+            src={largestImageSrc}
+            baseSrc={smallestImageSrc}
             alt={title}
           />
         </div>

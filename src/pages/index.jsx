@@ -7,19 +7,18 @@ import IndexTemplate from '~/templates/index';
 const {
   flattenGraphQlEdges,
   byImageExistence,
+  toAddedRepresentativeImage,
   toArtefactWithOptions,
 } = require('~/../libs/transformers/graphic');
-const cranachCfg = require('~/cranach.config');
 
+const cranachCfg = require('~/../cranach.config');
 
 export default ({ data }) => {
-  const lang = {
-    name: 'German',
-    code: 'de',
-    path: 'de',
-  };
+  const lang = 'de';
+
   const graphics = flattenGraphQlEdges(data.allGraphicsJson)
     .filter(byImageExistence)
+    .map(toAddedRepresentativeImage)
     .map(toArtefactWithOptions({ titleLength: cranachCfg.titleLength }));
 
   return (<IndexTemplate pageContext={{ lang, graphics }} />);
@@ -73,47 +72,49 @@ export const query = graphql`
               }
             }
             images {
-              infos {
-                maxDimensions {
-                  width
-                  height
-                }
-              }
-              sizes {
-                xs {
-                  dimensions {
+              representative {
+                infos {
+                  maxDimensions {
                     width
                     height
                   }
-                  src
                 }
-                s {
-                  dimensions {
-                    width
-                    height
+                variants {
+                  xs {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                m {
-                  dimensions {
-                    width
-                    height
+                  s {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                l {
-                  dimensions {
-                    width
-                    height
+                  m {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
-                }
-                xl {
-                  dimensions {
-                    width
-                    height
+                  l {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
                   }
-                  src
+                  xl {
+                    dimensions {
+                      width
+                      height
+                    }
+                    src
+                  }
                 }
               }
             }
