@@ -138,8 +138,6 @@ export default ({
                     term={t('Production date')}
                     definition={`${dating.dated} ${dating.remarks}`}
                   />
-
-
                   <DefinitionList.Entry
                     term={t('Dimensions')}
                     definition={dimensions}

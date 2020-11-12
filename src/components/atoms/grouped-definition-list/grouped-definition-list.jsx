@@ -2,6 +2,7 @@
 import React from 'react';
 
 import './grouped-definition-list.scss';
+import FlatText from '~/components/atoms/flat-text';
 
 const GroupedDefinitionList = ({ children }) => (
   <dl
@@ -15,7 +16,12 @@ const GroupedDefinitionList = ({ children }) => (
 GroupedDefinitionList.Entry = ({ term, definition }) => (
   <React.Fragment>
     <dt className="grouped-definition-list__term">{ term }</dt>
-    <dd className="grouped-definition-list__definition">{ definition }</dd>
+    <dd className="grouped-definition-list__definition">
+    {typeof (definition) === 'string' && <FlatText
+        text={definition}
+      />}
+      {typeof (definition) !== 'string' && definition}
+    </dd>
   </React.Fragment>
 );
 
