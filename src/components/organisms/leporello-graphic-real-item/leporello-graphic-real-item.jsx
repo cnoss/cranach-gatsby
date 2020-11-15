@@ -3,9 +3,11 @@ import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
+import ImageStripe from '~/components/molecules/image-stripe';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
+
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
@@ -56,6 +58,8 @@ export default ({
             baseSrc={smallestImageSrc}
             alt={title}
           />
+
+          <ImageStripe inventoryNumber={inventoryNumber} />
         </div>
 
         <div className="leporello-graphic-real-item__info">
