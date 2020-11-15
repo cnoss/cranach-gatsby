@@ -2,8 +2,9 @@ import React from 'react';
 import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
-import ZoomImage from '~/components/atoms/zoom-image';
-import ImageStripe from '~/components/molecules/image-stripe';
+
+
+import Viewer from '~/components/playground/viewer';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
@@ -41,9 +42,6 @@ export default ({
     catalogWorkReferences,
   } = graphic;
 
-  const largestImageSrc = representativeImage.xl.src;
-  const smallestImageSrc = representativeImage.s.src;
-
   return (
     <LeporelloGraphicItem
       className="leporello-graphic-real-item-wrap"
@@ -53,13 +51,11 @@ export default ({
     >
       <div className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-item__image">
-          <ZoomImage
-            src={largestImageSrc}
-            baseSrc={smallestImageSrc}
-            alt={title}
+          <Viewer
+            inventoryNumber={inventoryNumber}
+            artefactType='graphics'
+            placeholder={representativeImage}
           />
-
-          <ImageStripe inventoryNumber={inventoryNumber} />
         </div>
 
         <div className="leporello-graphic-real-item__info">

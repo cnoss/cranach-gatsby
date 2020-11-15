@@ -4,6 +4,8 @@ import React, {
   useRef,
 } from 'react';
 
+// import { useAsync } from 'react-async';
+// import imageData from '~/libs/artefact-data';
 import './zoom-image.scss';
 
 const zoomInRest = require('./images/zoomin_rest.png');
@@ -45,7 +47,6 @@ const navImages = {
   },
 };
 
-
 export default ({
   src,
   baseSrc,
@@ -56,6 +57,15 @@ export default ({
   const imageElRef = useRef(null);
   const viewerRef = useRef(null);
   const [activeZoom, setActiveZoom] = useState(false);
+
+
+  const addImages = () => (
+    {
+      type: 'image',
+      url: 'https://lucascranach.org/imageserver/G_AT_A_DG1929-98/01_Overall/G_AT_A_DG1929-98_2010_Overall-s.jpg',
+    }
+  );
+
 
   useEffect(() => {
     if (!figureElRef.current || !imageElRef.current) {
@@ -75,17 +85,29 @@ export default ({
     import('openseadragon').then((OpenSeaDragon) => {
       viewerRef.current = new OpenSeaDragon.Viewer({
         element: figureElRef.current,
-        tileSources: {
-          type: 'image',
-          url: src,
-        },
+        tileSources: [
+          {
+            type: 'image',
+            url: src,
+          },
+        ],
         prefixUrl: '',
+        sequenceMode: true,
         navImages,
       });
 
       viewerRef.current.addOnceHandler('open', () => {
         setActiveZoom(true);
       });
+
+
+      viewerRef.current.tileSources.push(addImages());
+      viewerRef.current.forceRedraw();
+      console.log(viewerRef.current.tileSources);
+
+      /* viewerRef.current.addSimpleImage({
+        url: 'https://lucascranach.org/imageserver/G_AT_A_DG1929-98/01_Overall/G_AT_A_DG1929-98_2010_Overall-s.jpg',
+      }); */
     });
   }, [src, imageElRef, figureElRef]);
 
@@ -106,6 +128,7 @@ export default ({
         className="zoom-image-caption"
       >
         <p className="text">{caption}</p>
+
       </figcaption>
       }
     </figure>
