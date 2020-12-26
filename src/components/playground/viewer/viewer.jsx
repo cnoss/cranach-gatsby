@@ -95,7 +95,7 @@ export default ({
           },
         ],
         prefixUrl: '',
-        sequenceMode: true,
+        sequenceMode: false,
         navImages,
         showNavigator: true,
       });
@@ -120,7 +120,7 @@ export default ({
     showLoadIndicator();
     viewerRef.current.open({
       type: 'image',
-      url: images[index].srcXl,
+      url: images[index].srcL,
     });
     return null;
   };
