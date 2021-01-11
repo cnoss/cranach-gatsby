@@ -10,6 +10,8 @@ export default ({
   <div
     className="copy-text"
   >
-    { text.split('\n').map((item, i) => <p key={i}>{ item || '\u200B' }</p>) }
+    { text.length === 0
+      ? ''
+      : text.split('\n').map((item, i) => <p key={i}>{ item || '\u200B' }</p>) }
   </div>
 );

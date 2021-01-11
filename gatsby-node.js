@@ -300,6 +300,30 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                 }
               }
+              restorationSurveys {
+                type
+                project
+                overallAnalysis
+                remarks
+                tests {
+                  kind
+                  text
+                  purpose
+                  remarks
+                }
+                involvedPersons {
+                  role
+                  name
+                }
+                processingDates {
+                  beginDate
+                  endDate
+                }
+                signature {
+                  date
+                  name
+                }
+              }
             }
           }
         }
