@@ -171,8 +171,7 @@ export default ({
                 || !!survey.overallAnalysis
                 || !!survey.remarks
                 || !!survey.involvedPersons.length > 0
-                || !!survey.processingDates
-                || !!survey.signature)
+                || !!survey.processingDates)
                 && <GroupedDefinitionList>
                 {!!survey.project && <GroupedDefinitionList.Entry
                   term="Projekt"
@@ -195,11 +194,9 @@ export default ({
                 />}
                 {!!survey.processingDates && <GroupedDefinitionList.Entry
                   term="Datum"
-                  definition={`${survey.processingDates.beginDate} - ${survey.processingDates.endDate}`}
-                />}
-                {!!survey.signature && <GroupedDefinitionList.Entry
-                  term="Signatur"
-                  definition={<CopyText text={`${survey.signature.name} ${survey.signature.date}`} />}
+                  definition={`${survey.processingDates.beginDate}${survey.processingDates.endDate.length !== 0 && survey.processingDates.endDate !== survey.processingDates.beginDate
+                    ? ` - ${survey.processingDates.endDate}`
+                    : ''}`}
                 />}
               </GroupedDefinitionList>}
 
