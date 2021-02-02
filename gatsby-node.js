@@ -104,6 +104,53 @@ exports.createPages = ({ graphql, actions }) => {
      Z. B. nur alle deutschen virtuellen Objekte anfragen
       allContentJson(filter: {items: {elemMatch: {isVirtual: {eq: true}, langCode: {eq: "de"}}}}) {
    */
+
+   const imageTypeStructure = `
+    infos {
+      maxDimensions {
+        width
+        height
+      }
+    }
+    variants {
+      xs {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      s {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      m {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      l {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      xl {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+    }
+  `;
+
   const pagesData = graphql(`
     query CranachGraphicObjects {
       allGraphicsJson {
@@ -210,94 +257,10 @@ exports.createPages = ({ graphql, actions }) => {
               }
               images {
                 representative {
-                  infos {
-                    maxDimensions {
-                      width
-                      height
-                    }
-                  }
-                  variants {
-                    xs {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    s {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    m {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    l {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    xl {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                  }
+                  ${imageTypeStructure}
                 }
                 overall {
-                  infos {
-                    maxDimensions {
-                      width
-                      height
-                    }
-                  }
-                  variants {
-                    xs {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    s {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    m {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    l {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    xl {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                  }
+                  ${imageTypeStructure}
                 }
               }
               restorationSurveys {
@@ -309,7 +272,10 @@ exports.createPages = ({ graphql, actions }) => {
                   kind
                   text
                   purpose
-                  remarks
+                  keywords {
+                    name
+                    additional
+                  }
                 }
                 involvedPersons {
                   role
