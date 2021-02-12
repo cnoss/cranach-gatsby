@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from '~/i18n';
 
-import CopyText from '~/components/atoms/copy-text';
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 import ZoomImage from '~/components/atoms/zoom-image';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
+import RestorationSurveys from '~/components/molecules/restoration-surveys';
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
@@ -17,6 +17,10 @@ export default ({
   onClose = () => { },
 }) => {
   const { t } = useTranslation('LeporelloGraphicRealItem', translations);
+
+  const ART_TECH_EXAMINATION = 'ArtTechExamination';
+  const CONDITION_REPORT = 'ConditionReport';
+  const CONSERVATION_REPORT = 'ConservationReport';
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const location = (graphic.locations[0] && graphic.locations[0].term) || '';
@@ -43,6 +47,10 @@ export default ({
 
   const largestImageSrc = representativeImage.xl.src;
   const smallestImageSrc = representativeImage.s.src;
+
+  const artTechExaminations = restorationSurveys.filter(rs => rs.type === ART_TECH_EXAMINATION);
+  const conditionReports = restorationSurveys.filter(rs => rs.type === CONDITION_REPORT);
+  const conservationReports = restorationSurveys.filter(rs => rs.type === CONSERVATION_REPORT);
 
   return (
     <LeporelloGraphicItem
@@ -160,72 +168,34 @@ export default ({
             </DefinitionList>
           }
 
-          { /* Restaurationsdokument */ }
-          <h3 className="leporello-graphic-real-item__subheading">Restaurationsdokument</h3>
+          { (artTechExaminations.length + conditionReports.length + conservationReports.length) > 0
+            && <GroupedDefinitionList>
+                {/* Kunsttechnologische Untersuchung */}
+                { artTechExaminations.length > 0
+                  && <GroupedDefinitionList.Entry
+                      term={t('Art-technological examination')}
+                      definition={<RestorationSurveys items={artTechExaminations.reverse()} />}
+                    />
+                }
 
-          { restorationSurveys.map((survey, surveyIdx) => (<section key={surveyIdx} className="survey">
-            <h4 className="leporello-graphic-real-item__survey-title">{ survey.type }</h4>
+                {/* Erhaltungszustand */}
+                { conditionReports.length > 0
+                  && <GroupedDefinitionList.Entry
+                    term={t('Condition')}
+                    definition={<RestorationSurveys items={conditionReports.reverse()} />}
+                  />}
 
-            <div className="leporello-graphic-real-item__survey">
-              {(!!survey.project
-                || !!survey.overallAnalysis
-                || !!survey.remarks
-                || !!survey.involvedPersons.length > 0
-                || !!survey.processingDates)
-                && <GroupedDefinitionList>
-                {!!survey.project && <GroupedDefinitionList.Entry
-                  term="Projekt"
-                  definition={survey.project}
-                />}
-                {!!survey.overallAnalysis && <GroupedDefinitionList.Entry
-                  term="Analyse"
-                  definition={<CopyText text={survey.overallAnalysis} />}
-                />}
-                {!!survey.remarks && <GroupedDefinitionList.Entry
-                  term="Bemerkungen"
-                  definition={<CopyText text={survey.remarks} />}
-                />}
-                {!!survey.involvedPersons.length > 0 && <GroupedDefinitionList.Entry
-                  term="Involvierte Personen"
-                  definition={survey.involvedPersons.map((involvedPerson, involvedPersonIdx) => (
-                    <p key={involvedPersonIdx}>
-                   { involvedPerson.name } ({involvedPerson.role})
-                  </p>))}
-                />}
-                {!!survey.processingDates && <GroupedDefinitionList.Entry
-                  term="Datum"
-                  definition={`${survey.processingDates.beginDate}${survey.processingDates.endDate.length !== 0 && survey.processingDates.endDate !== survey.processingDates.beginDate
-                    ? ` - ${survey.processingDates.endDate}`
-                    : ''}`}
-                />}
-              </GroupedDefinitionList>}
 
-              {survey.tests.length > 0 && <div className="leporello-graphic-real-item__survey-tests">
-                <h5 className="leporello-graphic-real-item__survey-tests-title">Tests</h5>
-                {survey.tests.map((test, testIdx) => (<div key={testIdx} className="leporello-graphic-real-item__survey-test">
-                    { (test.kind || test.purpose || test.text || test.remarks)
-                      && <GroupedDefinitionList>
-                      {test.kind && <GroupedDefinitionList.Entry
-                        term="Art"
-                        definition={test.kind}
-                      />}
-                      {test.purpose && <GroupedDefinitionList.Entry
-                        term="Zweck"
-                        definition={<CopyText text={test.purpose} />}
-                      />}
-                      {test.text && <GroupedDefinitionList.Entry
-                        term="Text"
-                        definition={<CopyText text={test.text} />}
-                      />}
-                      {test.remarks && <GroupedDefinitionList.Entry
-                        term="Bemerkungen"
-                        definition={<CopyText text={test.remarks} />}
-                      />}
-                    </GroupedDefinitionList>}
-                  </div>))}
-                </div>}
-            </div>
-          </section>)) }
+                {/* Restaurierungsgeschichte */}
+                { conservationReports.length > 0
+                  && <DefinitionList.Entry
+                      term={t('Conservation')}
+                      definition={<RestorationSurveys items={conservationReports.reverse()} />}
+                    />}
+
+            </GroupedDefinitionList>
+          }
+
         </div>
       </div>
     </LeporelloGraphicItem>
