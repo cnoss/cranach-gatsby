@@ -48,9 +48,9 @@ export default ({
   const largestImageSrc = representativeImage.xl.src;
   const smallestImageSrc = representativeImage.s.src;
 
-  const artTechExaminations = restorationSurveys.filter(rs => rs.type === ART_TECH_EXAMINATION);
-  const conditionReports = restorationSurveys.filter(rs => rs.type === CONDITION_REPORT);
-  const conservationReports = restorationSurveys.filter(rs => rs.type === CONSERVATION_REPORT);
+  const artTechExaminations = restorationSurveys.filter((rs) => rs.type === ART_TECH_EXAMINATION);
+  const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);
+  const conservationReports = restorationSurveys.filter((rs) => rs.type === CONSERVATION_REPORT);
 
   return (
     <LeporelloGraphicItem
@@ -151,7 +151,7 @@ export default ({
               definition={inventoryNumber}
             />
             {catalogWorkReferences.length > 0
-              && catalogWorkReferences.map(ref => <GroupedDefinitionList.Entry
+              && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
                 key={ref.referenceNumber}
                 term={ref.description}
                 definition={ref.referenceNumber}
@@ -184,7 +184,6 @@ export default ({
                     term={t('Condition')}
                     definition={<RestorationSurveys items={conditionReports.reverse()} />}
                   />}
-
 
                 {/* Restaurierungsgeschichte */}
                 { conservationReports.length > 0

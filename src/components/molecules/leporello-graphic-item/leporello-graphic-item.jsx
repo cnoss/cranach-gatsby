@@ -6,7 +6,6 @@ import Leporello from '~/components/atoms/leporello';
 import Toggler from '~/components/atoms/toggler';
 import Closer from '~/components/atoms/closer';
 
-
 export default ({
   initiallyOpen,
   children,

@@ -55,7 +55,7 @@ export default ({
     },
   ];
   const getPatternPos = (str) => {
-    const foundSortingWeight = sortingWeight.find(sw => str === sw.name);
+    const foundSortingWeight = sortingWeight.find((sw) => str === sw.name);
 
     return foundSortingWeight ? foundSortingWeight.pos : Number.MAX_SAFE_INTEGER;
   };
@@ -65,7 +65,7 @@ export default ({
 
   /* Map catalog work references */
   const catalogWorkReferenceItems = sortedCatalogWorkReferences.map(
-    reference => ({
+    (reference) => ({
       term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
       definition: reference.referenceNumber,
     }),
@@ -139,7 +139,6 @@ export default ({
                     definition={`${dating.dated} ${dating.remarks}`}
                   />
 
-
                   <DefinitionList.Entry
                     term={t('Dimensions')}
                     definition={dimensions}
@@ -150,10 +149,9 @@ export default ({
                   />
                   }
 
-
                   {
                     catalogWorkReferenceItems.map(
-                      item => (
+                      (item) => (
                         <DefinitionList.Entry
                           key={item.term}
                           term={item.term}

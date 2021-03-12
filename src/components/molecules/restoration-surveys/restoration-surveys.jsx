@@ -30,11 +30,11 @@ export default ({ items }) => {
     return date;
   };
 
-  const surveyPurpose = survey => ((survey.tests.length > 0)
+  const surveyPurpose = (survey) => ((survey.tests.length > 0)
     ? (<p className="purpose">{ survey.tests[0].purpose }</p>)
     : '');
 
-  const distinctSurveyKeywords = survey => Object.values(survey.tests.reduce((acc, test) => {
+  const distinctSurveyKeywords = (survey) => Object.values(survey.tests.reduce((acc, test) => {
     test.keywords.forEach((keyword) => {
       if (!acc[keyword.name]) {
         acc[keyword.name] = keyword;
@@ -56,7 +56,7 @@ export default ({ items }) => {
     setItemsOpenState(itemsOpenState.map((openState, i) => (i === idx ? !openState : openState)));
   };
 
-  const surveyHasBody = item => (item.tests.length + item.involvedPersons.length) > 0;
+  const surveyHasBody = (item) => (item.tests.length + item.involvedPersons.length) > 0;
 
   return (<div
     className="restoration-surveys"
