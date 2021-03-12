@@ -88,7 +88,7 @@ const SearchSidebar = () => {
           </Accordion.Entry>
           <Accordion.Entry title={ t('Content') } toggle={ useState(false) }>
             Content
-          </Accordion.Entry>,
+          </Accordion.Entry>
           <Accordion.Entry title={ t('Form') } toggle={ useState(false) }>
             Form
           </Accordion.Entry>
