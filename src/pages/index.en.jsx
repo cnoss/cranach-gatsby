@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 
@@ -10,7 +9,6 @@ import ArtefactOverview from '~/components/organisms/artefact-overview';
 import graphic from '~/libs/transformers/graphic';
 
 import i18n from '~/i18n';
-
 
 export default ({ data }) => {
   i18n('en');

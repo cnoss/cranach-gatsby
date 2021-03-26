@@ -15,7 +15,7 @@ export default ({
     >
       {
         items.map(
-          item => <li
+          (item) => <li
             key={item.imgSrc}
             className="graphics-list-item"
           >

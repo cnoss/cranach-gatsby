@@ -45,7 +45,6 @@ const navImages = {
   },
 };
 
-
 export default ({
   src,
   baseSrc,
