@@ -98,7 +98,6 @@ export default ({
       filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 4,
       items: [],
     },
-
     {
       id: '5th-state',
       translations: {
