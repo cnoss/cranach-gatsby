@@ -57,19 +57,19 @@ export const query = graphql`
     allGraphicsJson(filter: {
       items: {
         elemMatch: {
-          isVirtual: {
-            eq: true
+          metadata: {
+            langCode: { eq: "de" }
           },
-          langCode: {
-            eq: "en"
-          },
+          isVirtual: { eq: true }
         }
       }
     }) {
       edges {
         node {
           items {
-            langCode
+            metadata {
+              langCode
+            }
             slug
             objectName
             inventoryNumber

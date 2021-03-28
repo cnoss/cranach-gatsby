@@ -54,7 +54,7 @@ export default {
       date: item.dating.dated || '',
       masterData: item,
       classification,
-      to: `/${item.langCode}/${item.slug}`,
+      to: `/${item.metadata.langCode}/${item.slug}`,
       imgSrc,
     };
   },
