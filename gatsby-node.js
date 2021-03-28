@@ -31,7 +31,7 @@ const getRepresentativeImageVariant = (item) => {
 const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
   const foundReferencesItem = graphics.find(
     currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
-        && currItem.langCode === graphic.langCode,
+        && currItem.metadata.langCode === graphic.metadata.langCode,
   );
 
   if (!foundReferencesItem) {
@@ -77,7 +77,7 @@ const createGraphicPages = (graphics, actions) => {
       : realObjectPageTemplate;
 
     createPage({
-      path: `${graphic.langCode}/${graphic.slug}`,
+      path: `${graphic.metadata.langCode}/${graphic.slug}`,
       component,
       context: {
         ...graphic,
@@ -102,7 +102,14 @@ exports.createPages = ({ graphql, actions }) => {
     Filterung per grapqhql möglich:
 
      Z. B. nur alle deutschen virtuellen Objekte anfragen
-      allContentJson(filter: {items: {elemMatch: {isVirtual: {eq: true}, langCode: {eq: "de"}}}}) {
+      allContentJson(filter: {
+        items: {
+          elemMatch: {
+            isVirtual: {eq: true},
+            metadata: { langCode: {eq: "de"} }
+          }
+        }
+      }) {
    */
 
    const imageTypeStructure = `
@@ -157,7 +164,9 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             items {
-              langCode
+              metadata {
+                langCode
+              }
               slug
               objectName
               inventoryNumber
