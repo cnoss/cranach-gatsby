@@ -6,7 +6,10 @@ import React, {
 import Async from 'react-async';
 
 import imageData from '~/libs/artefact-data';
+import cranachCfg from '~/cranach.config';
 import './viewer.scss';
+
+const { imageServer } = cranachCfg;
 
 const zoomInRest = require('./images/zoomin_rest.png');
 const zoomInHover = require('./images/zoomin_hover.png');
@@ -50,6 +53,7 @@ const navImages = {
 export default ({
   inventoryNumber,
   placeholder,
+  artefactType,
 }) => {
   const figureElRef = useRef(null);
   const imageElRef = useRef(null);
@@ -58,7 +62,7 @@ export default ({
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
   let [images] = useState(null);
-  const { src } = placeholder.l;
+  const { src } = placeholder.m;
 
   const hideLoadIndicator = () => {
     setIsLoaded(true);
@@ -68,6 +72,15 @@ export default ({
   const showLoadIndicator = () => {
     setIsLoaded(false);
     return null;
+  };
+
+  const getTilesUrl = (tiles) => {
+    const artefactTypePrefix = imageServer.prefixes[artefactType];
+    const urlFragmentTilesBase = imageServer.baseUrlTiles;
+    const urlFragmentArtefact = `${artefactTypePrefix}${inventoryNumber}`;
+    const urlFragmentTilesSrc = `${tiles.path}/${tiles.src}`;
+    console.log(tiles);
+    return `${urlFragmentTilesBase}${urlFragmentArtefact}/${urlFragmentTilesSrc}`;
   };
 
   useEffect(() => {
@@ -88,18 +101,12 @@ export default ({
     import('openseadragon').then((OpenSeaDragon) => {
       viewerRef.current = new OpenSeaDragon.Viewer({
         element: figureElRef.current,
-        tileSources: [
-          {
-            type: 'image',
-            url: src,
-          },
-        ],
+        tileSources: 'https://lucascranach.org/imagedata/image-tiles.php?obj=G_DE_SKD_A6645/01_Overall/G_DE_SKD_A6645_Overall.dzi',
         prefixUrl: '',
         sequenceMode: false,
         navImages,
         showNavigator: true,
       });
-
       viewerRef.current.addOnceHandler('open', () => {
         setActiveZoom(true);
       });
@@ -118,10 +125,12 @@ export default ({
   const changeImage = (index) => {
     setActiveImage(index);
     showLoadIndicator();
-    viewerRef.current.open({
-      type: 'image',
-      url: images[index].srcL,
-    });
+    const img = images[index];
+    const tilesUrl = getTilesUrl(img.imageVariants.tiles);
+
+    viewerRef.current.open(
+      tilesUrl,
+    );
     return null;
   };
 
@@ -146,11 +155,12 @@ export default ({
       <Async.Fulfilled>
         {(data) => {
           images = data;
+
           return (
             <ul className="image-stripe-list">
               {data.map((image, index) => (
-                <li onClick={() => changeImage(index)} key={image.srcXs} className={(index === activeImage) ? 'image-stripe-list__item is-active' : 'image-stripe-list__item'}>
-                  <img src={image.srcXs} alt={image.altText} />
+                <li Key={image.id} onClick={() => changeImage(index)} className={(index === activeImage) ? 'image-stripe-list__item is-active' : 'image-stripe-list__item'}>
+                  <img src={image.thumbnail} alt={image.altText} />
                 </li>
               ))}
             </ul>
