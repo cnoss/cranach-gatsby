@@ -3,7 +3,6 @@ import React from 'react';
 import { Link as GatsbyLink } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-
 export default ({
   children,
   to,

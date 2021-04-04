@@ -52,7 +52,7 @@ export default ({
       <ul className="menu">
         <li><i className="material-icons" /></li>
         {
-          navStructure.map(item => (
+          navStructure.map((item) => (
             <li className="menu-item"
                 key={item.to}
 

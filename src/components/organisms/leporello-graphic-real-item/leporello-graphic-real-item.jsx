@@ -141,7 +141,7 @@ export default ({
               definition={inventoryNumber}
             />
             {catalogWorkReferences.length > 0
-              && catalogWorkReferences.map(ref => <GroupedDefinitionList.Entry
+              && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
                 term={ref.description}
                 definition={ref.referenceNumber}
               />)}

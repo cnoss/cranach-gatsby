@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 
@@ -10,7 +9,6 @@ import ArtefactOverview from '~/components/organisms/artefact-overview';
 import graphic from '~/libs/transformers/graphic';
 
 import i18n from '~/i18n';
-
 
 export default ({ data }) => {
   i18n('de');
@@ -59,19 +57,19 @@ export const query = graphql`
     allGraphicsJson(filter: {
       items: {
         elemMatch: {
-          isVirtual: {
-            eq: true
+          metadata: {
+            langCode: { eq: "de" }
           },
-          langCode: {
-            eq: "de"
-          },
+          isVirtual: { eq: true }
         }
       }
     }) {
       edges {
         node {
           items {
-            langCode
+            metadata {
+              langCode
+            }
             slug
             objectName
             inventoryNumber
@@ -101,7 +99,7 @@ export const query = graphql`
               }
             }
             images {
-              representative {
+              overall {
                 infos {
                   maxDimensions {
                     width
@@ -130,14 +128,14 @@ export const query = graphql`
                     }
                     src
                   }
-                  l {
+                  origin {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  xl {
+                  tiles {
                     dimensions {
                       width
                       height

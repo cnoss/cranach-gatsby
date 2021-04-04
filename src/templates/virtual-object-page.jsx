@@ -12,7 +12,6 @@ import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-r
 
 import i18n from '~/i18n';
 
-
 const PageTemplate = ({ pageContext, location }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';

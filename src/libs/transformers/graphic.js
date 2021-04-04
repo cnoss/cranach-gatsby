@@ -1,4 +1,3 @@
-
 import cranachCfg from '~/cranach.config';
 
 const { titleLength } = cranachCfg;
@@ -12,7 +11,7 @@ const getRepresentativeImageVariant = (item) => {
       },
     },
     variants: [
-      ['xs', 's', 'm', 'l', 'xl'].reduce(
+      ['xs', 's', 'm', 'origin', 'tiles'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
@@ -21,7 +20,7 @@ const getRepresentativeImageVariant = (item) => {
       ),
     ],
   };
-  const imageType = item.images.representative || item.images.overall || emptyImageType;
+  const imageType = item.images.overall || emptyImageType;
   return imageType.variants[imageType.variants.length - 1];
 };
 
@@ -54,7 +53,7 @@ export default {
       date: item.dating.dated || '',
       masterData: item,
       classification,
-      to: `/${item.langCode}/${item.slug}`,
+      to: `/${item.metadata.langCode}/${item.slug}`,
       imgSrc,
     };
   },
