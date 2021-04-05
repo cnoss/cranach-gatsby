@@ -91,7 +91,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const largestImageSrc = representativeImage.l.src;
+  const largestImageSrc = representativeImage.origin.src;
 
   return (
     <LeporelloGraphicItem

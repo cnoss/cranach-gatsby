@@ -107,21 +107,21 @@ export const query = graphql`
                   }
                 }
                 variants {
-                  xs {
+                  xsmall {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  s {
+                  small {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  m {
+                  medium {
                     dimensions {
                       width
                       height

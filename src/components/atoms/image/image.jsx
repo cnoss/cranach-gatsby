@@ -8,11 +8,14 @@ export default ({
   caption,
   classNamePrefix,
   modifierWithBox = false,
+  all,
 }) => {
   const classNameModifier = modifierWithBox ? '--with-box' : '';
   const capArray = (Array.isArray(caption) ? caption : [caption]);
   const captions = caption ? capArray : [];
   const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
+
+  console.log(all);
   return (
     <figure
       className={className}

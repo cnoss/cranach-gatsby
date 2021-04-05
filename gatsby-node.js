@@ -112,235 +112,178 @@ exports.createPages = ({ graphql, actions }) => {
       }) {
    */
   const pagesData = graphql(`
-    query CranachGraphicObjects {
-      allGraphicsJson {
-        edges {
-          node {
-            items {
-              metadata {
-                langCode
-              }
-              slug
-              objectName
-              inventoryNumber
-              objectId
-              isVirtual
-              sortingNumber
-              representativeObject
-              titles {
-                remarks
-                title
-                type
-              }
-              bibliography
-              catalogWorkReferences {
-                description
-                referenceNumber
-                remarks
-              }
-              classification {
-                classification
-                condition
-                printProcess
-              }
-              conditionLevel
-              dating {
-                begin
-                dated
-                end
-                historicEventInformations {
-                  begin
-                  end
-                  eventType
-                  remarks
-                  text
-                }
-                remarks
-              }
+  query CranachGraphicObjects {
+    allGraphicsJson {
+      edges {
+        node {
+          items {
+            metadata {
+              langCode
+            }
+            slug
+            objectName
+            inventoryNumber
+            objectId
+            isVirtual
+            sortingNumber
+            titles {
+              remarks
+              title
+              type
+            }
+            bibliography
+            catalogWorkReferences {
               description
-              dimensions
-              exhibitionHistory
-              inscription
-              involvedPersons {
-                alternativeName
-                date
-                id
-                isUnknown
+              referenceNumber
+              remarks
+            }
+            classification {
+              classification
+              condition
+              printProcess
+            }
+            conditionLevel
+            dating {
+              begin
+              dated
+              end
+              historicEventInformations {
+                begin
+                end
+                eventType
+                remarks
+                text
+              }
+              remarks
+            }
+            description
+            dimensions
+            exhibitionHistory
+            inscription
+            involvedPersonsNames {
+              constituentId
+              details {
                 name
                 nameType
-                prefix
-                remarks
-                role
-                suffix
               }
-              involvedPersonsNames {
-                constituentId
-                details {
-                  name
-                  nameType
-                }
-              }
-              markings
-              locations {
-                path
-                term
-                type
-              }
-              medium
-              owner
-              provenance
-              publications {
-                pageNumber
-                referenceId
-                title
-              }
-              relatedWorks
-              references {
-                reprints {
-                  inventoryNumber
-                  remark
-                  text
-                }
-                relatedWorks {
-                  inventoryNumber
-                  remark
-                  text
-                }
-              }
-              repository
-              signature
-              structuredDimension {
-                element
-                height
-                width
-              }
-              additionalTextInformation {
+            }
+            markings
+            locations {
+              path
+              term
+              type
+            }
+            medium
+            owner
+            provenance
+            publications {
+              pageNumber
+              referenceId
+              title
+            }
+            relatedWorks
+            references {
+              reprints {
+                inventoryNumber
                 text
-                type
-                year
+                remark
               }
-              keywords {
-                type
-                term
-                path
-                url
+              relatedWorks {
+                inventoryNumber
+                remark
+                text
               }
-              restorationSurveys {
-                type
-                project
-                overallAnalysis
-                remarks
-                tests {
-                  kind
-                  text
-                  purpose
-                }
-                involvedPersons {
-                  role
-                  name
-                }
-                processingDates {
-                  beginDate
-                  endDate
-                }
+            }
+            repository
+            signature
+            structuredDimension {
+              height
+              width
+              element
+            }
+            additionalTextInformation {
+              text
+              type
+              year
+            }
+            keywords {
+              type
+              term
+              path
+              url
+            }
+            representativeObject
+            restorationSurveys {
+              type
+              project
+              overallAnalysis
+              remarks
+              tests {
+                kind
+                text
+                purpose
               }
-              images {
-                overall {
-                  infos {
-                    maxDimensions {
-                      width
+              processingDates {
+                beginDate
+                endDate
+              }
+              involvedPersons {
+                name
+                role
+              }
+            }
+            images {
+              overall {
+                infos {
+                  maxDimensions {
+                    width
+                    height
+                  }
+                }
+                variants {
+                  medium {
+                    src
+                    dimensions {
                       height
-                    }
-                  }
-                  variants {
-                    xs {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    s {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    m {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    origin {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    tiles {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                  }
-                }
-                overall {
-                  infos {
-                    maxDimensions {
                       width
-                      height
                     }
                   }
-                  variants {
-                    xs {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
+                  origin {
+                    dimensions {
+                      height
+                      width
                     }
-                    s {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
+                    src
+                  }
+                  small {
+                    dimensions {
+                      height
+                      width
                     }
-                    m {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    origin {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
-                    }
-                    tiles {
-                      dimensions {
-                        width
-                        height
-                      }
-                      src
+                    src
+                  }
+                  tiles {
+                    src
+                  }
+                  xsmall {
+                    src
+                    dimensions {
+                      height
+                      width
                     }
                   }
                 }
               }
             }
+            involvedPersons {
+              id
+            }
           }
         }
       }
     }
+  }
+
   `);
 
   return pagesData.then((res) => {

@@ -62,7 +62,7 @@ export default ({
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
   let [images] = useState(null);
-  const { src } = placeholder.m;
+  const src = placeholder.tiles.src.replace(imageServer.urlImages, imageServer.baseUrlTiles);
 
   const hideLoadIndicator = () => {
     setIsLoaded(true);
@@ -74,12 +74,12 @@ export default ({
     return null;
   };
 
+
   const getTilesUrl = (tiles) => {
     const artefactTypePrefix = imageServer.prefixes[artefactType];
     const urlFragmentTilesBase = imageServer.baseUrlTiles;
     const urlFragmentArtefact = `${artefactTypePrefix}${inventoryNumber}`;
     const urlFragmentTilesSrc = `${tiles.path}/${tiles.src}`;
-    console.log(tiles);
     return `${urlFragmentTilesBase}${urlFragmentArtefact}/${urlFragmentTilesSrc}`;
   };
 
@@ -101,7 +101,7 @@ export default ({
     import('openseadragon').then((OpenSeaDragon) => {
       viewerRef.current = new OpenSeaDragon.Viewer({
         element: figureElRef.current,
-        tileSources: 'https://lucascranach.org/imagedata/image-tiles.php?obj=G_DE_SKD_A6645/01_Overall/G_DE_SKD_A6645_Overall.dzi',
+        tileSources: src,
         prefixUrl: '',
         sequenceMode: false,
         navImages,

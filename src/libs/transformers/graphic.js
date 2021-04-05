@@ -11,7 +11,7 @@ const getRepresentativeImageVariant = (item) => {
       },
     },
     variants: [
-      ['xs', 's', 'm', 'origin', 'tiles'].reduce(
+      ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
@@ -43,7 +43,7 @@ export default {
     const title = (item.titles[0] && item.titles[0].title) || '';
     const titleShort = (title.length > titleLength) ? `${title.substr(0, titleLength)}…` : title;
 
-    const imgSrc = item.representativeImage.s.src || '';
+    const imgSrc = item.representativeImage.small.src || '';
 
     return {
       inventoryNumber: item.inventoryNumber,
