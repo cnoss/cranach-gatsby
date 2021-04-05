@@ -234,7 +234,6 @@ exports.createPages = ({ graphql, actions }) => {
                   kind
                   text
                   purpose
-                  remarks
                 }
                 involvedPersons {
                   role
@@ -242,9 +241,7 @@ exports.createPages = ({ graphql, actions }) => {
                 }
                 processingDates {
                   beginDate
-                  beginYear
                   endDate
-                  endYear
                 }
               }
               images {

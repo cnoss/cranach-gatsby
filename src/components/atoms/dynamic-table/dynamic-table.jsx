@@ -36,7 +36,7 @@ export default ({
       { showHead && columns
         && <thead className="head">
           <tr className="row">
-            { columns.map((column) => (
+            { columns.map(column => (
               <th
                 className='cell'
                 data-field={ column.field }

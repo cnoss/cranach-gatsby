@@ -40,7 +40,7 @@ const ArtefactOverview = ({
       data-active-view={ view.type }
     >
     {
-        items.map((item) => (<div
+        items.map(item => (<div
           key={ item.inventoryNumber }
           className="overview-item"
           data-src={JSON.stringify(item)}
@@ -82,7 +82,7 @@ ArtefactOverview.Switcher = ({
   handleChange = () => {},
 }) => (
   <Switcher className="artefact-overview-switcher" >
-    { SupportedViews.map((currentView) => (
+    { SupportedViews.map(currentView => (
       <Switcher.Item
         key={ currentView.type }
       >

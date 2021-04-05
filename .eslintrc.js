@@ -58,5 +58,6 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'no-underscore-dangle': 'off',
+    'no-console': 'off',
   },
 };

@@ -16,7 +16,7 @@ export default ({
     >
       {
         items.map(
-          (item) => <li
+          item => <li
             key={item.imgSrc}
             className="graphics-list-item"
           >
@@ -31,22 +31,19 @@ export default ({
                   e.preventDefault();
                   return false;
                 }
-                e.preventDefault();
-                return false;
-              }
 
-              return true;
-            }}
-          >
-            <Image
-              src={item.imgSrc}
-              alt={item.title}
-              classNamePrefix={'graphics-list-item__image'}
-              caption={item.title}
-              modifierWithBox={true}
-            />
-          </Link>
-        </li>,
-      )
+                return true;
+              }}
+            >
+              <Image
+                src={item.imgSrc}
+                alt={item.title}
+                classNamePrefix={'graphics-list-item__image'}
+                caption={item.title}
+                modifierWithBox={true}
+              />
+            </Link>
+          </li>,
+        )
     }
   </ul >);
