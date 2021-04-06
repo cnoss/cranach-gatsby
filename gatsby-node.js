@@ -5,7 +5,7 @@ const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-pag
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
 /* TODO: use function already found in graphics transformer lib */
-const getRepresentativeImageVariant = (item) => {
+const getRepresentativeImageVariants = (item) => {
   const emptyImageType = {
     infos: {
       maxDimensions: {
@@ -14,7 +14,7 @@ const getRepresentativeImageVariant = (item) => {
       },
     },
     variants: [
-      ['xs', 's', 'm', 'l', 'xl'].reduce(
+      ['xsmall', 'small', 'medium', 'origin'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
@@ -23,9 +23,16 @@ const getRepresentativeImageVariant = (item) => {
       ),
     ],
   };
-  const imageType = item.images.representative || item.images.overall || emptyImageType;
+  const imageType = (item.images && (item.images.representative || item.images.overall)) || emptyImageType;
 
   return imageType.variants[imageType.variants.length - 1];
+};
+
+const toHaveRepresentativeImage = (graphic) => {
+  return ({
+    ...graphic,
+    representativeImage: getRepresentativeImageVariants(graphic),
+  });
 };
 
 const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
@@ -48,8 +55,29 @@ const referenceResolver = (graphic, graphics, references) => references.reduce((
   return acc;
 }, []);
 
+const literatureResolver = (graphic, literatureIndex) => graphic.publications.reduce((acc, publicationItem) => {
+  const { langCode } = graphic.metadata;
+  const { referenceId } = publicationItem;
+
+  if (literatureIndex[langCode] && literatureIndex[langCode][referenceId]) {
+    acc.push({
+      ...publicationItem,
+      ref: {
+        ...literatureIndex[langCode][referenceId],
+        connectedObjects: literatureIndex[langCode][referenceId].connectedObjects.filter(
+          (cObj) => cObj.inventoryNumber === graphic.inventoryNumber,
+        ),
+      },
+    });
+  } else {
+    console.log(`Missing reference: ${graphic.inventoryNumber}(${referenceId})`);
+  }
+
+  return acc;
+}, []);
+
 /* Grafikverknüpfung */
-const extendGraphicReferences = (items, item) => ({
+const toHaveExtendedReferences = (item, items) => ({
   ...item,
   references: {
     reprints: referenceResolver(item, items, item.references.reprints),
@@ -57,21 +85,15 @@ const extendGraphicReferences = (items, item) => ({
   },
 });
 
+const toHaveExtendedLiterature = (graphic, literatureIndex) => ({
+  ...graphic,
+  publications: literatureResolver(graphic, literatureIndex),
+});
+
 const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
-  const graphicsWithImages = graphics
-    .filter(graphic => graphic.images)
-    .map(graphic => ({
-      ...graphic,
-      representativeImage: getRepresentativeImageVariant(graphic),
-    }));
-
-  const extendedGraphicsWithExtendedReferences = graphicsWithImages.map(
-    graphic => extendGraphicReferences(graphicsWithImages, graphic),
-  );
-
-  extendedGraphicsWithExtendedReferences.forEach((graphic) => {
+  graphics.forEach((graphic) => {
     const component = graphic.isVirtual
       ? virtualObjectPageTemplate
       : realObjectPageTemplate;
@@ -120,35 +142,35 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
     variants {
-      xs {
+      xsmall {
         dimensions {
           width
           height
         }
         src
       }
-      s {
+      small {
         dimensions {
           width
           height
         }
         src
       }
-      m {
+      medium {
         dimensions {
           width
           height
         }
         src
       }
-      l {
+      origin {
         dimensions {
           width
           height
         }
         src
       }
-      xl {
+      tiles {
         dimensions {
           width
           height
@@ -158,7 +180,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `;
 
-  const pagesData = graphql(`
+  const graphicsPromise = graphql(`
     query CranachGraphicObjects {
       allGraphicsJson {
         edges {
@@ -306,16 +328,106 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `);
 
-  return pagesData.then((res) => {
-    if (res.errors) {
-      console.error(res.errors);
+  const literaturePromise = graphql(`
+    query CranachLiteratureObjects {
+      allLiteratureJson {
+        edges {
+          node {
+            items {
+              alternateNumbers {
+                description
+                number
+                remarks
+              }
+              connectedObjects {
+                catalogNumber
+                figureNumber
+                inventoryNumber
+                pageNumber
+                remarks
+              }
+              copyright
+              date
+              edition
+              events {
+                dateBegin
+                dateEnd
+                dateText
+                remarks
+                type
+              }
+              isPrimarySource
+              journal
+              longTitle
+              mention
+              metadata {
+                classification
+                date
+                entityType
+                id
+                imgSrc
+                langCode
+                subtitle
+                title
+              }
+              pageNumbers
+              persons {
+                name
+                role
+              }
+              physicalDescription
+              publications {
+                remarks
+                type
+              }
+              publishDate
+              publishLocation
+              referenceId
+              referenceNumber
+              series
+              shortTitle
+              subtitle
+              title
+              volume
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  return Promise.all([graphicsPromise, literaturePromise]).then(([graphics, literature]) => {
+    if (graphics.errors) {
+      console.error(pages.errors);
       return;
     }
 
-    const mergedAndFlattenedItems = res.data.allGraphicsJson.edges.reduce(
+    if (literature.errors) {
+      console.error(pages.errors);
+      return;
+    }
+
+    const mergedAndFlattenedGraphics = graphics.data.allGraphicsJson.edges.reduce(
       (acc, edge) => acc.concat(...edge.node.items), [],
     );
 
-    createGraphicPages(mergedAndFlattenedItems, actions);
+    const preparedLiteratureIndex = literature.data.allLiteratureJson.edges.reduce(
+      (acc, edge) => edge.node.items.reduce((subAcc, item) => {
+        const { langCode } = item.metadata;
+        subAcc[langCode] = subAcc[langCode] || {};
+
+        subAcc[langCode][item.referenceId] = item;
+
+        return subAcc;
+      }, acc), {},
+    );
+
+    const extendedGraphics = mergedAndFlattenedGraphics
+      .filter(graphic => graphic.images)
+      .map(toHaveRepresentativeImage)
+      .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
+      .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr));
+
+    createGraphicPages(extendedGraphics, actions);
   });
 };

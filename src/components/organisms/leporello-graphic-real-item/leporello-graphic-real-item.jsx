@@ -45,6 +45,8 @@ export default ({
     restorationSurveys,
   } = graphic;
 
+  console.log(publications);
+
   const largestImageSrc = representativeImage.xl.src;
   const smallestImageSrc = representativeImage.s.src;
 
