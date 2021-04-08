@@ -1,8 +1,6 @@
-
 import React from 'react';
 
 import './flat-text.scss';
-
 
 export default ({
   text,

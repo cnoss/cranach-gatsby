@@ -74,7 +74,6 @@ export default ({
     return null;
   };
 
-
   const getTilesUrl = (tiles) => {
     const artefactTypePrefix = imageServer.prefixes[artefactType];
     const urlFragmentTilesBase = imageServer.baseUrlTiles;
@@ -168,7 +167,7 @@ export default ({
         }}
       </Async.Fulfilled>
       <Async.Rejected>
-        {error => `Something went wrong: ${error.message}`}
+        {(error) => `Something went wrong: ${error.message}`}
       </Async.Rejected>
     </Async>
   </div >);

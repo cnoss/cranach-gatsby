@@ -37,7 +37,7 @@ export default {
   },
 
   toArtefact(item) {
-    const inventor = item.involvedPersons.find(person => person.role === 'Inventor');
+    const inventor = item.involvedPersons.find((person) => person.role === 'Inventor');
     const classificationLevel2 = (item.objectName) ? item.objectName.replace(/:.*/, '') : false;
     const classification = (item.objectName) ? `${item.classification.classification}, ${classificationLevel2}` : item.classification.classification;
     const title = (item.titles[0] && item.titles[0].title) || '';

@@ -49,7 +49,7 @@ export default ({
 
   const innerHandleItemClick = (item) => {
     const foundSelectedItem = reprints.find(
-      refItem => refItem.inventoryNumber === item.inventoryNumber,
+      (refItem) => refItem.inventoryNumber === item.inventoryNumber,
     );
 
     if (foundSelectedItem && (typeof onItemClick) === 'function') {
@@ -65,7 +65,7 @@ export default ({
         subtitle: '1st state',
         description: '1st state description',
       },
-      filter: reprintRefItem => reprintRefItem && [0, 1].includes(reprintRefItem.conditionLevel),
+      filter: (reprintRefItem) => reprintRefItem && [0, 1].includes(reprintRefItem.conditionLevel),
       items: [],
     },
     {
@@ -75,7 +75,7 @@ export default ({
         subtitle: '2nd state',
         description: '2nd state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 2,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 2,
       items: [],
     },
     {
@@ -85,7 +85,7 @@ export default ({
         subtitle: '3rd state',
         description: '3rd state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 3,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 3,
       items: [],
     },
     {
@@ -95,7 +95,7 @@ export default ({
         subtitle: '4th state',
         description: '4th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 4,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 4,
       items: [],
     },
     {
@@ -105,7 +105,7 @@ export default ({
         subtitle: '5th state',
         description: '5th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 5,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 5,
       items: [],
     },
     {
@@ -115,7 +115,7 @@ export default ({
         subtitle: '6th state',
         description: '6th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 6,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 6,
       items: [],
     },
     {
@@ -125,7 +125,7 @@ export default ({
         subtitle: '7th state',
         description: '7th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 7,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 7,
       items: [],
     },
     {
@@ -135,7 +135,7 @@ export default ({
         subtitle: '8th state',
         description: '8th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 8,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 8,
       items: [],
     },
     {
@@ -145,7 +145,7 @@ export default ({
         subtitle: '9th state',
         description: '9th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 9,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 9,
       items: [],
     },
     {
@@ -155,24 +155,24 @@ export default ({
         subtitle: '10th state',
         description: '10th state description',
       },
-      filter: reprintRefItem => reprintRefItem && reprintRefItem.conditionLevel === 10,
+      filter: (reprintRefItem) => reprintRefItem && reprintRefItem.conditionLevel === 10,
       items: [],
     },
   ];
 
   const reprintConditionLevelGroups = expectedReprintConditionLevelGroups.map(
-    conditionLevelGroup => ({
+    (conditionLevelGroup) => ({
       ...conditionLevelGroup,
       items: reprintItems.filter(
         conditionLevelGroup.filter,
       ),
     }),
-  ).filter(group => group.items.length > 0);
+  ).filter((group) => group.items.length > 0);
 
   /* Toggler should be visible if at least one group has more items
     as the given initial limit allows */
   const atLeastOneGroupHasMoreReprintItemsThanLimit = reprintConditionLevelGroups.some(
-    group => group.items.length > limitItemsTo,
+    (group) => group.items.length > limitItemsTo,
   );
 
   return (

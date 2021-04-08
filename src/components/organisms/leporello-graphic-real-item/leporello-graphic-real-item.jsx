@@ -3,12 +3,10 @@ import { useTranslation } from '~/i18n';
 
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 
-
 import Viewer from '~/components/playground/viewer';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
-
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
@@ -141,7 +139,7 @@ export default ({
               definition={inventoryNumber}
             />
             {catalogWorkReferences.length > 0
-              && catalogWorkReferences.map(ref => <GroupedDefinitionList.Entry
+              && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
                 term={ref.description}
                 definition={ref.referenceNumber}
               />)}
