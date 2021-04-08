@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from '~/i18n';
 
+import graphicsTransformer from '~/libs/transformers/graphic';
+
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
 
-import Viewer from '~/components/playground/viewer';
+import Viewer from '~/components/organisms/viewer';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
@@ -23,7 +25,6 @@ export default ({
   const condition = `${graphic.classification.classification}; ${graphic.classification.condition}`;
 
   const {
-    representativeImage,
     dating,
     dimensions,
     inventoryNumber,
@@ -40,6 +41,8 @@ export default ({
     catalogWorkReferences,
   } = graphic;
 
+  const graphicViewArtefact = graphicsTransformer.toViewerArtefact(graphic);
+
   return (
     <LeporelloGraphicItem
       className="leporello-graphic-real-item-wrap"
@@ -50,9 +53,7 @@ export default ({
       <div className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-item__image">
           <Viewer
-            inventoryNumber={inventoryNumber}
-            artefactType='graphics'
-            placeholder={representativeImage}
+            artefact={graphicViewArtefact}
           />
         </div>
 
@@ -140,6 +141,7 @@ export default ({
             />
             {catalogWorkReferences.length > 0
               && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
+                key={ref.referenceNumber}
                 term={ref.description}
                 definition={ref.referenceNumber}
               />)}

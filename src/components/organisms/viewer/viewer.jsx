@@ -3,9 +3,7 @@ import React, {
   useEffect,
   useRef,
 } from 'react';
-import Async from 'react-async';
 
-import imageData from '~/libs/artefact-data';
 import cranachCfg from '~/cranach.config';
 import './viewer.scss';
 
@@ -51,50 +49,42 @@ const navImages = {
 };
 
 export default ({
-  inventoryNumber,
-  placeholder,
-  artefactType,
+  artefact,
 }) => {
   const figureElRef = useRef(null);
-  const imageElRef = useRef(null);
   const viewerRef = useRef(null);
   const [activeZoom, setActiveZoom] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [activeImage, setActiveImage] = useState(0);
-  let [images] = useState(null);
-  const src = placeholder.tiles.src.replace(imageServer.urlImages, imageServer.baseUrlTiles);
+  const [activeImage, setActiveImage] = useState(
+    artefact.images.find(
+      (image) => image.variants.tiles.src === artefact.placeholder.tiles.src,
+    ),
+  );
+
+  const getTilesUrl = (tiles) => tiles.src.replace(
+    imageServer.urlImages,
+    imageServer.baseUrlTiles,
+  );
+
+  const src = getTilesUrl(artefact.placeholder.tiles);
 
   const hideLoadIndicator = () => {
     setIsLoaded(true);
-    return null;
   };
 
   const showLoadIndicator = () => {
     setIsLoaded(false);
-    return null;
-  };
-
-  const getTilesUrl = (tiles) => {
-    const artefactTypePrefix = imageServer.prefixes[artefactType];
-    const urlFragmentTilesBase = imageServer.baseUrlTiles;
-    const urlFragmentArtefact = `${artefactTypePrefix}${inventoryNumber}`;
-    const urlFragmentTilesSrc = `${tiles.path}/${tiles.src}`;
-    return `${urlFragmentTilesBase}${urlFragmentArtefact}/${urlFragmentTilesSrc}`;
   };
 
   useEffect(() => {
-    if (!figureElRef.current || !imageElRef.current) {
-      return;
+    if (!figureElRef.current) {
+      return () => {};
     }
     /* OpenSeaDragon references 'document',
     so we have to skip the import to prevent an error
     while building the site */
     if (!window || !window.document) {
-      return;
-    }
-
-    if (viewerRef.current) {
-      viewerRef.current.destroy();
+      return () => {};
     }
 
     import('openseadragon').then((OpenSeaDragon) => {
@@ -119,56 +109,40 @@ export default ({
         }
       });
     });
-  }, [src, imageElRef, figureElRef]);
 
-  const changeImage = (index) => {
-    setActiveImage(index);
+    return function seadragonCleanUp() {
+      if (viewerRef.current) {
+        viewerRef.current.destroy();
+        viewerRef.current = null;
+      }
+    };
+  }, [src, figureElRef]);
+
+  useEffect(() => {
+    if (!viewerRef.current) return;
+
     showLoadIndicator();
-    const img = images[index];
-    const tilesUrl = getTilesUrl(img.imageVariants.tiles);
-
     viewerRef.current.open(
-      tilesUrl,
+      getTilesUrl(activeImage.variants.tiles),
     );
-    return null;
-  };
+  }, [viewerRef, activeImage]);
 
   return (<div
     className="viewer"
-    data-component="playground/viewer"
+    data-component="organisms/viewer"
   >
     <figure
       ref={figureElRef}
       className={`zoom-image ${activeZoom ? 'has-active-zoom' : ''} ${isLoaded ? 'is-loaded' : ''}`}
     >
-      <img
-        ref={imageElRef}
-        className="preload-image"
-        src={src}
-        alt={inventoryNumber}
-      />
     </figure>
 
-    <Async promiseFn={imageData.getArtefaktImages} inventoryNumber={inventoryNumber}>
-      <Async.Loading>Loading...</Async.Loading>
-      <Async.Fulfilled>
-        {(data) => {
-          images = data;
-
-          return (
-            <ul className="image-stripe-list">
-              {data.map((image, index) => (
-                <li Key={image.id} onClick={() => changeImage(index)} className={(index === activeImage) ? 'image-stripe-list__item is-active' : 'image-stripe-list__item'}>
-                  <img src={image.thumbnail} alt={image.altText} />
-                </li>
-              ))}
-            </ul>
-          );
-        }}
-      </Async.Fulfilled>
-      <Async.Rejected>
-        {(error) => `Something went wrong: ${error.message}`}
-      </Async.Rejected>
-    </Async>
+   <ul className="image-stripe-list">
+      {artefact.images.map((image) => (
+        <li key={image.id} onClick={() => setActiveImage(image)} className={(image === activeImage) ? 'image-stripe-list__item is-active' : 'image-stripe-list__item'}>
+          <img src={image.thumbnail} alt={image.altText} />
+        </li>
+      ))}
+    </ul>
   </div >);
 };

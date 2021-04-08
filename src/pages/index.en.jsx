@@ -106,7 +106,7 @@ export const query = graphql`
                     height
                   }
                 }
-                variants {
+                images {
                   xsmall {
                     dimensions {
                       width

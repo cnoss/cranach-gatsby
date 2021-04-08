@@ -13,7 +13,7 @@ const getRepresentativeImageVariant = (item) => {
         height: 0,
       },
     },
-    variants: [
+    images: [
       ['xs', 's', 'm', 'l', 'xl'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
@@ -25,7 +25,7 @@ const getRepresentativeImageVariant = (item) => {
   };
   const imageType = item.images.overall || emptyImageType;
 
-  return imageType.variants[imageType.variants.length - 1];
+  return imageType.images[imageType.images.length - 1];
 };
 
 const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
@@ -111,6 +111,53 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }) {
    */
+
+  const imageTypeStructure = `
+    infos {
+      maxDimensions {
+        width
+        height
+      }
+    }
+    images {
+      xsmall {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      small {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      medium {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      origin {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+      tiles {
+        dimensions {
+          width
+          height
+        }
+        src
+      }
+    }
+  `;
+
   const pagesData = graphql(`
   query CranachGraphicObjects {
     allGraphicsJson {
@@ -234,45 +281,19 @@ exports.createPages = ({ graphql, actions }) => {
             }
             images {
               overall {
-                infos {
-                  maxDimensions {
-                    width
-                    height
-                  }
-                }
-                variants {
-                  medium {
-                    src
-                    dimensions {
-                      height
-                      width
-                    }
-                  }
-                  origin {
-                    dimensions {
-                      height
-                      width
-                    }
-                    src
-                  }
-                  small {
-                    dimensions {
-                      height
-                      width
-                    }
-                    src
-                  }
-                  tiles {
-                    src
-                  }
-                  xsmall {
-                    src
-                    dimensions {
-                      height
-                      width
-                    }
-                  }
-                }
+                ${imageTypeStructure}
+              }
+              detail {
+                ${imageTypeStructure}
+              }
+              reflected_light {
+                ${imageTypeStructure}
+              }
+              transmitted_light {
+                ${imageTypeStructure}
+              }
+              reverse {
+                ${imageTypeStructure}
               }
             }
             involvedPersons {
