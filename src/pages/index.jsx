@@ -14,7 +14,7 @@ export default ({ data }) => {
   i18n('de');
 
   const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
-    .filter(graphic.byImageExistence)
+    // .filter(graphic.byImageExistence)
     .map(graphic.toAddedRepresentativeImage)
     .map(graphic.toArtefact);
 

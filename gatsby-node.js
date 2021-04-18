@@ -14,7 +14,7 @@ const getRepresentativeImageVariant = (item) => {
       },
     },
     images: [
-      ['xs', 's', 'm', 'l', 'xl'].reduce(
+      ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
@@ -23,7 +23,7 @@ const getRepresentativeImageVariant = (item) => {
       ),
     ],
   };
-  const imageType = item.images.overall || emptyImageType;
+  const imageType = (item.images && item.images.overall) || emptyImageType;
 
   return imageType.images[imageType.images.length - 1];
 };
@@ -61,8 +61,8 @@ const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
   const graphicsWithImages = graphics
-    .filter(graphic => graphic.images)
-    .map(graphic => ({
+    //.filter(graphic => graphic.images)
+    .map((graphic) => ({
       ...graphic,
       representativeImage: getRepresentativeImageVariant(graphic),
     }));
@@ -259,7 +259,6 @@ exports.createPages = ({ graphql, actions }) => {
               path
               url
             }
-            representativeObject
             restorationSurveys {
               type
               project
