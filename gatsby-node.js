@@ -5,7 +5,7 @@ const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-pag
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 
 /* TODO: use function already found in graphics transformer lib */
-const getRepresentativeImageVariants = (item) => {
+const getRepresentativeImage = (item) => {
   const emptyImageType = {
     infos: {
       maxDimensions: {
@@ -13,7 +13,7 @@ const getRepresentativeImageVariants = (item) => {
         height: 0,
       },
     },
-    variants: [
+    images: [
       ['xsmall', 'small', 'medium', 'origin'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
@@ -25,13 +25,13 @@ const getRepresentativeImageVariants = (item) => {
   };
   const imageType = (item.images && (item.images.representative || item.images.overall)) || emptyImageType;
 
-  return imageType.variants[imageType.variants.length - 1];
+  return imageType.images[imageType.images.length - 1];
 };
 
 const toHaveRepresentativeImage = (graphic) => {
   return ({
     ...graphic,
-    representativeImage: getRepresentativeImageVariants(graphic),
+    representativeImage: getRepresentativeImage(graphic),
   });
 };
 
@@ -70,7 +70,7 @@ const literatureResolver = (graphic, literatureIndex) => graphic.publications.re
       },
     });
   } else {
-    console.log(`Missing reference: ${graphic.inventoryNumber}(${referenceId})`);
+    console.log(`Missing literature reference for graphic: ${graphic.inventoryNumber} (${referenceId})`);
   }
 
   return acc;
@@ -141,7 +141,7 @@ exports.createPages = ({ graphql, actions }) => {
         height
       }
     }
-    variants {
+    images {
       xsmall {
         dimensions {
           width
@@ -287,9 +287,6 @@ exports.createPages = ({ graphql, actions }) => {
                 year
               }
               images {
-                representative {
-                  ${imageTypeStructure}
-                }
                 overall {
                   ${imageTypeStructure}
                 }
@@ -398,12 +395,12 @@ exports.createPages = ({ graphql, actions }) => {
 
   return Promise.all([graphicsPromise, literaturePromise]).then(([graphics, literature]) => {
     if (graphics.errors) {
-      console.error(pages.errors);
+      console.error(graphics.errors);
       return;
     }
 
     if (literature.errors) {
-      console.error(pages.errors);
+      console.error(literature.errors);
       return;
     }
 
@@ -423,7 +420,7 @@ exports.createPages = ({ graphql, actions }) => {
     );
 
     const extendedGraphics = mergedAndFlattenedGraphics
-      .filter(graphic => graphic.images)
+      //.filter(graphic => graphic.images)
       .map(toHaveRepresentativeImage)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
       .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr));

@@ -14,7 +14,8 @@ export default ({ data }) => {
   i18n('en');
 
   const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
-    .filter(graphic.byImageExistence)
+    .map((item) => ({ ...item, images: {} }))
+    // .filter(graphic.byImageExistence)
     .map(graphic.toAddedRepresentativeImage)
     .map(graphic.toArtefact);
 
@@ -96,53 +97,6 @@ export const query = graphql`
               }
               relatedWorks {
                 inventoryNumber
-              }
-            }
-            images {
-              representative {
-                infos {
-                  maxDimensions {
-                    width
-                    height
-                  }
-                }
-                variants {
-                  xs {
-                    dimensions {
-                      width
-                      height
-                    }
-                    src
-                  }
-                  s {
-                    dimensions {
-                      width
-                      height
-                    }
-                    src
-                  }
-                  m {
-                    dimensions {
-                      width
-                      height
-                    }
-                    src
-                  }
-                  l {
-                    dimensions {
-                      width
-                      height
-                    }
-                    src
-                  }
-                  xl {
-                    dimensions {
-                      width
-                      height
-                    }
-                    src
-                  }
-                }
               }
             }
             involvedPersons {

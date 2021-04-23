@@ -19,7 +19,7 @@ export default ({
   const reprintItems = reprints.map((reprintItem) => {
     const item = reprintItem.ref;
 
-    const smallestImageSrc = item.representativeImage.s.src;
+    const smallestImageSrc = item.representativeImage.small.src;
 
     return {
       inventoryNumber: item.inventoryNumber,

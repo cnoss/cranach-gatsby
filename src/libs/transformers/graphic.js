@@ -2,7 +2,7 @@ import cranachCfg from '~/cranach.config';
 
 const { titleLength } = cranachCfg;
 
-const getRepresentativeImageVariant = (item) => {
+const getRepresentativeImage = (item) => {
   const emptyImageType = {
     infos: {
       maxDimensions: {
@@ -10,7 +10,7 @@ const getRepresentativeImageVariant = (item) => {
         height: 0,
       },
     },
-    variants: [
+    images: [
       ['xs', 's', 'm', 'l', 'xl'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
@@ -22,7 +22,7 @@ const getRepresentativeImageVariant = (item) => {
   };
   const imageType = item.images.representative || item.images.overall || emptyImageType;
 
-  return imageType.variants[imageType.variants.length - 1];
+  return imageType.images[imageType.images.length - 1];
 };
 
 export default {
@@ -44,7 +44,7 @@ export default {
     const title = (item.titles[0] && item.titles[0].title) || '';
     const titleShort = (title.length > titleLength) ? `${title.substr(0, titleLength)}…` : title;
 
-    const imgSrc = item.representativeImage.s.src || '';
+    const imgSrc = item.representativeImage.small.src || '';
 
     return {
       inventoryNumber: item.inventoryNumber,
@@ -62,7 +62,7 @@ export default {
   toAddedRepresentativeImage(item) {
     return {
       ...item,
-      representativeImage: getRepresentativeImageVariant(item),
+      representativeImage: getRepresentativeImage(item),
     };
   },
 };

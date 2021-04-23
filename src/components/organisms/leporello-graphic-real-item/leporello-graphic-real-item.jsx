@@ -47,8 +47,8 @@ export default ({
 
   console.log(publications);
 
-  const largestImageSrc = representativeImage.xl.src;
-  const smallestImageSrc = representativeImage.s.src;
+  const largestImageSrc = representativeImage.medium.src;
+  const smallestImageSrc = representativeImage.small.src;
 
   const artTechExaminations = restorationSurveys.filter((rs) => rs.type === ART_TECH_EXAMINATION);
   const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);

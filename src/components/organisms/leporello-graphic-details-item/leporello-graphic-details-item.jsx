@@ -91,7 +91,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const largestImageSrc = representativeImage.l.src;
+  const largestImageSrc = representativeImage.medium.src;
 
   const primaryLiterature = publications.filter(
     (publication) => publication.ref.isPrimarySource,
