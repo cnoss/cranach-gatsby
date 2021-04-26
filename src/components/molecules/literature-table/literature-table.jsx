@@ -73,12 +73,6 @@ export default ({
                       </tr>)
                     }
 
-                    { item.longTitle && (<tr>
-                        <td className="literature-item-details-table-title">{ t('Long title') }</td>
-                        <td dangerouslySetInnerHTML={{ __html: item.longTitle }}></td>
-                      </tr>)
-                    }
-
                     { item.pageNumbers && (<tr>
                         <td className="literature-item-details-table-title">{ t('Pages') }</td>
                         <td>{ item.pageNumbers }</td>
@@ -130,6 +124,12 @@ export default ({
                     { item.mention && (<tr>
                         <td className="literature-item-details-table-title">{ t('Mention') }</td>
                         <td dangerouslySetInnerHTML={{ __html: item.mention }}></td>
+                      </tr>)
+                    }
+
+                    { item.link && (<tr>
+                        <td className="literature-item-details-table-title">{ t('Link') }</td>
+                        <td>{ item.link }</td>
                       </tr>)
                     }
                   </tbody>

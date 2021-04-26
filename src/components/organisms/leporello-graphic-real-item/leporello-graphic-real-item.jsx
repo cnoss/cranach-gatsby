@@ -54,7 +54,7 @@ export default ({
     {},
   );
 
-  const toLiterature = (item) => {
+  const toPrimaryLiterature = (item) => {
     const connectedObject = item.ref.connectedObject || {
       pageNumber: '',
       catalogNumber: '',
@@ -63,15 +63,13 @@ export default ({
 
     return {
       id: item.referenceId,
-      isPrimary: !!(item.ref && item.ref.isPrimarySource),
       shortTitle: item.title,
       pageNumber: connectedObject.pageNumber,
       catalogNumber: connectedObject.catalogNumber,
       figureNumber: connectedObject.figureNumber,
 
       roles: groupPersonsByRole(item.ref.persons),
-      title: (item.ref && item.ref.title) || '',
-      longTitle: (item.ref && item.ref.longTitle) || '',
+      title: (item.ref && item.ref.longTitle) || '',
       pageNumbers: (item.ref && item.ref.pageNumbers) || '',
       series: (item.ref && item.ref.series) || '',
       volume: (item.ref && item.ref.volume) || '',
@@ -81,13 +79,48 @@ export default ({
       publishLocation: (item.ref && item.ref.publishLocation) || '',
       publishDate: (item.ref && item.ref.publishDate) || '',
       mention: (item.ref && item.ref.mention) || '',
+      link: (item.ref && item.ref.copyright) || '',
     };
   };
 
-  const preparedLiterature = publications.map(toLiterature);
+  const toSecondaryLiterature = (item) => {
+    const connectedObject = item.ref.connectedObject || {
+      pageNumber: '',
+      catalogNumber: '',
+      figureNumber: '',
+    };
 
-  const preparedPrimaryLiterature = preparedLiterature.filter((lit) => lit.isPrimary);
-  const preparedSecondaryLiterature = preparedLiterature.filter((lit) => !lit.isPrimary);
+    return {
+      id: item.referenceId,
+      shortTitle: item.title,
+      pageNumber: connectedObject.pageNumber,
+      catalogNumber: connectedObject.catalogNumber,
+      figureNumber: connectedObject.figureNumber,
+
+      roles: groupPersonsByRole(item.ref.persons),
+      title: (item.ref && item.ref.title) || '',
+      pageNumbers: (item.ref && item.ref.pageNumbers) || '',
+      series: (item.ref && item.ref.series) || '',
+      volume: (item.ref && item.ref.volume) || '',
+      journal: (item.ref && item.ref.journal) || '',
+      issue: (item.ref && item.ref.edition) || '',
+      publication: (item.ref && item.ref.subtitle) || '',
+      publishLocation: (item.ref && item.ref.publishLocation) || '',
+      publishDate: (item.ref && item.ref.publishDate) || '',
+      mention: (item.ref && item.ref.mention) || '',
+      link: (item.ref && item.ref.copyright) || '',
+    };
+  };
+
+  const primaryPublications = publications.filter(
+    (item) => !!(item.ref && item.ref.isPrimarySource),
+  );
+  const secondaryPublications = publications.filter(
+    (item) => !(item.ref && item.ref.isPrimarySource),
+  );
+
+  const preparedPrimaryLiterature = primaryPublications.map(toPrimaryLiterature);
+  const preparedSecondaryLiterature = secondaryPublications.map(toSecondaryLiterature);
 
   const largestImageSrc = representativeImage.medium.src;
   const smallestImageSrc = representativeImage.small.src;
