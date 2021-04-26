@@ -28,7 +28,7 @@ export default ({
     return {
       inventoryNumber: item.inventoryNumber,
       title,
-      to: `/${item.langCode}/${item.slug}`,
+      to: `/${item.metadata.langCode}/${item.slug}`,
       imgSrc: smallestImageSrc,
       preventLinkFollowing: false,
       triggersInternalTransition: true,

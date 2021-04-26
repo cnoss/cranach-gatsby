@@ -30,7 +30,7 @@ const PageTemplate = ({ pageContext, location }) => {
       </Helmet>
 
       <Navigation
-        goBackTo={`/${graphic.langCode}`}
+        goBackTo={`/${graphic.metadata.langCode}`}
       />
 
       <section className="body">
