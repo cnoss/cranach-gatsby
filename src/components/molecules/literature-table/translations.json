@@ -1,5 +1,30 @@
 {
   "de": {
-    "reference on page": "Erwähnt auf Seite"
+    "Reference on page": "Erwähnt auf Seite",
+    "Catalog number": "Katalognummer",
+    "Figure / plate": "Abbildung / Tafel",
+    "Author": "Autor",
+    "Publisher": "Herausgeber",
+    "Editorial staff": "Redaktion",
+    "Editing": "Bearbeitung",
+    "Illustrator": "Illustrator",
+    "Publishing house": "Verlag",
+    "In collaboration": "unter Mitarbeit",
+    "Illustrations": "Abbildungen",
+    "Translation": "Übersetzung",
+    "Print": "Druck",
+    "Officin": "Offizin",
+    "Unknown": "Unbekannt",
+    "Title": "Titel",
+    "Long title": "Langer Titel",
+    "Pages": "Seiten",
+    "Series": "Reihe",
+    "Volume": "Band",
+    "Journal": "Zeitschrift",
+    "Issue": "Jahrgang",
+    "Publication": "Veröffentlichung",
+    "Place of publication": "Ort der Veröffentlichung",
+    "Year of publication": "Jahr der Veröffentlichung",
+    "Mention": "Erwähnung"
   }
 }

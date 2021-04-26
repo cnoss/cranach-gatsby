@@ -12,7 +12,7 @@ const PageTemplate = ({ pageContext }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
-  i18n(graphic.langCode);
+  i18n(graphic.metadata.langCode);
 
   return (
     <div

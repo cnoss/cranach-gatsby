@@ -60,11 +60,13 @@ const literatureResolver = (graphic, literatureIndex) => graphic.publications.re
   const { referenceId } = publicationItem;
 
   if (literatureIndex[langCode] && literatureIndex[langCode][referenceId]) {
+    const foundLiteratureItem = literatureIndex[langCode][referenceId];
+
     acc.push({
       ...publicationItem,
       ref: {
-        ...literatureIndex[langCode][referenceId],
-        connectedObjects: literatureIndex[langCode][referenceId].connectedObjects.filter(
+        ...foundLiteratureItem,
+        connectedObject: foundLiteratureItem.connectedObjects.find(
           (cObj) => cObj.inventoryNumber === graphic.inventoryNumber,
         ),
       },

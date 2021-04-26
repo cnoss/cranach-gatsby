@@ -1,4 +1,59 @@
+@import '~/styles/000-abstracts/__abstracts-dir';
 
 .literature-table {
+  $title-color: $accent;
+  $item-active-bg-color: $lighter;
+  $item-active-border-color: $light;
+  $item-padding: $xs 0;
+  $item-details-table-margin: $m;
+  $details-title-padding: $m;
+
   width: 100%;
+
+  &-row {
+
+  }
+
+  &-datum {
+    padding: $item-padding;
+  }
+
+  &-head {
+    text-align: left;
+  }
+
+  .literature-item {
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+    &-title {
+      border-bottom: 1px solid $title-color;
+    }
+
+    &--active {
+      background-color: $item-active-bg-color;
+      border-bottom-color: $item-active-border-color;
+
+      .literature-item-title {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  .literature-item-details {
+    &--hidden {
+      display: none;
+    }
+  }
+
+
+  .literature-item-details-table {
+    margin: 0 0 $item-details-table-margin 0;
+
+    &-title {
+      padding: 0 $details-title-padding 0 0;
+      white-space: nowrap;
+    }
+  }
+
 }

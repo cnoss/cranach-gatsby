@@ -45,7 +45,49 @@ export default ({
     restorationSurveys,
   } = graphic;
 
-  console.log(publications);
+  const groupPersonsByRole = (persons) => persons.reduce(
+    (acc, person) => {
+      acc[person.role] = acc[person.role] || [];
+      acc[person.role].push(person.name);
+      return acc;
+    },
+    {},
+  );
+
+  const toLiterature = (item) => {
+    const connectedObject = item.ref.connectedObject || {
+      pageNumber: '',
+      catalogNumber: '',
+      figureNumber: '',
+    };
+
+    return {
+      id: item.referenceId,
+      isPrimary: !!(item.ref && item.ref.isPrimarySource),
+      shortTitle: item.title,
+      pageNumber: connectedObject.pageNumber,
+      catalogNumber: connectedObject.catalogNumber,
+      figureNumber: connectedObject.figureNumber,
+
+      roles: groupPersonsByRole(item.ref.persons),
+      title: (item.ref && item.ref.title) || '',
+      longTitle: (item.ref && item.ref.longTitle) || '',
+      pageNumbers: (item.ref && item.ref.pageNumbers) || '',
+      series: (item.ref && item.ref.series) || '',
+      volume: (item.ref && item.ref.volume) || '',
+      journal: (item.ref && item.ref.journal) || '',
+      issue: (item.ref && item.ref.edition) || '',
+      publication: (item.ref && item.ref.subtitle) || '',
+      publishLocation: (item.ref && item.ref.publishLocation) || '',
+      publishDate: (item.ref && item.ref.publishDate) || '',
+      mention: (item.ref && item.ref.mention) || '',
+    };
+  };
+
+  const preparedLiterature = publications.map(toLiterature);
+
+  const preparedPrimaryLiterature = preparedLiterature.filter((lit) => lit.isPrimary);
+  const preparedSecondaryLiterature = preparedLiterature.filter((lit) => !lit.isPrimary);
 
   const largestImageSrc = representativeImage.medium.src;
   const smallestImageSrc = representativeImage.small.src;
@@ -160,12 +202,22 @@ export default ({
               />)}
           </GroupedDefinitionList>
 
-          {/* Publikationen */}
-          {publications.length > 0
+          {/* Primärliteratur */}
+          {preparedPrimaryLiterature.length > 0
             && <DefinitionList>
               <DefinitionList.Entry
-                term={t('Literature')}
-                definition={<LiteratureTable data={publications} />}
+                term={t('Primary literature')}
+                definition={<LiteratureTable items={preparedPrimaryLiterature} />}
+              />
+            </DefinitionList>
+          }
+
+          {/* Sekundärliteratur */}
+          {preparedSecondaryLiterature.length > 0
+            && <DefinitionList>
+              <DefinitionList.Entry
+                term={t('Secondary literature')}
+                definition={<LiteratureTable items={preparedSecondaryLiterature} />}
               />
             </DefinitionList>
           }

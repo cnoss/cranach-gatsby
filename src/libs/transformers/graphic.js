@@ -11,7 +11,7 @@ const getRepresentativeImage = (item) => {
       },
     },
     images: [
-      ['xs', 's', 'm', 'l', 'xl'].reduce(
+      ['xsmall', 'small', 'medium', 'origin'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
