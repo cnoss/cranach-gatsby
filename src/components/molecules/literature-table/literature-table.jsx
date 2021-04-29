@@ -122,6 +122,13 @@ export default ({
                     }
 
                     {
+                      item.periodOfOrigin && (<tr>
+                        <td className="literature-item-details-table-title">{ t('Period of Origin') }</td>
+                        <td>{ item.periodOfOrigin }</td>
+                      </tr>)
+                    }
+
+                    {
                       item.physicalDescription && (<tr>
                         <td className="literature-item-details-table-title">{ t('Book format') }</td>
                         <td>{ item.physicalDescription }</td>
@@ -138,6 +145,15 @@ export default ({
                         <td className="literature-item-details-table-title">{ t('Link') }</td>
                         <td>{ item.link }</td>
                       </tr>)
+                    }
+
+                    {
+                      item.alternateNumbers.length > 0 && item.alternateNumbers.map(
+                        (alternateNumber) => (<tr>
+                          <td className="literature-item-details-table-title">{ t(alternateNumber.description) }</td>
+                          <td>{ alternateNumber.number }</td>
+                        </tr>),
+                      )
                     }
                   </tbody>
                 </table>

@@ -78,27 +78,39 @@ const getConnectedObject = (item, graphicInventoryNumber) => {
   };
 };
 
-const toPrimaryLiterature = (publication, literatureItem, connectedObject) => ({
-  id: publication.referenceId,
-  shortTitle: publication.title,
-  pageNumber: connectedObject.pageNumber,
-  catalogNumber: connectedObject.catalogNumber,
-  figureNumber: connectedObject.figureNumber,
+const toPrimaryLiterature = (publication, literatureItem, connectedObject) => {
+  const PERIOD_OF_ORIGIN_TYPE = 'PERIOD_OF_ORIGIN';
+  const periodOfOriginEvent = literatureItem.events.find(
+    (event) => event.type === PERIOD_OF_ORIGIN_TYPE,
+  );
 
-  roles: groupPersonsByRole(literatureItem.persons),
-  title: literatureItem.longTitle || '',
-  pageNumbers: literatureItem.pageNumbers || '',
-  series: literatureItem.series || '',
-  volume: literatureItem.volume || '',
-  journal: literatureItem.journal || '',
-  issue: literatureItem.edition || '',
-  publication: literatureItem.subtitle || '',
-  publishLocation: literatureItem.publishLocation || '',
-  publishDate: literatureItem.publishDate || '',
-  physicalDescription: literatureItem.physicalDescription || '',
-  mention: literatureItem.mention || '',
-  link: literatureItem.copyright || '',
-});
+  const periodOfOrigin = (periodOfOriginEvent && `${periodOfOriginEvent.dateText} ${periodOfOriginEvent.remarks}`) || '';
+
+  return {
+    id: publication.referenceId,
+    shortTitle: publication.title,
+    pageNumber: connectedObject.pageNumber,
+    catalogNumber: connectedObject.catalogNumber,
+    figureNumber: connectedObject.figureNumber,
+
+    roles: groupPersonsByRole(literatureItem.persons),
+    title: literatureItem.longTitle || '',
+    pageNumbers: literatureItem.pageNumbers || '',
+    series: literatureItem.series || '',
+    volume: literatureItem.volume || '',
+    journal: literatureItem.journal || '',
+    issue: literatureItem.edition || '',
+    publication: literatureItem.subtitle || '',
+    publishLocation: literatureItem.publishLocation || '',
+    publishDate: literatureItem.publishDate || '',
+    periodOfOrigin: periodOfOrigin,
+    physicalDescription: literatureItem.physicalDescription || '',
+    mention: literatureItem.mention || '',
+    link: literatureItem.copyright || '',
+    alternateNumbers: literatureItem.alternateNumbers || [],
+  };
+
+};
 
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
   id: publication.referenceId,
@@ -119,6 +131,7 @@ const toSecondaryLiterature = (publication, literatureItem, connectedObject) => 
   publishDate: literatureItem.publishDate || '',
   mention: literatureItem.mention || '',
   link: literatureItem.copyright || '',
+  alternateNumbers: [],
 });
 
 
