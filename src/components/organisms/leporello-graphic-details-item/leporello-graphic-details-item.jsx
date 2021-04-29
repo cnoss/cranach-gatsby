@@ -91,7 +91,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const largestImageSrc = representativeImage.l.src;
+  const largestImageSrc = representativeImage.origin.src;
 
   return (
     <LeporelloGraphicItem
@@ -138,7 +138,6 @@ export default ({
                     term={t('Production date')}
                     definition={`${dating.dated} ${dating.remarks}`}
                   />
-
                   <DefinitionList.Entry
                     term={t('Dimensions')}
                     definition={dimensions}

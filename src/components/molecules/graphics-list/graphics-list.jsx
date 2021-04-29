@@ -44,7 +44,5 @@ export default ({
             </Link>
           </li>,
         )
-      }
-    </ul>
-
-);
+    }
+  </ul >);

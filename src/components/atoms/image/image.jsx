@@ -13,6 +13,7 @@ export default ({
   const capArray = (Array.isArray(caption) ? caption : [caption]);
   const captions = caption ? capArray : [];
   const className = `${classNamePrefix ? `${classNamePrefix} image${classNameModifier}` : `image${classNameModifier}`}`;
+
   return (
     <figure
       className={className}

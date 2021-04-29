@@ -8,6 +8,6 @@ export default ({
   <div
     className="copy-text"
   >
-    { text.split('\n').map((item, i) => <p key={i}>{ item || '\u200B' }</p>) }
+    { text && text.split('\n').map((item, i) => <p key={i}>{ decodeURI(item) || '\u200B' }</p>) }
   </div>
 );

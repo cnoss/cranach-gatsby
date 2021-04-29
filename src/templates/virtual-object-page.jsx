@@ -16,7 +16,7 @@ const PageTemplate = ({ pageContext, location }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
-  i18n(graphic.langCode);
+  i18n(graphic.metadata.langCode);
 
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
 
@@ -30,7 +30,7 @@ const PageTemplate = ({ pageContext, location }) => {
       </Helmet>
 
       <Navigation
-        goBackTo={`/${graphic.langCode}`}
+        goBackTo={`/${graphic.metadata.langCode}`}
       />
 
       <section className="body">

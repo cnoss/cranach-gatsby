@@ -1,0 +1,104 @@
+@import '~/styles/000-abstracts/__abstracts-dir';
+
+.viewer {
+  background-color: $darker;
+}
+
+.zoom-image {
+  display: block;
+  position: relative;
+  height: 100vw;
+
+  .preload-image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    opacity: 1;
+    transition: opacity ease-in 1.5s;
+  }
+  .openseadragon-container {
+     position: absolute !important;
+     opacity: 0;
+     transition: opacity $tr-medium;
+
+    .openseadragon-canvas {
+      opacity: 0;
+      transition: opacity 1s;
+
+      & + div{
+        margin-top: $s !important;
+        margin-left: $s !important;
+      }
+    }
+  }
+  &.has-active-zoom {
+    .preload-image {
+      opacity: 0;
+    }
+    .openseadragon-container {
+      .openseadragon-canvas {
+        opacity: 1;
+      }
+    }
+  }
+
+  &::before{
+    content: "Loading … ";
+    position: absolute;
+    left: $m;
+    bottom: $m;
+    padding: $xs $s;
+    background-color: $accent;
+    color: $darkest;
+    opacity: 1;
+    transition: opacity $tr-fast;
+  }
+
+  &.is-loaded{
+    &::before{
+      opacity: 0;
+    }
+
+    .openseadragon-container{
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    height: auto;
+    min-height: 50vw;
+   }
+}
+
+.image-stripe-list{
+  padding: $m;
+  background-color: $dark;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($tile-xxs, 1fr));
+  grid-auto-rows: 1fr;
+  grid-column-gap: $xs;
+  grid-row-gap: $xs;
+
+  &__item{
+    width: 100%;
+    transform: scale(0.8);
+    transition: transform $tr-fast;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &.is-active{
+      border: solid $border-stroke-weight-s $accent;
+      transform: scale(1);
+    }
+  }
+}

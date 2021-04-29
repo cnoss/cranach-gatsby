@@ -1,4 +1,5 @@
 import React from 'react';
+import FlatText from '~/components/atoms/flat-text';
 
 import './definition-list.scss';
 
@@ -13,8 +14,13 @@ const DefinitionList = ({ children }) => (
 
 DefinitionList.Entry = ({ term, definition }) => (
   <React.Fragment>
-    <dt className="definition-list__term">{ term }</dt>
-    <dd className="definition-list__definition">{ definition }</dd>
+    <dt className="definition-list__term">{term}</dt>
+    <dd className="definition-list__definition">
+      {typeof (definition) === 'string' && <FlatText
+        text={definition}
+      />}
+      {typeof (definition) !== 'string' && definition}
+    </dd>
   </React.Fragment>
 );
 

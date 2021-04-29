@@ -14,7 +14,7 @@ export default ({ data }) => {
   i18n('de');
 
   const items = graphic.flattenGraphQlEdges(data.allGraphicsJson)
-    .filter(graphic.byImageExistence)
+    // .filter(graphic.byImageExistence)
     .map(graphic.toAddedRepresentativeImage)
     .map(graphic.toArtefact);
 
@@ -99,43 +99,43 @@ export const query = graphql`
               }
             }
             images {
-              representative {
+              overall {
                 infos {
                   maxDimensions {
                     width
                     height
                   }
                 }
-                variants {
-                  xs {
+                images {
+                  xsmall {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  s {
+                  small {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  m {
+                  medium {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  l {
+                  origin {
                     dimensions {
                       width
                       height
                     }
                     src
                   }
-                  xl {
+                  tiles {
                     dimensions {
                       width
                       height

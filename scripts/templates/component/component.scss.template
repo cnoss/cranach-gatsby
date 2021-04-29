@@ -1,3 +1,4 @@
+@import '~/styles/000-abstracts/__abstracts-dir';
 
 .<% HyphenatedName %> {
 
