@@ -91,7 +91,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const largestImageSrc = representativeImage.origin.src;
+  const repImageSrc = representativeImage.medium.src;
 
   return (
     <LeporelloGraphicItem
@@ -110,7 +110,7 @@ export default ({
         <div className="leporello-graphic-details-item__content">
           <div className={'leporello-graphic-details-item__content-image'}>
             <Image
-              src={largestImageSrc}
+              src={repImageSrc}
               alt={title}
             />
           </div>

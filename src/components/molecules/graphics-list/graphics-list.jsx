@@ -16,9 +16,10 @@ export default ({
       {
         items.map(
           (item) => <li
-            key={item.imgSrc}
+            key={item.inventoryNumber}
             className="graphics-list-item"
           >
+
             <Link
               to={item.to}
               triggersInternalTransition={!!item.triggersInternalTransition}
