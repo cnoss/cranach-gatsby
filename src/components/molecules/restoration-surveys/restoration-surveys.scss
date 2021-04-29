@@ -1,0 +1,76 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.restoration-surveys {
+  width: 100%;
+  margin-bottom: $xs;
+  margin-left: $s;
+
+  .survey {
+    margin-top: $xxs;
+  }
+
+  .date {
+    margin-top: $bfs;
+    font-weight: $fw-regular;
+
+    &__value {
+      font-weight: $fw-light;
+    }
+  }
+
+  .purpose {
+    margin-top: $xxs;
+    font-weight: $fw-regular;
+  }
+
+  .keywords {
+    margin-top: $xxs;
+  }
+
+  .files {
+    margin: $bfs auto;
+
+    &__item {
+      width: $xl;
+      height: $xl;
+      border: 1px solid $light;
+      display: inline-block;
+      margin: $xxs;
+      background-color: $lighter;
+    }
+  }
+
+  .survey__collapser {
+    display: flex;
+    margin-bottom: $s;
+
+    .collapser__spacer {
+      flex-grow: 1;
+      border-bottom: 1px solid $light;
+    }
+
+    .collapser__button {
+      flex-shrink: 1;
+      transform: scale(0.68);
+      margin-left: $xxs;
+    }
+  }
+
+  .survey__body {
+    margin-bottom: $bfs;
+
+    .survey__test {
+      .test__kind {
+        margin: $l auto $bfs;
+      }
+
+      .test__text {
+        margin-left: $s;
+      }
+    }
+
+    .involved-persons {
+      margin-top: $l;
+    }
+  }
+
+}

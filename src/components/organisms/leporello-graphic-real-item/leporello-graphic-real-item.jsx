@@ -9,6 +9,7 @@ import Viewer from '~/components/organisms/viewer';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
+import RestorationSurveys from '~/components/molecules/restoration-surveys';
 
 import translations from './translations.json';
 import './leporello-graphic-real-item.scss';
@@ -19,6 +20,10 @@ export default ({
   onClose = () => { },
 }) => {
   const { t } = useTranslation('LeporelloGraphicRealItem', translations);
+
+  const ART_TECH_EXAMINATION = 'ArtTechExamination';
+  const CONDITION_REPORT = 'ConditionReport';
+  const CONSERVATION_REPORT = 'ConservationReport';
 
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
   const location = (graphic.locations[0] && graphic.locations[0].term) || '';
@@ -39,9 +44,14 @@ export default ({
     publications,
     exhibitionHistory,
     catalogWorkReferences,
+    restorationSurveys,
   } = graphic;
 
   const graphicViewArtefact = graphicsTransformer.toViewerArtefact(graphic);
+
+  const artTechExaminations = restorationSurveys.filter((rs) => rs.type === ART_TECH_EXAMINATION);
+  const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);
+  const conservationReports = restorationSurveys.filter((rs) => rs.type === CONSERVATION_REPORT);
 
   return (
     <LeporelloGraphicItem
@@ -156,6 +166,34 @@ export default ({
               />
             </DefinitionList>
           }
+
+          { (artTechExaminations.length + conditionReports.length + conservationReports.length) > 0
+            && <GroupedDefinitionList>
+                {/* Kunsttechnologische Untersuchung */}
+                { artTechExaminations.length > 0
+                  && <GroupedDefinitionList.Entry
+                      term={t('Art-technological examination')}
+                      definition={<RestorationSurveys items={artTechExaminations.reverse()} />}
+                    />
+                }
+
+                {/* Erhaltungszustand */}
+                { conditionReports.length > 0
+                  && <GroupedDefinitionList.Entry
+                    term={t('Condition')}
+                    definition={<RestorationSurveys items={conditionReports.reverse()} />}
+                  />}
+
+                {/* Restaurierungsgeschichte */}
+                { conservationReports.length > 0
+                  && <DefinitionList.Entry
+                      term={t('Conservation')}
+                      definition={<RestorationSurveys items={conservationReports.reverse()} />}
+                    />}
+
+            </GroupedDefinitionList>
+          }
+
         </div>
       </div>
     </LeporelloGraphicItem>
