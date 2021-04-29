@@ -110,6 +110,42 @@ const createGraphicPages = (graphics, actions) => {
   });
 };
 
+const toHaveValidAndSortedCatalogWorkReferences = (item) => {
+  const descriptionsToBeSkipped = ['Frühere Nummer'];
+
+  /* Sorting catalogWorkReferences */
+  const sortingWeight = [
+    {
+      name: 'Bartsch',
+      pos: 1,
+    },
+    {
+      name: 'Hollstein',
+      pos: 2,
+    },
+    {
+      name: 'GND',
+      pos: 3,
+    },
+  ];
+
+  const byValidReferences = (reference) => !descriptionsToBeSkipped.includes(reference.description);
+  const getPatternPos = (str) => {
+    const foundSortingWeight = sortingWeight.find((sw) => str === sw.name);
+
+    return foundSortingWeight ? foundSortingWeight.pos : Number.MAX_SAFE_INTEGER;
+  };
+  const byDescription = (a, b) => getPatternPos(b.description) - getPatternPos(a.description);
+
+  const validAndSortedCatalogWorkReferences = item.catalogWorkReferences.filter(byValidReferences)
+    .sort(byDescription)
+
+  return {
+    ...item,
+    catalogWorkReferences: validAndSortedCatalogWorkReferences,
+  }
+};
+
 exports.onCreateNode = ({ node }) => {
   if (node && node.internal.type !== 'GraphicsJson') {
     return;
@@ -424,6 +460,7 @@ exports.createPages = ({ graphql, actions }) => {
     const extendedGraphics = mergedAndFlattenedGraphics
       //.filter(graphic => graphic.images)
       .map(toHaveRepresentativeImage)
+      .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
       .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr));
 

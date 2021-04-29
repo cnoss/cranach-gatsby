@@ -129,6 +129,13 @@ export default ({
   const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);
   const conservationReports = restorationSurveys.filter((rs) => rs.type === CONSERVATION_REPORT);
 
+  const referenceToDefinitionListEntry = (reference) => ({
+    term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
+    definition: reference.referenceNumber,
+  });
+
+  const catalogWorkReferenceItems = catalogWorkReferences.map(referenceToDefinitionListEntry);
+
   return (
     <LeporelloGraphicItem
       className="leporello-graphic-real-item-wrap"
@@ -227,11 +234,11 @@ export default ({
               term="CDA ID"
               definition={inventoryNumber}
             />
-            {catalogWorkReferences.length > 0
-              && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
-                key={ref.referenceNumber}
-                term={ref.description}
-                definition={ref.referenceNumber}
+            {catalogWorkReferenceItems.length > 0
+              && catalogWorkReferenceItems.map((ref) => <GroupedDefinitionList.Entry
+                key={ref.definition}
+                term={ref.term}
+                definition={ref.definition}
               />)}
           </GroupedDefinitionList>
 

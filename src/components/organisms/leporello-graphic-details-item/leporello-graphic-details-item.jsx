@@ -39,37 +39,12 @@ export default ({
     classification,
   } = graphic;
 
-  /* Sorting catalogWorkReferences */
-  const sortingWeight = [
-    {
-      name: 'Bartsch',
-      pos: 1,
-    },
-    {
-      name: 'Hollstein',
-      pos: 2,
-    },
-    {
-      name: 'GND',
-      pos: 3,
-    },
-  ];
-  const getPatternPos = (str) => {
-    const foundSortingWeight = sortingWeight.find((sw) => str === sw.name);
+  const referenceToDefinitionListEntry = (reference) => ({
+    term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
+    definition: reference.referenceNumber,
+  });
 
-    return foundSortingWeight ? foundSortingWeight.pos : Number.MAX_SAFE_INTEGER;
-  };
-  const sortedCatalogWorkReferences = catalogWorkReferences.sort(
-    (a, b) => getPatternPos(b.description) - getPatternPos(a.description),
-  );
-
-  /* Map catalog work references */
-  const catalogWorkReferenceItems = sortedCatalogWorkReferences.map(
-    (reference) => ({
-      term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
-      definition: reference.referenceNumber,
-    }),
-  );
+  const catalogWorkReferenceItems = catalogWorkReferences.map(referenceToDefinitionListEntry);
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
@@ -191,7 +166,7 @@ export default ({
                 {secondaryLiterature.length > 0
                   && <DefinitionList>
                     <DefinitionList.Entry
-                      term={t('Literature')}
+                      term={t('Secondary literature')}
                       definition={<LiteratureTable data={secondaryLiterature} />}
                     />
                   </DefinitionList>
