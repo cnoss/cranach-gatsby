@@ -30,7 +30,7 @@ const getRepresentativeImageVariant = (item) => {
 
 const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
   const foundReferencesItem = graphics.find(
-    currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
+    (currItem) => currItem.inventoryNumber === referenceItem.inventoryNumber
         && currItem.metadata.langCode === graphic.metadata.langCode,
   );
 
@@ -61,14 +61,14 @@ const createGraphicPages = (graphics, actions) => {
   const { createPage } = actions;
 
   const graphicsWithImages = graphics
-    //.filter(graphic => graphic.images)
+    // .filter(graphic => graphic.images)
     .map((graphic) => ({
       ...graphic,
       representativeImage: getRepresentativeImageVariant(graphic),
     }));
 
   const extendedGraphicsWithExtendedReferences = graphicsWithImages.map(
-    graphic => extendGraphicReferences(graphicsWithImages, graphic),
+    (graphic) => extendGraphicReferences(graphicsWithImages, graphic),
   );
 
   extendedGraphicsWithExtendedReferences.forEach((graphic) => {
@@ -112,7 +112,7 @@ exports.createPages = ({ graphql, actions }) => {
       }) {
    */
 
-   const imageTypeStructure = `
+  const imageTypeStructure = `
     infos {
       maxDimensions {
         width
@@ -268,6 +268,10 @@ exports.createPages = ({ graphql, actions }) => {
                 kind
                 text
                 purpose
+                keywords {
+                  name
+                  additional
+                }
               }
               processingDates {
                 beginDate
@@ -293,33 +297,6 @@ exports.createPages = ({ graphql, actions }) => {
               }
               reverse {
                 ${imageTypeStructure}
-              }
-              restorationSurveys {
-                type
-                project
-                overallAnalysis
-                remarks
-                tests {
-                  kind
-                  text
-                  purpose
-                  keywords {
-                    name
-                    additional
-                  }
-                }
-                involvedPersons {
-                  role
-                  name
-                }
-                processingDates {
-                  beginDate
-                  endDate
-                }
-                signature {
-                  date
-                  name
-                }
               }
             }
             involvedPersons {
