@@ -78,6 +78,7 @@ export default ({
       publication: (item.ref && item.ref.subtitle) || '',
       publishLocation: (item.ref && item.ref.publishLocation) || '',
       publishDate: (item.ref && item.ref.publishDate) || '',
+      physicalDescription: (item.ref && item.ref.physicalDescription) || '',
       mention: (item.ref && item.ref.mention) || '',
       link: (item.ref && item.ref.copyright) || '',
     };

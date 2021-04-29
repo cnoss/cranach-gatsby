@@ -121,6 +121,13 @@ export default ({
                       </tr>)
                     }
 
+                    {
+                      item.physicalDescription && (<tr>
+                        <td className="literature-item-details-table-title">{ t('Book format') }</td>
+                        <td>{ item.physicalDescription }</td>
+                      </tr>)
+                    }
+
                     { item.mention && (<tr>
                         <td className="literature-item-details-table-title">{ t('Mention') }</td>
                         <td dangerouslySetInnerHTML={{ __html: item.mention }}></td>
