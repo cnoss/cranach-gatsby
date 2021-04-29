@@ -112,7 +112,7 @@ exports.createPages = ({ graphql, actions }) => {
       }) {
    */
 
-  const imageTypeStructure = `
+   const imageTypeStructure = `
     infos {
       maxDimensions {
         width
@@ -293,6 +293,33 @@ exports.createPages = ({ graphql, actions }) => {
               }
               reverse {
                 ${imageTypeStructure}
+              }
+              restorationSurveys {
+                type
+                project
+                overallAnalysis
+                remarks
+                tests {
+                  kind
+                  text
+                  purpose
+                  keywords {
+                    name
+                    additional
+                  }
+                }
+                involvedPersons {
+                  role
+                  name
+                }
+                processingDates {
+                  beginDate
+                  endDate
+                }
+                signature {
+                  date
+                  name
+                }
               }
             }
             involvedPersons {

@@ -12,6 +12,9 @@ function resolve(dir) {
 }
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   pathPrefix: process.env.PATH_PREFIX || '/graphics',
   plugins: [
     'gatsby-plugin-react-helmet',
