@@ -45,84 +45,6 @@ export default ({
     restorationSurveys,
   } = graphic;
 
-  const groupPersonsByRole = (persons) => persons.reduce(
-    (acc, person) => {
-      acc[person.role] = acc[person.role] || [];
-      acc[person.role].push(person.name);
-      return acc;
-    },
-    {},
-  );
-
-  const toPrimaryLiterature = (item) => {
-    const connectedObject = item.ref.connectedObject || {
-      pageNumber: '',
-      catalogNumber: '',
-      figureNumber: '',
-    };
-
-    return {
-      id: item.referenceId,
-      shortTitle: item.title,
-      pageNumber: connectedObject.pageNumber,
-      catalogNumber: connectedObject.catalogNumber,
-      figureNumber: connectedObject.figureNumber,
-
-      roles: groupPersonsByRole(item.ref.persons),
-      title: (item.ref && item.ref.longTitle) || '',
-      pageNumbers: (item.ref && item.ref.pageNumbers) || '',
-      series: (item.ref && item.ref.series) || '',
-      volume: (item.ref && item.ref.volume) || '',
-      journal: (item.ref && item.ref.journal) || '',
-      issue: (item.ref && item.ref.edition) || '',
-      publication: (item.ref && item.ref.subtitle) || '',
-      publishLocation: (item.ref && item.ref.publishLocation) || '',
-      publishDate: (item.ref && item.ref.publishDate) || '',
-      physicalDescription: (item.ref && item.ref.physicalDescription) || '',
-      mention: (item.ref && item.ref.mention) || '',
-      link: (item.ref && item.ref.copyright) || '',
-    };
-  };
-
-  const toSecondaryLiterature = (item) => {
-    const connectedObject = item.ref.connectedObject || {
-      pageNumber: '',
-      catalogNumber: '',
-      figureNumber: '',
-    };
-
-    return {
-      id: item.referenceId,
-      shortTitle: item.title,
-      pageNumber: connectedObject.pageNumber,
-      catalogNumber: connectedObject.catalogNumber,
-      figureNumber: connectedObject.figureNumber,
-
-      roles: groupPersonsByRole(item.ref.persons),
-      title: (item.ref && item.ref.title) || '',
-      pageNumbers: (item.ref && item.ref.pageNumbers) || '',
-      series: (item.ref && item.ref.series) || '',
-      volume: (item.ref && item.ref.volume) || '',
-      journal: (item.ref && item.ref.journal) || '',
-      issue: (item.ref && item.ref.edition) || '',
-      publication: (item.ref && item.ref.subtitle) || '',
-      publishLocation: (item.ref && item.ref.publishLocation) || '',
-      publishDate: (item.ref && item.ref.publishDate) || '',
-      mention: (item.ref && item.ref.mention) || '',
-      link: (item.ref && item.ref.copyright) || '',
-    };
-  };
-
-  const primaryPublications = publications.filter(
-    (item) => !!(item.ref && item.ref.isPrimarySource),
-  );
-  const secondaryPublications = publications.filter(
-    (item) => !(item.ref && item.ref.isPrimarySource),
-  );
-
-  const preparedPrimaryLiterature = primaryPublications.map(toPrimaryLiterature);
-  const preparedSecondaryLiterature = secondaryPublications.map(toSecondaryLiterature);
-
   const largestImageSrc = representativeImage.medium.src;
   const smallestImageSrc = representativeImage.small.src;
 
@@ -244,21 +166,21 @@ export default ({
           </GroupedDefinitionList>
 
           {/* Primärliteratur */}
-          {preparedPrimaryLiterature.length > 0
+          {publications.primary.length > 0
             && <DefinitionList>
               <DefinitionList.Entry
                 term={t('Primary literature')}
-                definition={<LiteratureTable items={preparedPrimaryLiterature} />}
+                definition={<LiteratureTable items={publications.primary} />}
               />
             </DefinitionList>
           }
 
           {/* Sekundärliteratur */}
-          {preparedSecondaryLiterature.length > 0
+          {publications.secondary.length > 0
             && <DefinitionList>
               <DefinitionList.Entry
                 term={t('Secondary literature')}
-                definition={<LiteratureTable items={preparedSecondaryLiterature} />}
+                definition={<LiteratureTable items={publications.secondary} />}
               />
             </DefinitionList>
           }

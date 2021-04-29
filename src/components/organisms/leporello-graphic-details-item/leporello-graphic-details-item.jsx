@@ -68,13 +68,6 @@ export default ({
 
   const largestImageSrc = representativeImage.medium.src;
 
-  const primaryLiterature = publications.filter(
-    (publication) => publication.ref.isPrimarySource,
-  );
-  const secondaryLiterature = publications.filter(
-    (publication) => !publication.ref.isPrimarySource,
-  );
-
   return (
     <LeporelloGraphicItem
       className={`leporello-graphic-details-item-wrap ${additionalClassNames.join(' ')}`}
@@ -154,20 +147,22 @@ export default ({
 
                 </DefinitionList>
 
-                {primaryLiterature.length > 0
+                {/* Primärliteratur */}
+                {publications.primary.length > 0
                   && <DefinitionList>
                     <DefinitionList.Entry
                       term={t('Primary literature')}
-                      definition={<LiteratureTable data={primaryLiterature} />}
+                      definition={<LiteratureTable items={publications.primary} />}
                     />
                   </DefinitionList>
                 }
 
-                {secondaryLiterature.length > 0
+                {/* Sekundärliteratur */}
+                {publications.secondary.length > 0
                   && <DefinitionList>
                     <DefinitionList.Entry
                       term={t('Secondary literature')}
-                      definition={<LiteratureTable data={secondaryLiterature} />}
+                      definition={<LiteratureTable items={publications.secondary} />}
                     />
                   </DefinitionList>
                 }

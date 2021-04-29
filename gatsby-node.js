@@ -55,6 +55,73 @@ const referenceResolver = (graphic, graphics, references) => references.reduce((
   return acc;
 }, []);
 
+
+const groupPersonsByRole = (persons) => persons.reduce(
+  (acc, person) => {
+    acc[person.role] = acc[person.role] || [];
+    acc[person.role].push(person.name);
+    return acc;
+  },
+  {},
+);
+
+
+const getConnectedObject = (item, graphicInventoryNumber) => {
+  const foundLiteratureItem = item.connectedObjects.find(
+    (cObj) => cObj.inventoryNumber === graphicInventoryNumber
+  );
+
+  return foundLiteratureItem || {
+    pageNumber: '',
+    catalogNumber: '',
+    figureNumber: '',
+  };
+};
+
+const toPrimaryLiterature = (publication, literatureItem, connectedObject) => ({
+  id: publication.referenceId,
+  shortTitle: publication.title,
+  pageNumber: connectedObject.pageNumber,
+  catalogNumber: connectedObject.catalogNumber,
+  figureNumber: connectedObject.figureNumber,
+
+  roles: groupPersonsByRole(literatureItem.persons),
+  title: literatureItem.longTitle || '',
+  pageNumbers: literatureItem.pageNumbers || '',
+  series: literatureItem.series || '',
+  volume: literatureItem.volume || '',
+  journal: literatureItem.journal || '',
+  issue: literatureItem.edition || '',
+  publication: literatureItem.subtitle || '',
+  publishLocation: literatureItem.publishLocation || '',
+  publishDate: literatureItem.publishDate || '',
+  physicalDescription: literatureItem.physicalDescription || '',
+  mention: literatureItem.mention || '',
+  link: literatureItem.copyright || '',
+});
+
+const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
+  id: publication.referenceId,
+  shortTitle: publication.title,
+  pageNumber: connectedObject.pageNumber,
+  catalogNumber: connectedObject.catalogNumber,
+  figureNumber: connectedObject.figureNumber,
+
+  roles: groupPersonsByRole(literatureItem.persons),
+  title: literatureItem.title || '',
+  pageNumbers: literatureItem.pageNumbers || '',
+  series: literatureItem.series || '',
+  volume: literatureItem.volume || '',
+  journal: literatureItem.journal || '',
+  issue: literatureItem.edition || '',
+  publication: literatureItem.subtitle || '',
+  publishLocation: literatureItem.publishLocation || '',
+  publishDate: literatureItem.publishDate || '',
+  mention: literatureItem.mention || '',
+  link: literatureItem.copyright || '',
+});
+
+
 const literatureResolver = (graphic, literatureIndex) => graphic.publications.reduce((acc, publicationItem) => {
   const { langCode } = graphic.metadata;
   const { referenceId } = publicationItem;
@@ -62,21 +129,29 @@ const literatureResolver = (graphic, literatureIndex) => graphic.publications.re
   if (literatureIndex[langCode] && literatureIndex[langCode][referenceId]) {
     const foundLiteratureItem = literatureIndex[langCode][referenceId];
 
-    acc.push({
-      ...publicationItem,
-      ref: {
-        ...foundLiteratureItem,
-        connectedObject: foundLiteratureItem.connectedObjects.find(
-          (cObj) => cObj.inventoryNumber === graphic.inventoryNumber,
-        ),
-      },
-    });
+    const connectedObject = getConnectedObject(foundLiteratureItem, graphic.inventoryNumber);
+
+    if (foundLiteratureItem.isPrimarySource) {
+      const mappedLiteratureItem = toPrimaryLiterature(
+        publicationItem,
+        foundLiteratureItem,
+        connectedObject,
+      );
+      acc.primary.push(mappedLiteratureItem);
+    } else {
+      const mappedLiteratureItem = toSecondaryLiterature(
+        publicationItem,
+        foundLiteratureItem,
+        connectedObject,
+      );
+      acc.secondary.push(mappedLiteratureItem);
+    }
   } else {
     console.log(`Missing literature reference for graphic: ${graphic.inventoryNumber} (${referenceId})`);
   }
 
   return acc;
-}, []);
+}, { primary: [], secondary: [] });
 
 /* Grafikverknüpfung */
 const toHaveExtendedReferences = (item, items) => ({
