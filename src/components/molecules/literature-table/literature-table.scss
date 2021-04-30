@@ -8,6 +8,8 @@
   $item-details-table-margin: $m;
   $details-title-padding: $m;
 
+  border-spacing: $s 0;
+  border-collapse: separate;
   width: 100%;
 
   &-row {
@@ -25,6 +27,10 @@
   .literature-item {
     cursor: pointer;
     border-bottom: 1px solid transparent;
+
+    .literature-table-datum:first-child {
+      white-space: nowrap;
+    }
 
     &-title {
       border-bottom: 1px solid $title-color;

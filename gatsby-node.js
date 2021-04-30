@@ -89,9 +89,7 @@ const toPrimaryLiterature = (publication, literatureItem, connectedObject) => {
   return {
     id: publication.referenceId,
     shortTitle: publication.title,
-    pageNumber: connectedObject.pageNumber,
-    catalogNumber: connectedObject.catalogNumber,
-    figureNumber: connectedObject.figureNumber,
+    pageNumber: publication.pageNumber,
 
     roles: groupPersonsByRole(literatureItem.persons),
     title: literatureItem.longTitle || '',
@@ -115,7 +113,7 @@ const toPrimaryLiterature = (publication, literatureItem, connectedObject) => {
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
   id: publication.referenceId,
   shortTitle: publication.title,
-  pageNumber: connectedObject.pageNumber,
+  pageNumber: publication.pageNumber,
   catalogNumber: connectedObject.catalogNumber,
   figureNumber: connectedObject.figureNumber,
 

@@ -6,6 +6,7 @@ import './literature-table.scss';
 
 export default ({
   items = [],
+  forPrimary = false,
   className = '',
 }) => {
   const { t } = useTranslation('LiteratureTable', translations);
@@ -43,8 +44,8 @@ export default ({
         <tr>
           <th className="literature-table-head"></th>
           <th className="literature-table-head">{ t('Reference on page') }</th>
-          <th className="literature-table-head">{ t('Catalog number') }</th>
-          <th className="literature-table-head">{ t('Figure / plate') }</th>
+          { !forPrimary && (<th className="literature-table-head">{ t('Catalog number') }</th>) }
+          { !forPrimary && (<th className="literature-table-head">{ t('Figure / plate') }</th>) }
         </tr>
       </thead>
       <tbody>
@@ -52,11 +53,11 @@ export default ({
             <tr className={ `literature-item ${detailsVisibilities[i] ? 'literature-item--active' : ''}` } onClick={ () => toggleDetailsVisibility(i) }>
               <td className="literature-table-datum"><span className="literature-item-title">{ item.shortTitle }</span></td>
               <td className="literature-table-datum">{ item.pageNumber }</td>
-              <td className="literature-table-datum">{ item.catalogNumber }</td>
-              <td className="literature-table-datum">{ item.figureNumber }</td>
+              { !forPrimary && (<td className="literature-table-datum">{ item.catalogNumber }</td>) }
+              { !forPrimary && (<td className="literature-table-datum">{ item.figureNumber }</td>) }
             </tr>
             <tr className={ `literature-item-details ${detailsVisibilities[i] ? '' : 'literature-item-details--hidden'}` }>
-              <td className="literature-table-datum" colSpan="4">
+              <td className="literature-table-datum" colSpan={ forPrimary ? 2 : 4 }>
 
                 <table className="literature-item-details-table">
                   <tbody>

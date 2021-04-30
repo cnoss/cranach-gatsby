@@ -152,7 +152,10 @@ export default ({
                   && <DefinitionList>
                     <DefinitionList.Entry
                       term={t('Primary literature')}
-                      definition={<LiteratureTable items={publications.primary} />}
+                      definition={<LiteratureTable
+                        forPrimary={true}
+                        items={publications.primary}
+                      />}
                     />
                   </DefinitionList>
                 }
