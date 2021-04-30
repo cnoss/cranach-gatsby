@@ -4,12 +4,10 @@
   $title-color: $accent;
   $item-active-bg-color: $lighter;
   $item-active-border-color: $light;
-  $item-padding: $xs 0;
+  $item-padding: $xs $xs;
   $item-details-table-margin: $m;
   $details-title-padding: $m;
 
-  border-spacing: $s 0;
-  border-collapse: separate;
   width: 100%;
 
   &-row {
@@ -22,6 +20,7 @@
 
   &-head {
     text-align: left;
+    padding: $item-padding;
   }
 
   .literature-item {
