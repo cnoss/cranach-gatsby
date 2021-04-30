@@ -78,7 +78,7 @@ const getConnectedObject = (item, graphicInventoryNumber) => {
   };
 };
 
-const toPrimaryLiterature = (publication, literatureItem, connectedObject) => {
+const toPrimaryLiterature = (publication, literatureItem) => {
   const PERIOD_OF_ORIGIN_TYPE = 'PERIOD_OF_ORIGIN';
   const periodOfOriginEvent = literatureItem.events.find(
     (event) => event.type === PERIOD_OF_ORIGIN_TYPE,
