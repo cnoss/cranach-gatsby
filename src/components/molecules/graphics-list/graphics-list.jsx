@@ -16,7 +16,7 @@ export default ({
       {
         items.map(
           (item) => <li
-            key={item.imgSrc}
+            key={item.inventoryNumber}
             className="graphics-list-item"
           >
             <Link
