@@ -113,7 +113,7 @@ const toPrimaryLiterature = (publication, literatureItem) => {
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
   id: publication.referenceId,
   shortTitle: publication.title,
-  pageNumber: publication.pageNumber,
+  pageNumber: connectedObject.pageNumber,
   catalogNumber: connectedObject.catalogNumber,
   figureNumber: connectedObject.figureNumber,
 
@@ -173,6 +173,7 @@ const toHaveExtendedReferences = (item, items) => ({
   },
 });
 
+
 const toHaveExtendedLiterature = (graphic, literatureIndex) => ({
   ...graphic,
   publications: literatureResolver(graphic, literatureIndex),
@@ -231,6 +232,40 @@ const toHaveValidAndSortedCatalogWorkReferences = (item) => {
     catalogWorkReferences: validAndSortedCatalogWorkReferences,
   }
 };
+
+
+const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
+  if (!graphic.isVirtual) return graphic;
+
+  const { references: { reprints } } = graphic;
+
+  const updatePublications = (publications, parentPublications) => publications.map((publication) => {
+
+    const matchingPublication = parentPublications.find((pp) => pp.id === publication.id);
+
+    if (!matchingPublication) return publication;
+
+    return {
+      ...publication,
+      pageNumber: matchingPublication.pageNumber,
+    };
+  });
+
+  reprints.forEach((reprint) => {
+    const matchingReprintGraphic = graphics.find((currentGraphic) => currentGraphic.inventoryNumber === reprint.inventoryNumber
+      && graphic.metadata.langCode === currentGraphic.metadata.langCode);
+
+    if (!matchingReprintGraphic) return;
+
+    matchingReprintGraphic.publications = {
+      primary: updatePublications(matchingReprintGraphic.publications.primary, graphic.publications.primary),
+      secondary: updatePublications(matchingReprintGraphic.publications.secondary, graphic.publications.secondary),
+    }
+  });
+
+  return graphic;
+};
+
 
 exports.onCreateNode = ({ node }) => {
   if (node && node.internal.type !== 'GraphicsJson') {
@@ -548,7 +583,8 @@ exports.createPages = ({ graphql, actions }) => {
       .map(toHaveRepresentativeImage)
       .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
-      .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr));
+      .map((graphic, _, arr) => realObjectsToHaveInheritedLiteratureInfos(graphic, arr))
+      .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr))
 
     createGraphicPages(extendedGraphics, actions);
   });
