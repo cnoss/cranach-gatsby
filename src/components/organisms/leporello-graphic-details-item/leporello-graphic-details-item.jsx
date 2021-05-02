@@ -37,6 +37,7 @@ export default ({
     catalogWorkReferences,
     publications,
     classification,
+    additionalTextInformation,
   } = graphic;
 
   const referenceToDefinitionListEntry = (reference) => ({
@@ -67,6 +68,10 @@ export default ({
   }, [className, isOpen]);
 
   const largestImageSrc = representativeImage.medium.src;
+
+  const datingHistoricEventInformations = dating.historicEventInformations.filter(
+    (eventInfo) => eventInfo.eventType === 'DATING',
+  );
 
   return (
     <LeporelloGraphicItem
@@ -111,7 +116,16 @@ export default ({
                   />
                   <DefinitionList.Entry
                     term={t('Production date')}
-                    definition={`${dating.dated} ${dating.remarks}`}
+                    definition={
+                      <ul class="historic-event-dates-list">
+                        <li className="historic-event-dates-list-item">{`${dating.dated} ${dating.remarks}`}</li>
+                        {
+                          datingHistoricEventInformations.map((eventInfo, idx) => (
+                            <li className="historic-event-dates-list-item" key={idx}>{`${eventInfo.text} ${eventInfo.remarks}`}</li>
+                          ))
+                        }
+                      </ul>
+                    }
                   />
 
                   <DefinitionList.Entry
@@ -166,6 +180,26 @@ export default ({
                     <DefinitionList.Entry
                       term={t('Secondary literature')}
                       definition={<LiteratureTable items={publications.secondary} />}
+                    />
+                  </DefinitionList>
+                }
+
+                {/* Forschungsgeschichte / Diskussion */}
+                {additionalTextInformation.length > 0
+                  && <DefinitionList>
+                    <DefinitionList.Entry
+                      term={t('Interpretation / History / Discussion')}
+                      definition={
+                        <ul class="additional-texts-list"> {
+                          additionalTextInformation.map((info) => (<li
+                            className="additional-texts-list-item"
+                            key={info.text}
+                          >
+                            {info.text}
+                          </li>))
+                        }
+                        </ul>
+                      }
                     />
                   </DefinitionList>
                 }

@@ -43,6 +43,7 @@ export default ({
     exhibitionHistory,
     catalogWorkReferences,
     restorationSurveys,
+    additionalTextInformation,
   } = graphic;
 
   const largestImageSrc = representativeImage.medium.src;
@@ -181,6 +182,26 @@ export default ({
               <DefinitionList.Entry
                 term={t('Secondary literature')}
                 definition={<LiteratureTable items={publications.secondary} />}
+              />
+            </DefinitionList>
+          }
+
+          {/* Forschungsgeschichte / Diskussion */}
+          {additionalTextInformation.length > 0
+            && <DefinitionList>
+              <DefinitionList.Entry
+                term={t('Interpretation / History / Discussion')}
+                definition={
+                  <ul class="additional-texts-list"> {
+                    additionalTextInformation.map((info) => (<li
+                      className="additional-texts-list-item"
+                      key={info.text}
+                    >
+                      {info.text}
+                    </li>))
+                  }
+                  </ul>
+                }
               />
             </DefinitionList>
           }
