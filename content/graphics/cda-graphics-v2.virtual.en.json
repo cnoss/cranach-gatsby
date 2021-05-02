@@ -94,10 +94,10 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "Dye zaigung des hochlobwirdi= \/\/ gen hailigthumbs der Stifft \/\/ kirchen aller hailigen zu \/\/ wittenburg, Symphorian Reinhart, Wittenberg 1510, 2. Edition (Frontispiece) [VD 16 Z 250, accessed 13.11.2020](http:\/\/gateway-bayern.de\/VD16+Z+250)( http:\/\/daten.digitale-sammlungen.de\/bsb00012487\/image_1)"
                     }
                 ]
@@ -286,38 +286,38 @@
                 "remarks": "[KKL 2020]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "between 1522 and 1546\/1548",
-                        "begin": 1522,
-                        "end": 1548,
+                        "begin": "1522",
+                        "end": "1548",
                         "remarks": "[KKL 2020]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "between 1546\/1548 and 1579",
-                        "begin": 1546,
-                        "end": 1579,
+                        "begin": "1546",
+                        "end": "1579",
                         "remarks": "[KKL 2020]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "between 1546\/1548 and 1579",
-                        "begin": 1546,
-                        "end": 1579,
+                        "begin": "1546",
+                        "end": "1579",
                         "remarks": "additional edition [KKL 2020]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1579",
-                        "begin": 1579,
-                        "end": 1579,
+                        "begin": "1579",
+                        "end": "1579",
                         "remarks": "[dated]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "after 1579",
-                        "begin": 1580,
-                        "end": 1800,
+                        "begin": "1580",
+                        "end": "1800",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -918,31 +918,31 @@
                 "remarks": "[antedated in the block]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Datierung",
+                        "eventType": "DATING",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "[cda 2019]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1554",
-                        "begin": 1549,
-                        "end": 1559,
+                        "begin": "1549",
+                        "end": "1559",
                         "remarks": "date in the block removed; with verse by Johann Stigel and dated '1554'"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1556",
-                        "begin": 1551,
-                        "end": 1561,
+                        "begin": "1551",
+                        "end": "1561",
                         "remarks": "Date in the block removed; verse by Johann Stigel and dated '1556'"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1556",
-                        "begin": 1551,
-                        "end": 1561,
+                        "begin": "1551",
+                        "end": "1561",
                         "remarks": "Date removed from the block; text to the right and dated '1556'"
                     }
                 ]
@@ -1137,52 +1137,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "''Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     }
                 ]
@@ -1439,52 +1439,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     }
                 ]
@@ -1746,52 +1746,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     }
                 ]
@@ -2050,52 +2050,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     }
                 ]
@@ -2349,17 +2349,17 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1503",
-                        "begin": 1498,
-                        "end": 1598,
+                        "begin": "1498",
+                        "end": "1598",
                         "remarks": "Missale Pataviense, Johannes Winterburger, Vienna [VD 16 M 5606]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1512",
-                        "begin": 1507,
-                        "end": 1517,
+                        "begin": "1507",
+                        "end": "1517",
                         "remarks": "Missale Pataviense, Johannes Winterburger, Vienna [VD16 M 5611]"
                     }
                 ]
@@ -2539,17 +2539,17 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam 1616. The medaillon with the Trinity removed from the block and used on the title-page."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "after 1550",
-                        "begin": 1550,
-                        "end": 1560,
+                        "begin": "1550",
+                        "end": "1560",
                         "remarks": "After the Reformation the inscriptions were revised accordingly"
                     }
                 ]
@@ -2741,10 +2741,10 @@
                 "remarks": "",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "after 1550",
-                        "begin": 1550,
-                        "end": 1560,
+                        "begin": "1550",
+                        "end": "1560",
                         "remarks": "After the reformation the text in the block was edited"
                     }
                 ]
@@ -3069,38 +3069,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -3540,10 +3540,10 @@
                 "remarks": "[cda 2019] [Exhib. Cat. D\u00fcsseldorf 2017, 124, no. 29]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1508 - 1509",
-                        "begin": 1503,
-                        "end": 1514,
+                        "begin": "1503",
+                        "end": "1514",
                         "remarks": "[Exhib. Cat. Basel 1974, 489, no. 338]"
                     }
                 ]
@@ -3889,17 +3889,17 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "between 1540 and 1550",
-                        "begin": 1540,
-                        "end": 1550,
+                        "begin": "1540",
+                        "end": "1550",
                         "remarks": "[Exhib. Cat. Basel 1974, No. 35]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1570 - 1590",
-                        "begin": 1565,
-                        "end": 1595,
+                        "begin": "1565",
+                        "end": "1595",
                         "remarks": "[Exhib. Cat. Basel 1974, No. 35]"
                     }
                 ]
@@ -4255,17 +4255,17 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1503",
-                        "begin": 1498,
-                        "end": 1508,
+                        "begin": "1498",
+                        "end": "1508",
                         "remarks": "Missale Pataviense, Johannes Winterburger, Vienna 1503  [VD16 M 5606, accessed 19.11.2020](http:\/\/gateway-bayern.de\/VD16+M+5606)(http:\/\/daten.digitale-sammlungen.de\/bsb00005368\/image_318)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1505",
-                        "begin": 1500,
-                        "end": 1510,
+                        "begin": "1500",
+                        "end": "1510",
                         "remarks": "Missale Olomucense, Johannes Winterburger, Vienna 1505  [\u00d6sterreichische Nationalbibliothek online database, accessed 19.11.2020](https:\/\/digital.onb.ac.at\/RepViewer\/viewer.faces?doc=DTL_6109760&order=1&view=SINGLE)"
                     }
                 ]
@@ -5293,10 +5293,10 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "about 1512",
-                        "begin": 1507,
-                        "end": 1517,
+                        "begin": "1507",
+                        "end": "1517",
                         "remarks": "Die Martyrien der Apostel, Symphorian Reinhardt, Wittenberg, c. 1512"
                     }
                 ]
@@ -5917,10 +5917,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1507",
-                        "begin": 1502,
-                        "end": 1512,
+                        "begin": "1502",
+                        "end": "1512",
                         "remarks": "[Exhib. Cat. Basel 1974, 241]"
                     }
                 ]
@@ -6757,24 +6757,24 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1508",
-                        "begin": 1503,
-                        "end": 1513,
+                        "begin": "1503",
+                        "end": "1513",
                         "remarks": "Missale Pragense, Nuremberg, G. Stuchs, 1508 [not verified, cda 2019] [VD16 M 5615, accessed 17.11.2020](http:\/\/gateway-bayern.de\/VD16+M+5615)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1516",
-                        "begin": 1511,
-                        "end": 1521,
+                        "begin": "1511",
+                        "end": "1521",
                         "remarks": "Missale s[e]c[un]d[u]m rubrica[m] eccle||sie Brandenburgensis (Jncipit ordo missalis s'm || consuetudin? ecclesie Brande=||burgensis ... ||) [Hrsg.v.(Diocesis Br\u00e3||denburgensis Episcopus Hie=||ronymus ... ||)], Leipzig, M. Lotter, 1516  [VD16 M 5561, accessed 17.11.2020](http:\/\/gateway-bayern.de\/VD16+M+5561) [Staatsbibliothek online database, accessed 17.11.2020](http:\/\/resolver.staatsbibliothek-berlin.de\/SBB0000E06C00000000)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1522",
-                        "begin": 1517,
-                        "end": 1527,
+                        "begin": "1517",
+                        "end": "1527",
                         "remarks": "Missale secundum ritum sct ecclesie pragensis in Bohemia adiectis oibus sacri faciendi carminibus perfesta annua. missale, prag, Leipzig, Melchior  Lotter, 1522  [VD16 M 5616, accessed 17.11.2020](http:\/\/gateway-bayern.de\/VD16+M+5616)"
                     }
                 ]
@@ -7340,10 +7340,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1547",
-                        "begin": 1542,
-                        "end": 1552,
+                        "begin": "1542",
+                        "end": "1552",
                         "remarks": "HORTVLVS ANIMAE. Lustgarten der Seelen, Georg Rhau, Wittenberg 1547\/1548 [VD16 R 1687]"
                     }
                 ]
@@ -7529,25 +7529,25 @@
                 "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg1509 [1st Edition]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg, 1510 [VD16 Z 250]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1547",
-                        "begin": 1542,
-                        "end": 1552,
+                        "begin": "1542",
+                        "end": "1552",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau1547, [Wittemberg], 1548 [VD16 R 1687];  http:\/\/daten.digitale-sammlungen.de\/bsb00026021\/image_202"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
-                        "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch\u00f6nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...), Georg Rhau Erben, 1550, Wittenberg; [VD 16 R1691];  \thttp:\/\/resolver.staatsbibliothek-berlin.de\/SBB000191CF00000000"
+                        "begin": "1545",
+                        "end": "1555",
+                        "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch\u00f6nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...), Georg Rhau Erben, 1550, Wittenberg; [VD 16 R1691];   http:\/\/resolver.staatsbibliothek-berlin.de\/SBB000191CF00000000"
                     }
                 ]
             },
@@ -7716,10 +7716,10 @@
                 "remarks": "Dye zaigung des hochlobwirdigen hailigthums der stifftkirchen aller hailigen zu Wittenburg (The display of the highly praised reliquaries of the church of All Saints at Wittenberg)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1532",
-                        "begin": 1527,
-                        "end": 1537,
+                        "begin": "1527",
+                        "end": "1537",
                         "remarks": "attached to the reverse of a series of small format portraits executed in 1532 in the Cranach workshop"
                     }
                 ]
@@ -7879,10 +7879,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1506",
-                        "begin": 1501,
-                        "end": 1511,
+                        "begin": "1501",
+                        "end": "1511",
                         "remarks": "[Exhib. Cat. Basel 1974, 518]"
                     }
                 ]
@@ -9272,52 +9272,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     }
                 ]
@@ -9563,52 +9563,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     }
                 ]
@@ -9860,52 +9860,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -10157,52 +10157,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -10454,52 +10454,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -10750,52 +10750,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -11047,52 +11047,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam; On the title-page part of 'The Celestial Ladder of St Bonaventura' (H078a). The Lamentation is missing in this edition. All blocks have cracks and broken lines."
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -11344,52 +11344,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509, Visscherius, Amsterdam"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -11641,52 +11641,52 @@
                 "remarks": "[Title-page and 2nd sheet dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -11938,52 +11938,52 @@
                 "remarks": "[Title-block and 2nd block dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5354, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5354)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Kurze und einf\u00e4ltige Auslegung der Episteln und Evangelien, so auf die Sonntage und vornehmsten Feste durch das ganze Jahr gelesen werden', Antonius Corvinus, Georg Rhau, Wittenberg [VD16 C5350, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+C+5350)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1616",
-                        "begin": 1611,
-                        "end": 1621,
+                        "begin": "1611",
+                        "end": "1621",
                         "remarks": "Passio D.N. Iesv Christi Venvstissimis Imaginibvs Eleganter Expressa ab, Luca Cranogio Anno. 1509., Visscherius, Amsterdam"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "Passio D. N. Jesu Christi, venustissimis imaginibus eleganter expressa ab illustrissimi Saxoniae ducis Luca Cranagio Anno 1509. Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4780, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4780)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1540",
-                        "begin": 1535,
-                        "end": 1545,
+                        "begin": "1535",
+                        "end": "1545",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4782, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4782)"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1543",
-                        "begin": 1538,
-                        "end": 1548,
+                        "begin": "1538",
+                        "end": "1548",
                         "remarks": "'Passionalbuch. Vom Leiden und Auferstehung unseres Herrn Jesu Christi', Georg Rhau, Wittenberg [VD16 B4786, accessed 11.07.2019](http:\/\/gateway-bayern.de\/VD16+B+4786)"
                     }
                 ]
@@ -12385,17 +12385,17 @@
                 "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg1509 [1st Edition]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg, 1510 [VD16 Z 250]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1547",
-                        "begin": 1542,
-                        "end": 1552,
+                        "begin": "1542",
+                        "end": "1552",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau 1547, [Wittemberg], 1548 [VD16 R 1687]  http:\/\/daten.digitale-sammlungen.de\/bsb00012487\/image_68"
                     }
                 ]
@@ -12570,10 +12570,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "[Exhib. Cat. Basel 1974, 550, no. 413]"
                     }
                 ]
@@ -12988,10 +12988,10 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521\/1522",
-                        "begin": 1521,
-                        "end": 1522,
+                        "begin": "1521",
+                        "end": "1522",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -13316,38 +13316,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -13589,38 +13589,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -13867,38 +13867,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -14135,38 +14135,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -14408,39 +14408,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -14691,39 +14691,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -14964,39 +14964,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -15232,39 +15232,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -15505,39 +15505,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -15778,39 +15778,39 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
+                        "text": "1539",
+                        "begin": "1534",
+                        "end": "1544",
+                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
+                    },
+                    {
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
-                    },
-                    {
-                        "eventType": "Auflage",
-                        "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
-                        "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     }
                 ]
             },
@@ -16051,38 +16051,38 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau, Wittenberg, VD16 R 1687"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1539",
-                        "begin": 1534,
-                        "end": 1544,
+                        "begin": "1534",
+                        "end": "1544",
                         "remarks": "Das Symbolum der Heiligen Aposteln... , Georg Rhau, Wittenberg"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit scho?nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...) [Holzschnitte von Lukas Cranach d.\u00c4., Hans Brosamer und Anton Woensam], Georg Rhau Erben, Wittenberg, VD16 R 1691"
                     },
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1548",
-                        "begin": 1543,
-                        "end": 1553,
+                        "begin": "1543",
+                        "end": "1553",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch#[oe]nen lieb=||lichen Figuren.|| (Das Symbolum der || Heiligen Aposteln:|| darin der Grund vnsers Christ=||lichen Glaubens gelegt ist\/|| Ausgelegt durch\/|| D. Mart. Luth., Georg Rhau, Wittenberg (1547\/1548), VD16 R 1683"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1549",
-                        "begin": 1544,
-                        "end": 1554,
+                        "begin": "1544",
+                        "end": "1554",
                         "remarks": "\u00acDer\u00ac heiligen XII.|| Aposteln ankunfft\/beruff\/glauben\/|| lere\/ leben vnd seliges absterben etc. Aus || heiliger Schrifft vnd glaubwirdigen Hi=||storien\/ auffs aller k\u00fcrtzst zusamen || gestelt. F\u00fcr die Leien vnd || Einfeltigen.|| Durch\/|| Johannem Pollicarium\/|| Prediger zu Weis=||senfels.||, Georg Rhau Erben, Wittenberg, 1549 [VD16 P 4031]"
                     }
                 ]
@@ -16659,45 +16659,45 @@
                 "remarks": "Ein ser andechtig Cristenlich Buchlein aus hailigen schriften vnd Lerern von Adam von Fulda in teutsch reymenn gesetzt, Wittenberg, Symphorian Reinhart 1512 [VD16 ZV 86]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1516",
-                        "begin": 1511,
-                        "end": 1521,
+                        "begin": "1511",
+                        "end": "1521",
                         "remarks": "Eyn geystlich edles Buchleynn.|| von rechter vnderscheyd || vnd vorstand. was der || alt v\u00f1 new mensche sey. Was Adams || v\u00f1 was gottis kind sey. v\u00f1 wie Ad\u00e3 || ynn vns sterben vnnd Christus || ersteen sall.||; Wittenberg, Johann Rhau-Grunenberg, 1516; [VD 16 T 890]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1518",
-                        "begin": 1513,
-                        "end": 1523,
+                        "begin": "1513",
+                        "end": "1523",
                         "remarks": "F] Resolutiones disputationum | de Jndulgetiarum virtute | [A] F. MARTINI LVTHER | AVGVSTINIANI | VITTENBERG= | ENSIS, | [TH] | LIBER | Candidum & liberum lectorem opto. |[Am Schlu\u00df:] \u00b6 ANNO DOMINI, M, D, XVIII, Wittenberg, Johann Rhau-Grunenberg, 1518 [VD 16 L 5786]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1520",
-                        "begin": 1515,
-                        "end": 1525,
+                        "begin": "1515",
+                        "end": "1525",
                         "remarks": "Von den guten || Wercken:|| D.M.|| L.||;  Wittenberg, M. Lotter the Younger, 1520; VD 16 L 7143"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1520",
-                        "begin": 1515,
-                        "end": 1525,
+                        "begin": "1515",
+                        "end": "1525",
                         "remarks": "Von den guten || Wercken:|| D.M.|| L.||; Wittenberg, Melchior Lotter the Younger, 1520; VD16 L 7142"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1520",
-                        "begin": 1515,
-                        "end": 1525,
+                        "begin": "1515",
+                        "end": "1525",
                         "remarks": "Von den guten werckenn, D. M. L., Wittenberg, Melchior Lotter the Younger, 1520; VD16 L 7140\/1?"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1520",
-                        "begin": 1515,
-                        "end": 1525,
+                        "begin": "1515",
+                        "end": "1525",
                         "remarks": "\u00acEyn\u00ac Sermon von der Betrachtung des || heiligenn leydens Christi. D.|| Martini Luther tzu || Wittenberg.||; Wittenberg, Melchior Lotter the Younger, 1520; VD16 L 6523"
                     }
                 ]
@@ -17702,10 +17702,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1515",
-                        "begin": 1510,
-                        "end": 1520,
+                        "begin": "1510",
+                        "end": "1520",
                         "remarks": "[Exhib. Cat. Basel 1974, 231]"
                     }
                 ]
@@ -21825,10 +21825,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1513",
-                        "begin": 1508,
-                        "end": 1518,
+                        "begin": "1508",
+                        "end": "1518",
                         "remarks": "[Exhib. Cat. Basel 1974, 553]"
                     }
                 ]
@@ -21998,10 +21998,10 @@
                 "remarks": "[cda 2019]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "about 1509",
-                        "begin": 1504,
-                        "end": 1514,
+                        "begin": "1504",
+                        "end": "1514",
                         "remarks": "[Exhib. Cat. Basel 1974, 70]"
                     }
                 ]
@@ -22684,10 +22684,10 @@
                 "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg1509 [1st Edition]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg, 1510 [VD16 Z 250]"
                     }
                 ]
@@ -22859,7 +22859,15 @@
                 "begin": 1519,
                 "end": 1519,
                 "remarks": "[year of book determined]",
-                "historicEventInformations": []
+                "historicEventInformations": [
+                    {
+                        "eventType": "1520",
+                        "text": "",
+                        "begin": "1519",
+                        "end": "1520",
+                        "remarks": "[KKL 2020]"
+                    }
+                ]
             },
             "description": "Half-length portrait of Martin Luther as an Augustinian monk with a doctoral hat, turned to the left, his left hand raised to the gesture of speech. The inscription runs between the lines of the two-contoured circle surrounding the picture. Under Luther his coat of arms is attached.\n[KKL 2020]",
             "provenance": "",
@@ -23270,10 +23278,10 @@
                 "remarks": "`D. Martin Luthers Passion oder Leidung', [VD16 B 9933](http:\/\/gateway-bayern.de\/VD16+B+9933)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523-1524",
-                        "begin": 1523,
-                        "end": 1524,
+                        "begin": "1523",
+                        "end": "1524",
                         "remarks": "\u00b4Eine sch\u00f6ne und kl\u00e4gliche History Bruder Jacobs\u00b4, VD16 P 4915](http:\/\/gateway-bayern.de\/VD16+P+4915)"
                     }
                 ]
@@ -23666,73 +23674,73 @@
                 "remarks": "\"Acta et res gestae\", [VD16 ZV 61]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 3,
-                        "end": 4,
+                        "begin": "3.1521",
+                        "end": "4.1521",
                         "remarks": "'Acta et res gestae', [VD16 ZV 62](urn:nbn:de:bvb:12-bsb00027453-2)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 29,
-                        "end": 1522,
+                        "begin": "29.3.1521",
+                        "end": "1522",
                         "remarks": "'Antwort auf Bock Emsers \u00fcberchristlich Buch', [VD16 L 3886](http:\/\/gateway-bayern.de\/VD16+L+3899)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 18,
-                        "end": 1521,
+                        "begin": "18.4.1521",
+                        "end": "1521",
                         "remarks": "'Handlung so mit Martin Luther auf dem Reichstag', [VD16 L 3667](http:\/\/gateway-bayern.de\/VD16+S+7419)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 8,
-                        "end": 1522,
+                        "begin": "8.1521",
+                        "end": "1522",
                         "remarks": "'Bruder Michael Stifel von Esslingen von der [...] Lehre Martin Luthers', [VD16 S 9020](http:\/\/gateway-bayern.de\/VD16+S+9020)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 1522,
-                        "end": 1522,
+                        "begin": "1522",
+                        "end": "1522",
                         "remarks": "'Von der Beichte', [VD16 L 7189](http:\/\/gateway-bayern.de\/VD16+L+7189)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 3,
-                        "end": 1522,
+                        "begin": "3.1522",
+                        "end": "1522",
                         "remarks": "'Postille oder Auslegung der Epistel', [VD16 L 4550](http:\/\/gateway-bayern.de\/VD16+L+4550)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523",
-                        "begin": 1,
-                        "end": 1523,
+                        "begin": "1.9.1523",
+                        "end": "1523",
                         "remarks": "'27 Predigten', [VD16 L 6687](http:\/\/gateway-bayern.de\/VD16+L+6687)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523-1524",
-                        "begin": 1,
-                        "end": 1,
+                        "begin": "1.9.1523",
+                        "end": "1.9.1524",
                         "remarks": "\"27 Predigten\", [VD16 L 6688](http:\/\/gateway-bayern.de\/VD16+L+6688)"
                     },
                     {
-                        "eventType": "Datierung",
+                        "eventType": "DATING",
                         "text": "1523",
-                        "begin": 1,
-                        "end": 1,
-                        "remarks": "\"13 Predigten neulich ausgegangen\", [VD16 L 4488](http:\/\/gateway-bayern.de\/VD16+L+4488)"
+                        "begin": "1.9.1523",
+                        "end": "1.9.1523",
+                        "remarks": "'13 Predigten neulich ausgegangen', [VD16 L 4488](http:\/\/gateway-bayern.de\/VD16+L+4488)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1526",
-                        "begin": 1526,
-                        "end": 1526,
+                        "begin": "1526",
+                        "end": "1526",
                         "remarks": "\"27 Predigten\", [VD16 L 6689](http:\/\/gateway-bayern.de\/VD16+L+6689)"
                     }
                 ]
@@ -25778,17 +25786,17 @@
                 "remarks": "[equal to book date VD16 B 4344]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1526",
-                        "begin": 1526,
-                        "end": 1526,
+                        "begin": "1526",
+                        "end": "1526",
                         "remarks": "[equal to book date]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "after 1526",
-                        "begin": 1527,
-                        "end": 1900,
+                        "begin": "1527",
+                        "end": "1900",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -25985,31 +25993,31 @@
                 "remarks": "\u00b4Von der Babylonischen Gefangenschaft\u00b4, [VD16 L 4193](http:\/\/gateway-bayern.de\/VD16+L+4193)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 18,
-                        "end": 1522,
+                        "begin": "18.4.1522",
+                        "end": "1522",
                         "remarks": "'Passio oder das Leiden unseres Herrn', [VD16 L 5576](http:\/\/gateway-bayern.de\/VD16+L+5576)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523",
-                        "begin": 1,
-                        "end": 1523,
+                        "begin": "1.3.1523",
+                        "end": "1523",
                         "remarks": "`Von weltlicher Obrigkeit\u00b4, [VD16 L 7309](http:\/\/gateway-bayern.de\/VD16+L+7309)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523",
-                        "begin": 3,
-                        "end": 1523,
+                        "begin": "3.5.1523",
+                        "end": "1523",
                         "remarks": "\u00b4F\u00fcnf sch\u00f6ne christliche Sermones\u00b4, [VD16 L 4753](http:\/\/gateway-bayern.de\/VD16+L+4753)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1524",
-                        "begin": 8,
-                        "end": 1524,
+                        "begin": "8.6.1524",
+                        "end": "1524",
                         "remarks": "\u00b4Wider den neuen Abgott und alten Teufel\u00b4, [VD16 L 7437](http:\/\/gateway-bayern.de\/VD16+L+7437)"
                     }
                 ]
@@ -27207,45 +27215,45 @@
                 "remarks": "\"De Captivitate Babylonica\", [VD 16 L 4185, accessed 02-03-2021](https:\/\/gateway-bayern.de\/BV004063977)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 3,
-                        "end": 1521,
+                        "begin": "3.10.1520",
+                        "end": "1521",
                         "remarks": "'Von der babylonischen Gefangenschaft', [VD 16 L 4194, accessed 02-03-2021](https:\/\/gateway-bayern.de\/BV004249853)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 3,
-                        "end": 1521,
+                        "begin": "3.10.1520",
+                        "end": "1521",
                         "remarks": "'Von der babylonischen Gefangenschaft', [VD 16 L 4195, accessed 02-03-2021](http:\/\/gateway-bayern.de\/VD16+L+4195)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 3,
-                        "end": 1521,
+                        "begin": "3.10.1520",
+                        "end": "1521",
                         "remarks": "'Von der babylonischen Gefangenschaft', [VD 16 L 4196, accessed 02-03-2021](http:\/\/gateway-bayern.de\/VD16+L+4196)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 5,
-                        "end": 5,
+                        "begin": "5.1521",
+                        "end": "5.1521",
                         "remarks": "#In Evangelici Doctoris Martini Lutheri laudem defensionemque Elegias', [VD 16 E 1511](http:\/\/gateway-bayern.de\/VD16+E+1511)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521-1522",
-                        "begin": 9,
-                        "end": 1522,
+                        "begin": "9.1521",
+                        "end": "1522",
                         "remarks": "'Doctor Martin Luthers Passion', [VD 16 B 9934](http:\/\/gateway-bayern.de\/VD16+B+9934)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1523",
-                        "begin": 9,
-                        "end": 1523,
+                        "begin": "9.1523",
+                        "end": "1523",
                         "remarks": "'13 Predigten Doctor Martin Luthers', [VD16 L 4889](http:\/\/gateway-bayern.de\/VD16+L+4489)"
                     }
                 ]
@@ -27962,10 +27970,10 @@
                 "remarks": "\u00b4Von der Babylonischen Gefangenschaft\u00b4, [VD16 L 4192](http:\/\/gateway-bayern.de\/VD16+L+4192)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 1,
-                        "end": 1522,
+                        "begin": "1.3.1521",
+                        "end": "1522",
                         "remarks": "\u00b4Grund und Ursache aller Artikel Luthers\u00b4, [VD16 L 4789](http:\/\/gateway-bayern.de\/VD16+L+4789)"
                     }
                 ]
@@ -28277,52 +28285,52 @@
                 "remarks": "\"Doctor Martin Luthers Antwort auf den Pfingsttag, den 18. April 1521\", [VD16 L 3652](http:\/\/gateway-bayern.de\/VD16+L+3652)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 18,
-                        "end": 1521,
+                        "begin": "18.4.1521",
+                        "end": "1521",
                         "remarks": "'Doctor Martin Luthers Antwort auf den Pfingsttag, den 18. April 1521', [VD16 L 3652](http:\/\/gateway-bayern.de\/VD16+L+3652)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 19,
-                        "end": 1521,
+                        "begin": "19.4.1521",
+                        "end": "1521",
                         "remarks": "'Doctor Martin Luthers \u00f6ffentliches Verh\u00f6r zu Worms im Reichstag', [VD16 L 3653](http:\/\/gateway-bayern.de\/VD16+L+3653)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 20,
-                        "end": 1521,
+                        "begin": "20.4.1521",
+                        "end": "1521",
                         "remarks": "'Doctor Martin Luthers Antwort auf den Pfingsttag, den 18. April 1521',  [VD16 L 3651](http:\/\/gateway-bayern.de\/VD16+L+3651"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 21,
-                        "end": 1521,
+                        "begin": "21.4.1521",
+                        "end": "1521",
                         "remarks": "'Serenissime domine Imperator Illustrissime Principes Clementissimi domini', [VD16 L 3647](http:\/\/gateway-bayern.de\/VD16+L+3647)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 9,
-                        "end": 1522,
+                        "begin": "9.1522",
+                        "end": "1522",
                         "remarks": "'Doctor Martin Luthers Passion durch Marcellum beschrieben', [VD16 B 9930](http:\/\/gateway-bayern.de\/VD16+B+9930)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 26,
-                        "end": 1522,
+                        "begin": "26.9.1522",
+                        "end": "1522",
                         "remarks": "'Vom ehelichen Leben', [VD16 L 7034](http:\/\/gateway-bayern.de\/VD16+L+7034)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522-1523",
-                        "begin": 1523,
-                        "end": 1523,
+                        "begin": "1523",
+                        "end": "1523",
                         "remarks": "'Ein Sermon von dem unrechten Mammon', [VD16 L 6065](http:\/\/gateway-bayern.de\/VD16+L+6065)"
                     }
                 ]
@@ -29607,10 +29615,10 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "after 1522",
-                        "begin": 1523,
-                        "end": 1600,
+                        "begin": "1523",
+                        "end": "1600",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -29807,24 +29815,24 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "early 17th century",
-                        "begin": 1600,
-                        "end": 1625,
+                        "begin": "1600",
+                        "end": "1625",
                         "remarks": "[Kranz 2009, 427, No. 102]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "probably 17th\/18th century",
-                        "begin": 1625,
-                        "end": 1799,
+                        "begin": "1625",
+                        "end": "1799",
                         "remarks": "[Kranz 2009, 427, No. 102]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1802",
-                        "begin": 1802,
-                        "end": 1802,
+                        "begin": "1802",
+                        "end": "1802",
                         "remarks": "[Kranz 2009, 427, No. 102]"
                     }
                 ]
@@ -30653,10 +30661,10 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "after 1530",
-                        "begin": 1531,
-                        "end": 1590,
+                        "begin": "1531",
+                        "end": "1590",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -31114,10 +31122,10 @@
                 "remarks": "[M\u00fcller, Exhib. Cat. Basel 1997, 171, No. 111]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1553",
-                        "begin": 1553,
-                        "end": 1553,
+                        "begin": "1553",
+                        "end": "1553",
                         "remarks": "[Bernhardt Brandt, \"Volkumner Begriff aller lobw\u00fcrdigen Geschichten und Thaten vorab Gottes wunderwercken ...\", Jacob K\u00fcndig, Basel, 1553, VD16 B 7041]"
                     }
                 ]
@@ -31557,24 +31565,24 @@
                 "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg1509 [1st Edition]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Auflage",
+                        "eventType": "EDITION",
                         "text": "1510",
-                        "begin": 1505,
-                        "end": 1515,
+                        "begin": "1505",
+                        "end": "1515",
                         "remarks": "Dye Zaigung des hochlobwirdigen Hailigthumbs der Stifft-Kirchen aller Hailigen zu Wittenburg, Reinhart Symphorian, Wittenberg, 1510 [VD16 Z 250]"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1547",
-                        "begin": 1542,
-                        "end": 1552,
+                        "begin": "1542",
+                        "end": "1552",
                         "remarks": "Hortvlvs animae, Mit sch\u00f6nen lieblichen Figuren, Georg Rhau 1547, [Wittemberg], 1548 [VD16 R 1687] http:\/\/daten.digitale-sammlungen.de\/bsb00026021\/image_201"
                     },
                     {
-                        "eventType": "Edition",
+                        "eventType": "EDITION",
                         "text": "1550",
-                        "begin": 1545,
-                        "end": 1555,
+                        "begin": "1545",
+                        "end": "1555",
                         "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch\u00f6nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...), Georg Rhau Erben, 1550, Wittenberg; [VD 16 R1691]; http:\/\/resolver.staatsbibliothek-berlin.de\/SBB000191CF00000000"
                     }
                 ]
@@ -32262,10 +32270,10 @@
                 "remarks": "\u00b4Warum die B\u00fccher des Papstes verbrannt wurden\u00b4, [VD16 L 7375](VD0027888)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 18,
-                        "end": 1522,
+                        "begin": "18.4.1521",
+                        "end": "1522",
                         "remarks": "'Die ganze Handlung auf dem Reichstag', [VD16 S 7420](VD0090268)"
                     }
                 ]
@@ -33634,38 +33642,38 @@
                 "remarks": "'Dialogi Murnarus Leviathan', [VD16 M 7111](https:\/\/gateway-bayern.de\/BV023354422)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 1,
-                        "end": 1521,
+                        "begin": "1.1521",
+                        "end": "1521",
                         "remarks": "'Dialogi Murnarus Leviathan', [VD16 M 7112](urn:nbn:de:bvb:12-bsb00025191-3)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 5,
-                        "end": 1521,
+                        "begin": "5.1521",
+                        "end": "1521",
                         "remarks": "'Passion Doktor Martin Luthers oder sein Leidung', [VD16 B 9935](https:\/\/gateway-bayern.de\/BV001535969)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 8,
-                        "end": 9,
+                        "begin": "8.1521",
+                        "end": "9.1521",
                         "remarks": "'Passio doctoris Martini Lutheri', [VD16 9928](VD0062611)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 8,
-                        "end": 1522,
+                        "begin": "8.1521",
+                        "end": "1522",
                         "remarks": "'Passio Doctoris Marthini Lutheri secundum Marcellum', [VD16 L 9929](https:\/\/gateway-bayern.de\/BV001469869)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 29,
-                        "end": 1522,
+                        "begin": "29.5.1522",
+                        "end": "1522",
                         "remarks": "'Von Menschen Lehren zu meiden', [VD16 L 7286](https:\/\/gateway-bayern.de\/BV010417110)"
                     }
                 ]
@@ -34197,24 +34205,24 @@
                 "remarks": "\"Gespr\u00e4chsb\u00fcchlein\", [VD16 H 6342](https:\/\/gateway-bayern.de\/BV009727595)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 14,
-                        "end": 1523,
+                        "begin": "14.11.1521",
+                        "end": "1523",
                         "remarks": "\"Postille oder die Auslegung der Epistel und Evangelien\", [VD16 L 4550](https:\/\/gateway-bayern.de\/BV001437743)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 11,
-                        "end": 24,
+                        "begin": "11.1521",
+                        "end": "24.5.1522",
                         "remarks": "\"Bruder Michael Stiefel von der Lehre Luthers\", [VD16 S 9020](https:\/\/gateway-bayern.de\/BV010824871)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1525",
-                        "begin": 1525,
-                        "end": 1525,
+                        "begin": "1525",
+                        "end": "1525",
                         "remarks": "\"Bruder Michael Stiefel von der Lehre Luthers\", [VD16 S 9021](http:\/\/resolver.staatsbibliothek-berlin.de\/SBB0000B2B300000000)"
                     }
                 ]
@@ -35645,10 +35653,10 @@
                 "remarks": "`De Captivitate Babylonica`, [VD16 L 4188](http:\/\/gateway-bayern.de\/VD16+L+4188",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1521",
-                        "begin": 18,
-                        "end": 1521,
+                        "begin": "18.4.1521",
+                        "end": "1521",
                         "remarks": "\u00b4Martin Luthers eigene Antwort auf den Pfingsttag\u00b4, [VD16 L 3663](http:\/\/gateway-bayern.de\/VD16+L+3663)"
                     }
                 ]
@@ -35961,17 +35969,17 @@
                 "remarks": "[dated]",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "after 1530",
-                        "begin": 1531,
-                        "end": 1650,
+                        "begin": "1531",
+                        "end": "1650",
                         "remarks": "[KKL 2020]"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "between 1648 and 1695",
-                        "begin": 1648,
-                        "end": 1695,
+                        "begin": "1648",
+                        "end": "1695",
                         "remarks": "[KKL 2020]"
                     }
                 ]
@@ -36620,24 +36628,24 @@
                 "remarks": "\"Wunderliche Weissagung\", [VD16 W 4642](http:\/\/gateway-bayern.de\/VD16+W+4642)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1527",
-                        "begin": 2,
-                        "end": 2,
+                        "begin": "2.1527",
+                        "end": "2.1527",
                         "remarks": "\"Wunderliche Weissagung\", [VD16 W 4643](http:\/\/gateway-bayern.de\/VD16+W+4643)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1527",
-                        "begin": 3,
-                        "end": 3,
+                        "begin": "3.1527",
+                        "end": "3.1527",
                         "remarks": "\"Wunderliche Weissagung\", [VD16 W 4644](http:\/\/gateway-bayern.de\/VD16+W+4644)"
                     },
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1527",
-                        "begin": 4,
-                        "end": 4,
+                        "begin": "4.1527",
+                        "end": "4.1527",
                         "remarks": "\"Wunderliche Weissagung\", [VD16 W 4645](http:\/\/gateway-bayern.de\/VD16+W+4645)"
                     }
                 ]
@@ -36961,10 +36969,10 @@
                 "remarks": "\"Hauptst\u00fcck des Neuen Testaments\", [VD16 L 4821](http:\/\/gateway-bayern.de\/VD16+L+4821)",
                 "historicEventInformations": [
                     {
-                        "eventType": "Dating",
+                        "eventType": "DATING",
                         "text": "1522",
-                        "begin": 31,
-                        "end": 1523,
+                        "begin": "31.8.1522",
+                        "end": "1523",
                         "remarks": "\"Das Hauptst\u00fcck des Neuen Testaments\", [VD16 L 4822]( http:\/\/gateway-bayern.de\/VD16+L+4822)"
                     }
                 ]
