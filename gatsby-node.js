@@ -171,8 +171,10 @@ const literatureResolver = (graphic, literatureIndex) => graphic.publications.re
 const toHaveExtendedReferences = (item, items) => ({
   ...item,
   references: {
-    reprints: referenceResolver(item, items, item.references.reprints),
-    relatedWorks: referenceResolver(item, items, item.references.relatedWorks),
+    reprints: referenceResolver(item, items, item.references.reprints)
+      .sort((a, b) => bySortingNumber(a.ref, b.ref)),
+    relatedWorks: referenceResolver(item, items, item.references.relatedWorks)
+      .sort((a, b) => bySortingNumber(a.ref, b.ref)),
   },
 });
 
