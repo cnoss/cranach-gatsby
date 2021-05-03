@@ -295,8 +295,8 @@ const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
 
 
 const bySortingNumber = (a, b) => {
-  const aSortingValue = (a.sortingNumber || a.dating.begin || '').toString();
-  const bSortingValue = (b.sortingNumber || b.dating.begin || '').toString();
+  const aSortingValue = a.sortingNumber || '';
+  const bSortingValue = b.sortingNumber || '';
 
   if (aSortingValue === '') return 1;
   if (bSortingValue === '') return -1;
