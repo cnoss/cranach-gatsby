@@ -113,7 +113,7 @@ const toPrimaryLiterature = (publication, literatureItem) => {
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
   id: publication.referenceId,
   shortTitle: publication.title,
-  pageNumber: connectedObject.pageNumber,
+  pageNumber: publication.pageNumber,
   catalogNumber: connectedObject.catalogNumber,
   figureNumber: connectedObject.figureNumber,
 
