@@ -1,8 +1,11 @@
 // gatsby-node.js
 const path = require('path');
 
+  const langCodes = ['de', 'en'];
+
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
+const overviewPageTemplate = path.resolve('src/templates/overview.jsx');
 
 /* TODO: use function already found in graphics transformer lib */
 const getRepresentativeImage = (item) => {
@@ -113,7 +116,7 @@ const toPrimaryLiterature = (publication, literatureItem) => {
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
   id: publication.referenceId,
   shortTitle: publication.title,
-  pageNumber: publication.pageNumber,
+  pageNumber: connectedObject.pageNumber || publication.pageNumber,
   catalogNumber: connectedObject.catalogNumber,
   figureNumber: connectedObject.figureNumber,
 
@@ -180,7 +183,7 @@ const toHaveExtendedLiterature = (graphic, literatureIndex) => ({
 });
 
 const createGraphicPages = (graphics, actions) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
 
   graphics.forEach((graphic) => {
     const component = graphic.isVirtual
@@ -194,6 +197,28 @@ const createGraphicPages = (graphics, actions) => {
         ...graphic,
       },
     });
+  });
+
+  langCodes.forEach((langCode) => {
+    const virtualGraphics = graphics.filter(
+      (graphic) => graphic.metadata.langCode === langCode && graphic.isVirtual,
+    );
+
+    createPage({
+      path: langCode,
+      component: overviewPageTemplate,
+      context: {
+        langCode,
+        graphics: virtualGraphics,
+      },
+    });
+  });
+
+  createRedirect({
+    fromPath: '/',
+    toPath: '/de',
+    isPermanent: true,
+    redirectInBrowser: true,
   });
 };
 
@@ -264,6 +289,17 @@ const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
   });
 
   return graphic;
+};
+
+
+const bySortingNumber = (a, b) => {
+  const aSortingValue = (a.sortingNumber || a.dating.begin || '').toString();
+  const bSortingValue = (b.sortingNumber || b.dating.begin || '').toString();
+
+  if (aSortingValue === '') return 1;
+  if (bSortingValue === '') return -1;
+
+  return aSortingValue.localeCompare(bSortingValue);
 };
 
 
@@ -580,11 +616,12 @@ exports.createPages = ({ graphql, actions }) => {
 
     const extendedGraphics = mergedAndFlattenedGraphics
       //.filter(graphic => graphic.images)
+      .sort(bySortingNumber)
       .map(toHaveRepresentativeImage)
       .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
       .map((graphic, _, arr) => realObjectsToHaveInheritedLiteratureInfos(graphic, arr))
-      .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr))
+      .map((graphic, _, arr) => toHaveExtendedReferences(graphic, arr));
 
     createGraphicPages(extendedGraphics, actions);
   });
