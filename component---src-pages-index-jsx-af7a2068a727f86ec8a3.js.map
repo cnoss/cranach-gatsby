@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.jsx"],"names":[],"mappings":"2FAAA,gCAEe,4BAAO","file":"component---src-pages-index-jsx-af7a2068a727f86ec8a3.js","sourcesContent":["import React from 'react';\n\nexport default () => (<></>);\n"],"sourceRoot":""}
