@@ -117,7 +117,7 @@ export default ({
                   <DefinitionList.Entry
                     term={t('Production date')}
                     definition={
-                      <ul class="historic-event-dates-list">
+                      <ul className="historic-event-dates-list">
                         <li className="historic-event-dates-list-item">{`${dating.dated} ${dating.remarks}`}</li>
                         {
                           datingHistoricEventInformations.map((eventInfo, idx) => (
