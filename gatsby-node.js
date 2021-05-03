@@ -7,6 +7,16 @@ const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-pag
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
 const overviewPageTemplate = path.resolve('src/templates/overview.jsx');
 
+const bySortingNumber = (a, b) => {
+  const aSortingValue = a.sortingNumber || '';
+  const bSortingValue = b.sortingNumber || '';
+
+  if (aSortingValue === '') return 1;
+  if (bSortingValue === '') return -1;
+
+  return aSortingValue.localeCompare(bSortingValue);
+};
+
 /* TODO: use function already found in graphics transformer lib */
 const getRepresentativeImage = (item) => {
   const emptyImageType = {
@@ -211,7 +221,7 @@ const createGraphicPages = (graphics, actions) => {
       component: overviewPageTemplate,
       context: {
         langCode,
-        graphics: virtualGraphics,
+        graphics: virtualGraphics.sort(bySortingNumber),
       },
     });
   });
@@ -291,17 +301,6 @@ const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
   });
 
   return graphic;
-};
-
-
-const bySortingNumber = (a, b) => {
-  const aSortingValue = a.sortingNumber || '';
-  const bSortingValue = b.sortingNumber || '';
-
-  if (aSortingValue === '') return 1;
-  if (bSortingValue === '') return -1;
-
-  return aSortingValue.localeCompare(bSortingValue);
 };
 
 
@@ -618,7 +617,6 @@ exports.createPages = ({ graphql, actions }) => {
 
     const extendedGraphics = mergedAndFlattenedGraphics
       //.filter(graphic => graphic.images)
-      .sort(bySortingNumber)
       .map(toHaveRepresentativeImage)
       .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
