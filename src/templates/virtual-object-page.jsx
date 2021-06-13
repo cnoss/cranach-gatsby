@@ -60,6 +60,16 @@ const PageTemplate = ({ pageContext, location, navigate }) => {
     }
   };
 
+  const queryParams = location.search.slice(1).split('&').reduce((acc, param) => {
+    const [name, value] = param.split('=');
+
+    acc[name] = decodeURIComponent(value);
+
+    return acc;
+  }, {});
+
+  const goBackTo = queryParams.back || `/${graphic.metadata.langCode}`;
+
   return (
     <div
       className="template"
@@ -70,7 +80,7 @@ const PageTemplate = ({ pageContext, location, navigate }) => {
       </Helmet>
 
       <Navigation
-        goBackTo={`/${graphic.metadata.langCode}`}
+        goBackTo={goBackTo}
       />
 
       <section className="body">
