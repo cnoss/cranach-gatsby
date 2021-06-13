@@ -1,7 +1,11 @@
 // gatsby-node.js
 const path = require('path');
+const unified = require('unified');
+const markdown = require('remark-parse')
 
-  const langCodes = ['de', 'en'];
+const fromMarkdown = unified().use(markdown);
+
+const langCodes = ['de', 'en'];
 
 const virtualObjectPageTemplate = path.resolve('src/templates/virtual-object-page.jsx');
 const realObjectPageTemplate = path.resolve('src/templates/real-object-page.jsx');
