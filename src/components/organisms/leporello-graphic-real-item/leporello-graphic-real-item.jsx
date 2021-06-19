@@ -60,7 +60,7 @@ export default ({
       visibleCloser={visibleCloser}
       onClose={onClose}
     >
-      <div className="leporello-graphic-real-item">
+      <div id={ inventoryNumber } className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-item__image">
           <Viewer
             artefact={graphicViewArtefact}
