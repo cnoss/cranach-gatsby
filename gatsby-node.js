@@ -289,18 +289,18 @@ exports.createPages = ({ graphql, actions }) => {
               detail {
                 ${imageTypeStructure}
               }
-              reflected_light {
-                ${imageTypeStructure}
-              }
-              transmitted_light {
-                ${imageTypeStructure}
-              }
               reverse {
+                ${imageTypeStructure}
+              }
+              other {
                 ${imageTypeStructure}
               }
             }
             involvedPersons {
-              id
+              displayOrder
+              alternativeName
+              role
+              remarks
             }
           }
         }
