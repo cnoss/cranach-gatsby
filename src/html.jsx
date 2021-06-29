@@ -18,6 +18,7 @@ export default function HTML(props) {
         <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/fonts.css') } />
         <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/reset.css') } />
         <link rel="stylesheet" type="text/css" href={ withPrefix('/styles/global.css') } />
+        <link rel="icon" type="image/svg+xml" href={ withPrefix('/favicon.svg') } />
         { props.headComponents }
       </head>
       <body
