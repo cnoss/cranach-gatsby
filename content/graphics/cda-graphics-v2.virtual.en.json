@@ -26428,7 +26428,7 @@
                     "Image: 153 (+\/-2) x 122 (+\/-2) mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Print, Woodcut",
-                "imgSrc": ""
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall-s.jpg"
             },
             "involvedPersons": [
                 {
@@ -27493,7 +27493,60 @@
                 "height": "15.50"
             },
             "restorationSurveys": [],
-            "images": null
+            "images": {
+                "overall": {
+                    "infos": {
+                        "maxDimensions": {
+                            "width": 3197,
+                            "height": 4057
+                        }
+                    },
+                    "images": [
+                        {
+                            "medium": {
+                                "dimensions": {
+                                    "width": 600,
+                                    "height": 761
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall-m.jpg",
+                                "type": "plain"
+                            },
+                            "origin": {
+                                "dimensions": {
+                                    "width": 3197,
+                                    "height": 4057
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall-origin.jpg",
+                                "type": "plain"
+                            },
+                            "small": {
+                                "dimensions": {
+                                    "width": 400,
+                                    "height": 508
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall-s.jpg",
+                                "type": "plain"
+                            },
+                            "tiles": {
+                                "dimensions": {
+                                    "width": 0,
+                                    "height": 0
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall.dzi",
+                                "type": "dzi"
+                            },
+                            "xsmall": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 254
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-3\/01_Overall\/GWN_ANO_HVI-8_7-3_Overall-xs.jpg",
+                                "type": "plain"
+                            }
+                        }
+                    ]
+                }
+            }
         },
         {
             "metadata": {
@@ -31108,7 +31161,7 @@
                     ""
                 ],
                 "classification": "Print, Woodcut",
-                "imgSrc": ""
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall-s.jpg"
             },
             "involvedPersons": [
                 {
@@ -31259,7 +31312,60 @@
                 "height": null
             },
             "restorationSurveys": [],
-            "images": null
+            "images": {
+                "overall": {
+                    "infos": {
+                        "maxDimensions": {
+                            "width": 2600,
+                            "height": 3672
+                        }
+                    },
+                    "images": [
+                        {
+                            "medium": {
+                                "dimensions": {
+                                    "width": 600,
+                                    "height": 847
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall-m.jpg",
+                                "type": "plain"
+                            },
+                            "origin": {
+                                "dimensions": {
+                                    "width": 2600,
+                                    "height": 3672
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall-origin.jpg",
+                                "type": "plain"
+                            },
+                            "small": {
+                                "dimensions": {
+                                    "width": 400,
+                                    "height": 565
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall-s.jpg",
+                                "type": "plain"
+                            },
+                            "tiles": {
+                                "dimensions": {
+                                    "width": 0,
+                                    "height": 0
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall.dzi",
+                                "type": "dzi"
+                            },
+                            "xsmall": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 282
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_HB_HIV-259-595\/01_Overall\/GWN_HB_HIV-259-595_Overall-xs.jpg",
+                                "type": "plain"
+                            }
+                        }
+                    ]
+                }
+            }
         },
         {
             "metadata": {
@@ -38686,7 +38792,7 @@
                     "Image: 111 x 76 mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Print, Woodcut",
-                "imgSrc": ""
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall-s.jpg"
             },
             "involvedPersons": [
                 {
@@ -38850,7 +38956,60 @@
                 "height": "11.10"
             },
             "restorationSurveys": [],
-            "images": null
+            "images": {
+                "overall": {
+                    "infos": {
+                        "maxDimensions": {
+                            "width": 3384,
+                            "height": 4766
+                        }
+                    },
+                    "images": [
+                        {
+                            "medium": {
+                                "dimensions": {
+                                    "width": 600,
+                                    "height": 845
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall-m.jpg",
+                                "type": "plain"
+                            },
+                            "origin": {
+                                "dimensions": {
+                                    "width": 3384,
+                                    "height": 4766
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall-origin.jpg",
+                                "type": "plain"
+                            },
+                            "small": {
+                                "dimensions": {
+                                    "width": 400,
+                                    "height": 563
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall-s.jpg",
+                                "type": "plain"
+                            },
+                            "tiles": {
+                                "dimensions": {
+                                    "width": 0,
+                                    "height": 0
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall.dzi",
+                                "type": "dzi"
+                            },
+                            "xsmall": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 282
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-023\/01_Overall\/GWN_ANO_H-NONE-023_Overall-xs.jpg",
+                                "type": "plain"
+                            }
+                        }
+                    ]
+                }
+            }
         },
         {
             "metadata": {
