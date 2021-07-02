@@ -8,6 +8,6 @@ export default ({
   <p
     className="flat-text"
   >
-    { text && text.split('\n').map((item, i) => <span key={i}>{ decodeURI(item) || '\u200B' }</span>) }
+    { text && text.split('\n').map((item, i) => <span key={i}>{ item || '\u200B' }</span>) }
   </p>
 );
