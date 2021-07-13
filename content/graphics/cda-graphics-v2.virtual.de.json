@@ -163,7 +163,7 @@
                 },
                 {
                     "type": "Schlagwort",
-                    "term": "010402010222",
+                    "term": "010402010223",
                     "path": "",
                     "url": ""
                 },
@@ -332,57 +332,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xBE_KBR_S-II20715",
-                        "remark": "Hollstein VI.107.132"
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_GNMN_Mp14637a",
                         "remark": "Hollstein VI.107.132c"
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-74",
+                        "inventoryNumber": "XDE_HAUMB_AB3-74",
                         "remark": "Hollstein VI.107.132"
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_V3-1696",
+                        "inventoryNumber": "XDE_HAUMB_V3-1696",
                         "remark": "Hollstein VI.107.132d"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_DK181-83",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SGSM_1912-997D",
-                        "remark": "Hollstein VI.107.132d"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SKD_A6645",
-                        "remark": "Hollstein VI.107.132"
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SMBKSK_66-1898",
-                        "remark": "Hollstein VI.107.132c"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_WSE_G1359",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BML_1895-0122-279",
-                        "remark": "Hollstein VI.107.132b"
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BML_O-3-190",
                         "remark": "Hollstein VI.107.132c"
                     },
                     {
@@ -397,17 +362,42 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_NGA_1943_3_2875",
+                        "inventoryNumber": "UK_BML_1895-0122-279",
                         "remark": "Hollstein VI.107.132b"
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "PRIVATE_NONE-006",
+                        "inventoryNumber": "UK_BML_O-3-190",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SKD_A6645",
+                        "remark": "Hollstein VI.107.132"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KSW_DK181-83",
+                        "remark": "Hollstein VI.107.132c"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SGSM_1912-997D",
+                        "remark": "Hollstein VI.107.132d"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_NGA_1943-3-2875",
+                        "remark": "Hollstein VI.107.132b"
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "XPRIVATE_NONE-006",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_smbKK_66-1898",
+                        "inventoryNumber": "XDE_smbKK_66-1898",
                         "remark": ""
                     },
                     {
@@ -422,27 +412,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XDE_HABW_II-3313",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SMBKSK_759-2",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "YDE_HAUMB_LCranachdA-V-3-1696",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XDE_SGSM_191-997D",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_UBTue_Kg385a-4-R-104",
+                        "inventoryNumber": "DE_HAUMB_LCranachdAe-V3-1696",
                         "remark": ""
                     },
                     {
@@ -452,22 +427,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "YDE_HAUMB_LCranachdA-AB-3-74",
+                        "inventoryNumber": "DE_HAUMB_LCranachdAe-AB3-74",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "PRIVATE_NONE-007",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII3-3",
+                        "inventoryNumber": "XPRIVATE_NONE-007",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_PortrII-3313",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII3-3",
                         "remark": ""
                     }
                 ],
@@ -3937,6 +3912,11 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-78",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "DE_SKD_A5388",
                         "remark": ""
                     },
@@ -3967,27 +3947,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_MMANY_20.64.21",
+                        "inventoryNumber": "US_MMANY_20-64-21",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_GNMN_K868",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-78",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-79",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII21",
                         "remark": ""
                     },
                     {
@@ -4017,6 +3982,26 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-79",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII21",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_DACM_1938-D1-16",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "NL_RM_RP-P-1919-1988",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "US_HAM_G4390",
                         "remark": ""
                     },
@@ -4038,6 +4023,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SLUB_Mscr-Dresd-R96-239",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KSVC_I-41-5",
                         "remark": ""
                     }
                 ],
@@ -5046,7 +5036,7 @@
             "keywords": [
                 {
                     "type": "Schlagwort",
-                    "term": "010403030213",
+                    "term": "010403030214",
                     "path": "",
                     "url": ""
                 },
@@ -5840,7 +5830,7 @@
             "keywords": [
                 {
                     "type": "Schlagwort",
-                    "term": "010402010224",
+                    "term": "010402010225",
                     "path": "",
                     "url": ""
                 },
@@ -7583,7 +7573,7 @@
                         "text": "1550",
                         "begin": "1545",
                         "end": "1555",
-                        "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch\u00f6nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...), Georg Rhau Erben, 1550, Wittenberg; [VD 16 R1691];   http:\/\/resolver.staatsbibliothek-berlin.de\/SBB000191CF00000000"
+                        "remarks": "HORTVLVS ANIMAE.|| Lustgarten der See=||len: Mit sch\u00f6nen lieb=||lichen Figuren.|| (Das Symbolum der || heiligen Aposteln: || Darin der grund vnsers Christ=||lichen Glaubens gelegt || ist\/ Ausgelegt || durch || D. Mart. Luth.|| ...), Georg Rhau Erben, 1550, Wittenberg; [VD 16 R1691];  \thttp:\/\/resolver.staatsbibliothek-berlin.de\/SBB000191CF00000000"
                     }
                 ]
             },
@@ -9654,17 +9644,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-21",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-133",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-147",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KSVC_1-42-21",
                         "remark": ""
                     }
                 ],
@@ -9951,12 +9941,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSVC_1-42-22a",
+                        "inventoryNumber": "AT_A_DG1929-134",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-134",
+                        "inventoryNumber": "DE_KSVC_1-42-22a",
                         "remark": ""
                     },
                     {
@@ -12029,17 +12019,17 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_HAUMB_AB3-25",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-141",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-155",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_AB3-25",
                         "remark": ""
                     }
                 ],
@@ -12799,22 +12789,17 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XDE_KSVC_K157",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "UK_BM_1854-1113-232",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-80",
+                        "inventoryNumber": "DE_SBBa_IM68c",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SBBa_IM68c",
+                        "inventoryNumber": "AT_A_DG1929-80",
                         "remark": ""
                     },
                     {
@@ -12825,11 +12810,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "FR_BNFP_Ca-9a-res-828",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XDE_KSW_XXX",
                         "remark": ""
                     },
                     {
@@ -13006,7 +12986,7 @@
                 "date": "1521",
                 "additionalInfos": [
                     "Druckgrafik, Kupferstich",
-                    "Platte: 208 (+\/-1) x 149 (+\/-1) mm\nDarstellung: 208 (+\/-1) x 149 (+\/-2) mm\n[Thomas Klinke, KKL 2020]"
+                    "Platte: 208 (+\/-1) x 149 (+\/-2) mm\nDarstellung: 208 (+\/-1) x 149 (+\/-2) mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Druckgrafik, Kupferstich",
                 "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_LC_HVI-9_8\/01_Overall\/GWN_LC_HVI-9_8_Overall-s.jpg"
@@ -13061,7 +13041,7 @@
             "inventoryNumber": "LC_HVI-9_8",
             "objectId": 954634,
             "isVirtual": true,
-            "dimensions": "Platte: 208 (+\/-1) x 149 (+\/-1) mm\nDarstellung: 208 (+\/-1) x 149 (+\/-2) mm\n[Thomas Klinke, KKL 2020]",
+            "dimensions": "Platte: 208 (+\/-1) x 149 (+\/-2) mm\nDarstellung: 208 (+\/-1) x 149 (+\/-2) mm\n[Thomas Klinke, KKL 2020]",
             "dating": {
                 "dated": "1521",
                 "begin": 1521,
@@ -13095,7 +13075,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_URSJC_NONE-001",
+                        "inventoryNumber": "YUS_URSJC_NONE-001",
                         "remark": ""
                     },
                     {
@@ -13135,17 +13115,17 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_FMC_1876-12-16-78",
+                        "inventoryNumber": "XUS_FMC_1876-12-16-78",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_AIC_1939-243",
+                        "inventoryNumber": "US_artic_1939-243",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_MAC_1925-55",
+                        "inventoryNumber": "US_CMA_1925-55",
                         "remark": ""
                     },
                     {
@@ -16286,12 +16266,12 @@
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
                         "remark": ""
                     },
                     {
                         "text": "Teil eines Werkes",
-                        "inventoryNumber": "GWN_LC_HVI-36-37_63",
+                        "inventoryNumber": "GWN_LC_HVI-36-37_64",
                         "remark": ""
                     },
                     {
@@ -20648,12 +20628,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-231",
+                        "inventoryNumber": "AT_A_DG1929-217",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-217",
+                        "inventoryNumber": "AT_A_DG1929-231",
                         "remark": ""
                     }
                 ],
@@ -22543,7 +22523,7 @@
                 },
                 {
                     "type": "Schlagwort",
-                    "term": "010403030211",
+                    "term": "010403030212",
                     "path": "",
                     "url": ""
                 },
@@ -22925,7 +22905,7 @@
                 "id": "ANO_H-NONE-001",
                 "title": "Martin Luther als Augustinerm\u00f6nch mit Doktorhut im Ordenshabit, Halbfigur nach links gewandt, in zweikonturigem Rund, mit Inschrift und Luther-Rose",
                 "subtitle": "",
-                "date": "1519",
+                "date": "zwischen Anfang August und 3. September 1519",
                 "additionalInfos": [
                     "Druckgrafik, Holzschnitt",
                     "Darstellung: 80 (+\/-2) x 60 (+\/-1) mm\n[Thomas Klinke, KKL 2020]"
@@ -22989,17 +22969,24 @@
             "isVirtual": true,
             "dimensions": "Darstellung: 80 (+\/-2) x 60 (+\/-1) mm\n[Thomas Klinke, KKL 2020]",
             "dating": {
-                "dated": "1519",
+                "dated": "zwischen Anfang August und 3. September 1519",
                 "begin": 1519,
                 "end": 1519,
-                "remarks": "[Jahreszahl des Buchs ermittelt]",
+                "remarks": "\"Ein Sermon gepredigt zu Leipzig\", [VD16 L 6193](http:\/\/gateway-bayern.de\/VD16+L+6193)",
                 "historicEventInformations": [
                     {
-                        "eventType": "1520",
-                        "text": "",
-                        "begin": "1519",
+                        "eventType": "DATING",
+                        "text": "1519",
+                        "begin": "9.1519",
+                        "end": "12.1519",
+                        "remarks": "\"Ein Sermon gepredigt zu Leipzig\", [VD16 L 6194](http:\/\/gateway-bayern.de\/VD16+L+6194)"
+                    },
+                    {
+                        "eventType": "DATING",
+                        "text": "1520",
+                        "begin": "1520",
                         "end": "1520",
-                        "remarks": "[KKL 2020]"
+                        "remarks": "\"Ein Sermon gepredigt zu Leipzig\", [VD16 L 6197](http:\/\/gateway-bayern.de\/VD16+L+6197)"
                     }
                 ]
             },
@@ -23016,21 +23003,6 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN403",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XUS_PTLA_1519Luth",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_PTLA_1519LuthU",
                         "remark": ""
                     },
@@ -23041,27 +23013,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SuStBA_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_UBBa_FM_hoch_1X_1_14",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SBB_Luth681",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xBE_KBR_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LBC_Lu_57_322",
                         "remark": ""
                     },
                     {
@@ -23092,11 +23049,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SLUB_Hist-eccl-E-289-10",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WSEIS_NONE-002",
                         "remark": ""
                     },
                     {
@@ -23181,11 +23133,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_ULSNY_D645",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "FR_BNUS_R103-139",
                         "remark": ""
                     },
@@ -23211,22 +23158,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBW_Mag-LB-31a",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LHW_4-fl-IIa-201",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_RFBW_Ag-4-188u",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_NONE-004",
                         "remark": ""
                     },
                     {
@@ -23496,16 +23433,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_Ant-3090-2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_STBC_V_11877",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_ULBH_ AB-102-893",
                         "remark": ""
                     },
@@ -23517,16 +23444,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_LMUM_W-4-Theol-2314-3-folD3v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WLBS_NONE-002",
                         "remark": ""
                     },
                     {
@@ -24061,17 +23978,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBMa_XXX",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_TCRAM_90-03",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XUS_PTLA_521LuthDDD",
                         "remark": ""
                     },
                     {
@@ -24087,46 +23994,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_smbKK_894-2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-007",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_AG1AF13_AF14",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN854",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN909",
                         "remark": ""
                     },
                     {
@@ -24156,7 +24023,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DE_SBBa_22-MvO-Theol-q-24_fol4v",
+                        "inventoryNumber": "xG_DE_SBBa_22-MvO-Theol-q-24_fol4v",
                         "remark": ""
                     },
                     {
@@ -24221,17 +24088,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBB_NONE-007",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SBB_Hymn3018_fol2v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBB_Hymn3018-fol2v",
                         "remark": ""
                     },
                     {
@@ -24246,37 +24103,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_MFA_35_659",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_DAB_G_E6_11_5",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xPL_STBr_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_Lu-56-2059",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_STBC_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_STBC_NONE-002",
                         "remark": ""
                     },
                     {
@@ -24287,11 +24114,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_ALBD_Georg-991-2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SLUBD_NONE_002",
                         "remark": ""
                     },
                     {
@@ -24311,27 +24133,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_ULE_NONE_002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "UK_ULE_Dh-2-106",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-007",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WSEIS_Th747",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LSEISL_ESA221",
                         "remark": ""
                     },
                     {
@@ -24357,11 +24159,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_StGF_HMRA407",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StUBF_XV_84",
                         "remark": ""
                     },
                     {
@@ -24411,62 +24208,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SUBG_4AUTLUTH624_1",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_Theol_4225_1_16_R",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_FBG_Theol-8-00250-251-02",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-009",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-008",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-010",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_NLBH_Bu5912_11",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_FSH_62F_Z6",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_AB153099_16",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_77L1053",
                         "remark": ""
                     },
                     {
@@ -24501,16 +24248,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SWBH_Hc_3154",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SWBH_Hc-69",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_BLBK_113-E-832-R",
                         "remark": ""
                     },
@@ -24521,37 +24258,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SKK_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_ThULBJ_4-Op-theol-V-101-1",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_GSLBL_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_BCUL_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_DSBML_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBL_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "G_DE_UBL_libri-sep-a-2013",
+                        "inventoryNumber": "DE_UBL_libri-sep-a-2013",
                         "remark": ""
                     },
                     {
@@ -24591,11 +24303,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBM_E1001_2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBM_095-XIXc-B-597",
                         "remark": ""
                     },
@@ -24606,7 +24313,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_BSBM_Res_4_Thu_103_I_13",
+                        "inventoryNumber": "xDE_BSBM_Res_4_Thu_103_I_13",
                         "remark": ""
                     },
                     {
@@ -24617,11 +24324,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_BSBM_Res_4_Hom_1151a_4v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BSBM_4_Th_U_104_V_18",
                         "remark": ""
                     },
                     {
@@ -24642,11 +24344,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_BSBM_4Polem1832_fol42r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BSBM_Res4Href816-6",
                         "remark": ""
                     },
                     {
@@ -24686,32 +24383,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BLN_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BLN_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SBN_Theol_900_4_5",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SBN_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_94_21",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_ARCH_8o_G_1523_32_1",
                         "remark": ""
                     },
                     {
@@ -24741,57 +24418,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBR_4-Theol-syst-758_120",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_KBSG_Magazin1B218",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_KBSG_VadSlgMISCEV_K4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BMS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_GSS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_UBS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "FR_BNUS_R104-252_fol1v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-006",
                         "remark": ""
                     },
                     {
@@ -24811,22 +24438,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WLBS_Kirch_G_qt_K_119",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_WLBS_R-16-Lut-3",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_WLBS_Theol-qt-K669",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBT_5_an_Z_VI_32_8",
                         "remark": ""
                     },
                     {
@@ -24966,11 +24583,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xAT_ONBW_20_Dd_979",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_77-Dd-181",
                         "remark": ""
                     },
@@ -24991,7 +24603,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_RFBW_MRM-Ag-4-194s",
+                        "inventoryNumber": "DE_RFBW_Ag-4-194s",
                         "remark": ""
                     },
                     {
@@ -25002,16 +24614,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_RFBW_EKU-203",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RFBW_EKU-204",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RFBW_NONE-001",
                         "remark": ""
                     },
                     {
@@ -25031,11 +24633,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LHW_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LHW_Ag4195g",
                         "remark": ""
                     },
@@ -25046,32 +24643,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JMUW_Th_dp_q_664",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBZ_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBZ_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_18_257_20",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_18_261_8",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_1_145_9",
                         "remark": ""
                     },
                     {
@@ -25087,11 +24659,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_III_N_150_4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_IIIM164_1",
                         "remark": ""
                     },
                     {
@@ -25141,16 +24708,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "UK_BML_1871-0812-1423",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "UK_BML_Z-13234",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LHW_4-II-fl-IIa-GR11352",
                         "remark": ""
                     },
@@ -25176,12 +24733,27 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SBBa_22-MvO-Theol-q-24_fol4v",
+                        "inventoryNumber": "DE_HABW_CodGuelfExtrav226-1_fol108v",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_CodGuelfExtrav226-1_fol108v",
+                        "inventoryNumber": "DE_HABW_86-12Theol11",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "UK_BML_1871-0812-1423",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "UK_BML_Z-13234",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SBBa_22-MvO-Theol-q-24_fol4v",
                         "remark": ""
                     },
                     {
@@ -25201,17 +24773,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_86-12Theol11",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_BSBM_Res4Th-u103I12",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DE_SBR_4-Theol-syst-758_120",
+                        "inventoryNumber": "DE_SBR_4-Theol-syst-758_120",
                         "remark": ""
                     }
                 ],
@@ -25482,7 +25049,7 @@
             "metadata": {
                 "entityType": "GRAPHIC",
                 "langCode": "de",
-                "id": "YANO_HVI-8_7-8",
+                "id": "ANO_HVI-8_7-8",
                 "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, Nimbus, Strahlenkranz und Taube",
                 "subtitle": "",
                 "date": "nach 1534 (?)",
@@ -25491,7 +25058,7 @@
                     "Darstellung:  (+\/-) x  (+\/-) mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Druckgrafik, Holzschnitt",
-                "imgSrc": ""
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall-s.jpg"
             },
             "involvedPersons": [
                 {
@@ -25522,7 +25089,7 @@
             },
             "conditionLevel": 0,
             "objectName": "",
-            "inventoryNumber": "YANO_HVI-8_7-8",
+            "inventoryNumber": "ANO_HVI-8_7-8",
             "objectId": 961199,
             "isVirtual": true,
             "dimensions": "Darstellung:  (+\/-) x  (+\/-) mm\n[Thomas Klinke, KKL 2020]",
@@ -25551,7 +25118,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_WSE_G2443",
+                        "inventoryNumber": "YDE_WSE_G2443",
                         "remark": ""
                     },
                     {
@@ -25648,13 +25215,66 @@
                 "height": "0.00"
             },
             "restorationSurveys": [],
-            "images": null
+            "images": {
+                "overall": {
+                    "infos": {
+                        "maxDimensions": {
+                            "width": 2829,
+                            "height": 3887
+                        }
+                    },
+                    "images": [
+                        {
+                            "medium": {
+                                "dimensions": {
+                                    "width": 600,
+                                    "height": 824
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall-m.jpg",
+                                "type": "plain"
+                            },
+                            "origin": {
+                                "dimensions": {
+                                    "width": 2829,
+                                    "height": 3887
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall-origin.jpg",
+                                "type": "plain"
+                            },
+                            "small": {
+                                "dimensions": {
+                                    "width": 400,
+                                    "height": 550
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall-s.jpg",
+                                "type": "plain"
+                            },
+                            "tiles": {
+                                "dimensions": {
+                                    "width": 0,
+                                    "height": 0
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall.dzi",
+                                "type": "dzi"
+                            },
+                            "xsmall": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 275
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-8_7-8\/01_Overall\/GWN_ANO_HVI-8_7-8_Overall-xs.jpg",
+                                "type": "plain"
+                            }
+                        }
+                    ]
+                }
+            }
         },
         {
             "metadata": {
                 "entityType": "GRAPHIC",
                 "langCode": "de",
-                "id": "YANO_H-NONE-003",
+                "id": "ANO_H-NONE-003",
                 "title": "Martin Luther als Augustinerm\u00f6nch im Ordenshabit, Halbfigur nach rechts gewandt, mit Buch, Nimbus, Strahlenkranz und Taube",
                 "subtitle": "",
                 "date": "nach 1534 (?)",
@@ -25663,7 +25283,7 @@
                     "Darstellung:  1(+\/-) x  (+\/-) mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Druckgrafik, Holzschnitt",
-                "imgSrc": ""
+                "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall-s.jpg"
             },
             "involvedPersons": [
                 {
@@ -25716,7 +25336,7 @@
             },
             "conditionLevel": 0,
             "objectName": "",
-            "inventoryNumber": "YANO_H-NONE-003",
+            "inventoryNumber": "ANO_H-NONE-003",
             "objectId": 961200,
             "isVirtual": true,
             "dimensions": "Darstellung:  1(+\/-) x  (+\/-) mm\n[Thomas Klinke, KKL 2020]",
@@ -25740,7 +25360,7 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KHMG_329-1996",
+                        "inventoryNumber": "YDE_KHMG_329-1996",
                         "remark": ""
                     },
                     {
@@ -25827,7 +25447,60 @@
                 "height": "0.00"
             },
             "restorationSurveys": [],
-            "images": null
+            "images": {
+                "overall": {
+                    "infos": {
+                        "maxDimensions": {
+                            "width": 1162,
+                            "height": 1605
+                        }
+                    },
+                    "images": [
+                        {
+                            "medium": {
+                                "dimensions": {
+                                    "width": 600,
+                                    "height": 829
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall-m.jpg",
+                                "type": "plain"
+                            },
+                            "origin": {
+                                "dimensions": {
+                                    "width": 1162,
+                                    "height": 1605
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall-origin.jpg",
+                                "type": "plain"
+                            },
+                            "small": {
+                                "dimensions": {
+                                    "width": 400,
+                                    "height": 552
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall-s.jpg",
+                                "type": "plain"
+                            },
+                            "tiles": {
+                                "dimensions": {
+                                    "width": 0,
+                                    "height": 0
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall.dzi",
+                                "type": "dzi"
+                            },
+                            "xsmall": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 276
+                                },
+                                "src": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_H-NONE-003\/01_Overall\/GWN_ANO_H-NONE-003_Overall-xs.jpg",
+                                "type": "plain"
+                            }
+                        }
+                    ]
+                }
+            }
         },
         {
             "metadata": {
@@ -26213,7 +25886,7 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SMBKSK_Derschau-233",
+                        "inventoryNumber": "YDE_SMBKSK_Derschau-233",
                         "remark": ""
                     },
                     {
@@ -26223,32 +25896,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_WSE_G2450",
+                        "inventoryNumber": "yDE_BSBM_Res_Bg_luth_25",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SuStBA_02-XIII-1-2-133",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-013",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_BSBM_Res_Bg_luth_25",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_LMUM_8Bibl_279",
+                        "inventoryNumber": "yDE_LMUM_8Bibl_279",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_A97_4_Helmst",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "GWN_HSB_HIII-223",
                         "remark": ""
                     },
                     {
@@ -26263,7 +25926,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DK_KRL_KB19A007550",
+                        "inventoryNumber": "DK_KRL_KB19A007550",
                         "remark": ""
                     },
                     {
@@ -26487,17 +26150,12 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "UK_BM_1903,0408.21",
+                        "inventoryNumber": "UK_BM_1903-0408-21",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_KSW_Gr-2008-4624",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_MFAB_M8890",
+                        "inventoryNumber": "XDE_KSW_Gr-2008-4624",
                         "remark": ""
                     },
                     {
@@ -26512,17 +26170,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XAT_ONBW_PORT_0005000_02",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_I-8262",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "YDE_HAUMB_LCranachdA_Kopie-V-3-1697",
+                        "inventoryNumber": "XDE_HAUMB_LCranachdA_Kopie-V-3-1697",
                         "remark": ""
                     },
                     {
@@ -26607,7 +26260,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_71-4-Theol-2",
+                        "inventoryNumber": "xDE_HABW_71-4-Theol-2",
                         "remark": ""
                     },
                     {
@@ -26632,32 +26285,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_PBA_999_Theol_gen_2093",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-008",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "NL_VUBA_XC_00074",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN1515",
                         "remark": ""
                     },
                     {
@@ -26673,16 +26301,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SuStBA_4ThH1744-449_folC3v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JaLBE_Theol_4_0580M",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JaLBE_Theol_8_5976R",
                         "remark": ""
                     },
                     {
@@ -26727,21 +26345,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xPL_STBr_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_Lu-55-1690",
                         "remark": ""
                     },
@@ -26753,16 +26356,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_Lu_59_844",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ALBD_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ALBD_Seel-3-1-105",
                         "remark": ""
                     },
                     {
@@ -26792,32 +26385,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_ULE_NONE_001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_ULE_Dh_2_30",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBERF_NONE-001",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBERL_H004-THL-V-2s-19",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBERL_H00_4THL_V2d_13",
                         "remark": ""
                     },
                     {
@@ -26832,47 +26405,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SUBG_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_FBG_Theol-4-00224-08-15",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_Theol4_00335_07",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "xDE_FBG_Theol_4875_876_9_R",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_76L1082_21",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_Vg2095a_QK",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_PonVg_2241a",
                         "remark": ""
                     },
                     {
@@ -26883,21 +26421,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBH_Salem32-1RES",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SWBH_Hc_20",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SWBH_Hc-20",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_USBK_NONE-001",
                         "remark": ""
                     },
                     {
@@ -26933,21 +26456,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-423",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-424",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-425",
                         "remark": ""
                     },
                     {
@@ -27002,17 +26510,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBM_COLL_ERH_141",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "yDE_ULBM_COLL_ERH_123_4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_ULSNY_D2023_T_II",
                         "remark": ""
                     },
                     {
@@ -27027,47 +26525,17 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_5_7",
+                        "inventoryNumber": "AT_A_DG1929-423",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_4_F13_1_Th_BS",
+                        "inventoryNumber": "AT_A_DG1929-424",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_T_671_4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_ARCH_8o_G_1523_30",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_ARCH_8o_G_1519_8_3",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_MCO_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_MCO_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_TYO_NONE-001",
+                        "inventoryNumber": "AT_A_DG1929-425",
                         "remark": ""
                     },
                     {
@@ -27077,17 +26545,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_HLLP_284_1L97",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SBR_4-Theol-syst-758_133",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBR_4_Theol_Syst_758_114_3",
                         "remark": ""
                     },
                     {
@@ -27098,31 +26556,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBR_Fg-1830-8",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBS_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBSG_I_10_21",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xSE_RLS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WLBS_NONE-001",
                         "remark": ""
                     },
                     {
@@ -27217,11 +26650,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBW_Mag_LB172",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_74_J_31_6_VarG2",
                         "remark": ""
                     },
@@ -27232,17 +26660,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RFBW_EKU403a",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_RFBW_Ag-4-200n",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_RFBW_Ag-4-303g",
+                        "inventoryNumber": "DE_RFBW_Ag-4-303q",
                         "remark": ""
                     },
                     {
@@ -27287,17 +26710,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JMUW_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_18_46_12",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_NONE-003",
                         "remark": ""
                     },
                     {
@@ -27372,22 +26785,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_A_DG1929-243",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_32-E-44",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_SLUB_Mscr-Dresd-R96-25b",
+                        "inventoryNumber": "yDE_SLUB_Mscr-Dresd-R96-25b",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "FR_BNUS_R174-14",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_71Theol4",
                         "remark": ""
                     }
                 ],
@@ -27849,37 +27262,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_PBA_999_Theol_hom_786b",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_PBA_999_Theol_hom_786b_angeb_9",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-009",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN714",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_PTLA_1520LuthUUU",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SuStBA_4_ThH1744AH42",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_AHTLC_NONE-001",
                         "remark": ""
                     },
                     {
@@ -27895,11 +27278,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_48-2Poet2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-002",
                         "remark": ""
                     },
                     {
@@ -27939,6 +27317,21 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "US_PTLA_1520LuthXXXX",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_ALBD_Georg-1078-1",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_FBG_Theol-4-00224-08-01",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBH_Salem69-5RES",
                         "remark": ""
                     },
@@ -27954,7 +27347,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBKNONE-001",
+                        "inventoryNumber": "DE_ThULB_4-Op-theol-V-5-1",
                         "remark": ""
                     },
                     {
@@ -27965,11 +27358,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_NONE-006",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RBL_NONE-001",
                         "remark": ""
                     },
                     {
@@ -27989,11 +27377,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BLN_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_GNMN_R11960",
                         "remark": ""
                     },
@@ -28004,32 +27387,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_5_4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNP_Ca9_res",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BNUS_NONE-008",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "yFR_BSGS_16_36_1",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xSE_RLS_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBTUE_Gh330_4",
                         "remark": ""
                     },
                     {
@@ -28039,7 +27397,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_PTLA_1520LuthXXXX",
+                        "inventoryNumber": "DE_HABW_164-3Theol1",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_MLi5530SlgHardt70-1425",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_RFBW_Ag-4-191f",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_GNMN_Mp14671",
                         "remark": ""
                     },
                     {
@@ -28055,11 +27428,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "CHE_UBBe_MUE-AD-1621",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_ALBD_Georg-1078-1",
                         "remark": ""
                     },
                     {
@@ -28084,11 +27452,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_FBG_Theol-4-00224-08-01",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_ULBH_1978-L-1051",
                         "remark": ""
                     },
@@ -28100,11 +27463,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBH_Salem69-3RES",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_ThULB_4-Op-theol-V-5-1",
                         "remark": ""
                     },
                     {
@@ -28164,12 +27522,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_164-3Theol1",
+                        "inventoryNumber": "DE_HABW_F587-4Helmst",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_MLi5530SlgHardt70-1425",
+                        "inventoryNumber": "DE_HABW_K241-4Helmst14",
                         "remark": ""
                     },
                     {
@@ -28194,37 +27552,17 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_Li_5530_38_652_1",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_86-7Theol32",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_77-Cc-169",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_RFBW_Ag-4-191f",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JMUW_12an_Th_dp_q_159",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBZ_NONE-004",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_GNMN_Mp14671",
                         "remark": ""
                     },
                     {
@@ -28254,7 +27592,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DE_HABW_CodGuelfExtrav226-1_fol101a-v",
+                        "inventoryNumber": "XG_DE_HABW_CodGuelfExtrav226-1_fol101a-v",
                         "remark": ""
                     },
                     {
@@ -28299,12 +27637,17 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DE_SUBG_8-MULERT-88-1",
+                        "inventoryNumber": "DE_SUBG_8-MULERT-88-1",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_ThULBJ_4-Op-theol-V-5-1",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_BSBM_Res4Polem1889",
                         "remark": ""
                     },
                     {
@@ -28329,22 +27672,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_F587-4Helmst",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_K241-4Helmst14",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_MLi5530SlgHardt70-1426",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_Li_5530_38_652_1",
                         "remark": ""
                     },
                     {
@@ -28360,6 +27688,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_RFBW_SS-2337",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_CodGuelfExtrav226-1_fol101v",
                         "remark": ""
                     }
                 ],
@@ -28612,16 +27945,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xHU_OSKB_Ant_2600",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_Lu-Ia1-520-19",
                         "remark": ""
                     },
@@ -28647,16 +27970,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-011",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_DNBL_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "UK_BLL_3905_ee_64",
                         "remark": ""
                     },
@@ -28677,7 +27990,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_BSBM_Res4Polem1867b",
+                        "inventoryNumber": "xDE_BSBM_Res4Polem1867b",
                         "remark": ""
                     },
                     {
@@ -28697,22 +28010,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBSG_I_9_1",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_171-30Quod5",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_N2718_g",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xAT_ONBW_20_Dd_1030",
                         "remark": ""
                     },
                     {
@@ -28748,11 +28051,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_20-Dd-1029",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_RFBW_Ag-4-276b1",
                         "remark": ""
                     }
                 ],
@@ -29067,26 +28365,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_UBA_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_ARN926",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_KBA_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_PTLA_1521LuthTTT",
                         "remark": ""
                     },
@@ -29152,42 +28430,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBB_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBB_Cu7328",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBB_Cu7328a",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xPL_STBr_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xBE_KBR_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_KBC_KGBO5363_16",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBD_Mag-VI-679-3",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBD_Mag-VI-679-2",
                         "remark": ""
                     },
                     {
@@ -29212,32 +28455,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xIE_TCLD_NONE_001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "UK_ULE_Dh-3-256",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBEI_04-1-B-X-548",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LSEISL_GH882Lu",
                         "remark": ""
                     },
                     {
@@ -29262,16 +28485,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StUBF_Ms_germ_oct_191Nr_12",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_OLBG_AI4_79_11b",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_OLBG_AI418-18",
                         "remark": ""
                     },
@@ -29282,17 +28495,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_FBG_Theol-4-00387-06",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ULBH_Vg470_QK",
                         "remark": ""
                     },
                     {
@@ -29323,11 +28526,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_ThULBJ_4-Bud-Hist-eccl-261-10",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_DSBML_III_3_14a",
                         "remark": ""
                     },
                     {
@@ -29402,16 +28600,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_BPN_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_BLN_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_GNMN_NONE-001",
                         "remark": ""
                     },
@@ -29437,52 +28625,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_18_13",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_15_68",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "UK_TYO_ARCH_8o_G_1521_18",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBR_999_4Theol_syst_758_178",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBR_999_4Theol_syst_758_178a",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBR_4-Theol-syst-758-102",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LBZS_4_an_3_239",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBS_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_MOSS_OS861",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_SBSG_I_4_15",
                         "remark": ""
                     },
                     {
@@ -29567,22 +28710,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xAT_ONBW_20Dd1277_2",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_633-B_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBBW_VIIa87_13",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RFBW_EKU224b",
                         "remark": ""
                     },
                     {
@@ -29592,7 +28720,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_RFBW_Ag-4-194g",
+                        "inventoryNumber": "DE_RFBW_Ag-4-194q",
                         "remark": ""
                     },
                     {
@@ -29622,11 +28750,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_JMUW_Th_dp_q_576",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_Zwingli_MvKA74_28",
                         "remark": ""
                     },
@@ -29638,11 +28761,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_18_46_10",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_NONE-006",
                         "remark": ""
                     },
                     {
@@ -29722,17 +28840,17 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_ONBW_1597-3-12747-50",
+                        "inventoryNumber": "yAT_ONBW_1597-3-12747-50",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "AT_ONBW_1597-3a-12747-50",
+                        "inventoryNumber": "yAT_ONBW_1597-3a-12747-50",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "G_DE_SBR_4-Theol-syst-758-102",
+                        "inventoryNumber": "DE_SBR_4-Theol-syst-758-102",
                         "remark": ""
                     }
                 ],
@@ -29918,7 +29036,7 @@
             "metadata": {
                 "entityType": "GRAPHIC",
                 "langCode": "de",
-                "id": "XANO_H-NONE-006",
+                "id": "YANO_H-NONE-006",
                 "title": "Luther als Augustinerm\u00f6nch",
                 "subtitle": "",
                 "date": "",
@@ -29958,7 +29076,7 @@
             },
             "conditionLevel": 0,
             "objectName": "",
-            "inventoryNumber": "XANO_H-NONE-006",
+            "inventoryNumber": "YANO_H-NONE-006",
             "objectId": 961208,
             "isVirtual": true,
             "dimensions": "130 x 100 mm",
@@ -30235,7 +29353,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XAT_A_DI-21\u2013fol57-1936-1133",
+                        "inventoryNumber": "GWN_HSB_HIII-210",
                         "remark": ""
                     }
                 ],
@@ -30477,7 +29595,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_AIC_1947-543",
+                        "inventoryNumber": "US_artic_1947-543",
                         "remark": ""
                     },
                     {
@@ -30503,11 +29621,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "US_MMANY_51-501-404",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_PLNY_91186",
                         "remark": ""
                     },
                     {
@@ -30557,7 +29670,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HAUMB_Dhopfer-V-3-2881-02",
+                        "inventoryNumber": "YDE_HAUMB_Dhopfer-V-3-2881-02",
                         "remark": ""
                     },
                     {
@@ -30617,17 +29730,22 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "UK_BML_1870-0625-521",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-445",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG2017-1-759",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "UK_BML_1870-0625-521",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KFWW_K11-B86",
                         "remark": ""
                     }
                 ],
@@ -30700,6 +29818,11 @@
                 {
                     "description": "Hollstein",
                     "referenceNumber": "XV.96",
+                    "remarks": ""
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "VIII.493.86",
                     "remarks": ""
                 }
             ],
@@ -30847,17 +29970,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_MFAB_P811",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "YDE_HAUMB_AAltdorfer-V-3-108",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_FMC_AD-5-22-151",
+                        "inventoryNumber": "YUS_FMC_AD-5-22-151",
                         "remark": ""
                     },
                     {
@@ -30867,12 +29985,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_AIC_1939-2078",
+                        "inventoryNumber": "YUS_AIC_1939-2078",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_MAC_1922-129",
+                        "inventoryNumber": "US_CMA_1922-129",
                         "remark": ""
                     },
                     {
@@ -30908,11 +30026,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "US_MMANY_20-64-18",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_PLNY_91191",
                         "remark": ""
                     },
                     {
@@ -31008,6 +30121,16 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1926-1746",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KFWW_K8-B61",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_artic_1939-2078",
                         "remark": ""
                     }
                 ],
@@ -31495,6 +30618,11 @@
                         "text": "Abzug A",
                         "inventoryNumber": "AT_A_DG1929-250",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KFWW_K13-312",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
@@ -31693,17 +30821,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_MFAB_P859",
+                        "inventoryNumber": "XUS_FMC_P4910-R",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "US_FMC_P4910-R",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "US_AIC_1921-177",
+                        "inventoryNumber": "US_artic_1921-177",
                         "remark": ""
                     },
                     {
@@ -31723,7 +30846,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "NL_RM_RP-P-3082",
+                        "inventoryNumber": "NL_RM_RP-P-OB-3082",
                         "remark": ""
                     },
                     {
@@ -31790,6 +30913,11 @@
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SKD_A3060",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KFWW_K12-B9",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
@@ -31815,13 +30943,13 @@
             "keywords": [
                 {
                     "type": "Schlagwort",
-                    "term": "010402010129",
+                    "term": "010402010136",
                     "path": "",
                     "url": ""
                 },
                 {
                     "type": "Schlagwort",
-                    "term": "010501",
+                    "term": "010502",
                     "path": "",
                     "url": ""
                 }
@@ -31850,7 +30978,7 @@
                 },
                 {
                     "description": "Bartsch",
-                    "referenceNumber": "VIII.302",
+                    "referenceNumber": "VIII.302.9",
                     "remarks": ""
                 }
             ],
@@ -32015,7 +31143,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "NL_RM_RP-P-1965-1326",
+                        "inventoryNumber": "CH_KBSG_VadSlg-Ms72-f67r",
                         "remark": ""
                     }
                 ],
@@ -33033,12 +32161,12 @@
                 "id": "WM_H-NONE-001",
                 "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
                 "subtitle": "W. M\u00fcller",
-                "date": "nach 1798",
+                "date": "1851",
                 "additionalInfos": [
-                    "Druckgrafik, Lithographie",
+                    "Druckgrafik, Lichtdruck",
                     "Darstellung: 284 x 203 mm\n[Thomas Klinke, KKL 2020]"
                 ],
-                "classification": "Druckgrafik, Lithographie",
+                "classification": "Druckgrafik, Lichtdruck",
                 "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_WM_H-NONE-001\/01_Overall\/GWN_WM_H-NONE-001_Overall-s.jpg"
             },
             "involvedPersons": [
@@ -33076,7 +32204,7 @@
             "classification": {
                 "classification": "Druckgrafik",
                 "condition": "",
-                "printProcess": "Lithographie"
+                "printProcess": "Lichtdruck"
             },
             "conditionLevel": 0,
             "objectName": "",
@@ -33085,17 +32213,17 @@
             "isVirtual": true,
             "dimensions": "Darstellung: 284 x 203 mm\n[Thomas Klinke, KKL 2020]",
             "dating": {
-                "dated": "nach 1798",
-                "begin": 1798,
-                "end": 2020,
-                "remarks": "[KKL 2020]",
+                "dated": "1851",
+                "begin": 1851,
+                "end": 1851,
+                "remarks": "[datiert]",
                 "historicEventInformations": []
             },
             "description": "Fotomechanische Reproduktion",
             "provenance": "",
             "medium": "",
-            "signature": "Keine",
-            "inscription": "",
+            "signature": "Unter der Darstellung: \"W. M\u00fcller. Weimar 1851\"\n[KKL 2020]",
+            "inscription": "Unter der Darstellung: \"Facsimile eines Cranachischen Holzschnitts von W. M\u00fcller. Weimar 1851\"\n[KKL 2020]",
             "markings": "",
             "relatedWorks": "",
             "exhibitionHistory": "",
@@ -33111,13 +32239,7 @@
                 "relatedWorks": []
             },
             "additionalTextInformation": [],
-            "publications": [
-                {
-                    "title": "Kaufmann 2020",
-                    "pageNumber": "",
-                    "referenceId": "30532"
-                }
-            ],
+            "publications": [],
             "keywords": [
                 {
                     "type": "Schlagwort",
@@ -33216,7 +32338,7 @@
                 "entityType": "GRAPHIC",
                 "langCode": "de",
                 "id": "SAT_H-NONE-001",
-                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken, mit Inschrift",
                 "subtitle": "Sixtus Armin Thon",
                 "date": "nach 1856",
                 "additionalInfos": [
@@ -33254,7 +32376,7 @@
             "titles": [
                 {
                     "type": "Beschreibender Titel",
-                    "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken",
+                    "title": "Martin Luther als \u201eJunker J\u00f6rg\u201c, Brustst\u00fcck, nach links gewandt, vor Wolken, mit Inschrift",
                     "remarks": ""
                 }
             ],
@@ -33291,6 +32413,16 @@
                         "text": "Abzug A",
                         "inventoryNumber": "DE_KSW_Reg-2010-874",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_WSE_G1359",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_PMA_1985-52-19261",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
@@ -33326,7 +32458,7 @@
             ],
             "repository": "",
             "owner": "",
-            "sortingNumber": "1850-0010",
+            "sortingNumber": "1850-0030",
             "catalogWorkReferences": [
                 {
                     "description": "Hollstein",
@@ -33471,11 +32603,6 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WSEIS_Th_810",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SUBG_8MULERT503_22",
                         "remark": ""
                     },
@@ -33486,12 +32613,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_UBR_ Fg-1209-1",
+                        "inventoryNumber": "DE_UBR_Ff-1282-1",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_UBR_Ff-1282-1",
+                        "inventoryNumber": "DE_UBR_ Fg-1209-1",
                         "remark": ""
                     },
                     {
@@ -33633,7 +32760,7 @@
                 "date": "nach November 1520",
                 "additionalInfos": [
                     "Druckgrafik, Holzschnitt",
-                    "Darstellung: 142 (+\/-2) x 116 (+\/-3) mm\n[Thomas Klinke, KKL 2020]"
+                    "Darstellung: 152 (+\/-2) x 116 (+\/-3) mm\n[Thomas Klinke, KKL 2020]"
                 ],
                 "classification": "Druckgrafik, Holzschnitt",
                 "imgSrc": "https:\/\/lucascranach.org\/imageserver-2021\/G_ANO_HVI-7-5\/01_Overall\/GWN_ANO_HVI-7-5_Overall-s.jpg"
@@ -33670,7 +32797,7 @@
             "inventoryNumber": "ANO_HVI-7-5",
             "objectId": 986399,
             "isVirtual": true,
-            "dimensions": "Darstellung: 142 (+\/-2) x 116 (+\/-3) mm\n[Thomas Klinke, KKL 2020]",
+            "dimensions": "Darstellung: 152 (+\/-2) x 116 (+\/-3) mm\n[Thomas Klinke, KKL 2020]",
             "dating": {
                 "dated": "nach November 1520",
                 "begin": 1520,
@@ -33711,32 +32838,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xFR_BMB_201152_3",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xBE_KBR_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_Lu-Ia-1520-22",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SLUBD_",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_NLSE_NONE-008",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_LSEISL_GH387Lu",
                         "remark": ""
                     },
                     {
@@ -33757,21 +32864,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "yDE_UBFB_N6387",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_NONE-005",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBH_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_HSGK_NONE-002",
                         "remark": ""
                     },
                     {
@@ -33801,37 +32893,22 @@
                     },
                     {
                         "text": "Abzug A",
+                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII34a",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_SLUB_Lit-Graec-B-1971-b-misc-4",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
                         "inventoryNumber": "DE_BSBM_Res4Polem1890",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_PLNY_KB_1520",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_5_3",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBR_",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBS_NONE-003",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_KBSG_Magazin6B219",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_KBSG_VadSlgMISCEXLI_K4_",
+                        "inventoryNumber": "DE_LMUM_4-Luth-91-folA1v",
                         "remark": ""
                     },
                     {
@@ -33857,21 +32934,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_Res_1016",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SBB_PortrSlg-SlgLutherAII34a",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_SLUB_Lit-Graec-B-1971-b-misc-4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_LMUM_4-Luth-91-folA1v",
                         "remark": ""
                     }
                 ],
@@ -33945,7 +33007,7 @@
             "structuredDimension": {
                 "element": "Ma\u00dfstab CDA",
                 "width": "0.00",
-                "height": "14.40"
+                "height": "15.40"
             },
             "restorationSurveys": [],
             "images": {
@@ -34091,11 +33153,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-012",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_ULBH_Vg-2317",
                         "remark": ""
                     },
@@ -34127,6 +33184,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "YDE_LHW_4-II-215",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_LHW_4-II-215",
                         "remark": ""
                     },
                     {
@@ -34329,7 +33391,7 @@
             "signature": "Keine",
             "inscription": "",
             "markings": "",
-            "relatedWorks": "Nutzung in \u201eVon der Freiheit\u201c \n\u2022 L 7206, L 4824, L 4825\n\nWelche methodischen Kriterien bei der Auswahl \u201eLutherbildnis\u201c sind anzuwenden?  (vgl. Nr. 30 oben)",
+            "relatedWorks": "Nutzung in \u201eVon der Freiheit\u201c \n\u2022\tL 7206, L 4824, L 4825\n\nWelche methodischen Kriterien bei der Auswahl \u201eLutherbildnis\u201c sind anzuwenden?  (vgl. Nr. 30 oben)",
             "exhibitionHistory": "",
             "bibliography": "",
             "references": {
@@ -34524,11 +33586,6 @@
             "bibliography": "",
             "references": {
                 "reprints": [
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xNL_KBNDH_NONE-001",
-                        "remark": ""
-                    },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_NONE-003",
@@ -34766,11 +33823,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_USBK_9an_EVA1",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_BSBM_4Asc1073a_fol1r",
                         "remark": ""
                     },
@@ -34837,6 +33889,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SBB_Hymn3014_fol51r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_K258-4Helmst1",
                         "remark": ""
                     }
                 ],
@@ -35252,11 +34309,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SuStBA_NONE-002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_UBBa_FM_XI15Nr_2",
                         "remark": ""
                     },
@@ -35307,27 +34359,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xIE_TCLD_NONE_002",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBEI_18-1-B-X-213",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WSEIS_Th784",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_UBERF_Druck_8_00682_13",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_UBG_Ink_W9210_11",
                         "remark": ""
                     },
                     {
@@ -35342,22 +34379,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_682_13_R",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_FBG_Druck-8-00682-13",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_StBH_NONE-007",
                         "remark": ""
                     },
                     {
@@ -35368,11 +34390,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBH_Salem12_1RES",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_HSGK_gsj103_k",
                         "remark": ""
                     },
                     {
@@ -35402,17 +34419,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUS_YULNH_NONE-001",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_GNMN_8_Bg_6320",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xUK_BLO_Tr_Luth_82_18",
                         "remark": ""
                     },
                     {
@@ -35438,11 +34445,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_WLBS_Kirch-g-qt-1370",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_WLBS_NONE-004",
                         "remark": ""
                     },
                     {
@@ -35502,22 +34504,12 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_SBW_Mag-LB-110",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_43-K-133",
                         "remark": ""
                     },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "AT_ONBW_78-V-48",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xAT_ONBW_78_V_48",
                         "remark": ""
                     },
                     {
@@ -35533,11 +34525,6 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_RFBW_EKU899",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_RFBW_EKU_905",
                         "remark": ""
                     },
                     {
@@ -35562,22 +34549,7 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_II_DD_381_14",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_Gal_VI_163_4",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "CH_ZBZ_FF_1251_5",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xCH_ZBZ_IVS117_7",
                         "remark": ""
                     },
                     {
@@ -35854,11 +34826,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.XDE_DHM_R-91-1305-fin-r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_LBC_P-I-5-4_fin-r",
                         "remark": ""
                     },
@@ -35909,11 +34876,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_FBG_Theol_4_00217_03",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_ThULBJ_4-Bud-Theol-158-1_fin",
                         "remark": ""
                     },
@@ -35929,11 +34891,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_Yv728-8Helmst_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "US_PTLA_1525Stif",
                         "remark": ""
                     },
@@ -35945,6 +34902,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_104-3Theol26_fin-v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_Yv728-8Helmst_fol1r",
                         "remark": ""
                     },
                     {
@@ -36029,41 +34991,6 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_511-29Theol1_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_511-29Theol1_fin-v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_99-4Theol8_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_99-4Theol8_fin-v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_Yv728-8Helmst_fin-r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_DHM_R-55-882_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_DHM_R-55-882_fin-v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_SBB_Hymn3010_fin-v",
                         "remark": ""
                     },
@@ -36099,22 +35026,32 @@
                     },
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_LMUM_4-Theol-5483-folA1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_LMUM_W-4-Theol-4080-4-folh3v",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "DE_HABW_104-3Theol26_fol1r",
-                        "remark": ""
-                    },
-                    {
-                        "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_140-15Theol1_fol-fin",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_511-29Theol1_fol1r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_511-29Theol1_fin-v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_99-4Theol8_fol1r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_99-4Theol8_fin-v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_Yv728-8Helmst_fin-r",
                         "remark": ""
                     },
                     {
@@ -36250,6 +35187,31 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_HABW_86-12Theol11_fin-r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_DHM_R-55-882_fol1r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_DHM_R-55-882_fin-v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_LMUM_4-Theol-5483-folA1r",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_LMUM_W-4-Theol-4080-4-folh3v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_HABW_104-3Theol26_fol1r",
                         "remark": ""
                     },
                     {
@@ -36442,11 +35404,6 @@
             "bibliography": "",
             "references": {
                 "reprints": [
-                    {
-                        "text": "Abzug A",
-                        "inventoryNumber": "L\u00d6SCH.xDE_ALBD_Georg-907-11",
-                        "remark": ""
-                    },
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_SUBG_8HEECCL372_15RARA",
@@ -36874,7 +35831,7 @@
                 "reprints": [
                     {
                         "text": "Abzug A",
-                        "inventoryNumber": "DE_UBA_Graph22-1",
+                        "inventoryNumber": "DE_SuStBa_Graph22-1",
                         "remark": ""
                     },
                     {
@@ -36905,6 +35862,16 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_1903-0408-21",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-243",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "US_MFA_M8890",
                         "remark": ""
                     }
                 ],
@@ -37131,6 +36098,11 @@
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_O-3-196",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_KFWW_K12-B10",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
@@ -37151,7 +36123,13 @@
             "keywords": [
                 {
                     "type": "Schlagwort",
-                    "term": "010501",
+                    "term": "010402010136",
+                    "path": "",
+                    "url": ""
+                },
+                {
+                    "type": "Schlagwort",
+                    "term": "010502",
                     "path": "",
                     "url": ""
                 }
@@ -37176,6 +36154,11 @@
                 {
                     "description": "Hollstein",
                     "referenceNumber": "---",
+                    "remarks": ""
+                },
+                {
+                    "description": "Bartsch",
+                    "referenceNumber": "8.303.10",
                     "remarks": ""
                 }
             ],
@@ -38303,6 +37286,11 @@
                         "text": "Abzug A",
                         "inventoryNumber": "UK_BML_R-7-169",
                         "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "AT_A_DG1929-252",
+                        "remark": ""
                     }
                 ],
                 "relatedWorks": []
@@ -38866,6 +37854,11 @@
                     {
                         "text": "Abzug A",
                         "inventoryNumber": "DE_UBERL_H61-4-TREW-T-573",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "DE_RFBW_Ag-4-276b1",
                         "remark": ""
                     }
                 ],
@@ -39598,6 +38591,157 @@
                     ]
                 }
             }
+        },
+        {
+            "metadata": {
+                "entityType": "GRAPHIC",
+                "langCode": "de",
+                "id": "ANO_H-NONE-024",
+                "title": "Ulrich von Hutten im Harnisch, Halbfigur nach links, mit Schwert, vor Wand\u00f6ffnung, hinter Br\u00fcstung",
+                "subtitle": "Hans Baldung gen. Grien",
+                "date": "nach September 1520",
+                "additionalInfos": [
+                    "Druckgrafik, Holzschnitt",
+                    "Darstellung: 154 (+\/-1) x 113 (+\/-1) mm\n[Thomas Klinke, KKL 2020]"
+                ],
+                "classification": "Druckgrafik, Holzschnitt",
+                "imgSrc": ""
+            },
+            "involvedPersons": [
+                {
+                    "displayOrder": 1,
+                    "role": "Inventor",
+                    "name": "Hans Baldung gen. Grien",
+                    "prefix": "",
+                    "suffix": "",
+                    "nameType": "Prim\u00e4rer Name",
+                    "alternativeName": "Hans Baldung gen. Grien",
+                    "remarks": "",
+                    "date": "",
+                    "isUnknown": false
+                }
+            ],
+            "involvedPersonsNames": [
+                {
+                    "constituentId": "24228",
+                    "details": [
+                        {
+                            "name": "Hans Baldung gen. Grien",
+                            "nameType": "Prim\u00e4rer Name"
+                        }
+                    ]
+                }
+            ],
+            "titles": [
+                {
+                    "type": "Beschreibender Titel",
+                    "title": "Ulrich von Hutten im Harnisch, Halbfigur nach links, mit Schwert, vor Wand\u00f6ffnung, hinter Br\u00fcstung",
+                    "remarks": ""
+                }
+            ],
+            "classification": {
+                "classification": "Druckgrafik",
+                "condition": "",
+                "printProcess": "Holzschnitt"
+            },
+            "conditionLevel": 0,
+            "objectName": "",
+            "inventoryNumber": "ANO_H-NONE-024",
+            "objectId": 1005463,
+            "isVirtual": true,
+            "dimensions": "Darstellung: 154 (+\/-1) x 113 (+\/-1) mm\n[Thomas Klinke, KKL 2020]",
+            "dating": {
+                "dated": "nach September 1520",
+                "begin": 1520,
+                "end": 1520,
+                "remarks": "[KKL 2020]",
+                "historicEventInformations": []
+            },
+            "description": "",
+            "provenance": "",
+            "medium": "",
+            "signature": "Keine",
+            "inscription": "",
+            "markings": "",
+            "relatedWorks": "",
+            "exhibitionHistory": "",
+            "bibliography": "",
+            "references": {
+                "reprints": [
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "yAT_ONBW_17-L-257_fol4v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "yDE_BSBM_Rar1869_fol4v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "yDE_KSW_Aut-ben-AutHutten-U-14_fol2v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "yDE_LBC_P-I-5-4_fol4v",
+                        "remark": ""
+                    },
+                    {
+                        "text": "Abzug A",
+                        "inventoryNumber": "yDE_LBC_P-I-5-26_fol4v",
+                        "remark": ""
+                    }
+                ],
+                "relatedWorks": []
+            },
+            "additionalTextInformation": [],
+            "publications": [
+                {
+                    "title": "VD 16 H 6342",
+                    "pageNumber": "",
+                    "referenceId": "30363"
+                }
+            ],
+            "keywords": [
+                {
+                    "type": "Schlagwort",
+                    "term": "010501",
+                    "path": "",
+                    "url": ""
+                }
+            ],
+            "locations": [
+                {
+                    "type": "",
+                    "term": "",
+                    "path": "",
+                    "url": ""
+                }
+            ],
+            "repository": "",
+            "owner": "",
+            "sortingNumber": "1520-0080",
+            "catalogWorkReferences": [
+                {
+                    "description": "KKL-Ordnungsnummer",
+                    "referenceNumber": "I.5D2b",
+                    "remarks": ""
+                },
+                {
+                    "description": "Hollstein",
+                    "referenceNumber": "---",
+                    "remarks": ""
+                }
+            ],
+            "structuredDimension": {
+                "element": "Ma\u00dfstab CDA",
+                "width": "0.00",
+                "height": "15.40"
+            },
+            "restorationSurveys": [],
+            "images": null
         }
     ]
 }
