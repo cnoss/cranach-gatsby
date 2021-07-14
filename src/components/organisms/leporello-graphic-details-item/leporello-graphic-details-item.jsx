@@ -67,11 +67,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const largestImageSrc = representativeImage.medium.src;
-
-  const datingHistoricEventInformations = dating.historicEventInformations.filter(
-    (eventInfo) => eventInfo.eventType === 'DATING',
-  );
+  const repImageSrc = representativeImage.medium.src;
 
   return (
     <LeporelloGraphicItem
@@ -90,7 +86,7 @@ export default ({
         <div className="leporello-graphic-details-item__content">
           <div className={'leporello-graphic-details-item__content-image'}>
             <Image
-              src={largestImageSrc}
+              src={repImageSrc}
               alt={title}
             />
           </div>
@@ -120,14 +116,13 @@ export default ({
                       <ul className="historic-event-dates-list">
                         <li className="historic-event-dates-list-item">{`${dating.dated} ${dating.remarks}`}</li>
                         {
-                          datingHistoricEventInformations.map((eventInfo, idx) => (
+                          dating.historicEventInformations.map((eventInfo, idx) => (
                             <li className="historic-event-dates-list-item" key={idx}>{`${eventInfo.text} ${eventInfo.remarks}`}</li>
                           ))
                         }
                       </ul>
                     }
                   />
-
                   <DefinitionList.Entry
                     term={t('Dimensions')}
                     definition={dimensions}

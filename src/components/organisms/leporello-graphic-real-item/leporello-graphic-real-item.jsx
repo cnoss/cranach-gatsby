@@ -1,8 +1,11 @@
 import React from 'react';
 import { useTranslation } from '~/i18n';
 
+import graphicsTransformer from '~/libs/transformers/graphic';
+
 import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item';
-import ZoomImage from '~/components/atoms/zoom-image';
+
+import Viewer from '~/components/organisms/viewer';
 import GroupedDefinitionList from '~/components/atoms/grouped-definition-list';
 import DefinitionList from '~/components/atoms/definition-list';
 import LiteratureTable from '~/components/molecules/literature-table';
@@ -27,7 +30,6 @@ export default ({
   const condition = `${graphic.classification.classification}; ${graphic.classification.condition}`;
 
   const {
-    representativeImage,
     dating,
     dimensions,
     inventoryNumber,
@@ -46,8 +48,7 @@ export default ({
     additionalTextInformation,
   } = graphic;
 
-  const largestImageSrc = representativeImage.medium.src;
-  const smallestImageSrc = representativeImage.small.src;
+  const graphicViewArtefact = graphicsTransformer.toViewerArtefact(graphic);
 
   const artTechExaminations = restorationSurveys.filter((rs) => rs.type === ART_TECH_EXAMINATION);
   const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);
@@ -67,12 +68,10 @@ export default ({
       visibleCloser={visibleCloser}
       onClose={onClose}
     >
-      <div className="leporello-graphic-real-item">
+      <div id={ inventoryNumber } className="leporello-graphic-real-item">
         <div className="leporello-graphic-real-item__image">
-          <ZoomImage
-            src={largestImageSrc}
-            baseSrc={smallestImageSrc}
-            alt={title}
+          <Viewer
+            artefact={graphicViewArtefact}
           />
         </div>
 

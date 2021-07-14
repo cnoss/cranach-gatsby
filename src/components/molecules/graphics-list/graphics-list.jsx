@@ -19,6 +19,7 @@ export default ({
             key={item.inventoryNumber}
             className="graphics-list-item"
           >
+
             <Link
               to={item.to}
               triggersInternalTransition={!!item.triggersInternalTransition}
@@ -44,7 +45,5 @@ export default ({
             </Link>
           </li>,
         )
-      }
-    </ul>
-
-);
+    }
+  </ul >);

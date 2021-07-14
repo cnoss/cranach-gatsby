@@ -1,0 +1,71 @@
+@import "~/styles/000-abstracts/__abstracts-dir";
+.zoom-image {
+  display: block;
+  position: relative;
+  height: 100vw;
+
+  .preload-image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    opacity: 1;
+    transition: opacity ease-in 1.5s;
+  }
+  .openseadragon-container {
+     position: absolute !important;
+    .openseadragon-canvas {
+      opacity: 0;
+      transition: opacity 1s;
+
+      & + div{
+        margin-top: $s !important;
+        margin-left: $s !important;
+      }
+    }
+  }
+  &.has-active-zoom {
+    .preload-image {
+      opacity: 0;
+    }
+    .openseadragon-container {
+      .openseadragon-canvas {
+        opacity: 1;
+      }
+    }
+  }
+  .zoom-image-caption {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+      z-index: $level-background;
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 1.6rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    z-index: $level-content;
+    .text {
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    height: auto;
+    min-height: 50vw;
+   }
+}

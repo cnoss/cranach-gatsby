@@ -12,6 +12,7 @@ const ALLOWED_COMPONENT_TYPES = [
   'atoms',
   'molecules',
   'organisms',
+  'playground',
 ];
 
 const scriptPath = path.dirname(process.argv[1]);

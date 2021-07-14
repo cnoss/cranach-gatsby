@@ -14,7 +14,7 @@ export default ({ pageContext }) => {
   i18n(langCode);
 
   const items = graphics
-    // .filter(graphic.byImageExistence)
+    .filter(graphic.byImageExistence)
     .map(graphic.toArtefact);
 
   const [currentArtefactView, setCurrentArtefactView] = useState(ArtefactOverview.DefaultView);

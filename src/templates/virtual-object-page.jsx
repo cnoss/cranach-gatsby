@@ -1,6 +1,6 @@
 /* src/templates/virtual-object-page.js */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 
 import Navigation from '~/components/molecules/navigation';
@@ -12,13 +12,63 @@ import LeporelloGraphicRealItem from '~/components/organisms/leporello-graphic-r
 
 import i18n from '~/i18n';
 
-const PageTemplate = ({ pageContext, location }) => {
+const PageTemplate = ({ pageContext, location, navigate }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
 
   i18n(graphic.metadata.langCode);
 
   const [selectedReprintItem, setSelectedReprintItem] = useState(null);
+
+  const { hash } = location;
+  const { reprints } = graphic.references;
+
+  useEffect(() => {
+    if (hash.length === 0) {
+      return;
+    }
+
+    const selectedReprintInventoryNumber = hash.slice(1);
+    const matchingReprint = reprints.find(
+      (reprint) => reprint.inventoryNumber === selectedReprintInventoryNumber,
+    );
+
+    if (matchingReprint) {
+      setSelectedReprintItem(matchingReprint.ref);
+    }
+  }, [hash, reprints]);
+
+  useEffect(() => {
+    if (selectedReprintItem && location.hash.length > 1) {
+      const activeReprintElement = document.querySelector(location.hash);
+
+      if (!activeReprintElement) return;
+
+      setTimeout(() => {
+        activeReprintElement.scrollIntoView();
+      }, 0);
+    }
+  }, [selectedReprintItem, location]);
+
+  const reprintItemSelector = (reprintRef) => {
+    setSelectedReprintItem(reprintRef);
+
+    if (reprintRef) {
+      navigate(`${location.pathname}#${reprintRef.inventoryNumber}`, { replace: true });
+    } else {
+      navigate(`${location.pathname}`, { replace: true });
+    }
+  };
+
+  const queryParams = location.search.slice(1).split('&').reduce((acc, param) => {
+    const [name, value] = param.split('=');
+
+    acc[name] = decodeURIComponent(value);
+
+    return acc;
+  }, {});
+
+  const goBackTo = queryParams.back || `/${graphic.metadata.langCode}`;
 
   return (
     <div
@@ -30,7 +80,7 @@ const PageTemplate = ({ pageContext, location }) => {
       </Helmet>
 
       <Navigation
-        goBackTo={`/${graphic.metadata.langCode}/`}
+        goBackTo={goBackTo}
       />
 
       <section className="body">
@@ -40,13 +90,13 @@ const PageTemplate = ({ pageContext, location }) => {
             ? (
               <LeporelloGraphicRealItem
                 graphic={selectedReprintItem}
-                onClose={() => setSelectedReprintItem(null)}
+                onClose={() => reprintItemSelector(null)}
               />
             )
             : (
               <LeporelloGraphicReprintsItem
                 reprints={graphic.references.reprints}
-                onItemClick={setSelectedReprintItem}
+                onItemClick={reprintItemSelector}
               />
             )
           }

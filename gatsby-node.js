@@ -1,9 +1,5 @@
 // gatsby-node.js
 const path = require('path');
-const unified = require('unified');
-const markdown = require('remark-parse')
-
-const fromMarkdown = unified().use(markdown);
 
 const langCodes = ['de', 'en'];
 
@@ -31,7 +27,7 @@ const getRepresentativeImage = (item) => {
       },
     },
     images: [
-      ['xsmall', 'small', 'medium', 'origin'].reduce(
+      ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
         (acc, size) => {
           acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
           return acc;
@@ -40,38 +36,39 @@ const getRepresentativeImage = (item) => {
       ),
     ],
   };
-  const imageType = (item.images && (item.images.representative || item.images.overall)) || emptyImageType;
 
-  return imageType.images[imageType.images.length - 1];
+  const imageType = (item.images && (item.images.representative || item.images.overall))
+    || emptyImageType;
+
+  return imageType.images[0];
 };
 
-const toHaveRepresentativeImage = (graphic) => {
-  return ({
-    ...graphic,
-    representativeImage: getRepresentativeImage(graphic),
-  });
-};
+const toHaveRepresentativeImage = (graphic) => ({
+  ...graphic,
+  representativeImage: getRepresentativeImage(graphic),
+});
 
-const referenceResolver = (graphic, graphics, references) => references.reduce((acc, referenceItem) => {
-  const foundReferencesItem = graphics.find(
-    currItem => currItem.inventoryNumber === referenceItem.inventoryNumber
-        && currItem.metadata.langCode === graphic.metadata.langCode,
-  );
+const referenceResolver = (graphic, graphics, references) => references.reduce(
+  (acc, referenceItem) => {
+    const foundReferencesItem = graphics.find(
+      (currItem) => currItem.inventoryNumber === referenceItem.inventoryNumber
+          && currItem.metadata.langCode === graphic.metadata.langCode,
+    );
 
-  if (!foundReferencesItem) {
+    if (!foundReferencesItem) {
+      return acc;
+    }
+
+    const newReferenceItem = {
+      ...referenceItem,
+      ref: { ...foundReferencesItem },
+    };
+
+    acc.push(newReferenceItem);
+
     return acc;
-  }
-
-  const newReferenceItem = {
-    ...referenceItem,
-    ref: { ...foundReferencesItem },
-  };
-
-  acc.push(newReferenceItem);
-
-  return acc;
-}, []);
-
+  }, [],
+);
 
 const groupPersonsByRole = (persons) => persons.reduce(
   (acc, person) => {
@@ -82,10 +79,9 @@ const groupPersonsByRole = (persons) => persons.reduce(
   {},
 );
 
-
 const getConnectedObject = (item, graphicInventoryNumber) => {
   const foundLiteratureItem = item.connectedObjects.find(
-    (cObj) => cObj.inventoryNumber === graphicInventoryNumber
+    (cObj) => cObj.inventoryNumber === graphicInventoryNumber,
   );
 
   return foundLiteratureItem || {
@@ -118,13 +114,12 @@ const toPrimaryLiterature = (publication, literatureItem) => {
     publication: literatureItem.subtitle || '',
     publishLocation: literatureItem.publishLocation || '',
     publishDate: literatureItem.publishDate || '',
-    periodOfOrigin: periodOfOrigin,
+    periodOfOrigin,
     physicalDescription: literatureItem.physicalDescription || '',
     mention: literatureItem.mention || '',
     link: literatureItem.copyright || '',
     alternateNumbers: literatureItem.alternateNumbers || [],
   };
-
 };
 
 const toSecondaryLiterature = (publication, literatureItem, connectedObject) => ({
@@ -149,37 +144,39 @@ const toSecondaryLiterature = (publication, literatureItem, connectedObject) => 
   alternateNumbers: [],
 });
 
+const literatureResolver = (graphic, literatureIndex) => graphic.publications.reduce(
+  (acc, publicationItem) => {
+    const { langCode } = graphic.metadata;
+    const { referenceId } = publicationItem;
 
-const literatureResolver = (graphic, literatureIndex) => graphic.publications.reduce((acc, publicationItem) => {
-  const { langCode } = graphic.metadata;
-  const { referenceId } = publicationItem;
+    if (literatureIndex[langCode] && literatureIndex[langCode][referenceId]) {
+      const foundLiteratureItem = literatureIndex[langCode][referenceId];
 
-  if (literatureIndex[langCode] && literatureIndex[langCode][referenceId]) {
-    const foundLiteratureItem = literatureIndex[langCode][referenceId];
+      const connectedObject = getConnectedObject(foundLiteratureItem, graphic.inventoryNumber);
 
-    const connectedObject = getConnectedObject(foundLiteratureItem, graphic.inventoryNumber);
-
-    if (foundLiteratureItem.isPrimarySource) {
-      const mappedLiteratureItem = toPrimaryLiterature(
-        publicationItem,
-        foundLiteratureItem,
-        connectedObject,
-      );
-      acc.primary.push(mappedLiteratureItem);
+      if (foundLiteratureItem.isPrimarySource) {
+        const mappedLiteratureItem = toPrimaryLiterature(
+          publicationItem,
+          foundLiteratureItem,
+          connectedObject,
+        );
+        acc.primary.push(mappedLiteratureItem);
+      } else {
+        const mappedLiteratureItem = toSecondaryLiterature(
+          publicationItem,
+          foundLiteratureItem,
+          connectedObject,
+        );
+        acc.secondary.push(mappedLiteratureItem);
+      }
     } else {
-      const mappedLiteratureItem = toSecondaryLiterature(
-        publicationItem,
-        foundLiteratureItem,
-        connectedObject,
-      );
-      acc.secondary.push(mappedLiteratureItem);
+      console.log(`Missing literature reference for graphic: ${graphic.inventoryNumber} (${referenceId})`);
     }
-  } else {
-    console.log(`Missing literature reference for graphic: ${graphic.inventoryNumber} (${referenceId})`);
-  }
 
-  return acc;
-}, { primary: [], secondary: [] });
+    return acc;
+  },
+  { primary: [], secondary: [] },
+);
 
 /* Grafikverknüpfung */
 const toHaveExtendedReferences = (item, items) => ({
@@ -191,7 +188,6 @@ const toHaveExtendedReferences = (item, items) => ({
       .sort((a, b) => bySortingNumber(a.ref, b.ref)),
   },
 });
-
 
 const toHaveExtendedLiterature = (graphic, literatureIndex) => ({
   ...graphic,
@@ -266,47 +262,54 @@ const toHaveValidAndSortedCatalogWorkReferences = (item) => {
   const byDescription = (a, b) => getPatternPos(b.description) - getPatternPos(a.description);
 
   const validAndSortedCatalogWorkReferences = item.catalogWorkReferences.filter(byValidReferences)
-    .sort(byDescription)
+    .sort(byDescription);
 
   return {
     ...item,
     catalogWorkReferences: validAndSortedCatalogWorkReferences,
-  }
+  };
 };
-
 
 const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
   if (!graphic.isVirtual) return graphic;
 
   const { references: { reprints } } = graphic;
 
-  const updatePublications = (publications, parentPublications) => publications.map((publication) => {
+  const updatePublications = (publications, parentPublications) => publications.map(
+    (publication) => {
+      const matchingPublication = parentPublications.find((pp) => pp.id === publication.id);
 
-    const matchingPublication = parentPublications.find((pp) => pp.id === publication.id);
+      if (!matchingPublication) return publication;
 
-    if (!matchingPublication) return publication;
-
-    return {
-      ...publication,
-      pageNumber: matchingPublication.pageNumber,
-    };
-  });
+      return {
+        ...publication,
+        pageNumber: matchingPublication.pageNumber,
+      };
+    },
+  );
 
   reprints.forEach((reprint) => {
-    const matchingReprintGraphic = graphics.find((currentGraphic) => currentGraphic.inventoryNumber === reprint.inventoryNumber
-      && graphic.metadata.langCode === currentGraphic.metadata.langCode);
+    const matchingReprintGraphic = graphics.find(
+      (currentGraphic) => currentGraphic.inventoryNumber === reprint.inventoryNumber
+      && graphic.metadata.langCode === currentGraphic.metadata.langCode,
+    );
 
     if (!matchingReprintGraphic) return;
 
     matchingReprintGraphic.publications = {
-      primary: updatePublications(matchingReprintGraphic.publications.primary, graphic.publications.primary),
-      secondary: updatePublications(matchingReprintGraphic.publications.secondary, graphic.publications.secondary),
-    }
+      primary: updatePublications(
+        matchingReprintGraphic.publications.primary,
+        graphic.publications.primary,
+      ),
+      secondary: updatePublications(
+        matchingReprintGraphic.publications.secondary,
+        graphic.publications.secondary,
+      ),
+    };
   });
 
   return graphic;
 };
-
 
 exports.onCreateNode = ({ node }) => {
   if (node && node.internal.type !== 'GraphicsJson') {
@@ -334,7 +337,7 @@ exports.createPages = ({ graphql, actions }) => {
       }) {
    */
 
-   const imageTypeStructure = `
+  const imageTypeStructure = `
     infos {
       maxDimensions {
         width
@@ -412,9 +415,10 @@ exports.createPages = ({ graphql, actions }) => {
               }
               conditionLevel
               dating {
-                begin
                 dated
+                begin
                 end
+                remarks
                 historicEventInformations {
                   begin
                   end
@@ -422,24 +426,11 @@ exports.createPages = ({ graphql, actions }) => {
                   remarks
                   text
                 }
-                remarks
               }
               description
               dimensions
               exhibitionHistory
               inscription
-              involvedPersons {
-                alternativeName
-                date
-                id
-                isUnknown
-                name
-                nameType
-                prefix
-                remarks
-                role
-                suffix
-              }
               involvedPersonsNames {
                 constituentId
                 details {
@@ -465,8 +456,8 @@ exports.createPages = ({ graphql, actions }) => {
               references {
                 reprints {
                   inventoryNumber
-                  remark
                   text
+                  remark
                 }
                 relatedWorks {
                   inventoryNumber
@@ -477,19 +468,20 @@ exports.createPages = ({ graphql, actions }) => {
               repository
               signature
               structuredDimension {
-                element
                 height
                 width
+                element
               }
               additionalTextInformation {
                 text
                 type
                 year
               }
-              images {
-                overall {
-                  ${imageTypeStructure}
-                }
+              keywords {
+                type
+                term
+                path
+                url
               }
               restorationSurveys {
                 type
@@ -505,18 +497,34 @@ exports.createPages = ({ graphql, actions }) => {
                     additional
                   }
                 }
-                involvedPersons {
-                  role
-                  name
-                }
                 processingDates {
                   beginDate
                   endDate
                 }
-                signature {
-                  date
+                involvedPersons {
                   name
+                  role
                 }
+              }
+              images {
+                overall {
+                  ${imageTypeStructure}
+                }
+                detail {
+                  ${imageTypeStructure}
+                }
+                reverse {
+                  ${imageTypeStructure}
+                }
+                other {
+                  ${imageTypeStructure}
+                }
+              }
+              involvedPersons {
+                displayOrder
+                alternativeName
+                role
+                remarks
               }
             }
           }
@@ -611,16 +619,18 @@ exports.createPages = ({ graphql, actions }) => {
     const preparedLiteratureIndex = literature.data.allLiteratureJson.edges.reduce(
       (acc, edge) => edge.node.items.reduce((subAcc, item) => {
         const { langCode } = item.metadata;
-        subAcc[langCode] = subAcc[langCode] || {};
-
-        subAcc[langCode][item.referenceId] = item;
-
-        return subAcc;
-      }, acc), {},
+        return {
+          ...(subAcc || {}),
+          [langCode]: {
+            ...subAcc[langCode],
+            [item.referenceId]: item,
+          },
+        };
+      }, acc),
+      {},
     );
 
     const extendedGraphics = mergedAndFlattenedGraphics
-      //.filter(graphic => graphic.images)
       .map(toHaveRepresentativeImage)
       .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
