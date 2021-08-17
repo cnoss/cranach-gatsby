@@ -217,7 +217,7 @@ const createGraphicPages = (graphics, actions) => {
     );
 
     createPage({
-      path: langCode,
+      path: `/${langCode}/`,
       component: overviewPageTemplate,
       context: {
         langCode,
@@ -228,7 +228,7 @@ const createGraphicPages = (graphics, actions) => {
 
   createRedirect({
     fromPath: '/',
-    toPath: '/de',
+    toPath: '/de/',
     isPermanent: true,
     redirectInBrowser: true,
   });
