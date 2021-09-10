@@ -49,7 +49,9 @@
     "react": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.7.3",
-    "sass": "^1.26.12"
+    "remark-parse": "^6.0.3",
+    "sass": "^1.26.12",
+    "unified": "^8.4.2"
   },
   "devDependencies": {
     "babel-jest": "^24.9.0",

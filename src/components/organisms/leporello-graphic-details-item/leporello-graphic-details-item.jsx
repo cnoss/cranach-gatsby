@@ -37,39 +37,15 @@ export default ({
     catalogWorkReferences,
     publications,
     classification,
+    additionalTextInformation,
   } = graphic;
 
-  /* Sorting catalogWorkReferences */
-  const sortingWeight = [
-    {
-      name: 'Bartsch',
-      pos: 1,
-    },
-    {
-      name: 'Hollstein',
-      pos: 2,
-    },
-    {
-      name: 'GND',
-      pos: 3,
-    },
-  ];
-  const getPatternPos = (str) => {
-    const foundSortingWeight = sortingWeight.find((sw) => str === sw.name);
+  const referenceToDefinitionListEntry = (reference) => ({
+    term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
+    definition: reference.referenceNumber,
+  });
 
-    return foundSortingWeight ? foundSortingWeight.pos : Number.MAX_SAFE_INTEGER;
-  };
-  const sortedCatalogWorkReferences = catalogWorkReferences.sort(
-    (a, b) => getPatternPos(b.description) - getPatternPos(a.description),
-  );
-
-  /* Map catalog work references */
-  const catalogWorkReferenceItems = sortedCatalogWorkReferences.map(
-    (reference) => ({
-      term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
-      definition: reference.referenceNumber,
-    }),
-  );
+  const catalogWorkReferenceItems = catalogWorkReferences.map(referenceToDefinitionListEntry);
 
   const [additionalClassNames, setAdditionalClassNames] = useState([]);
   const [isOpen, setIsOpen] = useState(!!initiallyOpen);
@@ -136,7 +112,16 @@ export default ({
                   />
                   <DefinitionList.Entry
                     term={t('Production date')}
-                    definition={`${dating.dated} ${dating.remarks}`}
+                    definition={
+                      <ul className="historic-event-dates-list">
+                        <li className="historic-event-dates-list-item">{`${dating.dated} ${dating.remarks}`}</li>
+                        {
+                          dating.historicEventInformations.map((eventInfo, idx) => (
+                            <li className="historic-event-dates-list-item" key={idx}>{`${eventInfo.text} ${eventInfo.remarks}`}</li>
+                          ))
+                        }
+                      </ul>
+                    }
                   />
                   <DefinitionList.Entry
                     term={t('Dimensions')}
@@ -171,11 +156,45 @@ export default ({
 
                 </DefinitionList>
 
-                {publications.length > 0
+                {/* Primärliteratur */}
+                {publications.primary.length > 0
                   && <DefinitionList>
                     <DefinitionList.Entry
-                      term={t('Literature')}
-                      definition={<LiteratureTable data={publications} />}
+                      term={t('Primary literature')}
+                      definition={<LiteratureTable
+                        forPrimary={true}
+                        items={publications.primary}
+                      />}
+                    />
+                  </DefinitionList>
+                }
+
+                {/* Sekundärliteratur */}
+                {publications.secondary.length > 0
+                  && <DefinitionList>
+                    <DefinitionList.Entry
+                      term={t('Secondary literature')}
+                      definition={<LiteratureTable items={publications.secondary} />}
+                    />
+                  </DefinitionList>
+                }
+
+                {/* Forschungsgeschichte / Diskussion */}
+                {additionalTextInformation.length > 0
+                  && <DefinitionList>
+                    <DefinitionList.Entry
+                      term={t('Interpretation / History / Discussion')}
+                      definition={
+                        <ul class="additional-texts-list"> {
+                          additionalTextInformation.map((info) => (<li
+                            className="additional-texts-list-item"
+                            key={info.text}
+                          >
+                            {info.text}
+                          </li>))
+                        }
+                        </ul>
+                      }
                     />
                   </DefinitionList>
                 }

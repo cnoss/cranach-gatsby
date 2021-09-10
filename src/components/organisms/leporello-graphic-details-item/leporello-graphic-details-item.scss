@@ -117,12 +117,24 @@
         }
       }
     }
-  }
 
-  &.-is-open {
-    .leporello-graphic-details-item__content {
-      &-info-content {
-        max-height: 10000px;
+    &.-is-open {
+      .leporello-graphic-details-item__content {
+        &-info-content {
+          max-height: 10000px;
+        }
+      }
+    }
+
+    .historic-event-dates-list {
+      &-item {
+        margin-bottom: $s;
+      }
+    }
+
+    .additional-texts-list {
+      &-item {
+        margin-bottom: $s;
       }
     }
   }

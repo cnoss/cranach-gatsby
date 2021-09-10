@@ -20,8 +20,9 @@ const getRepresentativeImage = (item) => {
       ),
     ],
   };
+
   const imageType = (item.images && item.images.overall) || emptyImageType;
-  return imageType.images[imageType.images.length - 1];
+  return imageType.images[0];
 };
 
 export default {

@@ -45,6 +45,7 @@ export default ({
     exhibitionHistory,
     catalogWorkReferences,
     restorationSurveys,
+    additionalTextInformation,
   } = graphic;
 
   const graphicViewArtefact = graphicsTransformer.toViewerArtefact(graphic);
@@ -52,6 +53,13 @@ export default ({
   const artTechExaminations = restorationSurveys.filter((rs) => rs.type === ART_TECH_EXAMINATION);
   const conditionReports = restorationSurveys.filter((rs) => rs.type === CONDITION_REPORT);
   const conservationReports = restorationSurveys.filter((rs) => rs.type === CONSERVATION_REPORT);
+
+  const referenceToDefinitionListEntry = (reference) => ({
+    term: t('{{catalogWorkReferenceName}}-No', { catalogWorkReferenceName: reference.description }),
+    definition: reference.referenceNumber,
+  });
+
+  const catalogWorkReferenceItems = catalogWorkReferences.map(referenceToDefinitionListEntry);
 
   return (
     <LeporelloGraphicItem
@@ -149,20 +157,50 @@ export default ({
               term="CDA ID"
               definition={inventoryNumber}
             />
-            {catalogWorkReferences.length > 0
-              && catalogWorkReferences.map((ref) => <GroupedDefinitionList.Entry
-                key={ref.referenceNumber}
-                term={ref.description}
-                definition={ref.referenceNumber}
+            {catalogWorkReferenceItems.length > 0
+              && catalogWorkReferenceItems.map((ref) => <GroupedDefinitionList.Entry
+                key={ref.definition}
+                term={ref.term}
+                definition={ref.definition}
               />)}
           </GroupedDefinitionList>
 
-          {/* Publikationen */}
-          {publications.length > 0
+          {/* Primärliteratur */}
+          {publications.primary.length > 0
             && <DefinitionList>
               <DefinitionList.Entry
-                term={t('Literature')}
-                definition={<LiteratureTable data={publications} />}
+                term={t('Primary literature')}
+                definition={<LiteratureTable forPrimary={true} items={publications.primary} />}
+              />
+            </DefinitionList>
+          }
+
+          {/* Sekundärliteratur */}
+          {publications.secondary.length > 0
+            && <DefinitionList>
+              <DefinitionList.Entry
+                term={t('Secondary literature')}
+                definition={<LiteratureTable items={publications.secondary} />}
+              />
+            </DefinitionList>
+          }
+
+          {/* Forschungsgeschichte / Diskussion */}
+          {additionalTextInformation.length > 0
+            && <DefinitionList>
+              <DefinitionList.Entry
+                term={t('Interpretation / History / Discussion')}
+                definition={
+                  <ul class="additional-texts-list"> {
+                    additionalTextInformation.map((info) => (<li
+                      className="additional-texts-list-item"
+                      key={info.text}
+                    >
+                      {info.text}
+                    </li>))
+                  }
+                  </ul>
+                }
               />
             </DefinitionList>
           }

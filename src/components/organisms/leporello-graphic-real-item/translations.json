@@ -1,5 +1,6 @@
 {
   "de": {
+    "{{catalogWorkReferenceName}}-No": "{{catalogWorkReferenceName}}-Nr.",
     "Condition": "Druckzustand, Version",
     "Dating": "Datierung",
     "Dimensions": "Maße",
@@ -12,11 +13,13 @@
     "Stamps, Seals, Labels": "Stempel, Siegel, Beschriftungen",
     "Short description": "Kurzbeschreibung",
     "Provenance": "Provenienz",
-    "Literature": "Quellen / Publikationen",
+    "Primary literature": "Primärliteratur",
+    "Secondary literature": "Sekundärliteratur",
     "Exhibitions": "Ausstellungen",
     "VD16-No.": "VD16-Nr.",
     "Art-technological examination": "Kunsttechnologische Untersuchung",
     "Condition": "Erhaltungszustand",
-    "Conservation": "Restaurierungsgeschichte"
+    "Conservation": "Restaurierungsgeschichte",
+    "Interpretation / History / Discussion": "Forschungsgeschichte / Diskussion"
   }
 }
