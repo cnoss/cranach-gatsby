@@ -27,13 +27,16 @@ const getRepresentativeImage = (item) => {
       },
     },
     images: [
-      ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
-        (acc, size) => {
-          acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
-          return acc;
-        },
-        {},
-      ),
+      {
+        id: '',
+        sizes: ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
+          (acc, size) => {
+            acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
+            return acc;
+          },
+          {},
+        ),
+      },
     ],
   };
 
@@ -345,40 +348,43 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
     images {
-      xsmall {
-        dimensions {
-          width
-          height
+      id
+      sizes {
+        xsmall {
+          dimensions {
+            width
+            height
+          }
+          src
         }
-        src
-      }
-      small {
-        dimensions {
-          width
-          height
+        small {
+          dimensions {
+            width
+            height
+          }
+          src
         }
-        src
-      }
-      medium {
-        dimensions {
-          width
-          height
+        medium {
+          dimensions {
+            width
+            height
+          }
+          src
         }
-        src
-      }
-      origin {
-        dimensions {
-          width
-          height
+        origin {
+          dimensions {
+            width
+            height
+          }
+          src
         }
-        src
-      }
-      tiles {
-        dimensions {
-          width
-          height
+        tiles {
+          dimensions {
+            width
+            height
+          }
+          src
         }
-        src
       }
     }
   `;
@@ -517,6 +523,21 @@ exports.createPages = ({ graphql, actions }) => {
                   ${imageTypeStructure}
                 }
                 other {
+                  ${imageTypeStructure}
+                }
+                photomicrograph {
+                  ${imageTypeStructure}
+                }
+                conservation {
+                  ${imageTypeStructure}
+                }
+                irr {
+                  ${imageTypeStructure}
+                }
+                uv_light {
+                  ${imageTypeStructure}
+                }
+                transmitted_light {
                   ${imageTypeStructure}
                 }
               }

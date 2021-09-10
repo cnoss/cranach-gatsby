@@ -67,7 +67,7 @@ export default ({
     ]);
   }, [className, isOpen]);
 
-  const repImageSrc = representativeImage.medium.src;
+  const repImageSrc = representativeImage.sizes.medium.src;
 
   return (
     <LeporelloGraphicItem

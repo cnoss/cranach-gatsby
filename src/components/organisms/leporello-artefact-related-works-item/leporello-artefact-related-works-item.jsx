@@ -23,7 +23,7 @@ export default ({
     const item = relatedWorksItem.ref;
     const title = (item.titles[0].title) ? `${item.titles[0].title}, ${item.dating.dated}` : item.dating.dated;
 
-    const smallestImageSrc = item.representativeImage.small.src;
+    const smallestImageSrc = item.representativeImage.sizes.small.src;
 
     return {
       inventoryNumber: item.inventoryNumber,
