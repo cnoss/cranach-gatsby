@@ -11,17 +11,21 @@ const getRepresentativeImage = (item) => {
       },
     },
     images: [
-      ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
-        (acc, size) => {
-          acc[size] = { src: '', dimensions: { width: 0, height: 0 } };
-          return acc;
-        },
-        {},
-      ),
+      {
+        id: '',
+        sizes: ['xsmall', 'small', 'medium', 'origin', 'tiles'].reduce(
+          (acc, size) => {
+            acc[size] = { src: '', dimensions: { width: 0, height: 0 }, type: 'plain' };
+            return acc;
+          },
+          {},
+        ),
+      },
     ],
   };
+
   const imageType = (item.images && item.images.overall) || emptyImageType;
-  return imageType.images[imageType.images.length - 1];
+  return imageType.images[0];
 };
 
 export default {
@@ -43,7 +47,7 @@ export default {
     const title = (item.titles[0] && item.titles[0].title) || '';
     const titleShort = (title.length > titleLength) ? `${title.substr(0, titleLength)}…` : title;
 
-    const imgSrc = item.representativeImage.small.src || '';
+    const imgSrc = item.representativeImage.sizes.small.src || '';
 
     return {
       inventoryNumber: item.inventoryNumber,
@@ -62,12 +66,12 @@ export default {
     const images = Object.entries(item.images || {}).filter(
       (image) => !!image[1],
     ).reduce((acc, [imageType, imageTypeValue]) => {
-      imageTypeValue.images.forEach((image, index) => {
+      imageTypeValue.images.forEach((image) => {
         const imgData = {
-          variants: image,
-          thumbnail: image.small.src,
+          sizes: image.sizes,
+          thumbnail: image.sizes.small.src,
           altText: imageType,
-          id: `${item.inventoryNumber}-${imageType}-${index}`,
+          id: image.id,
         };
 
         acc.push(imgData);

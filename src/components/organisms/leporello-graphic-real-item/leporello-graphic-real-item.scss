@@ -72,5 +72,11 @@
       display: grid;
       grid-template-columns: 1fr $vp-medium;
     }
+
+    .additional-texts-list {
+      &-item {
+        margin-bottom: $s;
+      }
+    }
   }
 }

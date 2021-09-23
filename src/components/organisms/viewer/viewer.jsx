@@ -57,7 +57,7 @@ export default ({
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeImage, setActiveImage] = useState(
     artefact.images.find(
-      (image) => image.variants.tiles.src === artefact.placeholder.tiles.src,
+      (image) => image.sizes.tiles.src === artefact.placeholder.sizes.tiles.src,
     ),
   );
 
@@ -66,7 +66,7 @@ export default ({
     imageServer.baseUrlTiles,
   );
 
-  const src = getTilesUrl(artefact.placeholder.tiles);
+  const src = getTilesUrl(artefact.placeholder.sizes.tiles);
 
   const hideLoadIndicator = () => {
     setIsLoaded(true);
@@ -123,7 +123,7 @@ export default ({
 
     showLoadIndicator();
     viewerRef.current.open(
-      getTilesUrl(activeImage.variants.tiles),
+      getTilesUrl(activeImage.sizes.tiles),
     );
   }, [viewerRef, activeImage]);
 
