@@ -544,6 +544,8 @@ exports.createPages = ({ graphql, actions }) => {
               involvedPersons {
                 displayOrder
                 alternativeName
+                prefix
+                suffix
                 role
                 remarks
               }
