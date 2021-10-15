@@ -15,6 +15,7 @@ import i18n from '~/i18n';
 const PageTemplate = ({ pageContext, location, navigate }) => {
   const graphic = pageContext;
   const title = (graphic.titles[0] && graphic.titles[0].title) || '';
+  const permalink = `${location.origin}${location.pathname}`;
 
   i18n(graphic.metadata.langCode);
 
@@ -85,7 +86,7 @@ const PageTemplate = ({ pageContext, location, navigate }) => {
 
       <section className="body">
         <Leporello>
-          <LeporelloGraphicDetailsItem graphic={graphic} location={location.href} />
+          <LeporelloGraphicDetailsItem graphic={graphic} location={permalink} />
           {selectedReprintItem
             ? (
               <LeporelloGraphicRealItem
