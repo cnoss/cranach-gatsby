@@ -32,16 +32,12 @@
     }
 
     &-title {
-      border-bottom: 1px solid $title-color;
+      text-decoration: underline $title-color;
     }
 
     &--active {
       background-color: $item-active-bg-color;
       border-bottom-color: $item-active-border-color;
-
-      .literature-item-title {
-        border-bottom-color: transparent;
-      }
     }
   }
 
