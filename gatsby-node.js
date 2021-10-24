@@ -1,5 +1,8 @@
 // gatsby-node.js
 const path = require('path');
+var markdownify = require('markdown-it')({
+  breaks: true,
+});
 
 const langCodes = ['de', 'en'];
 
@@ -313,6 +316,49 @@ const realObjectsToHaveInheritedLiteratureInfos = (graphic, graphics) => {
 
   return graphic;
 };
+
+
+const toHaveParsedMarkdown = (graphic) => {
+  graphic.titles.forEach((title) => {
+    title.title = markdownify.renderInline(title.title);
+  });
+
+  graphic.dating.historicEventInformations.forEach((eventInfo) => {
+    eventInfo.remarks = markdownify.renderInline(eventInfo.remarks);
+  });
+
+  graphic.additionalTextInformation.forEach((additionalTextInformation) => {
+    additionalTextInformation.text = markdownify.renderInline(additionalTextInformation.text);
+  });
+
+    graphic.involvedPersons.forEach((involvedPerson) => {
+    involvedPerson.remarks = markdownify.renderInline(involvedPerson.remarks);
+  });
+
+  graphic.restorationSurveys.forEach((restorationSurvey) => {
+    restorationSurvey.tests.forEach((test) => {
+      test.text = markdownify.renderInline(test.text);
+    });
+
+    restorationSurvey.overallAnalysis = markdownify.renderInline(restorationSurvey.overallAnalysis);
+    restorationSurvey.remarks = markdownify.renderInline(restorationSurvey.remarks);
+  });
+
+  graphic.classification.condition = markdownify.renderInline(graphic.classification.condition);
+  graphic.dimensions = markdownify.renderInline(graphic.dimensions);
+  graphic.medium = markdownify.renderInline(graphic.medium);
+  graphic.inscription = markdownify.renderInline(graphic.inscription);
+  graphic.markings = markdownify.renderInline(graphic.markings);
+  graphic.provenance = markdownify.renderInline(graphic.provenance);
+  graphic.description = markdownify.renderInline(graphic.description);
+  graphic.relatedWorks = markdownify.renderInline(graphic.relatedWorks);
+  graphic.signature = markdownify.renderInline(graphic.signature);
+  graphic.dating.remarks = markdownify.renderInline(graphic.dating.remarks);
+  graphic.exhibitionHistory = markdownify.renderInline(graphic.exhibitionHistory);
+
+  return graphic;
+};
+
 
 exports.onCreateNode = ({ node }) => {
   if (node && node.internal.type !== 'GraphicsJson') {
@@ -655,6 +701,7 @@ exports.createPages = ({ graphql, actions }) => {
     );
 
     const extendedGraphics = mergedAndFlattenedGraphics
+      .map((graphic) => toHaveParsedMarkdown(graphic))
       .map(toHaveRepresentativeImage)
       .map(toHaveValidAndSortedCatalogWorkReferences)
       .map((graphic) => toHaveExtendedLiterature(graphic, preparedLiteratureIndex))
