@@ -5,91 +5,96 @@ $medium: #666;
 $dark: #444;
 $darker: #222;
 $darkest: #000;
-$light: #B4B4B4;
-$lighter: #F2F2F2;
+$light: #b4b4b4;
+$lighter: #f2f2f2;
 $lightest:#fff;
-$lighten: rgba(255,255,255,0.04);
-$lighten-strong: rgba(255,255,255,0.2);
-$accent: #FFCC00;
-$error: #cc0000;
-$darken: rgba(0,0,0,.04);
-$darken-medium: rgba(0,0,0,.1);
-$darken-strong: rgba(0,0,0,.2);
-
+$lighten: rgba(255, 255, 255, 0.06);
+$lighten-strong: rgba(255, 255, 255, 0.2);
+$accent: #fc0;
+$accent-dark: #E8A60C;
+$error: #c00;
+$darken: rgba(0, 0, 0, 0.06);
+$darken-medium: rgba(0, 0, 0, 0.1);
+$darken-strong: rgba(0, 0, 0, 0.6);
 
 /* Viewports
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
-$vp-medium: 720px;
+$vp-medium: 768px;
 $vp-large: 1024px;
-$vp-xlarge: 1400px;
-$vp-xxlarge: 1700px;
-$vp-3xlarge: 2000px;
-$vp-4xlarge: 2300px;
+$vp-xlarge: 1440px;
+$vp-xxlarge: 1900px;
 
 /* Größen und Abstände
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
 $bfs: 1rem;
+$scale: 0.0042;
 
-/* Entlang der Fibonacci Reihe */
+/* Entlang der Renard20 Reihe
+100, 110, 125, 140, 160, 180, 200, 220, 250, 280, 320, 360, 400, 420, 450,
+500, 560, 630
 
-$xxxs: $bfs * 0.2;
-$xxs: $bfs * 0.3;
-$xs: $bfs * 0.5;
-$s: $bfs * 0.8;
-$m: $bfs * 1.3;
-$l: $bfs * 2.1;
-$xl: $bfs * 3.4;
-$xxl: $bfs * 5.5;
+*/
+
+$xxxs: $bfs * 100 * $scale;
+$xxs: $bfs * 125 * $scale;
+$xs: $bfs * 160 * $scale;
+$s: $bfs * 200 * $scale;
+$m: $bfs * 250 * $scale;
+$l: $bfs * 320 * $scale;
+$xl: $bfs * 400 * $scale;
+$xxl: $bfs * 450 * $scale;
+$xxxl: $bfs * 500 * $scale;
+$xxxxl: $bfs * 630 * $scale;
+
+$half: $m * 0.5;
+$quad: $m * 0.25;
+
+/* Texte */
+$column-large: $m * 50;
+$column-medium: $m * 40;
+$column-small: $m * 30;
 
 /* Schriften
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
-$font-sans-serif: "IBMPlexSans",
-sans-serif;
-$font-icons: 'Material Icons';
-$font-code: Menlo,
-Consolas,
-"Courier New",
-Courier,
-"Liberation Mono",
-monospace;
-
+$font-sans-serif: "IBMPlexSans", sans-serif;
+$font-icons: 'MaterialIcons';
+$font-code: menlo, consolas, "Courier New", courier, "Liberation Mono", monospace;
 
 /* Schriftgewichte
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 $fw-light: 200;
 $fw-regular: 300;
 $fw-semibold: 400;
 $fw-bold: 600;
 
-
 /* Zeilenabstände
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 $lh-tight: 120%;
 $lh-normal: 140%;
 $lh-loose: 160%;
 
 $lh-headlines: $lh-tight;
 
-
 /* Animationen (Entlang der Fibonacci Reihe)
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
 $tr-slow: 0.8s;
 $tr-medium: 0.5s;
 $tr-fast: 0.3s;
 
 /* Kacheln
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
-$tile-xxs: 8em;
-$tile-xs: 13em;
-$tile-s: 21em;
+$tile-xxxs: $m * 5;
+$tile-xxs: $m * 8;
+$tile-xs: $m * 13;
+$tile-s: $m * 21;
 
 /* Levels (z-Index)
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
 $level-background: 0;
 $level-content: 10;
@@ -97,28 +102,26 @@ $level-content-nav: 20;
 $level-section-nav: 30;
 $level-overall-nav: 40;
 
-
 /* Schatten
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 $shadow: 1px 1px $xxs rgba(0, 0, 0, 0.4);
 $shadow-xs: 1px 1px $xxxs rgba(0, 0, 0, 0.4);
 $shadow-s: 1px 1px $s rgba(0, 0, 0, 0.4);
 $shadow-m: 1px 1px $m rgba(0, 0, 0, 0.4);
-$shadow-top: 0px 0px $xxs rgba(0,0,0,0.4);
-$shadow-top-s: 0px 0px $s rgba(0,0,0,0.4);
-$shadow-top-m: 0px 0px $m rgba(0,0,0,0.4);
-
+$shadow-top: 0 0 $xxs rgba(0, 0, 0, 0.4);
+$shadow-top-s: 0 0 $s rgba(0, 0, 0, 0.4);
+$shadow-top-m: 0 0 $m rgba(0, 0, 0, 0.4);
 
 /* Opacity
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 $op-medium: 0.5;
 $op-low: 0.2;
 
-
 /* Misc
------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------- */
 
 $border-stroke-weight: 2px;
 $border-stroke-weight-s: 1px;
 $inner-shadow: inset 0 0 $s rgba(0, 0, 0, 10);
-
+$radius-s: 2px;
+$radius-m: 5px;

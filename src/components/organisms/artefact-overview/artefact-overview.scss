@@ -4,14 +4,18 @@
 .artefact-overview {
 
   padding-top: $m;
+  display: grid;
+  align-content: flex-start;
+  gap: $s;
+
+  @include grid-auto-columns($tile-s);
 
   &[data-active-view='card'] {
     @include grid-even-columns($vp-medium, 3);
     @include grid-even-columns($vp-large, 4);
     @include grid-even-columns($vp-xlarge, 5);
     @include grid-even-columns($vp-xxlarge, 6);
-    @include grid-even-columns($vp-3xlarge, 7);
-    @include grid-even-columns($vp-4xlarge, 8);
+
   }
 
   &[data-active-view='card-small'] {
@@ -19,8 +23,7 @@
     @include grid-even-columns($vp-large, 6);
     @include grid-even-columns($vp-xlarge, 7);
     @include grid-even-columns($vp-xxlarge, 8);
-    @include grid-even-columns($vp-3xlarge, 9);
-    @include grid-even-columns($vp-4xlarge, 10);
+
     column-gap: $xxs !important;
     row-gap: $xxs !important;
   }
@@ -30,8 +33,7 @@
     padding: $xs;
     display: grid;
     @include grid-even-columns($vp-large, 2);
-    @include grid-even-columns($vp-xxlarge, 3);
-    @include grid-even-columns($vp-4xlarge, 4);
+
     column-gap: $xs !important;
     row-gap: $xs !important;
   }

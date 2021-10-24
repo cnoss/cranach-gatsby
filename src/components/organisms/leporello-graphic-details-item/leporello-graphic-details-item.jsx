@@ -6,7 +6,6 @@ import DefinitionList from '~/components/atoms/definition-list';
 import InvolvedPersonsList from '~/components/molecules/involved-persons-list';
 import LiteratureTable from '~/components/molecules/literature-table';
 import CopyText from '~/components/atoms/copy-text';
-import Image from '~/components/atoms/image';
 
 import translations from './translations.json';
 import './leporello-graphic-details-item.scss';
@@ -78,18 +77,17 @@ export default ({
       visibleToggler={visibleCloser}
       closerType="with-cover"
     >
-      <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
-        <header className="leporello-graphic-details-item__header">
-          <h2 className="chapter">{t('Master Data')}</h2>
-        </header>
+      <header className="leporello-graphic-details-item-wrap__header">
+        <h2 className="chapter">{t('Master Data')}</h2>
+      </header>
 
+      <div className={`leporello-graphic-details-item ${additionalClassNames.join(' ')}`}>
+
+        <figure className="leporello-graphic-details-item__image">
+          <img src={repImageSrc} alt={title} />
+        </figure>
         <div className="leporello-graphic-details-item__content">
-          <div className={'leporello-graphic-details-item__content-image'}>
-            <Image
-              src={repImageSrc}
-              alt={title}
-            />
-          </div>
+
           <div className="leporello-graphic-details-item__content-info">
             <header className="leporello-graphic-details-item__content-info-header">
               <h1 className="title">{title}</h1>
@@ -98,13 +96,11 @@ export default ({
               </h2>
             </header>
             <div className="leporello-graphic-details-item__content-info-content">
-              <div className="column">
+              <div className="main-column">
                 <CopyText
                   text={description}
                 />
-              </div>
 
-              <div className="column">
                 <DefinitionList>
                   <DefinitionList.Entry
                     term={t('Attribution')}
@@ -155,6 +151,9 @@ export default ({
                   />
 
                 </DefinitionList>
+              </div>
+
+              <div className="marginal-column">
 
                 {/* Primärliteratur */}
                 {publications.primary.length > 0

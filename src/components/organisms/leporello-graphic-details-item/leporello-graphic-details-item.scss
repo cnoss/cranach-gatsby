@@ -3,39 +3,44 @@
 @import '~/styles/000-abstracts/mixins';
 
 .leporello-graphic-details-item-wrap {
-  background-color: $lighter;
+  background-color: $lightest;
+  padding: $l;
+
+
+  &__header {
+
+    .chapter {
+      margin-bottom: $m;
+      color: $darken-strong;
+    }
+
+
+  }
 
   .leporello-graphic-details-item {
-    &__header {
-      padding: $l $m $l $m;
 
-      .chapter {
-        margin-bottom: $xs;
-      }
+    @media only screen and (min-width: $vp-medium) {
+      display: grid;
+      gap: $xxl;
+      grid-template-columns: max($tile-xs) 1fr;
+    }
 
-      @media only screen and (min-width: $vp-large) {
-        padding-bottom: 0;
-      }
+    &__image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        & > img{
+          width: 100%;
+        }
     }
 
     &__content {
-      overflow: hidden;
-
-      max-width: $vp-xlarge;
-      padding: $m;
-      padding-bottom: $l;
-      /* Responsive Large
-  -------------------------------------------------------------------------- */
-
-      @include grid-uneven-2-columns($vp-large);
 
       &-info {
         position: relative;
-
         display: flex;
         flex-direction: column;
-
-        background-color: $lighter;
 
         .involved-persons-toggler {
           margin-left: .5rem;
@@ -48,47 +53,34 @@
             white-space: nowrap;
           }
         }
+        &-header{
+          margin-bottom: $xxxxl;
+          max-width: $column-large;
+        }
 
         &-content {
-          display: flex;
-          flex-wrap: wrap;
+          .main-column{
+            max-width: $column-large;
+          }
 
-          max-height: 5vh;
+          .marginal-content{
+            padding-right: $xxl;
+            max-width: $column-large;
+          }
 
-          transition: max-height $tr-slow;
+          @media only screen and (min-width: $vp-xxlarge) {
+            display: grid;
+            gap: $xxl;
+            grid-template-columns: 1fr $column-large;
+          }
 
-          & .column {
-            flex-basis: calc(calc(600px - 100%)*999);
-            flex-grow: 1;
-
-            padding-right: $m;
-
-            & .definition-list__term:first-child {
-              padding-top: 0;
-            }
+          .copy-text{
+            margin-bottom: $xxxxl;
           }
         }
       }
 
-      &-image {
-        overflow: hidden;
 
-        margin: -$m 0 -$m $m;
-
-        & img {
-          width: 100vw;
-          height: 50vh;
-
-          object-position: center center;
-          object-fit: cover;
-        }
-
-        .zoom-image {
-          width: 100%;
-          height: 100%;
-          padding-top: inherit;
-        }
-      }
 
       .-is-non-fading {
         z-index: $level-content;
@@ -107,14 +99,6 @@
           }
         }
 
-        &-image {
-          padding: $m;
-
-          & img {
-            width: 100%;
-            height: auto;
-          }
-        }
       }
     }
 
