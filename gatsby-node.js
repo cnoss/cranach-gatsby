@@ -461,14 +461,15 @@ exports.createPages = ({ graphql, actions }) => {
               relatedWorks
               references {
                 reprints {
-                  inventoryNumber
                   text
-                  remark
+                  kind
+                  inventoryNumber
+                  remarks
                 }
                 relatedWorks {
-                  inventoryNumber
-                  remark
                   text
+                  kind
+                  inventoryNumber
                 }
               }
               repository
