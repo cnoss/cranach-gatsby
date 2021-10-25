@@ -71,11 +71,6 @@ export default ({ items }) => {
       { surveyKeywords(item) }
 
       {/* Files: should be added to graphql query in gatsby-node.js and outputted here */}
-      <div className="files">
-        <div className="files__item"></div>
-        <div className="files__item"></div>
-        <div className="files__item"></div>
-      </div>
 
       { surveyHasBody(item) && itemsOpenState[itemKey]
         && <div className="survey__body">

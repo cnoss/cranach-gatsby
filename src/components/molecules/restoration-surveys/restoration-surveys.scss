@@ -26,19 +26,6 @@
     margin-top: $xxs;
   }
 
-  .files {
-    margin: $bfs auto;
-
-    &__item {
-      width: $xl;
-      height: $xl;
-      border: 1px solid $light;
-      display: inline-block;
-      margin: $xxs;
-      background-color: $lighter;
-    }
-  }
-
   .survey__collapser {
     display: flex;
     margin-bottom: $s;
