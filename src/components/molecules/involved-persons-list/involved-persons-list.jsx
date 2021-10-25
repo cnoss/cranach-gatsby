@@ -14,7 +14,7 @@ export default ({
   const items = data.map(
     (item, idx) => (
       <li className="involved-persons-list__item" key={idx}>
-        {`${getInvolvedPersonName(item)}, ${item.role} `}
+        {`${getInvolvedPersonName(item)} (${item.role}) `}
         {(item.remarks) ? <span className="remarks">{item.remarks}</span> : ''}
       </li>
     ),
