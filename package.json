@@ -69,6 +69,7 @@
     "gh-pages": "^2.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "markdown-it": "^12.2.0",
     "prettier": "^1.19.1",
     "react-dom": "^16.13.1"
   },

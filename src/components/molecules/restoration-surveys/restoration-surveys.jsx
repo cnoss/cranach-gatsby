@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import CopyText from '~/components/atoms/copy-text';
+import HTMLOutput from '~/components/atoms/html-output';
 import Toggler from '~/components/atoms/toggler';
 
 import './restoration-surveys.scss';
@@ -84,7 +84,7 @@ export default ({ items }) => {
           { item.tests.map((test, testKey) => (<div className="survey__test" key={testKey}>
             <p className="test__kind">{ test.kind }</p>
             <div className="test__text">
-              <CopyText text={test.text} />
+              <HTMLOutput>{test.text}</HTMLOutput>
             </div>
           </div>))}
 

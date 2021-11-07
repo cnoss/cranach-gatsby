@@ -5,7 +5,7 @@ import LeporelloGraphicItem from '~/components/molecules/leporello-graphic-item'
 import DefinitionList from '~/components/atoms/definition-list';
 import InvolvedPersonsList from '~/components/molecules/involved-persons-list';
 import LiteratureTable from '~/components/molecules/literature-table';
-import CopyText from '~/components/atoms/copy-text';
+import HTMLOutput from '~/components/atoms/html-output';
 import Image from '~/components/atoms/image';
 
 import translations from './translations.json';
@@ -99,9 +99,7 @@ export default ({
             </header>
             <div className="leporello-graphic-details-item__content-info-content">
               <div className="column">
-                <CopyText
-                  text={description}
-                />
+                <HTMLOutput>{description}</HTMLOutput>
               </div>
 
               <div className="column">
@@ -114,10 +112,10 @@ export default ({
                     term={t('Production date')}
                     definition={
                       <ul className="historic-event-dates-list">
-                        <li className="historic-event-dates-list-item">{`${dating.dated} ${dating.remarks}`}</li>
+                        <li className="historic-event-dates-list-item">{dating.dated} <HTMLOutput>{dating.remarks}</HTMLOutput></li>
                         {
                           dating.historicEventInformations.map((eventInfo, idx) => (
-                            <li className="historic-event-dates-list-item" key={idx}>{`${eventInfo.text} ${eventInfo.remarks}`}</li>
+                            <li className="historic-event-dates-list-item" key={idx}>{eventInfo.text} <HTMLOutput>{eventInfo.remarks}</HTMLOutput></li>
                           ))
                         }
                       </ul>
@@ -125,11 +123,11 @@ export default ({
                   />
                   <DefinitionList.Entry
                     term={t('Dimensions')}
-                    definition={dimensions}
+                    definition={<HTMLOutput>{dimensions}</HTMLOutput>}
                   />
                   {signature && <DefinitionList.Entry
                     term={t('Signature')}
-                    definition={signature}
+                    definition={<HTMLOutput>{signature}</HTMLOutput>}
                   />
                   }
 
