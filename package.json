@@ -34,7 +34,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "babel-loader": "^8.1.0",
-    "gatsby": "^2.24.69",
+    "gatsby": "^5.5.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-i18n": "^1.0.1",
